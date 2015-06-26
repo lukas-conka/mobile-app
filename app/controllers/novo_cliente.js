@@ -4,6 +4,8 @@ Ti.include("/database/aparencia.js");
 Ti.include("/api/config.js");
 Ti.include("/database/credito.js");
 
+//testando commit em outro arquivo
+
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
 
 //Ids do cliente, empresa e representante
