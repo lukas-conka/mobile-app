@@ -1,0 +1,67 @@
+<Alloy>
+	<View id="win" class="container">
+		<View class="corpo">
+			<View id="gradeA" class="gradeA">
+				<View class="imagemView">
+					<ImageView class="imagem" id="imagemA"/>
+				</View>
+				<View class="images" id="imagesA"></View>
+				<View class="legenda">
+					<Label class="preco" id="precoA"/>
+					<Button class="tempo" id="tempoA"/>
+					<ImageView class="seleciona" id="selecionaA"/>
+				</View>
+			</View>
+			<View id="gradeB" class="gradeB">
+				<View class="imagemView">
+					<ImageView class="imagem" id="imagemB"/>
+				</View>
+				<View class="images" id="imagesB"></View>
+				<View class="legenda">
+					<Label class="preco" id="precoB"/>
+					<Button class="tempo" id="tempoB"/>
+					<ImageView class="seleciona" id="selecionaB"/>
+				</View>
+			</View>
+			<View id="gradeC" class="gradeC">
+				<View class="imagemView">
+					<ImageView class="imagem" id="imagemC"/>
+				</View>
+				<View class="images" id="imagesC"></View>
+				<View class="legenda">
+					<Label class="preco" id="precoC"/>
+					<Button class="tempo" id="tempoC"/>
+					<ImageView class="seleciona" id="selecionaC"/>
+				</View>
+			</View>
+			<View id="gradeD" class="gradeD">
+				<View class="imagemView">
+					<ImageView class="imagem" id="imagemD"/>
+				</View>
+				<View class="images" id="imagesD"></View>
+				<View class="legenda">
+					<Label class="preco" id="precoD"/>
+					<Button class="tempo" id="tempoD"/>
+					<ImageView class="seleciona" id="selecionaD"/>
+				</View>
+			</View>
+		</View>
+		<View class="rodape">
+			<View class="ajuda">
+				<Button id="botaoQuatroVerticais" class="botaoLimpa" onClick="limpar">Limpar todas marcações</Button>
+				<Button class="botaoVolta" onClick="voltar">Voltar</Button>
+			</View>
+			<View class="guia">
+				<ImageView class="botaoPrimeiro" onClick="primeiro"></ImageView>
+				<ImageView class="botaoAnterior" onClick="anterior"></ImageView>
+				<Button id="paginacao" class="paginacao">1/1</Button>
+				<ImageView class="botaoProximo" onClick="proximo"></ImageView>
+				<ImageView class="botaoUltimo" onClick="ultimo"></ImageView>
+			</View>
+			<View class="carrinho">
+				<ImageView class="botaoCesta" onClick="cesta"></ImageView>
+				<Button id="quantidade" class="quantidade">0</Button>
+			</View>
+		</View>
+	</View>
+</Alloy>

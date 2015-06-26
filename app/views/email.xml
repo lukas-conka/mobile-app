@@ -1,0 +1,56 @@
+<Alloy>
+	<Window class="container">
+		<ListView class="menu" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate" class="menuItem">
+					<View class="botaoA" onClick="menuClick">
+						<Label bindId="btnmenu" class="menuText"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:text="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:text="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:text="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:text="PEDIDOS"/>
+				<ListItem btnmenu:text="TRANSPORTADORA"/>
+				<ListItem btnmenu:text="NOVO CLIENTE"/>
+				<ListItem btnmenu:text="FUNÇÕES"/>
+				<ListItem btnmenu:text="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:text="SAIR"/>
+			</ListSection>
+		</ListView>
+		<View class="conteudo">
+			<View class="cabecalho">
+				<View class="logoA">
+					<ImageView id="logoEmpresa" class='imagemA'></ImageView>
+				</View>
+				<Button class="titulo">EMAIL</Button>
+				<View class="logoB">
+					<ImageView class='imagemA'></ImageView>
+				</View>
+			</View>
+			<View class="corpo">
+				<View class="busca">
+					<View class="busca1">
+						<TextField id="email_valor" class="novoEmail" hintText="Cadastrar novo email"></TextField>
+					</View>
+					<View class="busca2">
+						<Button class="botaoC" onClick="novoEmail">Ir</Button>
+					</View>
+				</View>
+				<ListView class="emails" id="listaemails" defaultItemTemplate="email_lista">
+					<Templates>
+						<ItemTemplate name="email_lista" class="emails_item">
+							<View class="list" layout="horizontal">
+								<Label class="label_email" bindId="label_email"/>
+								<Label class="label_acoes" bindId="label_acoes" onClick="excluir">Excluir</Label>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,9 @@
+".container":{
+	backgroundColor:"#ccc"
+},
+
+".cabecalho":{
+	height:"70%",
+	top:"0",
+	width:"70%"
+}

@@ -1,0 +1,40 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">LISTA DE CLIENTES</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<View class="barra">
+				<Button class="icone_razao">Razão Social</Button>
+				<Button class="icone_nome">Nome Fantasia</Button>
+				<Button class="icone_cnpj">CNPJ</Button>
+				<Button class="icone_info">Info</Button>
+			</View>
+			<View class="clientes">
+				<ListView class="clientes" id="listaclientes" defaultItemTemplate="cliente_lista">
+					<Templates>
+						<ItemTemplate name="cliente_lista" class="clientes_item">
+							<View class="border_horizontal"/>
+							<View class="list" layout="horizontal">
+								<View class="border_vertical"/>
+								<Label class="cl_razao" bindId="cl_razao"/>
+								<View class="border_vertical"/>
+								<Label class="cl_fantasia" bindId="cl_fantasia"/>
+								<View class="border_vertical"/>
+								<Label class="cl_cnpj" bindId="cl_cnpj"/>
+								<View class="border_vertical"/>
+									<Button class="infomais" onClick="selecionacliente">+</Button>
+								<View class="border_vertical"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+		</View>
+	</Window>
+</Alloy>

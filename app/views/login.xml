@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container">
+		<ActivityIndicator id="activityIndicator" message="Aguarde..."/>
+		<ImageView id="mensagem_login" image="/images/mensagem_login.jpg"></ImageView>
+		<View id="login_layout">
+			<TextField id="loginChave" hintText="CHAVE">
+			</TextField>
+			<TextField id="loginUsuario" hintText="LOGIN">
+			</TextField>
+			<TextField id="loginSenha" hintText="SENHA">
+			</TextField>
+			<Button id="default_button" onClick="login">Ir</Button>
+			<Button id="default_button" onClick="goToIndex">Voltar</Button>
+		</View>
+	</Window>
+</Alloy>

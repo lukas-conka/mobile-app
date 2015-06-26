@@ -1,0 +1,84 @@
+<Alloy>
+	<Window class="container">
+		<ListView class="menu" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate" class="menuItem">
+					<View class="botaoA" onClick="menuClick">
+						<Label bindId="btnmenu" class="menuText"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:text="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:text="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:text="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:text="PEDIDOS"/>
+				<ListItem btnmenu:text="TRANSPORTADORA"/>
+				<ListItem btnmenu:text="NOVO CLIENTE"/>
+				<ListItem btnmenu:text="FUNÇÕES"/>
+				<ListItem btnmenu:text="EMAIL"/>
+				<ListItem btnmenu:text="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:text="TROCAR\n MARCA"/>
+				<ListItem btnmenu:text="SAIR"/>
+			</ListSection>
+		</ListView>
+		<View class="conteudo">
+			<View class="cabecalho">
+				<View class="logoA">
+					<ImageView id="logoEmpresa" class='imagemA'></ImageView>
+				</View>
+				<Button class="titulo">ANÁLISE DE CRÉDITO</Button>
+				<View class="logoB">
+					<ImageView class='imagemB'></ImageView>
+				</View>
+			</View>
+			<View class="corpo">
+				<View class="cliente">
+					<View class="selecao">
+						<Label id="selecao" class="campoA" text="Seleção de cliente"></Label>
+					</View>
+					<View class="data">
+						<Button class="dataA">DATA</Button>
+						<Label class="campoB" id='data'></Label>
+						<Button class="botaoC" onClick="ir">Ir</Button>
+					</View>
+				</View>
+				<Button class="botaoDetalhe" onClick="detalhe">Detalhes</Button>
+				<Label id="avisoDetalhe" class="avisoDetalhe"></Label>
+				<View class="detalhe">
+					<View class="linhaA">
+						<Button class="detalheA">CRÉDITO</Button>
+					</View>
+					<View class="linhaB">
+						<Label id="credito" class="detalheB"></Label>
+					</View>
+					<View class="linhaC">
+						<Button class="detalheA">CRÉDITO UTILIZADO</Button>
+					</View>
+					<View class="linhaD">
+						<Label id="utilizado" class="detalheB"></Label>
+					</View>
+					<View class="linhaE">
+						<Button class="detalheA">SALDO</Button>
+					</View>
+					<View class="linhaF">
+						<Label id="saldo" class="detalheB"></Label>
+					</View>
+					<View class="linhaG">
+						<Button class="detalheA">VALOR MÍNIMO PARA COMPRA</Button>
+					</View>
+					<View class="linhaH">
+						<Label id="minimo" class="detalheB"></Label>
+					</View>
+				</View>
+				<View class="solicitacao">
+					<View class="linhaA">
+						<Button class="detalheA">PEDIDO DE AUMENTO DE CRÉDITO</Button>
+					</View>
+					<TextField class="campoC" hintText="" id="pedido_credito"></TextField>
+					<Button class="botaoD" onClick="funcEnviarCredito">Enviar</Button>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

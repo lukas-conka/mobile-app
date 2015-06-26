@@ -1,0 +1,37 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">LISTA DE VÍDEOS</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<View class="barra">
+				<Button class="icone_titulo">Título</Button>
+				<Button class="icone_descricao">Descrição</Button>
+				<Button class="icone_video">Video</Button>
+			</View>
+			<View class="videos">
+				<ListView class="videos" id="listavideos" defaultItemTemplate="video_lista">
+					<Templates>
+						<ItemTemplate name="video_lista" class="videos_item">
+							<View class="border_horizontal"/>
+							<View class="list" layout="horizontal">
+								<View class="border_vertical"/>
+								<Label class="v_titulo" bindId="v_titulo"/>
+								<View class="border_vertical"/>
+								<Label class="v_descricao" bindId="v_descricao"/>
+								<View class="border_vertical"/>
+								<Button class="video" onClick="selecionavideo"/>
+								<View class="border_vertical"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+		</View>
+	</Window>
+</Alloy>

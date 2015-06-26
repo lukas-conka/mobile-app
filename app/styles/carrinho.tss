@@ -1,0 +1,767 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".cabecalho":{
+	height: "16%",
+	top: "0%",
+	width: "100%"
+}
+
+".gradeA":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "50%",
+	left: "1%",
+	top: "10%",
+	width: "7%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".gradeB":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "50%",
+	left: "8%",
+	top: "10%",
+	width: "7%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".gradeC":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "50%",
+	left: "15%",
+	top: "10%",
+	width: "7%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".gradeD":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	left: "1%",
+	top: "60%",
+	width: "7%"
+}
+
+".gradeE":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	left: "8%",
+	top: "60%",
+	width: "7%"
+}
+
+".gradeF":{
+	backgroundColor: "#ffffff",
+	borderColor: "#b4282d",
+	borderWidth: "1",
+	color: "#b4282d",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	left: "15%",
+	top: "60%",
+	width: "7%"
+}
+
+".botaoA":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	left: "24%",
+	top: "10%",
+	width: "9%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".botaoB":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "0%",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	left: "24%",
+	width: "9%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".periodo_label_mes":{
+	height: "90%",
+	right: "64%",
+	top: "10%",
+	color: "#ff0000",
+	font:{
+		fontSize: 16
+	}
+}
+
+".periodo_label_semana":{
+	height: "90%",
+	right: "63%",
+	top: "10%",
+	color: "#ff0000",
+	font:{
+		fontSize: 16
+	}
+}
+
+".periodo_label_quinzena":{
+	height: "90%",
+	right: "62%",
+	top: "10%",
+	color: "#ff0000",
+	font:{
+		fontSize: 16
+	}
+}
+
+".periodo_mes":{
+	height: "90%",
+	right: "14%",
+	top: "10%",
+	width: "50%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	layout: 'horizontal'
+}
+
+".periodo_semana":{
+	height: "90%",
+	right: "-100%",
+	top: "10%",
+	width: "50%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	layout: 'horizontal'
+}
+
+".periodo_quinzena":{
+	height: "90%",
+	right: "-100%",
+	top: "10%",
+	width: "50%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	layout: 'horizontal'
+}
+
+".seta":{
+	height: "90%",
+	right: "11%",
+	top: "10%",
+	image: "/images/seta.jpg"
+}
+".scrollperiodo":{
+	height: '100%',
+	contentWidth: 'auto',
+	contentHeight: 'auto',
+	scrollType: 'horizontal',
+	layout: 'horizontal',
+	showHorizontalScrollIndicator: true
+}
+
+".data":{
+	backgroundColor: "#414243",
+	borderWidth: "1",
+	borderColor: "#e71123",
+	color: "#ffffff",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "80%",
+	width: "80"
+}
+
+".botaoC":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "20%",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "40%",
+	right: "1%",
+	width: "9%"
+}
+
+".titulo_carrinho":{
+	top: "17%",
+	color: "#008382",
+	font:{
+		fontSize: 25
+	},
+	left: "1%"
+}
+
+".produto":{
+	height: "19%",
+	top: "23%",
+	layout: "horizontal",
+	width: "99%"
+}
+
+".item":{
+	backgroundColor: "#ffe9e9",
+	borderColor: "#dddddd",
+	borderRadius: "6",
+	borderWidth: "1",
+	height: "100%",
+	left: "0%",
+	width: "100"
+}
+
+".scroll":{
+	height: '100%',
+	width: '100%',
+	contentWidth: 'auto',
+	contentHeight: 'auto',
+	layout: 'horizontal',
+	showVerticalScrollIndicator: true,
+	showHorizontalScrollIndicator: true
+}
+
+".itemTitulo":{
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "10%",
+	top: "5%"
+}
+
+".itemRodape":{
+	bottom: "5%",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "22%"
+}
+
+".conteudo":{
+	height: "48%",
+	top: "43%",
+	width: "99%"
+}
+
+".titulo":{
+	backgroundColor: "#008382",
+	height: "10%",
+	top: "0%",
+	width: "100%"
+}
+
+".tituloA":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "0%",
+	width: "7%"
+}
+
+".tituloB":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "7%",
+	width: "10%"
+}
+
+".tituloC":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "17%",
+	width: "5%"
+}
+
+".tituloD":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "23%",
+	width: "7%"
+}
+
+".tituloE":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "30%",
+	width: "3%"
+}
+
+".tituloF":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "33%",
+	width: "7%"
+}
+
+".tituloG":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "40%",
+	width: "4%"
+}
+
+".tituloH":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "44%",
+	width: "16%"
+}
+
+".tituloI":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "60%",
+	width: "6%"
+}
+
+".tituloJ":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "66%",
+	width: "6%"
+}
+
+".tituloK":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "72%",
+	width: "7%"
+}
+
+".tituloL":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "79%",
+	width: "7%"
+}
+
+".tituloM":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "86%",
+	width: "6%"
+}
+
+".tituloN":{
+	backgroundColor: "#008382",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: "100%",
+	left: "92%",
+	width: "8%"
+}
+
+".rodape":{
+	backgroundColor: "#59595b",
+	bottom: "1%",
+	height: "7%",
+	width: "99%"
+}
+
+".botaoD":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "10%",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "80%",
+	left: "1%",
+	width: "10%"
+}
+
+".botaoE":{
+	backgroundColor: "#59595b",
+	bottom: "10%",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "80%",
+	right: "1%",
+	width: "30%"
+}
+
+".botaoF":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "10%",
+	color: "#ffffff",
+	font:{
+		fontSize: 11
+	},
+	height: "80%",
+	left: "13%",
+	width: "10%"
+}
+
+".list_pedidos":{
+	width: '99%',
+	height: "80%",
+	top: '10%'
+}
+
+".pedidos":{
+	width: '100%'
+}
+
+".label_prod":{
+	width: '7%'
+}
+
+".label_ref":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '10%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_colecao":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '5%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_prazo":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '7%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_tam":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '3%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_preco":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '7%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_peso":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '4%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".label_cubagem":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '16%',
+	font: {
+		fontSize: 9
+	},
+	color: 'black'
+}
+
+".quantidade":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	color: 'black',
+	font: {
+		fontSize: 9
+	},
+	backgroundColor: 'white'
+}
+
+".quantidade_mais":{
+	left: 3,
+	top: 5,
+	height: 25,
+	width: 25,
+	font: {
+		fontSize: 11
+	},
+	backgroundColor: '#c0c0c0',
+	color: "black"
+}
+
+".quantidade_menos":{
+	left: 3,
+	bottom: 5,
+	height: 25,
+	width: 25,
+	font: {
+		fontSize: 11
+	},
+	backgroundColor: '#c0c0c0',
+	color: "black"
+}
+
+".quantidade_exclui":{
+	right: 3,
+	bottom: 3,
+	height: 25,
+	width: 25,
+	image: "/images/btn_excluir.png"
+}
+
+".label_quant":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: 'black'
+}
+
+".label_estoque":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_precototal":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '7%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_ipi":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '7%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_sustrib":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_totalIpi":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_totalPreco":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".label_valorfinal":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: '6%',
+	font: {
+		fontSize: 10
+	},
+	color: 'black'
+}
+
+".pedidos_item_escuro":{
+	width: '100%',
+	backgroundColor: '#EBEBEB',
+	height: 100
+}
+
+".pedidos_item_claro":{
+	width: '100%',
+	backgroundColor: '#FBFBFB',
+	height: 100
+}
+
+".border_vertical":{
+	width: 1,
+	height: '100%',
+	backgroundColor: 'black'
+}
+
+".espaco_vertical":{
+	width: 1,
+	height: "100%"
+}
+
+".imagem_produto":{
+	height: "95%"
+}
+
+".barraRodape":{
+	backgroundColor: "#008382",
+	height: "10%",
+	layout: "horizontal",
+	top: "90%",
+	width: "99%"
+}
+
+".label_soma":{
+	color: "#ffffff",
+	font:{
+		fontSize: "14"
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	width: "39%"
+}
+
+
+".label_totalPreco":{
+	color: "#ffffff",
+	font:{
+		fontSize: "14"
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	width: "39%"
+}
+
+".label_totalIpi":{
+	color: "#ffffff",
+	font:{
+		fontSize: "14"
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	width: "7%"
+}

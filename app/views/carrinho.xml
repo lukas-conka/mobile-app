@@ -1,0 +1,160 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Label class="gradeA">Total de produtos</Label>
+			<Label class="gradeB">Disponíveis no período</Label>
+			<Label class="gradeC">Restantes para marcar</Label>
+			<Button id="total_pedidos" class="gradeD">0</Button>
+			<Button id="disponiveis" class="gradeE">0</Button>
+			<Button id="restantes" class="gradeF">0</Button>
+			<Label class="botaoA" onClick="limparMarcacao">Limpar marcação</Label>
+			<Label class="botaoB" onClick="comprando">Continuar comprando</Label>
+			<Label id="periodo_label_mes" class="periodo_label_mes">Mês</Label>
+			<Label id="periodo_label_semana" class="periodo_label_semana" visible="false">Semana</Label>
+			<Label id="periodo_label_quinzena" class="periodo_label_quinzena" visible="false">Quinzena</Label>
+			<View id="view_semana" class="periodo_semana">
+				<ScrollView id="periodo_semana" class='scrollperiodo'>
+					<Label class="data">05/2015 Entrega: 01 à 31</Label>
+				</ScrollView>
+			</View>
+			<View id="view_quinzena" class="periodo_quinzena">
+				<ScrollView id="periodo_quinzena" class='scrollperiodo'>
+					<Label class="data">05/2015 Entrega: 01 à 31</Label>
+				</ScrollView>
+			</View>
+			<View id="view_mes" class="periodo_mes">
+				<ScrollView id="periodo_mes" class='scrollperiodo'>
+					<Label class="data">05/2015 Entrega: 01 à 31</Label>
+				</ScrollView>
+			</View>
+			<ImageView id="seta" class="seta" onLoad="showDates" onClick="showDates"/>
+			<Button class="botaoC" onClick="fechar">Fechar pedido</Button>
+		</View>
+		<Label class="titulo_carrinho">Meu Carrinho</Label>
+		<View id="produto" class="produto"></View>
+		<View class="conteudo">
+			<View class="titulo">
+				<Label class="tituloA">Produto</Label>
+				<Label class="tituloB">Ref.</Label>
+				<Label class="tituloC">Coleção</Label>
+				<Label class="tituloD">Prazo de entrega</Label>
+				<Label class="tituloE">Tam.</Label>
+				<Label class="tituloF">Preço Unit.</Label>
+				<Label class="tituloG">Peso</Label>
+				<Label class="tituloH">Cubagem AxLxP</Label>
+				<Label class="tituloI">Quant. de peças</Label>
+				<Label class="tituloJ">Estoque</Label>
+				<Label class="tituloK">Preço total</Label>
+				<Label class="tituloL">IPI</Label>
+				<Label class="tituloM">S.T.</Label>
+				<Label class="tituloN">Valor final do produto</Label>
+			</View>
+			<ListView class="list_pedidos" id="listapedidos" defaultItemTemplate="pedido_lista">
+				<Templates>
+					<ItemTemplate name="pedido_lista_escuro" class="pedidos_item_escuro">
+						<View layout="horizontal">
+							<View class="label_prod">
+								<ImageView class="imagem_produto" bindId="imagem_produto"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_ref" bindId="label_ref"/>
+							<View class='border_vertical'/>
+							<Label class="label_colecao" bindId="label_colecao"/>
+							<View class='border_vertical'/>
+							<Label class="label_prazo" bindId="label_prazo"/>
+							<View class='border_vertical'/>
+							<Label class="label_tam" bindId="label_tam"/>
+							<View class='border_vertical'/>
+							<Label class="label_preco" bindId="label_preco"/>
+							<View class='border_vertical'/>
+							<Label class="label_peso" bindId="label_peso"/>
+							<View class='border_vertical'/>
+							<Label class="label_cubagem" bindId="label_cubagem"/>
+							<View class='border_vertical'/>
+							<View class="quantidade">
+								<Button class="quantidade_mais" onClick="adiciona_quantidade">+</Button>
+								<Label class="label_quant" bindId="label_quant"/>
+								<Button class="quantidade_menos" onClick="subtrai_quantidade">-</Button>
+								<ImageView class="quantidade_exclui" onClick="exclui_item"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_estoque" bindId="label_estoque"/>
+							<View class='border_vertical'/>
+							<Label class="label_precototal" bindId="label_precototal"/>
+							<View class='border_vertical'/>
+							<Label class="label_ipi" bindId="label_ipi"/>
+							<View class='border_vertical'/>
+							<Label class="label_sustrib" bindId="label_sustrib"/>
+							<View class='border_vertical'/>
+							<Label class="label_valorfinal" bindId="label_valorfinal"/>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate name="pedido_lista_claro" class="pedidos_item_claro">
+						<View layout="horizontal">
+							<View class="label_prod">
+								<ImageView class="imagem_produto" bindId="imagem_produto"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_ref" bindId="label_ref"/>
+							<View class='border_vertical'/>
+							<Label class="label_colecao" bindId="label_colecao"/>
+							<View class='border_vertical'/>
+							<Label class="label_prazo" bindId="label_prazo"/>
+							<View class='border_vertical'/>
+							<Label class="label_tam" bindId="label_tam"/>
+							<View class='border_vertical'/>
+							<Label class="label_preco" bindId="label_preco"/>
+							<View class='border_vertical'/>
+							<Label class="label_peso" bindId="label_peso"/>
+							<View class='border_vertical'/>
+							<Label class="label_cubagem" bindId="label_cubagem"/>
+							<View class='border_vertical'/>
+							<View class="quantidade">
+								<Button class="quantidade_mais" onClick="adiciona_quantidade">+</Button>
+								<Label class="label_quant" bindId="label_quant"/>
+								<Button class="quantidade_menos" onClick="subtrai_quantidade">-</Button>
+								<ImageView class="quantidade_exclui" onClick="exclui_item"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_estoque" bindId="label_estoque"/>
+							<View class='border_vertical'/>
+							<Label class="label_precototal" bindId="label_precototal"/>
+							<View class='border_vertical'/>
+							<Label class="label_ipi" bindId="label_ipi"/>
+							<View class='border_vertical'/>
+							<Label class="label_sustrib" bindId="label_sustrib"/>
+							<View class='border_vertical'/>
+							<Label class="label_valorfinal" bindId="label_valorfinal"/>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection/>
+			</ListView>
+			<View class="barraRodape">
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<Label class="label_soma">SOMA DOS TOTAIS:</Label>
+				<View class='border_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<View class='espaco_vertical'/>
+				<Label id="label_totalPreco" class="label_totalPreco"></Label>
+				<View class='border_vertical'/>
+				<Label id="label_totalIpi" color="#ffffff" class="label_ipi"></Label>
+				<View class='border_vertical'/>
+				<Label class="label_sustrib"/>
+				<View class='border_vertical'/>
+				<Label id="label_totalComIPI" color="#ffffff" class="label_valorfinal"/>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="botaoD" onClick="voltar">Voltar</Button>
+			<Button id="pagamento" class="botaoF" onClick="pagamento">Ir para pagamento</Button>
+			<Button id="valor_total" class="botaoE">Valor total do pedido: R$ 0.00</Button>
+		</View>
+	</Window>
+</Alloy>

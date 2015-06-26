@@ -1,0 +1,25 @@
+".container": {
+	backgroundColor: "white"
+}
+
+"#index_mensagem":{
+	image: "/images/mensagem.jpg",
+	top: "100px"
+}
+
+"#index_botao_video": {
+	image: "/images/botao1.jpg"
+}
+
+"#index_botao_ircatalogos": {
+	image: "/images/botao3.jpg",
+	left: "30px"
+}
+
+"#index_layout": {
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	layout: "horizontal",
+	title: "centered",
+	top: "400px"
+}

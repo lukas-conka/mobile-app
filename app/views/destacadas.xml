@@ -1,0 +1,8 @@
+<Alloy>
+	<View class="container">
+		<Button class="botaoMenu" onClick="goToMenu">Menu</Button>
+		<ImageView id="imagem" class="imagem" onClick="stopSlides"/>
+		<ImageView id="nextSlide" class="nextslide" onClick="nextSlide"/>
+		<ImageView id="prevSlide" class="prevslide" onClick="prevSlide"/>
+	</View>
+</Alloy>

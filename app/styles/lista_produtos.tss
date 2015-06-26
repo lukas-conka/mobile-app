@@ -1,0 +1,281 @@
+".container": {
+	backgroundColor: "#ffffff"
+}
+
+".cabecalho":{
+	height: "10%",
+	top: "0",
+	width: "100%"
+}
+
+".titulo":{
+	backgroundColor: "#ffffff",
+	color: "#000000",
+	right: "10"
+}
+
+".logo":{
+	left: "10"
+}
+
+".corpo":{
+	height: "80%",
+	top: "10%",
+	width: "100%"
+}
+
+".busca_title":{
+	color: 'black',
+	right: "48%",
+	top: 0
+}
+
+".busca_barra":{
+	right: "45%",
+	image: '/images/codigo_barra.png',
+	width: "2%",
+	top: 5
+}
+
+".buscar_field":{
+	color: 'black',
+	right: "34%",
+	width: "10%",
+	top: 2
+}
+
+".buscar_button":{
+	right: "32%",
+	top: 0,
+	backgroundColor: "#c0c0c0",
+	color:"#336633",
+	borderRadius: 9
+}
+
+
+".barra":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#449e46", "#aed252"]
+	},
+	height: "7%",
+	top: "10%",
+	width: "100%",
+	layout: 'horizontal'
+}
+
+".icone_produto":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_referencia":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_barras":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "20%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_nome":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "20%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_marca":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_preco":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_quantidade_min":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".icone_selecionar":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: 13
+	}
+}
+
+".produtos":{
+	height: "90%",
+	top: "10%",
+	width: "100%"
+}
+
+".produtos_item":{
+	backgroundColor: "white",
+	height: "100dp"
+}
+
+".rodape":{
+	height: "7%",
+	bottom: "1%",
+	width: "100%"
+}
+
+".pedidos_voltar":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "10%",
+	bottom: "1%"
+}
+
+".ir_selecionados":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	right: "1%",
+	width: "12%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	bottom: "1%"
+}
+
+".item_single":{
+	width: "8%"
+}
+
+".item_data":{
+	width: "16%"
+}
+
+".item_double":{
+	width: "20%"
+}
+
+".border_vertical":{
+	backgroundColor: "#DDDDDD",
+	width: 1,
+	heigth: "100%"
+}
+
+".border_horizontal":{
+	backgroundColor: "#DDDDDD",
+	width: "100%",
+	heigth: 1,
+	top: 0,
+	left: 0
+}
+
+".imagem_view":{
+	width: "10%",
+	height: "90%"
+}
+
+".imagem_produto":{
+	width: "100%"
+}
+
+".list":{
+	backgroundColor: "white",
+	top: 2,
+	left: 0,
+	width: "100%",
+	height: "100%"
+}
+
+".label_referencia":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+".label_barras":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "20%"
+}
+".label_nome":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "20%"
+}
+
+".marca_view":{
+	width: "10%"
+}
+
+".imagem_marca":{
+	width: "80%"
+}
+
+".label_preco":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+".label_quantidade_min":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".view_selecionar":{
+	width: "9%"
+}
+
+".image_selecionar":{
+	width: "70%"
+}

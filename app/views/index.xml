@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container">
+		<ImageView id="index_mensagem"></ImageView>
+		<View id="index_layout">
+			<ImageView id="index_botao_video" onClick="goToVideo"></ImageView>
+			<ImageView id="index_botao_ircatalogos" onClick="nextStage"></ImageView>
+		</View>	
+	</Window>
+</Alloy>

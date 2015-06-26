@@ -1,0 +1,28 @@
+<Alloy>
+	<Window class="container">
+		<View id="lateral" class="lateral">
+			<View class="lateral_conteudo">
+				<ImageView class="logoMarca" id="logoEmpresa" onClick="goToDestacadas"/>
+				<Button class="categoria">Categorias</Button>
+				<ListView class="menu" defaultItemTemplate="menuTemplateSimple" id="listaCategorias">
+					<Templates>
+						<ItemTemplate name="menuTemplateSimple" class="menuItem">
+							<View class="botaoSimple" onClick="selecionaCategoria">
+								<Label bindId="btnmenu" class="menuText"/>
+							</View>
+						</ItemTemplate>
+						<ItemTemplate name="menuTemplateDouble" class="menuItem">
+							<View class="botaoDoubleView" onClick="selecionaCategoria">
+								<Label bindId="btnmenuA" class="botaoDoubleA"></Label>
+								<Label bindId="btnmenuB" class="botaoDoubleB"></Label>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection></ListSection>
+				</ListView>
+			</View>
+			<ImageView class="borda_lateral" onClick="showMenu"/>
+		</View>
+		<View id="corpo" class="corpo"></View>
+	</Window>
+</Alloy>

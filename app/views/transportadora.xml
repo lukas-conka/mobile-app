@@ -1,0 +1,51 @@
+<Alloy>
+	<Window class="container">
+		<ListView class="menu" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate" class="menuItem">
+					<View class="botaoA" onClick="menuClick">
+						<Label bindId="btnmenu" class="menuText"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:text="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:text="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:text="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:text="PEDIDOS"/>
+				<ListItem btnmenu:text="TRANSPORTADORA"/>
+				<ListItem btnmenu:text="NOVO CLIENTE"/>
+				<ListItem btnmenu:text="FUNÇÕES"/>
+				<ListItem btnmenu:text="EMAIL"/>
+				<ListItem btnmenu:text="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:text="TROCAR\n MARCA"/>
+				<ListItem btnmenu:text="SAIR"/>
+			</ListSection>
+		</ListView>
+		<View class="conteudo">
+			<View class="cabecalho">
+				<View class="logoA">
+					<ImageView id="logoEmpresa" class='imagemA'></ImageView>
+				</View>
+				<Button class="titulo">TRANSPORTADORA</Button>
+				<View class="logoB">
+					<ImageView class='imagemB'></ImageView>
+				</View>
+			</View>
+			<View class="corpo">
+				<View class="aviso">
+					<ImageView class="imagemAviso"></ImageView>
+				</View>
+				<View class="formulario">
+					<TextField class="campoA" hintText=""></TextField>
+					<Button class="botaoC">Gravar</Button>
+					<Label class="nomeA">Telefone</Label>
+					<TextField class="campoB" hintText=""></TextField>
+					<Label class="nomeB">E-MAIL</Label>
+					<TextField class="campoC" hintText=""></TextField>
+					<Label class="nomeC">NOME DA TRANSPORTADORA</Label>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

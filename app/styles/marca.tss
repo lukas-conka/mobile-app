@@ -1,0 +1,43 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".cabecalho":{
+	height:"10%",
+	top:"0",
+	width:"100%"
+}
+
+".titulo":{
+	backgroundColor:"#ffffff",
+	color:"#000000",
+	left:"10"
+}
+
+".logo":{
+	image:"/images/logo_rodape.jpg",
+	right:"10"
+}
+
+
+".corpo":{
+	height:"90%",
+	top:"10%",
+	width:"100%"
+}
+
+".marca":{
+	backgroundColor:"#f8f8f8",
+	borderColor:"#4e8789",
+	borderWidth:"1",
+	height:"30%",
+	top:"0",
+	left:"2%",
+	width:"20%"
+}
+
+".nome":{
+	backgroundColor:"#f8f8f8",
+	color:"#000000",
+	top:"5"
+}

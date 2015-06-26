@@ -1,0 +1,179 @@
+<Alloy>
+	<Window class="container">
+		<View class="rodape">
+			<View class="imagens" id="imagens"/>
+			<ImageView class="legenda"/>
+			<Label id="pagina_inicial">
+				1
+			</Label>
+			<Label class="pagina_de">
+				de
+			</Label>
+			<Label id="pagina_final">
+				1
+			</Label>
+		</View>
+		<View class="content" id="content">
+		</View>
+		<View class="menu">
+			<View class="botaoReferencia">
+				<Label class="textoBotao" id="referencia">
+					Referência
+				</Label>
+			</View>
+			<View class="botaoNome">
+				<Label class="textoBotao" id="nome"/>
+			</View>
+			<View class="botaoColecao">
+				<Label class="textoBotao" id="colecao">
+					Coleção
+				</Label>
+			</View>
+			<View class="botaoInformacoes" onClick="informacoes">
+				<Label class="textoBotao">
+					Informações técnicas
+				</Label>
+			</View>
+			<View class="botaoComposicao" onClick="composicao">
+				<Label class="textoBotao">
+					Composição
+				</Label>
+			</View>
+			<View class="botaoPreco" onClick="precotroca">
+				<Label class="textoBotao" id="preco">
+					Preço / Qtde
+				</Label>
+			</View>
+			<View class="botaoPrazo" onClick="prazo">
+				<Label class="textoBotao">
+					Prazo de entrega
+				</Label>
+			</View>
+			<View class="botaoDescricao" onClick="descricao">
+				<Label class="textoBotao">
+					Descrição do produto
+				</Label>
+			</View>
+			<View class="botaoCodigo" onClick="codbarras">
+				<Label class="textoBotao">
+					Código de barras
+				</Label>
+			</View>
+			<ImageView id="logoEmpresa" class="logoEmpresa"/>
+		</View>
+		<View class="calculadora">
+			<View class="visor">
+				<Label class="tela" id="tela">
+				</Label>
+				<Button class="apaga" id="apaga" onClick="apaga">
+				</Button>
+			</View>
+			<View class="botoes">
+				<Button class="botao1" onClick="botao1">
+					1
+				</Button>
+				<Button class="botao2" onClick="botao2">
+					2
+				</Button>
+				<Button class="botao3" onClick="botao3">
+					3
+				</Button>
+				<Button class="botao4" onClick="botao4">
+					4
+				</Button>
+				<Button class="botao5" onClick="botao5">
+					5
+				</Button>
+				<Button class="botao6" onClick="botao6">
+					6
+				</Button>
+				<Button class="botao7" onClick="botao7">
+					7
+				</Button>
+				<Button class="botao8" onClick="botao8">
+					8
+				</Button>
+				<Button class="botao9" onClick="botao9">
+					9
+				</Button>
+				<Button class="botaoOk" onClick="botaoOk">
+					OK
+				</Button>
+				<Button class="botao0" onClick="botao0">
+					0
+				</Button>
+				<View class="botaoSortir" onClick="botaoSortir" id="sortido">
+					<Label class="textoBotao">
+						QTDE. SORTIDA
+					</Label>
+				</View>
+				<View class="botaoLimpa" onClick="botaoLimpa">
+					<Label class="textoBotao">
+						LIMPAR
+					</Label>
+				</View>
+				<View class="botaoLista" onClick="botaoLista">
+					<Label class="textoBotao">
+						LISTAR PROD.
+					</Label>
+				</View>
+				<View class="botaoZera" onClick="botaoZera">
+					<Label class="textoBotao">
+						ZERAR
+					</Label>
+				</View>
+				<View class="botaoAnterior" onClick="botaoAnterior">
+					<Label class="textoBotao">
+						PRODUTO ANTERIOR SELECIONADO
+					</Label>
+				</View>
+				<View class="botaoProximo" onClick="botaoProximo">
+					<Label class="textoBotao">
+						PRÓXIMO PRODUTO SELECIONADO
+					</Label>
+				</View>
+			</View>
+			<Label class="totalReferencia" >
+				Nº de peças desta ref.:
+			</Label>
+			<Button class="quantidadeReferencia" id="pecasref">
+				0
+			</Button>
+			<Label class="valorReferencia">
+				Valor desta ref.:
+			</Label>
+			<Button class="precoReferencia" id="valorref">
+				R$ 0,00
+			</Button>
+			<Label class="totalReferencia2">
+				Nº de peças acumuladas:
+			</Label>
+			<Button class="quantidadeReferencia2" id="pecastotal">
+				0
+			</Button>
+			<Label class="valorReferencia2">
+				Valor acumulado:
+			</Label>
+			<Button class="precoReferencia2" id="valortotal">
+				R$ 0,00
+			</Button>
+			<View class="botaoVoltar" onClick="goToCatalogo">
+				<Label class="textoBotao">
+					VOLTAR CATEGORIAS
+				</Label>
+			</View>
+			<View class="botaoComprar" onClick="goToPedido">
+				<ImageView class="iconeComprar" onClick="goToPedido"/>
+			</View>
+		</View>
+		<View class="produtos" id="produtos">
+			<Label class="produtostitle">
+				Lista de Produtos
+			</Label>
+			<View class="listaprodutos" id="listaprodutos"/>
+			<Button class="fecharlista" onClick="fecharLista">
+				Voltar
+			</Button>
+		</View>
+	</Window>
+</Alloy>

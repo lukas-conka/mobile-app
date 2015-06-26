@@ -1,0 +1,22 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">FUNÇÕES</Button>
+			<ImageView class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<ImageView class="funcao_pedido" onClick="goToListaPedido"></ImageView>
+			<ImageView class="funcao_produto" onClick="goToProdutos"></ImageView>
+			<ImageView class="funcao_cliente" onClick="goToClientes"></ImageView>
+			<ImageView class="funcao_sincronizacao" onClick="goToSync"></ImageView>
+			<ImageView class="funcao_notificacao" onClick="goToNotificacao"></ImageView>
+			<ImageView class="funcao_email" onClick="goToEmail"></ImageView>
+			<ImageView class="funcao_video" onClick="goToVideo"></ImageView>
+			<ImageView class="funcao_relatorio" onClick="goToRelatorio"></ImageView>
+			<ImageView class="funcao_duvida" onClick="goToDuvida"></ImageView>
+			<ImageView class="funcao_suporte" onClick="goToSuporte"></ImageView>
+			<ImageView class="funcao_online" onClick="goToOnline"></ImageView>
+			<ImageView class="funcao_offline" onClick="goToOffline"></ImageView>
+		</View>
+	</Window>
+</Alloy>

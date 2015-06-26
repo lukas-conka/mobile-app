@@ -1,0 +1,515 @@
+".container":{
+	backgroundColor: "white"
+}
+
+".titulo":{
+	backgroundColor: "#ffffff",
+	color: "#4e8789",
+	top: "2%"
+}
+
+".logo":{
+	image: "/images/logo_rodape.jpg",
+	right: "1%",
+	top: "0.8%"
+}
+
+".tela":{
+	backgroundColor: "#dbdbdb",
+	bottom: "1%",
+	height: "92%",
+	width: "98%"
+}
+
+".cabecalho":{
+	height: "7%",
+	top: "2%",
+	width: "98%"
+}
+
+".tituloPorcentagem":{
+	backgroundColor: "#69a09d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "0%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".tituloCnpj":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "5%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "13%"
+}
+
+".tituloPeca":{
+	backgroundColor: "#69a09d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "18%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "7%"
+}
+
+".tituloBruto":{
+	backgroundColor: "#20706d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "25%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".tituloPrazo":{
+	backgroundColor: "#69a09d",
+	color: '#ffffff',
+	height: "100%",
+	font:{
+		fontSize: 13
+	},
+	left: "35%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".tituloDescontoPrazo":{
+	backgroundColor: "#20706d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "40%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".tituloDescontoEspecial":{
+	backgroundColor: "#69a09d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "45%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".tituloDescontoVolume":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "50%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".tituloDescontoParcela":{
+	backgroundColor: "#69a09d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "55%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".tituloDescontoFinal":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "66%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".tituloDescontoCondicoes":{
+	backgroundColor: "#69a09d",
+	color: '#ffffff',
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "77%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".tituloDescontoCredito":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	left: "88%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "12%"
+}
+
+".lista_cliente":{
+	top: "9%",
+	width: "98%",
+	height: "50%"
+}
+
+".itens_cliente":{
+	height: "40",
+	width: "100%"
+}
+
+".label_porcentagem":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".label_porcentagem_botao":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "90%",
+	width: "90%"
+}
+
+".label_cnpj":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "13%"
+}
+
+".label_peca":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "7%"
+}
+
+".label_bruto":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".label_dias":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".label_dias_botao":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "90%",
+	width: "90%"
+}
+
+".label_prazo":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".label_especial":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".label_especial_botao":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "90%",
+	width: "90%"
+}
+
+".label_volume":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".label_parcela":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".label_desconto":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".label_condicao":{
+	backgroundColor: "#e1e1e1",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".label_credito":{
+	backgroundColor: "#d2d2d2",
+	color: "#000000",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "12%"
+}
+
+".rodape":{
+	backgroundColor: "#20706d",
+	height: "6%",
+	top: "60%",
+	width: "98%"
+}
+
+".numero":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	right: "1%",
+	width: "6%"
+}
+
+".geral":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	right: "8%",
+	width: "6%"
+}
+
+".observacao":{
+	backgroundColor: "#dbdbdb",
+	color: "#333333",
+	font:{
+		fontSize: 17
+	},
+	left: "1%",
+	top: "67%"
+}
+
+".observacaoCampo":{
+	backgroundColor: "#ffffff",
+	height: "15%",
+	top: "71%",
+	width: "98%"
+}
+
+".forma_pagamento":{
+	color: "#008280",
+	left: "1%",
+	top: "87%"
+}
+
+".botoesForma":{
+	bottom: "1%",
+	height: "8%",
+	layout: "horizontal",
+	width: "98%"
+}
+
+".botaoBoleto":{
+	height: "80%",
+	image: "/images/seleciona.png"
+}
+
+".boleto":{
+	backgroundColor: "#dbdbdb",
+	color: "#000000",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "7%",
+	left: 1
+}
+
+".botaoCheque":{
+	height: "86%",
+	image: "/images/seleciona.png"
+}
+
+".cheque":{
+	backgroundColor: "#dbdbdb",
+	color: "#000000",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "7%",
+	left: 1
+}
+
+".botaoDeposito":{
+	height: "86%",
+	image: "/images/seleciona.png"
+}
+
+".deposito":{
+	backgroundColor: "#dbdbdb",
+	color: "#000000",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "8%",
+	left: 1
+}
+
+".botaoCombinar":{
+	height: "86%",
+	image: "/images/seleciona.png"
+}
+
+".combinar":{
+	backgroundColor: "#dbdbdb",
+	color: "#000000",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "8%",
+	left: 1
+}
+
+".finaliza":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "1%",
+	color: "#ffffff",
+	font:{
+		fontSize: 11
+	},
+	height: "6%",
+	right: "1%",
+	width: "10%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".finalizaMarca":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "1%",
+	color: "#ffffff",
+	font:{
+		fontSize: 11
+	},
+	height: "6%",
+	right: "12%",
+	width: "20%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".volta":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	bottom: "1%",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "6%",
+	right: "33%",
+	width: "6%"
+}

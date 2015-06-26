@@ -1,0 +1,84 @@
+
+".container": {
+	backgroundColor: 'white'
+}
+
+".cabecalho":{
+	height: "10%",
+	top: "0",
+	width: "100%"
+}
+
+".titulo":{
+	backgroundColor: "#ffffff",
+	color: "#000000",
+	left: "10"
+}
+
+".line":{
+	top: "2%",
+	height: "45%",
+	width: "90%"
+}
+
+".botoes":{
+	left: "2%",
+	width: '10%',
+	height: '100%'
+}
+
+".tutorial":{
+	top: '10%',
+	image: "/images/tutorial.png",
+	width: '100%'
+}
+
+".seleciona_cristal":{
+	top: '2%',
+	image: "/images/select_cristal.png",
+	width: '100%'
+}
+
+".seleciona_esmeralda":{
+	top: '2%',
+	image: "/images/select_esmeralda.png",
+	width: '100%'
+}
+
+".seleciona_rubi":{
+	top: '2%',
+	image: "/images/select_rubi.png",
+	width: '100%'
+}
+
+".seleciona_safira":{
+	top: '2%',
+	image: "/images/select_safira.png",
+	width: '100%'
+}
+
+".software_cristal":{
+	top: 0,
+	width: '37%',
+	image: "/images/cristal.png"
+}
+
+".software_esmeralda":{
+	top: 0,
+	left: "2%",
+	width: '37%',
+	image: "/images/esmeralda.png"
+}
+
+".software_rubi":{
+	top: 0,
+	width: '37%',
+	image: "/images/rubi.png"
+}
+
+".software_safira":{
+	top: 0,
+	left: "2%",
+	width: '37%',
+	image: "/images/safira.png"
+}

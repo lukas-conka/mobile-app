@@ -1,0 +1,160 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Label class="tituloPagina">Informações do pedido</Label>
+			<Label class="numeroPedido" id="numeroPedido"></Label>
+			<Label class="dataPedido" id="dataPedido">00/00/0000 às 00:00</Label>
+		</View>
+		<View class="painel">
+			<View class="grade">
+				<Label class="barraTitulo">CNPJ</Label>
+				<Label id="label_cnpj" class="barraConteudo"></Label>
+				<Label class="barraTitulo">RAZÃO SOCIAL</Label>
+				<Label id="label_razao" class="barraConteudoDuplo"></Label>
+				<Label class="barraTitulo">ICMS SOMENTE PARA CRÉDITO</Label>
+				<Label id="label_icms" class="barraConteudo">R$ 0,00</Label>
+				<Label class="barraTitulo">IPI DESTACADO</Label>
+				<Label id="label_ipi" class="barraConteudo"></Label>
+			</View>
+			<View class="grade">
+				<Label class="barraTitulo">FORMA DE PAGAMENTO</Label>
+				<Label id="label_forma_pgto" class="barraConteudo"></Label>
+				<Label class="barraTitulo">NÚMERO DE PARCELAS</Label>
+				<Label id="label_parcelas" class="barraConteudo"></Label>
+				<Label class="barraTitulo">VALOR DAS PARCELAS</Label>
+				<Label id="label_valor_parcelas" class="barraConteudo"></Label>
+				<Label class="barraTitulo">PRAZO MÉDIO</Label>
+				<Label id="label_prazo_medio" class="barraConteudo"></Label>
+				<Label class="barraTitulo">REPRESENTANTE</Label>
+				<Label id="label_representante" class="barraConteudo"></Label>
+			</View>
+			<View class="grade">
+				<Label class="barraTitulo">PRAZO DE ENTREGA</Label>
+				<Label id="label_prazo_entrega" class="barraConteudoDuplo"></Label>
+				<Label class="barraTitulo">CUBAGEM</Label>
+				<Label id="label_cubagem" class="barraConteudo"></Label>
+				<Label class="barraTitulo">PESO</Label>
+				<Label id="label_peso" class="barraConteudo"></Label>
+				<Label class="barraTitulo">ENDEREÇO DE ENTREGA</Label>
+				<Label id="label_endereco" class="barraConteudoDuplo"></Label>
+			</View>
+		</View>
+		<View class="conteudo">
+			<View class="titulo" layout="horizontal">
+				<Label class="tituloA">Produto</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloB">Marca / Ref.</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloC">Coleção</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloD">Prazo de entrega</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloE">Tam.</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloF">Preço Unitário</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloG">Peso</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloH">Cubagem (A x L x P)</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloI">Quantidade</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloK">Preço total</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloL">IPI</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloM">S.T</Label>
+				<View class='border_vertical'/>
+				<Label class="tituloN">Valor do Produto</Label>
+			</View>
+			<ListView class="list_pedidos" id="listapedidos" defaultItemTemplate="pedido_lista">
+				<Templates>
+					<ItemTemplate name="pedido_lista_escuro" class="pedidos_item_escuro">
+						<View layout="horizontal">
+							<View class="label_prod">
+								<ImageView class="imagem_produto" bindId="imagem_produto"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_ref" bindId="label_ref"/>
+							<View class='border_vertical'/>
+							<Label class="label_colecao" bindId="label_colecao"/>
+							<View class='border_vertical'/>
+							<Label class="label_prazo" bindId="label_prazo"/>
+							<View class='border_vertical'/>
+							<Label class="label_tam" bindId="label_tam"/>
+							<View class='border_vertical'/>
+							<Label class="label_preco" bindId="label_preco"/>
+							<View class='border_vertical'/>
+							<Label class="label_peso" bindId="label_peso"/>
+							<View class='border_vertical'/>
+							<Label class="label_cubagem" bindId="label_cubagem"/>
+							<View class='border_vertical'/>
+							<Label class="quantidade" bindId="label_quantidade"/>
+							<View class='border_vertical'/>
+							<Label class="label_precototal" bindId="label_precototal"/>
+							<View class='border_vertical'/>
+							<Label class="label_ipi" bindId="label_ipi"/>
+							<View class='border_vertical'/>
+							<Label class="label_sustrib" bindId="label_sustrib"/>
+							<View class='border_vertical'/>
+							<Label class="label_valorfinal" bindId="label_valorfinal"/>
+						</View>
+					</ItemTemplate>
+					<ItemTemplate name="pedido_lista_claro" class="pedidos_item_claro">
+						<View layout="horizontal">
+							<View class="label_prod">
+								<ImageView class="imagem_produto" bindId="imagem_produto"/>
+							</View>
+							<View class='border_vertical'/>
+							<Label class="label_ref" bindId="label_ref"/>
+							<View class='border_vertical'/>
+							<Label class="label_colecao" bindId="label_colecao"/>
+							<View class='border_vertical'/>
+							<Label class="label_prazo" bindId="label_prazo"/>
+							<View class='border_vertical'/>
+							<Label class="label_tam" bindId="label_tam"/>
+							<View class='border_vertical'/>
+							<Label class="label_preco" bindId="label_preco"/>
+							<View class='border_vertical'/>
+							<Label class="label_peso" bindId="label_peso"/>
+							<View class='border_vertical'/>
+							<Label class="label_cubagem" bindId="label_cubagem"/>
+							<View class='border_vertical'/>
+							<Label class="quantidade" bindId="label_quantidade"/>
+							<View class='border_vertical'/>
+							<Label class="label_precototal" bindId="label_precototal"/>
+							<View class='border_vertical'/>
+							<Label class="label_ipi" bindId="label_ipi"/>
+							<View class='border_vertical'/>
+							<Label class="label_sustrib" bindId="label_sustrib"/>
+							<View class='border_vertical'/>
+							<Label class="label_valorfinal" bindId="label_valorfinal"/>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection/>
+			</ListView>
+		</View>
+		<View class="totalRodape" layout="horizontal">
+			<Label class="rodapeTotal" id="label_total"></Label>
+			<View class='border_vertical'/>
+			<Label class="rodapeDesconto" id='label_desconto'></Label>
+			<View class='border_vertical'/>
+			<Label class="rodapeFinal" id="label_totalcomdesconto"></Label>
+		</View>
+		<View class="rodape">
+			<View class="ajuda">
+				<Button class="botaoVolta" onClick="voltar">Voltar</Button>
+			</View>
+			<View class="guia">
+				<ImageView class="botaoPrimeiro" onClick="primeiro"></ImageView>
+				<ImageView class="botaoAnterior" onClick="anterior"></ImageView>
+				<Button id="paginacao" class="paginacao">1/1</Button>
+				<ImageView class="botaoProximo" onClick="proximo"></ImageView>
+				<ImageView class="botaoUltimo" onClick="ultimo"></ImageView>
+			</View>
+			<Button class="botaoCategoria" onClick="voltar">Voltar Categorias</Button>
+			<Button class="botaoTotalizacao" onClick="totalizacoes">Totalizações</Button>
+		</View>
+	</Window>
+</Alloy>

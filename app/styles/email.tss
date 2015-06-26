@@ -1,0 +1,205 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".menu":{
+	backgroundColor: "#ebf7f6",
+	height: "100%",
+	left: "0",
+	width: "15%"
+}
+
+".menuItem":{
+	height: "112dp"
+}
+
+".botaoA":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	color: "#ffffff",
+	width: "90%",
+	height: "80%"
+}
+
+".menuText":{
+	touchEnabled:"false",
+	width: "98%",
+	color: "white",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".botaoB":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	bottom: "10",
+	color: "#ffffff",
+	height: "94",
+	top: "10",
+	width: "90%"
+}
+
+".conteudo":{
+	height: "100%",
+	right: "0",
+	width: "85%"
+}
+
+".cabecalho":{
+	height: "90",
+	top: "0",
+	width: "98%"
+}
+
+".logoA":{
+	height: "90%",
+	left: "0",
+	width: "15%"
+}
+
+".titulo":{
+	backgroundColor: "#FFFFFF",
+	color: "#4e8789",
+	height: "90",
+	left: "15%",
+	width: "70%"
+}
+
+".logoB":{
+	height: "90",
+	left: "85%",
+	width: "15%"
+}
+
+".imagemA":{
+	image: "/images/logo_rodape.jpg"
+}
+
+
+".corpo":{
+	borderColor: "#4e8789",
+	borderWidth: "4",
+	top: "90",
+	width: "98%"
+}
+
+".busca":{
+	borderColor: "#4e8789",
+	borderWidth: "4",
+	height: "70",
+	top: "0",
+	width: "100%"
+}
+
+".busca1":{
+	top: 0,
+	height: "70",
+	left: "1%",
+	width: "92%"
+}
+
+".busca2":{
+	height: "60",
+	left: "92%",
+	top: "0",
+	width: "7%"
+}
+
+".emails":{
+	top: "80",
+	height: "80%",
+	width: "98%"
+}
+
+".list":{
+	width: "100%"
+}
+
+".label_email":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: "#000000",
+	height: "100%",
+	width: "90%",
+	left: 5
+}
+
+".label_acoes":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	top: "1%",
+	bottom: "1%",
+	height: "98%",
+	width: "9%",
+	bottom: "1%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".emails_item":{
+	height: "50",
+	backgroundColor: "#cce9e5"
+}
+
+".dataA":{
+	backgroundColor: "#FFFFFF",
+	color: "#222222",
+	height: "50",
+	left: "0",
+	width: "50"
+}
+
+".campoA":{
+	backgroundColor: "#FFFFFF",
+	borderColor: "#6EA9A0",
+	borderWidth: "4",
+	color: "#000000",
+	height: "50",
+	left: "60",
+	width: "220"
+}
+
+".dataB":{
+	backgroundColor: "#FFFFFF",
+	color: "#222222",
+	height: "50",
+	left: "290",
+	width: "50"
+}
+
+".campoB":{
+	backgroundColor: "#FFFFFF",
+	borderColor: "#6EA9A0",
+	borderWidth: "4",
+	color: "#000000",
+	height: "50",
+	left: "350",
+	width: "220"
+}
+
+".novoEmail":{
+	borderColor: "#6EA9A0",
+	borderRadius: "5",
+	borderWidth: "4",
+	color: "#000000",
+	height: "50",
+	left: "0",
+	top: "10",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "80%"
+}
+
+".botaoC":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	height: "80%",
+	top: "10",
+	width: "90%",
+	color: "white"
+}

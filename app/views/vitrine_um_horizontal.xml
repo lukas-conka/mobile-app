@@ -1,0 +1,37 @@
+<Alloy>
+	<View id="win" class="container">
+		<View class="corpo">
+			<View id="gradeA" class="grade">
+				<View class="imagemView">
+					<ImageView class="imagem" id="imagemA"/>
+				</View>
+				<View class="legenda" layout='horizontal'>
+					<Label class="preco" id="precoA"/>
+					<Label class="referencia" id="referenciaA"/>
+					<Button class="tempo" id="tempoA"/>
+					<ImageView class="seleciona" id="selecionaA"/>
+					<View class="images" id="imagesA"></View>
+				</View>
+			</View>
+		</View>
+		<View class="rodape">
+			<View class="ajuda">
+				<Button id="botaoQuatroVerticais" class="botaoLimpa" onClick="limpar">Limpar todas marcações</Button>
+				<Button class="botaoVolta" onClick="voltar">Voltar</Button>
+			</View>
+			<View class="guia">
+				<ImageView class="botaoPrimeiro" onClick="primeiro"></ImageView>
+				<ImageView class="botaoAnterior" onClick="anterior"></ImageView>
+				<Button id="paginacao" class="paginacao">1/1</Button>
+				<ImageView class="botaoProximo" onClick="proximo"></ImageView>
+				<ImageView class="botaoUltimo" onClick="ultimo"></ImageView>
+				<ImageView class="lupa" onClick="goToListaProdutos"></ImageView>
+				
+			</View>
+			<View class="carrinho">
+				<ImageView class="botaoCesta" onClick="cesta"></ImageView>
+				<Button id="quantidade" class="quantidade">0</Button>
+			</View>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,69 @@
+<Alloy>
+	<Window class="container">
+		<Button class="titulo">PAGAMENTO</Button>
+		<ImageView class="logo"></ImageView>
+		<View class="tela">
+			<View class="cabecalho">
+				<Label class="tituloCnpj">CNPJ</Label>
+				<Label class="tituloPorcentagem">% Sobre Pedido</Label>
+				<Label class="tituloPeca">Nº Peças</Label>
+				<Label class="tituloBruto">Valor Bruto</Label>
+				<Label class="tituloPrazo">Prazo Médio / Dias</Label>
+				<Label class="tituloDescontoPrazo">Desc. Prazo Médio</Label>
+				<Label class="tituloDescontoEspecial">Desc. Esp.</Label>
+				<Label class="tituloDescontoVolume">Desc. Vol.</Label>
+				<Label class="tituloDescontoParcela">Valor Parcela</Label>
+				<Label class="tituloDescontoFinal">Valor final do pedido</Label>
+				<Label class="tituloDescontoCondicoes">Condições de Pagamento</Label>
+				<Label class="tituloDescontoCredito">Crédito para Compra</Label>
+			</View>
+			<ListView class="lista_cliente" id="listaclientes" defaultItemTemplate="cliente_lista">
+				<Templates>
+					<ItemTemplate name="item_cliente" class="itens_cliente">
+						<View layout="horizontal">
+							<View class="label_porcentagem">
+								<Button class="label_porcentagem_botao" bindId="label_porcentagem_botao" onClick="replicar"></Button>
+							</View>
+							<Label bindId="label_cnpj" class="label_cnpj"></Label>
+							<Label bindId="label_peca" class="label_peca"></Label>
+							<Label bindId="label_bruto" class="label_bruto"></Label>
+							<View class="label_dias">
+								<Button class="label_dias_botao" bindId="label_dias_botao" onClick="descontoPrazoMedio"></Button>
+							</View>
+							<Label bindId="label_prazo" class="label_prazo"></Label>
+							<View class="label_especial">
+								<Button class="label_especial_botao" bindId="label_especial_botao" onClick="descontoEspecial"></Button>
+							</View>
+							<Label bindId="label_volume" class="label_volume"></Label>
+							<Label bindId="label_parcela" class="label_parcela"></Label>
+							<Label bindId="label_desconto" class="label_desconto"></Label>
+							<Label bindId="label_condicao" class="label_condicao"></Label>
+							<Label bindId="label_credito" class="label_credito"></Label>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection/>
+			</ListView>
+			<View class="rodape">
+				<Label id="total_geral" class="numero">R$ 0,00</Label>
+				<Label class="geral">Total Geral:</Label>
+			</View>
+			<Label class="observacao">Observação</Label>
+			<TextField class="observacaoCampo"></TextField>
+			<Label class="forma_pagamento">Formas de pagamento</Label>
+			<View class="botoesForma">
+				<ImageView id="boleto" class="botaoBoleto" onClick="selecionaBoleto"></ImageView>
+				<Label class="boleto" onClick="selecionaBoleto">Boleto</Label>
+				<ImageView id="cheque" class="botaoCheque" onClick="selecionaCheque"></ImageView>
+				<Label class="cheque" onClick="selecionaCheque">Cheque pré</Label>
+				<ImageView id="deposito" class="botaoDeposito" onClick="selecionaDeposito"></ImageView>
+				<Label class="deposito" onClick="selecionaDeposito">Depósito</Label>
+				<ImageView id="combinar" class="botaoCombinar" onClick="selecionaCombinar"></ImageView>
+				<Label class="combinar" onClick="selecionaCombinar">À combinar</Label>
+			</View>
+			<Label class="finaliza" onClick="finalizaPagamento">FINALIZAR PEDIDO</Label>
+			<Label class="finalizaMarca">FINALIZAR PEDIDO E ALTERAR MARCA</Label>
+			<Button class="volta" onClick="volta">VOLTAR</Button>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,43 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">
+				LISTA DE NOTIFICAÇÕES
+			</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+			
+		</View>
+		<View class="corpo">
+			<View class="barra" layout='horizontal'>
+				<Button class="icone_data">
+					DATA E HORA
+				</Button>
+				<Button class="icone_mensagem">
+					MENSAGEM
+				</Button>
+			</View>
+			<View class="notificacoes">
+				<ListView class="notificacoes" id="listanotificacoes" defaultItemTemplate="notificacoes_lista">
+					<Templates>
+						<ItemTemplate name="notificacoes_lista" class="notificacoes_item">
+							<View layout="horizontal">
+								<View class="item_single">
+									<Label class="label_data" bindId="label_data"/>
+								</View>
+								<View class="item_double">
+									<Label class="label_mensagem" bindId="label_mensagem"/>
+								</View>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+			<View class="rodape">
+				<Button class="notificacoes_voltar" onClick="voltar">
+					Voltar
+				</Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

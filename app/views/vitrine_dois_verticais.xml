@@ -1,0 +1,47 @@
+<Alloy>
+	<View class="container">
+		<View class="corpo">
+			<View class="vitrine" id="vitrine">
+				<View id="gradeA" class="gradeA">
+					<View class="imagemView">
+						<ImageView class="imagem" id="imagemA"/>
+					</View>
+					<View class="legenda" id="legendaA">
+						<Label class="preco" id="precoA"/>
+						<Button class="tempo" id="tempoA"/>
+						<ImageView class="seleciona" id="selecionaA"/>
+						<View class="images" id="imagesA"></View>
+					</View>
+				</View>
+				<View id="gradeB" class="gradeB">
+					<View class="imagemView">
+						<ImageView class="imagem" id="imagemB"/>
+					</View>
+					<View class="legenda" id="legendaB">
+						<Label class="preco" id="precoB"/>
+						<Button class="tempo" id="tempoB"/>
+						<ImageView class="seleciona" id="selecionaB"/>
+						<View class="images" id="imagesB"></View>
+					</View>
+				</View>
+			</View>
+		</View>
+		<View class="rodape">
+			<View class="ajuda">
+				<Button id="botaoQuatroVerticais" class="botaoLimpa" onClick="limpar">Limpar todas marcações</Button>
+				<Button class="botaoVolta" onClick="voltar">Voltar</Button>
+			</View>
+			<View class="guia">
+				<ImageView class="botaoPrimeiro" onClick="primeiro"></ImageView>
+				<ImageView class="botaoAnterior" onClick="anterior"></ImageView>
+				<Button id="paginacao" class="paginacao">1/1</Button>
+				<ImageView class="botaoProximo" onClick="proximo"></ImageView>
+				<ImageView class="botaoUltimo" onClick="ultimo"></ImageView>
+			</View>
+			<View class="carrinho">
+				<ImageView class="botaoCesta" onClick="cesta"></ImageView>
+				<Button id="quantidade" class="quantidade">0</Button>
+			</View>
+		</View>
+	</View>
+</Alloy>

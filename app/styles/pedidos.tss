@@ -1,0 +1,207 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".menu":{
+	backgroundColor: "#ebf7f6",
+	height: "100%",
+	left: "0",
+	width: "15%"
+}
+
+".menuItem":{
+	height: "112dp"
+}
+
+".botaoA":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	color: "#ffffff",
+	width: "90%",
+	height: "80%"
+}
+
+".menuText":{
+	touchEnabled:"false",
+	width: "98%",
+	color: "white",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".botaoB":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	bottom: "10",
+	color: "#ffffff",
+	height: "94",
+	top: "10",
+	width: "90%"
+}
+
+".conteudo":{
+	height: "100%",
+	right: "0",
+	width: "85%"
+}
+
+".cabecalho":{
+	height: "90",
+	top: "0",
+	width: "98%"
+}
+
+".logoA":{
+	height: "90%",
+	left: "0",
+	width: "15%"
+}
+
+".titulo":{
+	backgroundColor: "#FFFFFF",
+	color: "#4e8789",
+	height: "90",
+	left: "15%",
+	width: "70%"
+}
+
+".logoB":{
+	height: "90",
+	left: "85%",
+	width: "15%"
+}
+
+".imagemA":{
+	image: "/images/logo_rodape.jpg",
+	left:"0"
+}
+
+".imagemB":{
+	image: "/images/logo_rodape.jpg",
+	right:"0"
+}
+
+".corpo":{
+	borderColor: "#4e8789",
+	borderWidth: "4",
+	top: "90",
+	width: "98%"
+}
+
+".busca":{
+	borderColor: "#4e8789",
+	borderWidth: "4",
+	height: "70",
+	top: "0",
+	width: "100%"
+}
+
+".pedidos":{
+	top: "74",
+	height:"88%",
+	width:"98%"
+}
+
+".list":{
+	
+}
+
+".label_numero":{
+	backgroundColor:"#cce9e5",
+	color:"#000000",
+	height:"100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width:"15%"
+}
+
+".label_data":{
+	backgroundColor:"#cce9e5",
+	color:"#000000",
+	height:"100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width:"18%"
+}
+
+".label_razao":{
+	backgroundColor:"#cce9e5",
+	color:"#000000",
+	height:"100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width:"25%"
+}
+
+".label_cnpj":{
+	backgroundColor:"#cce9e5",
+	color:"#000000",
+	height:"100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width:"30%"
+}
+
+".label_acoes":{
+	backgroundGradient:{
+		type:"linear",
+		colors:["#2c8f8e","#206764"]
+	},
+	borderRadius:"5",
+	color:"#ffffff",
+	height:"95%",
+	left:"1%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width:"11%"
+}
+
+".pedidos_item":{
+	height:"50",
+	top:"6",
+	width:"98%"
+}
+
+".dataA":{
+	backgroundColor: "#FFFFFF",
+	color: "#222222",
+	height: "50",
+	left: "0",
+	width: "50"
+}
+
+".campoA":{
+	backgroundColor: "#FFFFFF",
+	borderColor: "#6EA9A0",
+	borderWidth: "4",
+	color: "#000000",
+	height: "50",
+	left: "60",
+	width: "220"
+}
+
+".dataB":{
+	backgroundColor: "#FFFFFF",
+	color: "#222222",
+	height: "50",
+	left: "290",
+	width: "50"
+}
+
+".campoB":{
+	backgroundColor: "#FFFFFF",
+	borderColor: "#6EA9A0",
+	borderWidth: "4",
+	color: "#000000",
+	height: "50",
+	left: "350",
+	width: "220"
+}
+
+".botaoC":{
+	backgroundGradient:{
+		type:"linear",
+		colors:["#2c8f8e","#206764"]
+	},
+	borderRadius:"5",
+	height: "50",
+	left: "580",
+	width: "70",
+	color: "white"
+}

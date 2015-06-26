@@ -1,0 +1,118 @@
+".container": {
+	backgroundColor: "#ffffff"
+}
+
+".cabecalho":{
+	height:"10%",
+	top:"0",
+	width:"100%"
+}
+
+".titulo":{
+	backgroundColor:"#ffffff",
+	color:"#000000",
+	right:"10"
+}
+
+".logo":{
+	left:"10"
+}
+
+
+".corpo":{
+	height:"90%",
+	top:"10%",
+	width:"100%"
+}
+
+".funcao_pedido":{
+	image:"/images/funcao_pedido.jpg",
+	height:"auto",
+	left:"0%",
+	top:"0%",
+	width:"25%"
+}
+
+".funcao_produto":{
+	image:"/images/funcao_produto.jpg",
+	height:"auto",
+	left:"25%",
+	top:"0%",
+	width:"25%"
+}
+
+".funcao_cliente":{
+	image:"/images/funcao_cliente.jpg",
+	height:"auto",
+	left:"50%",
+	top:"0%",
+	width:"25%"
+}
+
+".funcao_sincronizacao":{
+	image:"/images/funcao_sincronizacao.jpg",
+	height:"auto",
+	left:"75%",
+	top:"0%",
+	width:"25%"
+}
+
+".funcao_notificacao":{
+	image:"/images/funcao_notificacao.jpg",
+	height:"auto",
+	left:"0%",
+	width:"25%"
+}
+
+".funcao_email":{
+	image:"/images/funcao_email.jpg",
+	height:"auto",
+	left:"25%",
+	width:"25%"
+}
+
+".funcao_video":{
+	image:"/images/funcao_video.jpg",
+	height:"auto",
+	left:"50%",
+	width:"25%"
+}
+
+".funcao_relatorio":{
+	image:"/images/funcao_relatorio.jpg",
+	height:"auto",
+	left:"75%",
+	width:"25%"
+}
+
+".funcao_duvida":{
+	image:"/images/funcao_duvida.jpg",
+	bottom:"0%",
+	height:"auto",
+	left:"0%",
+	width:"25%"
+}
+
+".funcao_suporte":{
+	image:"/images/funcao_suporte.jpg",
+	bottom:"0%",
+	height:"auto",
+	left:"25%",
+	width:"25%"
+}
+
+".funcao_online":{
+	image:"/images/funcao_online.jpg",
+	bottom:"0%",
+	height:"auto",
+	left:"50%",
+	width:"25%"
+}
+
+".funcao_offline":{
+	image:"/images/funcao_offline.jpg",
+	bottom:"0%",
+	height:"auto",
+	left:"75%",
+	width:"25%"
+}

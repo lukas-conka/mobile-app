@@ -1,0 +1,90 @@
+<Alloy>
+	<Window class="container">
+		<ListView class="menu" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate" class="menuItem">
+					<View class="botaoA" onClick="menuClick">
+						<Label bindId="btnmenu" class="menuText"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:text="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:text="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:text="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:text="PEDIDOS"/>
+				<ListItem btnmenu:text="TRANSPORTADORA"/>
+				<ListItem btnmenu:text="NOVO CLIENTE"/>
+				<ListItem btnmenu:text="FUNÇÕES"/>
+				<ListItem btnmenu:text="EMAIL"/>
+				<ListItem btnmenu:text="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:text="TROCAR\n MARCA"/>
+				<ListItem btnmenu:text="SAIR"/>
+			</ListSection>
+		</ListView>
+		<View class="conteudo">
+			<View class="cabecalho">
+				<View class="logoA">
+					<ImageView id="logoEmpresa" class='imagemA'></ImageView>
+				</View>
+				<Button class="titulo">CNPJ / RAZÃO SOCIAL / ENDEREÇO LOJA</Button>
+				<View class="logoB">
+					<ImageView class='imagemB'></ImageView>
+				</View>
+			</View>
+			<View class="corpo">
+				<View class="busca">
+					<View class="busca1">
+						<TextField id="buscaRazao" class="campoRazao" hintText="BUSCAR POR RAZÃO SOCIAL"></TextField>
+						<TextField id="buscaCnpj" class="campoCnpj" hintText="BUSCAR POR CNPJ"></TextField>
+						<TextField id="buscaErp" class="campoErp" hintText="BUSCAR POR CÓDIGO DO ERP"></TextField>
+						<Button class="campoAlfabetica" onClick="buscaAlfabetica">BUSCAR POR ORDEM ALFABÉTICA</Button>
+					</View>
+					<View class="busca2">
+						<Button class="botaoC" onClick="buscaCliente">Ir</Button>
+					</View>
+				</View>
+			</View>
+			<View class="clientes">
+				<ListView id="listaClientes">
+					<Templates>
+						<ItemTemplate name="clientes_naoselecionado" class="clientes_item">
+							<View layout="horizontal" class="clientes_item_linha">
+								<View class="clientes_razao">
+									<Label bindId="label_razao" class="clientes_razao2"/>
+								</View>
+								<Label bindId="label_cnpj" class="clientes_cnpj"/>
+								<Label bindId="label_bairro" class="clientes_bairro"/>
+								<Label bindId="label_cidade" class="clientes_cidade"/>
+								<Button bindId="btn_selecionar" onClick="selecionaCliente" class="clientes_selecionar" title="Selecionar"/>
+							</View>
+						</ItemTemplate>
+						<ItemTemplate name="clientes_selecionado" class="clientes_item">
+							<View layout="horizontal" class="clientes_item_linha">
+								<View class="clientes_razao">
+									<Label bindId="label_razao" class="clientes_razao2"/>
+								</View>
+								<Label bindId="label_cnpj" class="clientes_cnpj"/>
+								<Label bindId="label_bairro" class="clientes_bairro"/>
+								<Label bindId="label_cidade" class="clientes_cidade"/>
+								<Button bindId="btn_selecionar" onClick="removeClienteSelecionado" class="clientes_selecionado" title="Selecionar"/>
+							</View>
+						</ItemTemplate>
+						<ItemTemplate name="clientes_base" class="clientes_item">
+							<View layout="horizontal" class="clientes_item_linha">
+								<View class="clientes_razao">
+									<Label bindId="label_razao" class="clientes_razao2"/>
+								</View>
+								<Label bindId="label_cnpj" class="clientes_cnpj"/>
+								<Label bindId="label_bairro" class="clientes_bairro"/>
+								<Label bindId="label_cidade" class="clientes_cidade"/>
+								<Button bindId="btn_selecionar" onClick="removeClienteBase" class="clientes_base" title="Base"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+	</Window>
+</Alloy>

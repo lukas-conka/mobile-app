@@ -1,0 +1,63 @@
+".container":{
+	backgroundColor: "white"
+}
+
+"#mensagem_login":{
+	top: "50px"
+}
+
+"#login_layout":{
+	height:Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	layout: "horizontal",
+	title: "centered"
+}
+
+"#loginChave":{
+	borderColor: "#6ea9a0",
+	borderRadius: 5,
+	color: "black",
+	width: 90,
+	height: 48,
+	left: 10,
+	font: {
+		fontSize: 10
+	}
+}
+
+"#loginUsuario":{
+	borderColor: "#6ea9a0",
+	borderRadius: 5,
+	color: "black",
+	width: 90,
+	height: 48,
+	left: 10,
+	font: {
+		fontSize: 10
+	}
+}
+
+"#loginSenha":{
+	borderColor: "#6ea9a0",
+	borderRadius: 5,
+	color: "black",
+	width: 90,
+	height: 48,
+	left: 10,
+	font: {
+		fontSize: 10
+	}
+}
+
+".default_button":{
+	backgroundColor: "#2c8f8e",
+	border: "none",
+	borderRadius: 5,
+	height: 48,
+	width: 48,
+	color: "#ffffff",
+	left: 10,
+	font: {
+		fontSize: 13
+	}
+}

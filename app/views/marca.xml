@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">SELECIONE A MARCA</Button>
+			<ImageView class="logo"></ImageView>
+		</View>
+			<View id="corpo" class="corpo"></View>
+	</Window>
+</Alloy>

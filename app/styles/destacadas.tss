@@ -1,0 +1,31 @@
+
+".container": {
+	backgrounColor: 'blue'
+}
+
+".imagem":{
+	top: "8%",
+	width: "98%"
+}
+
+".botaoMenu":{
+	backgroundColor: "#008382",
+	borderRadius: "5",
+	color: "#ffffff",
+	height: "6%",
+	right: "1%",
+	top: "1%",
+	width: "10%"
+}
+
+".prevslide":{
+	image: '/images/slide_left.png',
+	left: "2%",
+	height: "5%"
+}
+
+".nextslide":{
+	image: '/images/slide_right.png',
+	right: "2%",
+	height: "5%"
+}

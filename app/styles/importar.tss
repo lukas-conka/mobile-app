@@ -1,0 +1,8 @@
+".container": {
+	backgroundColor: "white",
+	orientationModes: [Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT]
+}
+
+"#activityIndicator": {
+	
+}

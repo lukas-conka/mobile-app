@@ -1,0 +1,26 @@
+<Alloy>
+	<Window class="container">
+		<View class="lateral">
+			<ImageView class="logoMarca"></ImageView>
+			<Button class="categoria">Categorias</Button>
+			<ListView class="menu">
+				<ListSection>
+					<ListItem class="item" title="Exemplo"/>
+				</ListSection>
+			</ListView>
+		</View>
+		<View class="cabecalho">
+			<View class="logo">
+				<ImageView class="logoECatalogos"></ImageView>
+			</View>
+			<Button class="titulo">Fotos conceituais de nosso Catálogo:</Button>
+			<View class="ajuda">
+				<Button class="botaoMarca">ALTERAR MARCA</Button>
+				<Button class="botaoMenu">MENU</Button>
+			</View>
+		</View>
+		<View class="corpo">
+			
+		</View>
+	</Window>
+</Alloy>

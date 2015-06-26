@@ -1,0 +1,24 @@
+<Alloy>
+	<Window>
+		<ListView class="menu" onItemclick="menuClick" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate">
+					<View>
+						<Button bindId="btnmenu" class="botaoA"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:title="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:title="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:title="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:title="PEDIDOS"/>
+				<ListItem btnmenu:title="TRANSPORTADORA"/>
+				<ListItem btnmenu:title="NOVO CLIENTE"/>
+				<ListItem btnmenu:title="FUNÇÕES"/>
+				<ListItem btnmenu:title="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:title="SAIR"/>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

@@ -1,0 +1,44 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">SUPORTE</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo" layout="vertical">
+			<Label class="texto">Antes de entrar em contato, pesquise em dúvidas sobre o sistema, outra opção é assistir aos vídeos tutoriais. Caso não encontre a solução do seu problema, entre em contato em uma das opções abaixo.</Label>
+			<View class="item" layout="horizontal">
+				<View class="icone">
+					<ImageView class="skype"/>
+				</View>
+				<Label class="item_texto">e-catalogos</Label>
+			</View>
+			<View class="item" layout="horizontal">
+				<View class="icone">
+					<ImageView class="youtube"/>
+				</View>
+				<Label class="item_texto">suporteecatalogos</Label>
+			</View>
+			<View class="item" layout="horizontal">
+				<View class="icone">
+					<ImageView class="email"/>
+				</View>
+				<Label class="item_texto">suporte@e-catalogos.net</Label>
+			</View>
+			<View class="item" layout="horizontal">
+				<View class="icone">
+					<ImageView class="telefone"/>
+				</View>
+				<Label class="item_texto">(11) 4304-5813</Label>
+			</View>
+			<View class="item" layout="horizontal">
+				<View class="icone">
+					<ImageView class="teamviewer"/>
+				</View>
+				<Label class="item_texto">TeamViewer</Label>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+		</View>
+	</Window>
+</Alloy>

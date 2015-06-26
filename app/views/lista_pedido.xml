@@ -1,0 +1,49 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">LISTA DE PEDIDOS</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<View class="barra">
+				<Button class="icone_pedido">PEDIDO</Button>
+				<Button class="icone_cnpj">CNPJ</Button>
+				<Button class="icone_razao">RAZÃO SOCIAL</Button>
+				<Button class="icone_data">DATA</Button>
+				<Button class="icone_representante">REPRESENTANTE</Button>
+				<Button class="icone_email">EMAIL</Button>
+				<Button class="icone_acoes">AÇÕES</Button>
+			</View>
+			<View class="pedidos">
+				<ListView class="pedidos" id="listapedidos" defaultItemTemplate="pedido_lista">
+					<Templates>
+						<ItemTemplate name="pedido_lista" class="pedidos_item">
+							<View class="border_horizontal"/>
+							<View class="list" layout="horizontal">
+								<View class="border_vertical"/>
+								<Label class="label_numero" bindId="label_numero"/>
+								<View class="border_vertical"/>
+								<Label class="label_cnpj" bindId="label_cnpj"/>
+								<View class="border_vertical"/>
+								<Label class="label_razao" bindId="label_razao"/>
+								<View class="border_vertical"/>
+								<Label class="label_data" bindId="label_data"/>
+								<View class="border_vertical"/>
+								<Label class="label_representante" bindId="label_representante"/>
+								<View class="border_vertical"/>
+								<Label class="label_email" bindId="label_email" onClick="enviaEmail">Enviar</Label>
+								<View class="border_vertical"/>
+								<Label class="label_acoes" bindId="label_acoes" onClick="exibeDetalhes">Detalhes</Label>
+								<View class="border_vertical"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+			<View class="rodape">
+				<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,120 @@
+".container": {
+	backgroundColor: "#ffffff"
+}
+
+".cabecalho":{
+	height: "10%",
+	top: "0",
+	width: "100%"
+}
+
+".titulo":{
+	backgroundColor: "#ffffff",
+	color: "#000000",
+	right: "10"
+}
+
+".logo":{
+	left: "10"
+}
+
+".corpo":{
+	height: "90%",
+	top: "10%",
+	width: "100%"
+}
+
+".barra":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#3550a3", "#008382"]
+	},
+	height: "7%",
+	top: "0%",
+	width: "100%"
+}
+
+".icone_data":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "20%"
+}
+
+".icone_mensagem":{
+	backgroundColor: "transparent",
+	color: "#ffffff",
+	height: "100%",
+	width: "80%"
+}
+
+".notificacoes":{
+	height: "85%",
+	top: "7%",
+	width: "100%"
+}
+
+".notificacoes_item":{
+	height: "50",
+	top: "6",
+	width: "100%"
+}
+
+".rodape":{
+	height: "7%",
+	bottom: "0%",
+	width: "100%"
+}
+
+".notificacoes_voltar":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "10%",
+	bottom: "1%"
+}
+
+".item_single":{
+	width: "20%"
+}
+
+".item_double":{
+	width: "80%"
+}
+
+".border_bottom":{
+	backgroundColor: "#DDDDDD",
+	width: "100%",
+	bottom: 0,
+	left: 0,
+	height: 1
+}
+
+".border_left":{
+	backgroundColor: "#DDDDDD",
+	width: 1,
+	lef: 0,
+	height: "100%"
+}
+
+".border_right":{
+	backgroundColor: "#DDDDDD",
+	width: 1,
+	right: 0,
+	height: "100%"
+}
+
+".label_data":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "100%"
+}
+".label_mensagem":{
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "100%"
+}

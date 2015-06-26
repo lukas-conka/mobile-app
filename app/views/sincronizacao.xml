@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container">
+		<Label class="titulo">SINCRONIZAÇÃO DE DADOS</Label>
+		<Label class="texto">As funções EXPORTAR e IMPORTAR são fundamentáis para sincronizar as informações com o sistema web, em caso de inclusão ou correção de alguma informação e/ou imagem efetuadas pelo fabricante.\n\n\n A ação de sincronizar os dados não elimina a necessidade de backup.</Label>
+		<View class="corpo" layout="horizontal">
+			<View class="view_sincronia">
+				<Label class="titulo_sincronia">EXPORTAR</Label>
+				<Label class="texto_sincronia">Dados dos pedidos\nDados dos clientes\nDados de email</Label>
+				<Button class="botao_ok" onClick="exportar">OK</Button>
+			</View>
+			<View class="view_sincronia">
+				<Label class="titulo_sincronia">IMPORTAR</Label>
+				<Label class="texto_sincronia">Dados dos produtos\nDados das imagens\nDados de marcas\nDados dos representantes</Label>
+				<Button class="botao_ok" onClick="importar">OK</Button>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+		</View>
+	</Window>
+</Alloy>

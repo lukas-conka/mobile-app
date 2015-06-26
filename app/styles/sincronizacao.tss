@@ -1,0 +1,79 @@
+
+".container": {
+	backgroundColor: "#ebebeb"
+}
+
+".titulo":{
+	top: 10,
+	color: "#000000",
+	left: 10
+}
+
+".texto":{
+	color: "#000000",
+	top: "10%",
+	right: 10,
+	left: 10
+}
+
+".corpo":{
+	height: "60%",
+	top: "30%",
+	width: "100%"
+}
+
+".rodape":{
+	height: "7%",
+	bottom: "1%",
+	width: "100%"
+}
+
+".view_sincronia":{
+	backgroundColor: 'white',
+	borderRadius: "5",
+	width: "45%",
+	left: "3%"
+}
+
+".titulo_sincronia":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	width: "95%",
+	height: "10%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top: "1%"
+}
+
+".texto_sincronia":{
+	top: "20%",
+	color: 'black',
+	left: "5%"
+}
+
+".botao_ok":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	right: "3%",
+	width: "15%",
+	bottom: "3%"
+}
+
+".pedidos_voltar":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "10%",
+	bottom: "1%"
+}

@@ -1,0 +1,17 @@
+<Alloy>
+	<Window class="container">
+		<ImageView class="logo"></ImageView>
+		<ImageView id="logoEmpresa" class="logoEmpresa"></ImageView>
+		<Label class="titulo">AGRADECEMOS OS SEUS PEDIDOS ABAIXO RELACIONADOS</Label>
+		<View id="corpo" class="corpo"></View>
+		<View class="rodapeTotal">
+			<Label class="rodapeTotalTitulo">SOMA DOS PEDIDOS</Label>
+			<Label id="total" class="rodapeTotalValor"></Label>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar Home</Button>
+		</View>
+		<Label class="titulo_emails">ESTES PEDIDOS FORAM ENVIADOS PARA OS E-MAILS CADASTRADOS ANTERIORMENTE:</Label>
+		<Label class="emails" id="emails"></Label>
+	</Window>
+</Alloy>

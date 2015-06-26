@@ -1,0 +1,99 @@
+".container": {
+	backgroundColor: "white"
+}
+
+	".lateral":{
+		height:"100%",
+		left:"0",
+		width:"15%"
+	}
+	
+		".logoMarca":{
+			height:"15%",
+			top:"0",
+			width:"100%"	
+		}
+		
+		".categoria":{
+			backgroundColor:"#ffffff",
+			color:"#000000",
+			height:"5%",
+			top:"15%",
+			width:"100%"
+		}
+		
+		".menu":{
+			backgroundColor:"#d0e2e6",
+			borderColor:"#008382",
+			borderWidth:"4",
+			height:"80%",
+			top:"20%",
+			width:"100%"
+		}
+		
+			".item":{
+				backgroundColor:"#3e3935",
+				borderColor:"#008382",
+				borderWidth:"4",
+				color:"#ffffff",
+				height:"60",
+				top:"10",
+				width:"90%"
+			}
+	
+	".cabecalho":{
+		height:"10%",
+		left:"15%",
+		top:"0",
+		width:"85%"
+	}
+	
+		".logo":{
+			height:"100%",
+			left:"0",
+			width:"25%"
+		}
+		
+			".logoECatalogos":{
+				image:"/images/logo_rodape.jpg",
+				left:"5%"
+			}
+		
+		".titulo":{
+			backgroundColor:"#ffffff",
+			color:"#008382",
+			height:"100%",
+			left:"25%",
+			width:"50%"
+		}
+		
+		".ajuda":{
+			height:"100%",
+			left:"75%",
+			width:"25%"
+		}
+		
+			".botaoMenu":{
+				backgroundColor:"#008382",
+				borderRadius:"5",
+				color:"#ffffff",
+				height:"60%",
+				right:"5%",
+				width:"45%"
+			}
+			
+			".botaoMarca":{
+				backgroundColor:"#008382",
+				borderRadius:"5",
+				color:"#ffffff",
+				height:"60%",
+				right:"55%",
+				width:"45%"
+			}
+	
+	".corpo":{
+		height:"90%",
+		left:"15%",
+		top:"10%",
+		width:"85%"	
+	}

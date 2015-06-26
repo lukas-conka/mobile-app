@@ -1,0 +1,62 @@
+Ti.include("/api/config.js");
+// Ir ao video
+// Todo: implementar video
+function goToVideo(e) {
+}
+
+verifyVersions();
+
+Ti.App.Properties.setString(SESSION_ID, "ejvm736r5cv9cggau6hjh6r9f1");
+
+function verifyVersions() {
+	if (Ti.App.Properties.getInt(DATABASE_VERSION) != SOFTWARE_DB_VERSION && Ti.App.Properties.getString(LOGIN) == "true") {
+		Ti.App.Properties.setString(SYNC, "false");
+		Ti.App.Properties.setInt(DATABASE_VERSION, SOFTWARE_DB_VERSION);
+		alert('Os dados do seu aplicativo estão desatualizados, será necessário fazer uma sincronia antes de utilizar o sistema');
+	}
+}
+
+// Ir a tela de login
+// Todo: verificar se está logado, se sim ir para a tela de clientes
+function nextStage(e) {
+	var login = Ti.App.Properties.getString(LOGIN);
+	var sync = Ti.App.Properties.getString(SYNC);
+	if (login == "true" && sync == "true") {
+		if (TEST_VERSION) {
+			Ti.App.Properties.setString(LOGIN, "true");
+			Ti.App.Properties.setString(CURRENT_USER_ID, 1);
+			Ti.App.Properties.setString(CURRENT_USER_NAME, "Exemplo 01");
+			Ti.App.Properties.setString(CURRENT_USER_EMAIL, "exemplo01@gmail.com");
+			Ti.App.Properties.setString(CURRENT_EMPRESA, 2);
+			Ti.App.Properties.setString(CURRENT_SOFTWARE, 1);
+			goToSoftware();
+		} else
+			goToCatalogo();
+	} else if (login == "true") {
+		goToImportar();
+	} else {
+		goToLogin();
+	}
+}
+
+function goToLogin() {
+	goTo('login');
+}
+
+function goToImportar() {
+	goTo('importar');
+}
+
+function goToCatalogo() {
+	goTo('seleciona_cliente');
+}
+
+function goToSoftware() {
+	goTo('softwares');
+}
+
+// Inicia a tela em fullsscreen e com barra oculta
+$.index.open({
+	fullscreen : true,
+	navBarHidden : true
+});

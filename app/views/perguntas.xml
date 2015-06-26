@@ -1,0 +1,37 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">
+				DÚVIDAS SOBRE O SISTEMA
+			</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<View class="busca">
+				<TextField id="busca_texto" hintText="O que você está procurando?"/>
+				<Button class="buscar_button" onClick="buscarperguntas">
+					Ir
+				</Button>
+			</View>
+			<View class="perguntas">
+				<ListView id="listaperguntas" defaultItemTemplate="pergunta_lista">
+					<Templates>
+						<ItemTemplate name="pergunta_lista" class="perguntas_item">
+							<View class="list" layout="vertical">
+								<Label class="label_pergunta" bindId="label_pergunta"/>
+								<Label class="label_resposta" bindId="label_resposta"/>
+								<View class="border_horizontal"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">
+				Voltar
+			</Button>
+		</View>
+	</Window>
+</Alloy>

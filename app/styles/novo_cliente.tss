@@ -1,0 +1,355 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".menu":{
+	backgroundColor: "#ebf7f6",
+	height: "100%",
+	left: "0",
+	width: "15%"
+}
+
+".menuItem":{
+	height: "112dp"
+}
+
+".botaoA":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	color: "#ffffff",
+	width: "90%",
+	height: "80%"
+}
+
+".menuText":{
+	touchEnabled:"false",
+	width: "98%",
+	color: "white",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".botaoB":{
+	backgroundColor:"#3f3a35",
+	borderColor:"#9ccccb",
+	borderWidth:"4",
+	bottom:"10",
+	color:"#ffffff",
+	height:"94",
+	top:"10",
+	width:"90%"
+}
+
+".conteudo":{
+	height:"100%",
+	right:"0",
+	width:"85%"
+}
+
+".cabecalho":{
+	height:"90",
+	top:"0",
+	width:"98%"
+}
+
+".logoA":{
+	height: "90%",
+	left: "0",
+	width: "15%"
+}
+
+".titulo":{
+	backgroundColor:"#FFFFFF",
+	color:"#4e8789",
+	height:"90",
+	left:"15%",
+	width:"70%"
+}
+
+".logoB":{
+	height:"90",
+	left:"85%",
+	width:"15%"
+}
+
+".imagemA":{
+	image: "/images/logo_rodape.jpg"
+}
+
+
+".corpo":{
+	borderColor:"#4e8789",
+	borderWidth:"4",
+	top:"90",
+	width:"98%"
+}
+
+".botaoC":{
+	backgroundColor:"#216a67",
+	bottom:"10",
+	height:"50",
+	right:"10",
+	width:"10%",
+	color: "white",
+	borderRadius:"5", 
+}
+
+".nomeA":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"0",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoA":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"45",
+	width:"87%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeB":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"95",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoB":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"140",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeC":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"95",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoC":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"140",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeD":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"190",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoD":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"235",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeE":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"190",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoE":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"235",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeF":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"285",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoF":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"330",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeG":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"285",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoG":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"330",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeH":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"380",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoH":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"425",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeI":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"380",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoI":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"425",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeJ":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"475",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoJ":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"520",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeK":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"475",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoK":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"520",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeL":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"10",
+	top:"570",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoL":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"10",
+	top:"615",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".nomeM":{
+	backgroundColor:"#FFFFFF",
+	color:"#4E8789",
+	height:"50",
+	left:"45%",
+	top:"570",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".campoM":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	height:"50",
+	left:"45%",
+	top:"615",
+	width:"43%",
+	color: "black",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}

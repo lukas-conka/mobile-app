@@ -1,0 +1,172 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".menu":{
+	backgroundColor: "#ebf7f6",
+	height: "100%",
+	left: "0",
+	width: "15%"
+}
+
+".menuItem":{
+	height: "112dp"
+}
+
+".botaoA":{
+	backgroundColor: "#3f3a35",
+	borderColor: "#9ccccb",
+	borderWidth: "4",
+	color: "#ffffff",
+	width: "90%",
+	height: "80%"
+}
+
+".menuText":{
+	touchEnabled:"false",
+	width: "98%",
+	color: "white",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".botaoB":{
+	backgroundColor:"#3f3a35",
+	borderColor:"#9ccccb",
+	borderWidth:"4",
+	bottom:"10",
+	color:"#ffffff",
+	height:"94",
+	top:"10",
+	width:"90%"
+}
+
+".conteudo":{
+	height:"100%",
+	right:"0",
+	width:"85%"
+}
+
+".cabecalho":{
+	height:"90",
+	top:"0",
+	width:"98%"
+}
+
+".logoA":{
+	height: "90%",
+	left: "0",
+	width: "15%"
+}
+
+".titulo":{
+	backgroundColor:"#FFFFFF",
+	color:"#4e8789",
+	height:"90",
+	left:"15%",
+	width:"70%"
+}
+
+".logoB":{
+	height:"90",
+	left:"85%",
+	width:"15%"
+}
+
+".imagemA":{
+	image: "/images/logo_rodape.jpg",
+	left:"0"
+}
+
+".imagemB":{
+	image: "/images/logo_rodape.jpg",
+	right:"0"
+}
+
+
+".corpo":{
+	borderColor:"#4e8789",
+	borderWidth:"4",
+	top:"90",
+	width:"98%"
+}
+
+".aviso":{
+	height:"40%",
+	top:"0",
+	width:"100%"
+}
+
+".imagemAviso":{
+	image:"/images/aviso_transportadora.jpg",
+	top:"0"
+}
+
+".formulario":{
+	height:"60%",
+	top:"40%",
+	width:"100%"
+}
+
+".campoA":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	bottom:"10",
+	height:"50",
+	left:"10",
+	width:"87%"
+}
+
+".botaoC":{
+	backgroundGradient:{
+		type:"linear",
+		colors:["#2c8f8e","#206764"]
+	},
+	borderRadius:"5",
+	bottom:"10",
+	height:"50",
+	right:"10",
+	width:"10%",
+	color: "white"
+}
+
+".nomeA":{
+	backgroundColor:"#FFFFFF",
+	bottom:"60",
+	color:"#4E8789",
+	height:"50",
+	left:"10"
+}
+
+".campoB":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	bottom:"110",
+	height:"50",
+	left:"10",
+	width:"87%"
+}
+
+".nomeB":{
+	backgroundColor:"#FFFFFF",
+	bottom:"160",
+	color:"#4E8789",
+	height:"50",
+	left:"10"
+}
+
+".campoC":{
+	borderColor:"#6EA9A0",
+	borderWidth:"4",
+	bottom:"220",
+	height:"50",
+	left:"10",
+	width:"87%"
+}
+
+".nomeC":{
+	backgroundColor:"#FFFFFF",
+	bottom:"270",
+	color:"#4E8789",
+	height:"50",
+	left:"10"
+}

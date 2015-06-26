@@ -1,0 +1,88 @@
+".container": {
+	backgroundColor: "#ffffff"
+}
+
+".cabecalho":{
+	height: "10%",
+	top: "0",
+	width: "100%"
+}
+
+".logo":{
+	image: "/images/logo_rodape.jpg",
+	right: "1%",
+	top: "0.8%"
+}
+
+".logoEmpresa":{
+	image: "/images/logo_rodape.jpg",
+	left: "1%",
+	top: "0.8%"
+}
+
+".titulo":{
+	color: 'black',
+	width: "100%",
+	top: "10%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".titulo_emails":{
+	color: 'black',
+	width: "100%",
+	bottom: "16%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".emails":{
+	color: 'red',
+	width: "100%",
+	bottom: "13%",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
+
+".corpo":{
+	height: "60%",
+	top: "15%",
+	width: "90%",
+	layout: "vertical"
+}
+
+".rodapeTotal":{
+	backgroundColor: "#414143",
+	height: "5%",
+	top: "75%",
+	width: "90%"
+}
+
+".rodapeTotalTitulo":{
+	color: "#ffffff",
+	height: "100%",
+	right: "16%",
+	width: "20%"
+}
+
+".rodapeTotalValor":{
+	color: "#ffffff",
+	height: "100%",
+	right: "1%",
+	width: "15%"
+}
+
+".rodape":{
+	height: "7%",
+	bottom: "1%",
+	width: "100%"
+}
+
+".pedidos_voltar":{
+	backgroundGradient:{
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	height: "80%",
+	left: "2%",
+	width: "14%"
+}

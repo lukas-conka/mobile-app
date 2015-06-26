@@ -1,0 +1,219 @@
+ 
+".container": {
+	backgroundColor: 'white',
+}
+
+".cabecalho":{
+	height: "7%",
+	top: "2%",
+	width: "98%",
+	layout: 'horizontal'
+}
+
+".rodape":{
+	height: "7%",
+	top: "81%",
+	width: "98%",
+	layout: 'horizontal'
+}
+
+".tituloQtde":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".tituloDesconto":{
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".tituloProduto":{
+	backgroundColor: "#69A09D",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".tituloPreco":{
+	backgroundColor: "#69A09D",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "11%"
+}
+
+".tituloRfr":{
+	backgroundColor: "#69A09D",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".totalRfr": {
+	backgroundColor: "#20706d",
+	color: "#ffffff",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".pedido_item":{
+	width: "100%",
+	height: "100"
+}
+
+".label_itemGrande":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "black",
+	width: "11%",
+	height: "100%"
+}
+
+".view_cliente":{
+	width: "8%",
+	height: "100%"
+}
+
+".seleciona_cliente":{
+	touchEnabled: "false",
+	left: "1%",
+	width: "40%",
+	image: '/images/checkbox-falso.png'
+}
+
+".label_itemCliente":{
+	touchEnabled: "false",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	right: "5%",
+	color: "black"
+}
+
+".label_itemPequeno":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "black",
+	width: "10%",
+	height: "100%"
+}
+
+".lista_pedidos":{
+	top: "10%",
+	width: "98%",
+	height: "70%"
+}
+
+".view_prod":{
+	layout: 'vertical',
+	width: '10%',
+	height: "100%"
+}
+
+".label_prod":{
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top: 0,
+	width: '98%',
+	height: '19%',
+	color: "black",
+	font:{
+		fontSize: 12
+	}
+}
+
+".imagem_produto":{
+	top: 0,
+	height: "69%",
+	width: "20%"
+}
+
+".rodapeTotal":{
+	color: "black",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%",
+	right: "31%"
+}
+
+".rodapeQtde":{
+	color: "black",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "5%"
+}
+
+".rodapePreco":{
+	color: "black",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "10%"
+}
+
+".rodapePorcentagem":{
+	color: "black",
+	font:{
+		fontSize: 13
+	},
+	height: "100%",
+	width: "15%"
+}
+
+".botao_porcentagem":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	font:{
+		fontSize: 11
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "6%",	
+	bottom: "1%"
+}
+
+".botao_enviar":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "10%",
+	bottom: "1%",
+	left: "1%"
+}

@@ -1,0 +1,66 @@
+<Alloy>
+	<Window class="container">
+		<ListView class="menu" defaultItemTemplate="menuTemplate">
+			<Templates>
+				<ItemTemplate name="menuTemplate" class="menuItem">
+					<View class="botaoA" onClick="menuClick">
+						<Label bindId="btnmenu" class="menuText"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+				<ListItem btnmenu:text="CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"/>
+				<ListItem btnmenu:text="ANÁLISE DE \n CRÉDITO"/>
+				<ListItem btnmenu:text="IR AO\n CATÁLOGO"/>
+				<ListItem btnmenu:text="PEDIDOS"/>
+				<ListItem btnmenu:text="TRANSPORTADORA"/>
+				<ListItem btnmenu:text="NOVO CLIENTE"/>
+				<ListItem btnmenu:text="FUNÇÕES"/>
+				<ListItem btnmenu:text="EMAIL"/>
+				<ListItem btnmenu:text="VOLTAR PARA TELA INICIAL"/>
+				<ListItem btnmenu:text="TROCAR\n MARCA"/>
+				<ListItem btnmenu:text="SAIR"/>
+			</ListSection>
+		</ListView>
+		<View class="conteudo">
+			<View class="cabecalho">
+				<View class="logoA">
+					<ImageView id="logoEmpresa" class='imagemA'></ImageView>
+				</View>
+				<Button class="titulo">NOVO CLIENTE</Button>
+				<View class="logoB">
+					<ImageView class='imagemA'></ImageView>
+				</View>
+			</View>
+			<View class="corpo">
+				<Button class="nomeA">RAZÃO SOCIAL</Button>
+				<TextField id="idCampoA" class="campoA" hintText=""></TextField>
+				<Button class="nomeB">CNPJ</Button>
+				<TextField id="idCampoB" class="campoB" hintText=""></TextField>
+				<Button class="nomeC">INSCRIÇÃO ESTADUAL</Button>
+				<TextField id="idCampoC" class="campoC" hintText=""></TextField>
+				<Button class="nomeD">ENDEREÇO</Button>
+				<TextField id="idCampoD" class="campoD" hintText=""></TextField>
+				<Button class="nomeE">NÚMERO</Button>
+				<TextField id="idCampoE" class="campoE" hintText=""></TextField>
+				<Button class="nomeF">COMPLEMENTO</Button>
+				<TextField id="idCampoF" class="campoF" hintText=""></TextField>
+				<Button class="nomeG">CEP</Button>
+				<TextField id="idCampoG" class="campoG" hintText=""></TextField>
+				<Button class="nomeH">CIDADE</Button>
+				<TextField id="idCampoH" class="campoH" hintText=""></TextField>
+				<Button class="nomeI">UF</Button>
+				<TextField id="idCampoI" class="campoI" hintText=""></TextField>
+				<Button class="nomeJ">E-MAIL</Button>
+				<TextField id="idCampoJ" class="campoJ" hintText=""></TextField>
+				<Button class="nomeK">TELEFONE</Button>
+				<TextField id="idCampoK" class="campoK" hintText=""></TextField>
+				<Button class="nomeL">COMPRADOR</Button>
+				<TextField id="idCampoL" class="campoL" hintText=""></TextField>
+				<Button class="nomeM">CARGO</Button>
+				<TextField id="idCampoM" class="campoM" hintText=""></TextField>
+				<Button class="botaoC" onClick="grava">Cadastrar</Button>
+			</View>
+		</View>
+	</Window>
+</Alloy>

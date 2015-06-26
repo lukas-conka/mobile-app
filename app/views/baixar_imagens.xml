@@ -1,0 +1,5 @@
+<Alloy>
+	<Window onOpen="showIndicator" class="container">
+		<ActivityIndicator id="activityIndicator" message="Carregando Imagens..."/>
+	</Window>
+</Alloy>

@@ -1,0 +1,236 @@
+".container": {
+	backgroundColor: "white"
+}
+
+".lateral":{
+	height: "100%",
+	left: "0",
+	width: "15%"
+}
+
+".logoMarca":{
+	height: "15%",
+	top: "0",
+	width: "100%"
+}
+
+".categoria":{
+	backgroundColor: "#ffffff",
+	color: "#000000",
+	height: "5%",
+	top: "15%",
+	width: "100%"
+}
+
+".menu":{
+	backgroundColor: "#d0e2e6",
+	borderColor: "#008382",
+	borderWidth: "4",
+	height: "80%",
+	top: "20%",
+	width: "100%"
+}
+
+".item":{
+	backgroundColor: "#3e3935",
+	borderColor: "#008382",
+	borderWidth: "4",
+	color: "#ffffff",
+	height: "60",
+	top: "10",
+	width: "90%"
+}
+
+".corpo":{
+	height:"90%",
+	top:"0%",
+	width:"100%"
+}
+
+".vitrine":{
+	height:Ti.UI.SIZE,
+	layout:"vertical",
+	width:Ti.UI.SIZE
+}
+
+".gradeA":{
+	backgroundColor:"#dddddd",
+	height:"48.5%",
+	layout:"vertical",
+	top:"1.5%",
+	width:"98%"
+}
+
+".gradeB":{
+	backgroundColor: "#dddddd",
+	height: "48.5%",
+	layout:"vertical",
+	top:"1%",
+	width: "98%"
+}
+
+".imagemView":{
+	backgroundColor:"#ffffff",
+	height:Ti.UI.SIZE,
+	top:"3%",
+	width:"98%"
+}
+
+".imagem":{
+	width:"100%"
+}
+
+".legenda":{
+	layout:"horizontal",
+	width:"98%"
+}
+
+".preco":{
+	backgroundColor:"#ffffff",
+	color:"#000000",
+	font:{
+		fontSize:15
+	},
+	height:"80%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top:"10%",
+	width:"10%"
+}
+
+".referencia":{
+	backgroundColor:"#ffffff",
+	color:"#000000",
+	font:{
+		fontSize:15
+	},
+	height:"80%",
+	left:"1%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top:"10%",
+	width:"10%"
+}
+
+".tempo":{
+	backgroundColor:"#000000",
+	color:"#ffffff",
+	font:{
+		fontSize:15
+	},
+	height:"80%",
+	left:"1%",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top:"10%",
+	width:"7%"
+}
+
+".seleciona":{
+	height:"80%",
+	left:"1%",
+	top:"10%",
+	zIndex:10
+}
+
+".images":{
+	height:"80%",
+	left:"1%",
+	top:"10%",
+	width:"60%"
+}
+
+".rodape":{
+	height:"10%",
+	left:"0%",
+	top:"90%",
+	width:"100%"
+}
+
+".ajuda":{
+	height:"100%",
+	left:"0",
+	width:"25%"
+}
+
+".botaoLimpa":{
+	backgroundColor:"#008382",
+	borderRadius:"5",
+	color:"#ffffff",
+	height:"60%",
+	left:"5%",
+	width:"45%"
+}
+
+".botaoVolta":{
+	backgroundColor:"#008382",
+	borderRadius:"5",
+	color:"#ffffff",
+	height:"60%",
+	left:"55%",
+	width:"45%"
+}
+
+".guia":{
+	height:"100%",
+	left:"25%",
+	width:"50%"
+}
+
+".botaoPrimeiro":{
+	image:"/images/primeiro.png",
+	height:"60%",
+	left:"2%",
+	width:"12%"
+}
+
+".botaoAnterior":{
+	image:"/images/anterior.png",
+	height:"60%",
+	left:"16%",
+	width:"12%"
+}
+
+".paginacao":{
+	backgroundColor:"#ffffff",
+	borderColor:"#cdcdcd",
+	borderWidth:"1",
+	color:"#008382",
+	height:"60%",
+	left:"30%",
+	width:"20%"
+}
+
+".botaoProximo":{
+	image:"/images/proximo.png",
+	height:"60%",
+	left:"52%",
+	width:"12%"
+}
+
+".botaoUltimo":{
+	image:"/images/ultimo.png",
+	height:"60%",
+	left:"66%",
+	width:"12%"
+}
+
+".carrinho":{
+	height:"100%",
+	right:"0%",
+	width:"25%"
+}
+
+".botaoCesta":{
+	image:"/images/cesta.png",
+	height:"60%",
+	right:"0%",
+	width:"75%"
+}
+
+".quantidade":{
+	backgroundColor:"#ffffff",
+	borderColor:"#cdcdcd",
+	borderWidth:"1",
+	color:"#ff0000",
+	height:"60%",
+	left:"0%",
+	width:"20%"
+}

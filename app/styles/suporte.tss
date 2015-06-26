@@ -1,0 +1,100 @@
+
+".container": {
+	backgroundColor: "#ffffff"
+}
+
+".cabecalho":{
+	height: "10%",
+	top: "0",
+	width: "100%"
+}
+
+".titulo":{
+	backgroundColor: "#ffffff",
+	color: "#000000",
+	right: "10"
+}
+
+".logo":{
+	left: "10"
+}
+
+".corpo":{
+	height: "80%",
+	top: "10%",
+	width: "50%",
+	borderRadius: 2,
+	borderColor: "#6ea9a0",
+	borderWidth: 3
+}
+
+".rodape":{
+	height: "7%",
+	bottom: "1%",
+	width: "100%"
+}
+
+".texto":{
+	top: "1%",
+	left: "2%",
+	width: "78%",
+	color: 'black',
+	height: "20%"
+}
+
+".item":{
+	left: 0,
+	width: "95%",
+	top: "1%",
+	height: "14%",
+	borderColor: "#dddddd",
+	borderWidth: 1
+}
+
+".icone":{
+	left: "2%",
+	height: "100%",
+	width: "20%"
+}
+
+".skype":{
+	height: "100%",
+	image: '/images/suporte_skype.jpg'
+}
+
+".youtube":{
+	height: "100%",
+	image: '/images/suporte_youtube.jpg'
+}
+
+".email":{
+	height: "100%",
+	image: '/images/suporte_email.jpg'
+}
+
+".telefone":{
+	height: "100%",
+	image: '/images/suporte_telefone.jpg'
+}
+
+".teamviewer":{
+	height: "100%",
+	image: '/images/suporte_teamviewer.jpg'
+}
+
+".item_texto":{
+	color: 'black',
+	left: 5
+}
+
+".pedidos_voltar":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "1%",
+	width: "10%",
+	bottom: "1%"
+}

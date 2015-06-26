@@ -1,0 +1,38 @@
+<Alloy>
+	<Window class="container">
+		<View layout='vertical'>
+			<View class="cabecalho">
+				<Button class="titulo">SELECIONE O TIPO DE SOFTWARE</Button>
+				<ImageView class="logo"></ImageView>
+			</View>
+			<View class="line" layout='horizontal'>
+				<ImageView class="software_cristal"/>
+				<View class="botoes" layout='vertical'>
+					<ImageView class="tutorial"/>
+					<ImageView class="seleciona_cristal" onClick="cristal"/>
+				</View>
+				<ImageView class="software_esmeralda"/>
+				<View class="botoes" layout='vertical'>
+					<ImageView class="tutorial"/>
+					<ImageView class="seleciona_esmeralda" onClick="esmeralda"/>
+				</View>
+			</View>
+			<View class="line" layout='horizontal'>
+				<ImageView class="software_rubi"/>
+				<View class="botoes" layout='vertical'>
+					<ImageView class="tutorial"/>
+					<ImageView class="seleciona_rubi" onClick="rubi"/>
+				</View>
+				<ImageView class="software_safira"/>
+				<View class="botoes" layout='vertical'>
+					<ImageView class="tutorial"/>
+					<ImageView class="seleciona_safira" onClick="safira"/>
+				</View>
+			</View>
+			<Button onClick="cristal" class="cristal">Cristal</Button>
+			<Button onClick="esmeralda" class="esmeralda">Esmeralda</Button>
+			<Button onClick="rubi" class="rubi">Rubi</Button>
+			<Button onClick="safira" class="safira">Safira</Button>
+		</View>
+	</Window>
+</Alloy>
