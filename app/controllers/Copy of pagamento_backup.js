@@ -1,7 +1,4 @@
-//teste
-//teste remoto
-//outro tstees
-//testesa
+//primeiro commit
 Ti.include("/api/config.js");
 Ti.include("/database/clientes.js");
 Ti.include("/database/carrinho.js");
