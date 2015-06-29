@@ -1,0 +1,1 @@
+/home/james/Documents/projetoMobile/mobile-app/Resources/android/database/representante_cliente.js

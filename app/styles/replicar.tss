@@ -147,7 +147,7 @@
 ".imagem_produto":{
 	top: 0,
 	height: "69%",
-	width: "20%"
+	//width: "20%"
 }
 
 ".rodapeTotal":{
@@ -157,8 +157,8 @@
 	},
 	height: "100%",
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
-	width: "10%",
-	right: "31%"
+	width: "11%",
+	right: "17%"
 }
 
 ".rodapeQtde":{
@@ -187,7 +187,7 @@
 		fontSize: 13
 	},
 	height: "100%",
-	width: "15%"
+	width: "18%"
 }
 
 ".botao_porcentagem":{
@@ -200,7 +200,7 @@
 	},
 	borderRadius: "5",
 	color: "#ffffff",
-	left: "1%",
+	left: "2%",
 	width: "6%",	
 	bottom: "1%"
 }

@@ -937,7 +937,7 @@ function Controller() {
         },
         height: "100%",
         width: "6%",
-        text: "Sus. Trib.",
+        text: "S.T",
         id: "__alloyId611"
     });
     $.__views.__alloyId588.add($.__views.__alloyId611);
@@ -956,8 +956,8 @@ function Controller() {
             fontSize: 13
         },
         height: "100%",
-        width: "12%",
-        text: "Valor",
+        width: "8%",
+        text: "Valor do Produto",
         id: "__alloyId613"
     });
     $.__views.__alloyId588.add($.__views.__alloyId613);
@@ -1187,6 +1187,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_precototal"
                 }
             };
@@ -1207,6 +1210,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_ipi"
                 }
             };
@@ -1227,6 +1233,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "6%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_sustrib"
                 }
             };
@@ -1245,8 +1254,11 @@ function Controller() {
                 bindId: "label_valorfinal",
                 properties: {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-                    width: "12%",
+                    width: "8%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_valorfinal"
                 }
             };
@@ -1493,6 +1505,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_precototal"
                 }
             };
@@ -1513,6 +1528,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_ipi"
                 }
             };
@@ -1533,6 +1551,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "6%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_sustrib"
                 }
             };
@@ -1551,8 +1572,11 @@ function Controller() {
                 bindId: "label_valorfinal",
                 properties: {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-                    width: "12%",
+                    width: "8%",
                     color: "black",
+                    font: {
+                        fontSize: 13
+                    },
                     bindId: "label_valorfinal"
                 }
             };

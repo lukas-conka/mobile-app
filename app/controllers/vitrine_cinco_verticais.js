@@ -16,7 +16,7 @@ var paginas = Math.ceil(produtos / itemsperpage);
 
 redimencionaVitrine($.vitrine);
 
-/*
+
 if(Ti.Platform.osname == "android"){
 	$.legendaA.height = "13%";
 	$.legendaB.height = "13%";
@@ -42,7 +42,7 @@ if(Ti.Platform.osname == "android"){
 	$.informacaoD.width = "50%";
 	$.informacaoE.width = "50%";
 }
-*/
+
 
 renderProducts();
 
