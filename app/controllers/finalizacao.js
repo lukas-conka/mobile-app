@@ -78,9 +78,11 @@ function renderCarrinho() {
 		var prd_cub_p = carrinho.fieldByName('ifp_cub_p');
 		var crp_quantidade = carrinho.fieldByName('crp_quantidade');
 		var prd_ipi = carrinho.fieldByName('prd_ipi');
-
+		var desconto_unit = carrinho.fieldByName('desconto_unit');
+	
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
 		var valor_produtos = crp_preco_unitario * crp_quantidade;
+		valor_produtos = valor_produtos - desconto_unit;
 		var valor_ipi = valor_produtos * prd_ipi / 100;
 		var valor_total_produto = valor_produtos + valor_ipi;
 

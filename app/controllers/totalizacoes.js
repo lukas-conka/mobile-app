@@ -33,8 +33,9 @@ while(pedidos.isValidRow()){
 		var crp_ipi = carrinhoPedido.fieldByName("crp_ipi");
 		var desconto_parcela = carrinhoPedido.fieldByName("desconto_parcela");
 		var desconto_especial = carrinhoPedido.fieldByName("desconto_especial");
-		
+		var desconto_unit = carrinhoPedido.fieldByName("desconto_unit");
 		var total = crp_quantidade * crp_preco_unitario;
+		total = total - desconto_unit;
 		var ipi = (total * crp_ipi) / 100;
 		total = total + ipi;
 		

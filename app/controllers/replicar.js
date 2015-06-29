@@ -35,7 +35,7 @@ for (var i = 0; i < clientes.length; i++) {
 
 var valor_total = 0;
 var quantidade_total = 0;
-var aux_total = 0;
+//var aux_total = 0;
 renderList();
 function renderList(){
 while (carrinho.isValidRow()) {
@@ -54,17 +54,17 @@ while (carrinho.isValidRow()) {
 	var fk_tamanhos = carrinho.fieldByName('fk_tamanhos');
 	var car_ipi = carrinho.fieldByName('prd_ipi');
 	var tmpl = carrinho.fieldByName('fk_template');
+	var car_desc_unit = carrinho.fieldByName("car_desc_unit");
 	
 	quantidade_total = quantidade_total + car_quantidade;
 
 	var label_cortamanho = cor_nome + " - " + tmh_nome;
 	
 	var total_ref =  car_preco_unitario*car_quantidade;
-	var ipi = (total_ref * car_ipi) / 100;
-	total_ref+=ipi;
+	total_ref = total_ref - car_desc_unit;
+
 	valor_total+=total_ref;
 	aux_total = valor_total;
-	
 	
 	var notfound;
 	switch(tmpl) {
@@ -312,8 +312,7 @@ while (carrinho.isValidRow()) {
 	
 	$.listapedidos.sections[0].setItems(data);
 	$.total_qtde.text = quantidade_total;
-	$.total_preco.text = formatCurrency(aux_total);
-	
+	$.total_preco.text = formatCurrency(valor_total);
 	// selecionaCarrinho(clientes[0])
 }
 
@@ -467,6 +466,7 @@ function percenteDesconto(event){
 	var car_quantidade = itemID.car_quantidade;
 	var car_preco_unitario = itemID.car_preco_unitario;
 	var car_ipi = itemID.car_ipi;
+	var car_id_n = itemID.car_id;
 	
 	for(var i = 0; i <= 100; i++){
 		valores.push(i);
@@ -498,19 +498,13 @@ function percenteDesconto(event){
 		data[event.itemIndex].total_ref.total_ref = total_desc - desc;
 		event.section.updateItemAt(event.itemIndex, data[event.itemIndex]);
 		
-		$.total_preco.text = formatCurrency(aux_total -= desc);
+		$.total_preco.text = formatCurrency(total_total);
 		
-		if(valores[e.index] == 0){
-			
-			aux_total = valor_total;
-			$.total_preco.text = formatCurrency(valor_total);
-			
-		}
-		
-		//setando o valor para constante global com o valor total e descontos
-		Ti.App.Properties.setString('valor_desconto_ref', aux_total);
-		
-		insertCarrinho(session, car_quantidade, car_preco_unitario, car_ipi, 0, 0, 0, 0, 0, 0, fk_usu, prd_id, fk_tamanhos, fk_cores, cliente, ep_id, desc);
+		var db = dbLoad();
+		var query = "UPDATE tb_carrinho set car_desc_unit = " + desc + " WHERE car_id = " + car_id_n;
+		db.execute(query);
+		var aux_ipi = Ti.App.Properties.getString("ipi_");	
+		Ti.App.Properties.setString("ipi_mod", aux_ipi);		
 	});
 		
 }

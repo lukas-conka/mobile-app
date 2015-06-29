@@ -20,6 +20,7 @@ var valorInicial = [];
 var quantidade;
 var total_geral = 0;
 var sobrepedido = [];
+var desconto_unit = 0;
 
 //Variavel estatica global que recebe o valor com o desconto de replicar.js
 var lista_xd = Ti.App.Properties.getString('valor_desconto_ref');
@@ -51,13 +52,13 @@ for (var i = 0; i < conjunto.length; i++) {
 			var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
 			var car_ipi = pedido.fieldByName("car_ipi");
 			var car_desc_unit = pedido.fieldByName("car_desc_unit");
-			
+			desconto_unit = parseFloat(car_desc_unit);
 			var produto = car_quantidade * car_preco_unitario;
+			produto = produto - car_desc_unit;
 			var ipi = (produto * car_ipi) / 100;
-
 			quantidade = quantidade + car_quantidade;
 			bruto = bruto + produto + ipi;
-			total_geral = total_geral + bruto - car_desc_unit;
+			total_geral = total_geral + produto + ipi;
 			pedido.next();
 		}
 		
@@ -73,19 +74,6 @@ for (var i = 0; i < conjunto.length; i++) {
 		} else {
 			var porcentagem = sobrepedido[i];
 			var cor = "";
-		}
-		
-		//Verifica se o valor total esta vindo de replicar.js com o desconto
-		if(lista_xd > 0){
-			bruto = lista_xd;
-			lista_xd = 0;
-		}else{
-			bruto = bruto;
-		}
-		
-		if(porcentagem < 100){
-			porcentagem = 0;
-			
 		}
 		
 		data.push({
@@ -129,10 +117,11 @@ for (var i = 0; i < conjunto.length; i++) {
 			}
 		});
 	}
-	$.total_geral.text = formatCurrency(bruto);
+	$.total_geral.text = formatCurrency(total_geral);
 }
 
 $.listaclientes.sections[0].setItems(data);
+$.total_geral.text = formatCurrency(total_geral);
 
 function replicar() {
 	goTo('replicar');
@@ -287,39 +276,17 @@ function calculoEspecial(comando, cliente, desconto) {
 	calculoParcela(comando, cliente);
 }
 
-//Variavel estatica global que vem de replciar.js
-var aux_calc = Ti.App.Properties.getString('valor_desconto_ref');
-
 function calculoParcela(comando, cliente) {
-	//modificado por Lucas e Carlos 
+	//modificado por Lucas
 	
-	var calculo1 = 0;
+	var calculo1 = (valorInicial[cliente] * descontoPrazo[cliente]) / 100;
 	
-	if(aux_calc != 0){
-		calculo1 = (aux_calc * descontoPrazo[cliente]) / 100;
-	}else{
-		calculo1 = (valorInicial[cliente] * descontoPrazo[cliente]) / 100;
-	}
-	
-	
-	var resultado1 = 0;
-	
-	if(aux_calc != 0){
-		resultado1 = aux_calc - calculo1;
-	}else{
-		resultado1 = valorInicial[cliente] - calculo1;
-	}
+	var resultado1 = valorInicial[cliente] - calculo1;
 	
 	var calculo2 = (resultado1 * descontoEspecial[cliente]) / 100; //valor final do pedido
 	var resultado2 = resultado1 - calculo2; //valor final do pedido finalmente 
 
-	var parcelaSemDesconto = 0;
-	
-	if(aux_calc != 0){
-		parcelaSemDesconto = aux_calc / dataPrazoMedio[cliente];
-	}else{
-		parcelaSemDesconto = valorInicial[cliente] / dataPrazoMedio[cliente];
-	}
+	var parcelaSemDesconto = valorInicial[cliente] / dataPrazoMedio[cliente];
 	
 	var parcelaComDesconto = resultado2 / dataPrazoMedio[cliente];
 
@@ -412,11 +379,10 @@ function finalizaPagamento() {
 				var fk_produtos = carrinho[j][7];
 				var fk_tamanhos = carrinho[j][8];
 				var fk_cores = carrinho[j][9];
+				var car_desc_unit = carrinho[j][10];
 				var crp_id = ultimoCarrinhoPedido + q;
 				q++;
-				
-				insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2);
-		
+				insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2, car_desc_unit);
 			}
 			insertPedido(ped_id, Ti.App.Properties.getString(SESSION_ID), 1, condicaoPrazoMedio[conjunto[i]], car_entrega, car_entrega_prazo, save_date, 1, numero, "", "N", conjunto[i], Ti.App.Properties.getString(CURRENT_USER_ID), 2);
 		}
@@ -434,4 +400,3 @@ function cleanOrders() {
 }
 
 //Zerando a constante global para n haver conflito na hora de colocar o valor total
-Ti.App.Properties.setString('valor_desconto_ref', 0);
