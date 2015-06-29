@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/vitrine_dois_horizontais.js

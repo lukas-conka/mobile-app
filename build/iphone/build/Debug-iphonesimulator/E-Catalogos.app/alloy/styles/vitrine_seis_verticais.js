@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/styles/vitrine_seis_verticais.js

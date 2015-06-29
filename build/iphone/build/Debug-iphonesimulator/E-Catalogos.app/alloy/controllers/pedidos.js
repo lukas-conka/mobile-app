@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/pedidos.js
