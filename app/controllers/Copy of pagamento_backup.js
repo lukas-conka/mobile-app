@@ -9,7 +9,7 @@ Ti.include("/database/datas.js");
 Ti.include("/database/representante.js");
 
 var base = 0;
-var bruto;
+var bruto;exit
 var condicaoPrazoMedio = [];
 var data = [];
 var dataPrazoMedio = [];
