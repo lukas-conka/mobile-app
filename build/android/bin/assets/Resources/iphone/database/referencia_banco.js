@@ -1,0 +1,1 @@
+/home/james/Documents/projetoMobile/mobile-app/Resources/iphone/database/referencia_banco.js

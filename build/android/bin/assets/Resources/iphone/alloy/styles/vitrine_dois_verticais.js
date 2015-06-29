@@ -1,0 +1,1 @@
+/home/james/Documents/projetoMobile/mobile-app/Resources/iphone/alloy/styles/vitrine_dois_verticais.js
