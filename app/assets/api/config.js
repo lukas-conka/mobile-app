@@ -93,7 +93,8 @@ function AddSelectedProduct(id) {
 		result = "true";
 	} else {
 		var index = products.indexOf(id);
-		products.splice(index, 1);
+		//products.slice(index, 1);
+		products.splice(index, 1, 2);
 		result = "false";
 
 	}
@@ -176,8 +177,8 @@ function redimencionaVitrine(vitrine) {
 		alturaTela = alturaTela - 100;
 		larguraTela = larguraTela - 100;
 	} else {
-		alturaTela = 550;
-		larguraTela = 1024;
+		alturaTela -200;
+		larguraTela -250;
 	}
 
 	var alturaView = Math.round(alturaTela * 0.9);

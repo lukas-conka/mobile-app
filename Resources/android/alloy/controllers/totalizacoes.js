@@ -34,13 +34,13 @@ function Controller() {
         id: "totalizacoes"
     });
     $.__views.totalizacoes && $.addTopLevelView($.__views.totalizacoes);
-    $.__views.__alloyId1472 = Ti.UI.createImageView({
+    $.__views.__alloyId1475 = Ti.UI.createImageView({
         image: "/images/logo_rodape.jpg",
         right: "1%",
         top: "0.8%",
-        id: "__alloyId1472"
+        id: "__alloyId1475"
     });
-    $.__views.totalizacoes.add($.__views.__alloyId1472);
+    $.__views.totalizacoes.add($.__views.__alloyId1475);
     $.__views.logoEmpresa = Ti.UI.createImageView({
         image: "/images/logo_rodape.jpg",
         left: "1%",
@@ -48,15 +48,15 @@ function Controller() {
         id: "logoEmpresa"
     });
     $.__views.totalizacoes.add($.__views.logoEmpresa);
-    $.__views.__alloyId1473 = Ti.UI.createLabel({
+    $.__views.__alloyId1476 = Ti.UI.createLabel({
         color: "black",
         width: "100%",
         top: "10%",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         text: "AGRADECEMOS OS SEUS PEDIDOS ABAIXO RELACIONADOS",
-        id: "__alloyId1473"
+        id: "__alloyId1476"
     });
-    $.__views.totalizacoes.add($.__views.__alloyId1473);
+    $.__views.totalizacoes.add($.__views.__alloyId1476);
     $.__views.corpo = Ti.UI.createView({
         height: "60%",
         top: "15%",
@@ -65,23 +65,23 @@ function Controller() {
         id: "corpo"
     });
     $.__views.totalizacoes.add($.__views.corpo);
-    $.__views.__alloyId1474 = Ti.UI.createView({
+    $.__views.__alloyId1477 = Ti.UI.createView({
         backgroundColor: "#414143",
         height: "5%",
         top: "75%",
         width: "90%",
-        id: "__alloyId1474"
+        id: "__alloyId1477"
     });
-    $.__views.totalizacoes.add($.__views.__alloyId1474);
-    $.__views.__alloyId1475 = Ti.UI.createLabel({
+    $.__views.totalizacoes.add($.__views.__alloyId1477);
+    $.__views.__alloyId1478 = Ti.UI.createLabel({
         color: "#ffffff",
         height: "100%",
         right: "16%",
         width: "20%",
         text: "SOMA DOS PEDIDOS",
-        id: "__alloyId1475"
+        id: "__alloyId1478"
     });
-    $.__views.__alloyId1474.add($.__views.__alloyId1475);
+    $.__views.__alloyId1477.add($.__views.__alloyId1478);
     $.__views.total = Ti.UI.createLabel({
         color: "#ffffff",
         height: "100%",
@@ -89,15 +89,15 @@ function Controller() {
         width: "15%",
         id: "total"
     });
-    $.__views.__alloyId1474.add($.__views.total);
-    $.__views.__alloyId1476 = Ti.UI.createView({
+    $.__views.__alloyId1477.add($.__views.total);
+    $.__views.__alloyId1479 = Ti.UI.createView({
         height: "7%",
         bottom: "1%",
         width: "100%",
-        id: "__alloyId1476"
+        id: "__alloyId1479"
     });
-    $.__views.totalizacoes.add($.__views.__alloyId1476);
-    $.__views.__alloyId1477 = Ti.UI.createButton({
+    $.__views.totalizacoes.add($.__views.__alloyId1479);
+    $.__views.__alloyId1480 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -108,19 +108,19 @@ function Controller() {
         left: "2%",
         width: "14%",
         title: "Voltar Home",
-        id: "__alloyId1477"
+        id: "__alloyId1480"
     });
-    $.__views.__alloyId1476.add($.__views.__alloyId1477);
-    voltar ? $.__views.__alloyId1477.addEventListener("click", voltar) : __defers["$.__views.__alloyId1477!click!voltar"] = true;
-    $.__views.__alloyId1478 = Ti.UI.createLabel({
+    $.__views.__alloyId1479.add($.__views.__alloyId1480);
+    voltar ? $.__views.__alloyId1480.addEventListener("click", voltar) : __defers["$.__views.__alloyId1480!click!voltar"] = true;
+    $.__views.__alloyId1481 = Ti.UI.createLabel({
         color: "black",
         width: "100%",
         bottom: "16%",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         text: "ESTES PEDIDOS FORAM ENVIADOS PARA OS E-MAILS CADASTRADOS ANTERIORMENTE:",
-        id: "__alloyId1478"
+        id: "__alloyId1481"
     });
-    $.__views.totalizacoes.add($.__views.__alloyId1478);
+    $.__views.totalizacoes.add($.__views.__alloyId1481);
     $.__views.emails = Ti.UI.createLabel({
         color: "red",
         width: "100%",
@@ -242,7 +242,7 @@ function Controller() {
         email.next();
     }
     $.emails.text = emailRodape;
-    __defers["$.__views.__alloyId1477!click!voltar"] && $.__views.__alloyId1477.addEventListener("click", voltar);
+    __defers["$.__views.__alloyId1480!click!voltar"] && $.__views.__alloyId1480.addEventListener("click", voltar);
     _.extend($, exports);
 }
 

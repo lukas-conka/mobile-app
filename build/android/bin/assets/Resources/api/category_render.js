@@ -1,0 +1,1 @@
+/home/james/Documents/projetoMobile/mobile-app/Resources/android/api/category_render.js

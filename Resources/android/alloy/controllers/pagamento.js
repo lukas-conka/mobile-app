@@ -134,13 +134,14 @@ function Controller() {
         calculoParcela(comando, cliente);
     }
     function calculoParcela(comando, cliente) {
-        var calculo1 = valorInicial[cliente] * descontoPrazo[cliente] / 100;
-        var resultado1 = valorInicial[cliente] - calculo1;
-        var dscEspecial = 0;
-        descontoEspecial[cliente] > 0 && dscEspecial++;
+        var calculo1 = 0;
+        calculo1 = 0 != aux_calc ? aux_calc * descontoPrazo[cliente] / 100 : valorInicial[cliente] * descontoPrazo[cliente] / 100;
+        var resultado1 = 0;
+        resultado1 = 0 != aux_calc ? aux_calc - calculo1 : valorInicial[cliente] - calculo1;
         var calculo2 = resultado1 * descontoEspecial[cliente] / 100;
         var resultado2 = resultado1 - calculo2;
-        valorInicial[cliente] / dataPrazoMedio[cliente];
+        var parcelaSemDesconto = 0;
+        parcelaSemDesconto = 0 != aux_calc ? aux_calc / dataPrazoMedio[cliente] : valorInicial[cliente] / dataPrazoMedio[cliente];
         var parcelaComDesconto = resultado2 / dataPrazoMedio[cliente];
         var credito = getClienteCredito(cliente);
         var cl_credito_utilizado = credito.fieldByName("cl_credito_utilizado");
@@ -148,15 +149,10 @@ function Controller() {
         var utilizado = cl_credito_total - cl_credito_utilizado - resultado2;
         var selecao = $.listaclientes.sections[comando.sectionIndex];
         var item = selecao.getItemAt(comando.itemIndex);
-        var aux = 0;
-        if (dscEspecial > 0) {
-            aux = resultado1 - resultado2;
-            dscEspecial = 0;
-        }
         item.label_parcela.text = dataPrazoMedio[cliente] + "x de " + formatCurrency(parcelaComDesconto);
-        item.label_desconto.text = formatCurrency(resultado1 - aux);
+        item.label_desconto.text = formatCurrency(resultado2);
         item.label_credito.text = formatCurrency(utilizado);
-        $.total_geral.text = formatCurrency(resultado1 - aux);
+        $.total_geral.text = formatCurrency(resultado2);
         selecao.updateItemAt(comando.itemIndex, item);
     }
     function selecionaBoleto() {
@@ -972,6 +968,7 @@ function Controller() {
     var quantidade;
     var total_geral = 0;
     var sobrepedido = [];
+    var lista_xd = Ti.App.Properties.getString("valor_desconto_ref");
     for (var i = 0; 7 > i; i++) sobrepedido[i] = 100;
     Ti.App.Properties.getList(SOBRE_PEDIDO) && (sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO));
     var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
@@ -1005,6 +1002,11 @@ function Controller() {
             } else {
                 var porcentagem = sobrepedido[i];
             }
+            if (lista_xd > 0) {
+                bruto = lista_xd;
+                lista_xd = 0;
+            } else bruto = bruto;
+            100 > porcentagem && (porcentagem = 0);
             data.push({
                 cliente: cl_id,
                 template: "item_cliente",
@@ -1046,8 +1048,11 @@ function Controller() {
                 }
             });
         }
+        $.total_geral.text = formatCurrency(bruto);
     }
     $.listaclientes.sections[0].setItems(data);
+    var aux_calc = Ti.App.Properties.getString("valor_desconto_ref");
+    Ti.App.Properties.setString("valor_desconto_ref", 0);
     __defers["$.__views.boleto!click!selecionaBoleto"] && $.__views.boleto.addEventListener("click", selecionaBoleto);
     __defers["$.__views.__alloyId1138!click!selecionaBoleto"] && $.__views.__alloyId1138.addEventListener("click", selecionaBoleto);
     __defers["$.__views.cheque!click!selecionaCheque"] && $.__views.cheque.addEventListener("click", selecionaCheque);

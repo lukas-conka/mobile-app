@@ -598,9 +598,8 @@ function Controller() {
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
     Ti.App.Properties.getString(CURRENT_USER_ID);
     Ti.App.Properties.getString(CURRENT_EMPRESA);
-    var clienteid = Ti.App.Properties.getList(SELECTED_CLIENTS);
+    Ti.App.Properties.getList(SELECTED_CLIENTS);
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
-    "INSERT INTO tb_cliente values (" + clienteid[0] + "," + campo + "," + campo1 + "," + campo2 + "," + campo3 + "," + campo4 + "," + campo5 + "," + campo6 + "," + campo6 + "," + campo8 + "," + campo9 + "," + campo10 + "," + campo11 + "," + campo12 + ");";
     __defers["$.__views.__alloyId1072!click!grava"] && $.__views.__alloyId1072.addEventListener("click", grava);
     _.extend($, exports);
 }
