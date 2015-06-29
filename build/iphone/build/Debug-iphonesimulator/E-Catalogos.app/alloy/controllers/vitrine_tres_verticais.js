@@ -1,0 +1,1 @@
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/vitrine_tres_verticais.js

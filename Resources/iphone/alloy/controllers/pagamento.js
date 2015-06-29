@@ -985,11 +985,12 @@ function Controller() {
                 var car_quantidade = pedido.fieldByName("car_quantidade");
                 var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
                 var car_ipi = pedido.fieldByName("car_ipi");
+                var car_desc_unit = pedido.fieldByName("car_desc_unit");
                 var produto = car_quantidade * car_preco_unitario;
                 var ipi = produto * car_ipi / 100;
                 quantidade += car_quantidade;
                 bruto = bruto + produto + ipi;
-                total_geral += bruto;
+                total_geral = total_geral + bruto - car_desc_unit;
                 pedido.next();
             }
             descontoEspecial[cl_id] = 0;

@@ -325,34 +325,6 @@ function Controller() {
             section.updateItemAt(i, item);
         }
     }
-    function percenteDesconto(event) {
-        var valores = [];
-        for (var i = 0; 100 >= i; i++) valores.push(i);
-        var percenteDialog = Ti.UI.createOptionDialog({
-            options: valores,
-            destructive: 2,
-            cancel: 0,
-            title: "Selecione a porcentagem"
-        });
-        percenteDialog.show();
-        percenteDialog.addEventListener("click", function(e) {
-            event.source.text = valores[e.index] + "%";
-            event.source.bindId = valores[e.index];
-            var total_max = data[event.itemIndex].total_ref.VAL;
-            var total_desc = total_max;
-            var desc = total_desc / 100 * valores[e.index];
-            data[event.itemIndex].prd_id;
-            data[event.itemIndex].total_ref.text = formatCurrency(total_desc - desc);
-            data[event.itemIndex].total_ref.total_ref = total_desc - desc;
-            event.section.updateItemAt(event.itemIndex, data[event.itemIndex]);
-            $.total_preco.text = formatCurrency(aux_total -= desc);
-            if (0 == valores[e.index]) {
-                aux_total = valor_total;
-                $.total_preco.text = formatCurrency(valor_total);
-            }
-            Ti.App.Properties.setString("valor_desconto_ref", aux_total);
-        });
-    }
     function selecionaQuantidade(button) {
         var valores = [];
         for (var i = 0; 100 >= i; i++) valores.push(i);
@@ -396,6 +368,47 @@ function Controller() {
             removeOrder(cliente, prd_id, fk_tamanhos, fk_cores);
         }
         section.updateItemAt(e.itemIndex, item);
+    }
+    function percenteDesconto(event) {
+        var valores = [];
+        var section = $.listapedidos.sections[event.sectionIndex];
+        var item = section.getItemAt(event.itemIndex);
+        var fk_tamanhos = item.fk_tamanhos;
+        var fk_cores = item.fk_cores;
+        var itemID = selecionaClienteBotao(event.bindId, item);
+        itemID.prd_id;
+        var cliente = itemID.cliente;
+        var fk_tamanhos = itemID.fk_tamanhos;
+        var fk_cores = itemID.fk_cores;
+        var car_quantidade = itemID.car_quantidade;
+        var car_preco_unitario = itemID.car_preco_unitario;
+        var car_ipi = itemID.car_ipi;
+        for (var i = 0; 100 >= i; i++) valores.push(i);
+        var percenteDialog = Ti.UI.createOptionDialog({
+            options: valores,
+            destructive: 2,
+            cancel: 0,
+            title: "Selecione a porcentagem"
+        });
+        percenteDialog.show();
+        percenteDialog.addEventListener("click", function(e) {
+            event.source.text = valores[e.index] + "%";
+            event.source.bindId = valores[e.index];
+            var total_max = data[event.itemIndex].total_ref.VAL;
+            var total_desc = total_max;
+            var desc = total_desc / 100 * valores[e.index];
+            var prd_id = data[event.itemIndex].prd_id;
+            data[event.itemIndex].total_ref.text = formatCurrency(total_desc - desc);
+            data[event.itemIndex].total_ref.total_ref = total_desc - desc;
+            event.section.updateItemAt(event.itemIndex, data[event.itemIndex]);
+            $.total_preco.text = formatCurrency(aux_total -= desc);
+            if (0 == valores[e.index]) {
+                aux_total = valor_total;
+                $.total_preco.text = formatCurrency(valor_total);
+            }
+            Ti.App.Properties.setString("valor_desconto_ref", aux_total);
+            insertCarrinho(session, car_quantidade, car_preco_unitario, car_ipi, 0, 0, 0, 0, 0, 0, fk_usu, prd_id, fk_tamanhos, fk_cores, cliente, ep_id, desc);
+        });
     }
     function insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores) {
         var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);

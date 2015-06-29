@@ -29,17 +29,18 @@ function dbLoad(){
 }
 function createCarrinho() {
 	db = dbLoad();
-	db.execute('CREATE TABLE IF NOT EXISTS ' + getTableCarrinho() + ' (
+	db.execute('DROP TABLE tb_carrinho');
+	db.execute('CREATE TABLE tb_carrinho (
 		id INTEGER PRIMARY KEY, car_id INTEGER, car_session_id TEXT, car_quantidade INTEGER, car_preco_unitario TEXT, car_ipi TEXT, car_icms TEXT,
 		car_entrega TEXT, car_entrega_prazo TEXT, car_status INTEGER, car_data DATE, car_replica INTEGER, fk_usu INTEGER, fk_produtos INTEGER,
-		fk_tamanhos INTEGER, fk_cores INTEGER, fk_cli INTEGER, ep_id INTEGER
+		fk_tamanhos INTEGER, fk_cores INTEGER, fk_cli INTEGER, ep_id INTEGER, car_desc_unit INTEGER
 		);');
 	db.close();
 }
 
 function dropCarrinho() {
 	db = dbLoad();
-	db.execute('DROP TABLE IF EXISTS ' + getTableCarrinho());
+	// db.execute('DROP TABLE IF EXISTS ' + getTableCarrinho());
 	db.close();
 }
 
@@ -49,15 +50,27 @@ function resetCarrinho(){
 	db.close();
 }
 
+// function insertCarrinho(car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
+	// car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id) {
+	// db = dbLoad();
+	// db.execute('INSERT INTO ' + getTableCarrinho() + ' (
+		// car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
+	// car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id) 
+	// VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', 
+	// car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
+	// car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id);
+	// db.close();
+// }
+
 function insertCarrinho(car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
-	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id) {
+	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id, car_desc_unit) {
 	db = dbLoad();
 	db.execute('INSERT INTO ' + getTableCarrinho() + ' (
 		car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
-	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id) 
-	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', 
+	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id, car_desc_unit) 
+	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', 
 	car_session_id, car_quantidade, car_preco_unitario, car_ipi, car_icms, car_entrega, car_entrega_prazo, 
-	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id);
+	car_status, car_data, car_replica, fk_usu, fk_produtos, fk_tamanhos, fk_cores, fk_cli, ep_id, car_desc_unit);
 	db.close();
 }
 
@@ -68,6 +81,13 @@ function updateCarrinho(car_id, car_session_id, car_quantidade, car_entrega, car
 	Ti.API.info('query=' + query);
 	db.execute(query);
 	db.close();
+}
+
+function updateCarrinho_car_desc_unit(){
+	
+	var query = "UPDATE " + getTableCarrinho() + " SET car_session_id = '" + car_session_id + "', car_quantidade = " + car_quantidade + ", car_entrega = " + car_entrega + ", car_entrega_prazo = " + car_entrega_prazo 
+	+ ", car_status = " + car_status + ", car_data = " + car_data + ", car_replica = " + car_replica + " WHERE car_id =" + car_id;	
+	
 }
 
 function updateCarrinhoQuantidade(car_id, quantidade){
@@ -136,7 +156,7 @@ function selectallCarrinho() {
 }
 
 function processCarrinho(jsonTxt) {
-	dropCarrinho();
+	// dropCarrinho();
 	createCarrinho();
 }
 

@@ -21,7 +21,7 @@ var quantidade;
 var total_geral = 0;
 var sobrepedido = [];
 
-//Constante global que recebe o valor com o desconto de replicar.js
+//Variavel estatica global que recebe o valor com o desconto de replicar.js
 var lista_xd = Ti.App.Properties.getString('valor_desconto_ref');
 
 for (var i = 0; i < 7; i++) {
@@ -50,13 +50,14 @@ for (var i = 0; i < conjunto.length; i++) {
 			var car_quantidade = pedido.fieldByName("car_quantidade");
 			var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
 			var car_ipi = pedido.fieldByName("car_ipi");
-
+			var car_desc_unit = pedido.fieldByName("car_desc_unit");
+			
 			var produto = car_quantidade * car_preco_unitario;
 			var ipi = (produto * car_ipi) / 100;
 
 			quantidade = quantidade + car_quantidade;
 			bruto = bruto + produto + ipi;
-			total_geral = total_geral + bruto;
+			total_geral = total_geral + bruto - car_desc_unit;
 			pedido.next();
 		}
 		
@@ -286,7 +287,7 @@ function calculoEspecial(comando, cliente, desconto) {
 	calculoParcela(comando, cliente);
 }
 
-//Constante global que vem de replciar.js
+//Variavel estatica global que vem de replciar.js
 var aux_calc = Ti.App.Properties.getString('valor_desconto_ref');
 
 function calculoParcela(comando, cliente) {
