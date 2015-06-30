@@ -968,8 +968,10 @@ function Controller() {
     var sobrepedido = [];
     var desconto_unit = 0;
     Ti.App.Properties.getString("valor_desconto_ref");
-    for (var i = 0; 7 > i; i++) sobrepedido[i] = 100;
-    Ti.App.Properties.getList(SOBRE_PEDIDO) && (sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO));
+    if (Ti.App.Properties.getList(SOBRE_PEDIDO)) {
+        sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO);
+        alert(sobrepedido);
+    }
     var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
     for (var i = 0; i < conjunto.length; i++) {
         var cliente = consultaCliente(conjunto[i]);

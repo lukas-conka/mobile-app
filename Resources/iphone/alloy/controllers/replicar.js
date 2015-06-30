@@ -413,10 +413,15 @@ function Controller() {
     }
     function insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores) {
         var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+        alert("InsertOrder" + prd_id);
         if (0 != carrinho[0]) {
             Ti.API.info("atualiza");
             updateCarrinho(carrinho[0], session, car_quantidade, 0, 0, 0, 0, 0);
-        } else insertCarrinho(session, car_quantidade, car_preco_unitario, car_ipi, 0, 0, 0, 0, 0, 0, fk_usu, prd_id, fk_tamanhos, fk_cores, cliente, ep_id);
+            alert("updateCarrinho" + prd_id);
+        } else {
+            insertCarrinho(session, car_quantidade, car_preco_unitario, car_ipi, 0, 0, 0, 0, 0, 0, fk_usu, prd_id, fk_tamanhos, fk_cores, cliente, ep_id);
+            alert("insertCarrinho" + prd_id);
+        }
         Ti.API.info("add" + carrinho);
         Ti.API.info("prd_id" + prd_id);
         Ti.API.info("fk_tamanhos" + fk_tamanhos);
@@ -688,30 +693,30 @@ function Controller() {
             __alloyId1232.push(__alloyId1249);
             var __alloyId1251 = {
                 type: "Ti.UI.View",
-                bindId: "view_cliente2",
+                bindId: "view_cliente4",
                 childTemplates: function() {
                     var __alloyId1252 = [];
                     var __alloyId1254 = {
                         type: "Ti.UI.ImageView",
-                        bindId: "seleciona_cliente2",
+                        bindId: "seleciona_cliente4",
                         properties: {
                             touchEnabled: "false",
                             left: "1%",
                             width: "40%",
                             image: "/images/checkbox-falso.png",
-                            bindId: "seleciona_cliente2"
+                            bindId: "seleciona_cliente4"
                         }
                     };
                     __alloyId1252.push(__alloyId1254);
                     var __alloyId1256 = {
                         type: "Ti.UI.Label",
-                        bindId: "label_cliente2",
+                        bindId: "label_cliente4",
                         properties: {
                             touchEnabled: "false",
                             textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                             right: "5%",
                             color: "black",
-                            bindId: "label_cliente2"
+                            bindId: "label_cliente4"
                         }
                     };
                     __alloyId1252.push(__alloyId1256);
@@ -720,7 +725,7 @@ function Controller() {
                 properties: {
                     width: "8%",
                     height: "100%",
-                    bindId: "view_cliente2"
+                    bindId: "view_cliente4"
                 }
             };
             __alloyId1232.push(__alloyId1251);
@@ -767,10 +772,51 @@ function Controller() {
             __alloyId1232.push(__alloyId1258);
             var __alloyId1265 = {
                 type: "Ti.UI.View",
-                bindId: "view_cliente3",
+                bindId: "view_cliente2",
                 childTemplates: function() {
                     var __alloyId1266 = [];
                     var __alloyId1268 = {
+                        type: "Ti.UI.ImageView",
+                        bindId: "seleciona_cliente2",
+                        properties: {
+                            touchEnabled: "false",
+                            left: "1%",
+                            width: "40%",
+                            image: "/images/checkbox-falso.png",
+                            bindId: "seleciona_cliente2"
+                        }
+                    };
+                    __alloyId1266.push(__alloyId1268);
+                    var __alloyId1270 = {
+                        type: "Ti.UI.Label",
+                        bindId: "label_cliente2",
+                        properties: {
+                            touchEnabled: "false",
+                            textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+                            right: "5%",
+                            color: "black",
+                            bindId: "label_cliente2"
+                        }
+                    };
+                    __alloyId1266.push(__alloyId1270);
+                    return __alloyId1266;
+                }(),
+                properties: {
+                    width: "8%",
+                    height: "100%",
+                    bindId: "view_cliente2"
+                },
+                events: {
+                    click: selecionaItem
+                }
+            };
+            __alloyId1232.push(__alloyId1265);
+            var __alloyId1272 = {
+                type: "Ti.UI.View",
+                bindId: "view_cliente3",
+                childTemplates: function() {
+                    var __alloyId1273 = [];
+                    var __alloyId1275 = {
                         type: "Ti.UI.ImageView",
                         bindId: "seleciona_cliente3",
                         properties: {
@@ -781,8 +827,8 @@ function Controller() {
                             bindId: "seleciona_cliente3"
                         }
                     };
-                    __alloyId1266.push(__alloyId1268);
-                    var __alloyId1270 = {
+                    __alloyId1273.push(__alloyId1275);
+                    var __alloyId1277 = {
                         type: "Ti.UI.Label",
                         bindId: "label_cliente3",
                         properties: {
@@ -793,54 +839,13 @@ function Controller() {
                             bindId: "label_cliente3"
                         }
                     };
-                    __alloyId1266.push(__alloyId1270);
-                    return __alloyId1266;
-                }(),
-                properties: {
-                    width: "8%",
-                    height: "100%",
-                    bindId: "view_cliente3"
-                },
-                events: {
-                    click: selecionaItem
-                }
-            };
-            __alloyId1232.push(__alloyId1265);
-            var __alloyId1272 = {
-                type: "Ti.UI.View",
-                bindId: "view_cliente4",
-                childTemplates: function() {
-                    var __alloyId1273 = [];
-                    var __alloyId1275 = {
-                        type: "Ti.UI.ImageView",
-                        bindId: "seleciona_cliente4",
-                        properties: {
-                            touchEnabled: "false",
-                            left: "1%",
-                            width: "40%",
-                            image: "/images/checkbox-falso.png",
-                            bindId: "seleciona_cliente4"
-                        }
-                    };
-                    __alloyId1273.push(__alloyId1275);
-                    var __alloyId1277 = {
-                        type: "Ti.UI.Label",
-                        bindId: "label_cliente4",
-                        properties: {
-                            touchEnabled: "false",
-                            textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-                            right: "5%",
-                            color: "black",
-                            bindId: "label_cliente4"
-                        }
-                    };
                     __alloyId1273.push(__alloyId1277);
                     return __alloyId1273;
                 }(),
                 properties: {
                     width: "8%",
                     height: "100%",
-                    bindId: "view_cliente4"
+                    bindId: "view_cliente3"
                 },
                 events: {
                     click: selecionaItem
@@ -1057,7 +1062,7 @@ function Controller() {
         id: "__alloyId1304"
     });
     $.__views.__alloyId1302.add($.__views.__alloyId1304);
-    $.__views.botao_cliente1 = Ti.UI.createButton({
+    $.__views.botao_cliente4 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -1071,10 +1076,29 @@ function Controller() {
         width: "6%",
         bottom: "1%",
         title: "BASE",
+        id: "botao_cliente4",
+        cliente: "4"
+    });
+    $.__views.__alloyId1302.add($.__views.botao_cliente4);
+    $.__views.botao_cliente1 = Ti.UI.createButton({
+        backgroundGradient: {
+            type: "linear",
+            colors: [ "#2c8f8e", "#206764" ]
+        },
+        font: {
+            fontSize: 11
+        },
+        borderRadius: "5",
+        color: "#ffffff",
+        left: "2%",
+        width: "6%",
+        bottom: "1%",
+        title: "0%",
         id: "botao_cliente1",
-        cliente: "2"
+        cliente: "1"
     });
     $.__views.__alloyId1302.add($.__views.botao_cliente1);
+    selecionaQuantidade ? $.__views.botao_cliente1.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente1!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente2 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
@@ -1090,7 +1114,7 @@ function Controller() {
         bottom: "1%",
         title: "0%",
         id: "botao_cliente2",
-        cliente: "1"
+        cliente: "2"
     });
     $.__views.__alloyId1302.add($.__views.botao_cliente2);
     selecionaQuantidade ? $.__views.botao_cliente2.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente2!click!selecionaQuantidade"] = true;
@@ -1113,25 +1137,6 @@ function Controller() {
     });
     $.__views.__alloyId1302.add($.__views.botao_cliente3);
     selecionaQuantidade ? $.__views.botao_cliente3.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente3!click!selecionaQuantidade"] = true;
-    $.__views.botao_cliente4 = Ti.UI.createButton({
-        backgroundGradient: {
-            type: "linear",
-            colors: [ "#2c8f8e", "#206764" ]
-        },
-        font: {
-            fontSize: 11
-        },
-        borderRadius: "5",
-        color: "#ffffff",
-        left: "2%",
-        width: "6%",
-        bottom: "1%",
-        title: "0%",
-        id: "botao_cliente4",
-        cliente: "4"
-    });
-    $.__views.__alloyId1302.add($.__views.botao_cliente4);
-    selecionaQuantidade ? $.__views.botao_cliente4.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente4!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente5 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
@@ -1262,9 +1267,9 @@ function Controller() {
             count++;
         }
     }
+    __defers["$.__views.botao_cliente1!click!selecionaQuantidade"] && $.__views.botao_cliente1.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente2!click!selecionaQuantidade"] && $.__views.botao_cliente2.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente3!click!selecionaQuantidade"] && $.__views.botao_cliente3.addEventListener("click", selecionaQuantidade);
-    __defers["$.__views.botao_cliente4!click!selecionaQuantidade"] && $.__views.botao_cliente4.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente5!click!selecionaQuantidade"] && $.__views.botao_cliente5.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente6!click!selecionaQuantidade"] && $.__views.botao_cliente6.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente7!click!selecionaQuantidade"] && $.__views.botao_cliente7.addEventListener("click", selecionaQuantidade);

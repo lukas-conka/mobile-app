@@ -41,6 +41,7 @@ function insertCarrinho(car_session_id, car_quantidade, car_preco_unitario, car_
 }
 
 function updateCarrinho(car_id, car_session_id, car_quantidade, car_entrega, car_entrega_prazo, car_status, car_data, car_replica) {
+    alert(car_id);
     db = dbLoad();
     var query = "UPDATE " + getTableCarrinho() + " SET car_session_id = '" + car_session_id + "', car_quantidade = " + car_quantidade + ", car_entrega = " + car_entrega + ", car_entrega_prazo = " + car_entrega_prazo + ", car_status = " + car_status + ", car_data = " + car_data + ", car_replica = " + car_replica + " WHERE car_id =" + car_id;
     Ti.API.info("query=" + query);
