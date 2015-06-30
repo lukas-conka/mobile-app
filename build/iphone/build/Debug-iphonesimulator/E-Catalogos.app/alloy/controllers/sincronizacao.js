@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/sincronizacao.js
+/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/controllers/sincronizacao.js

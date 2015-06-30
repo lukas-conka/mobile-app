@@ -205,6 +205,22 @@
 	bottom: "1%"
 }
 
+".botao_porcentagem_base":{
+	backgroundGradient: {
+		type: "linear",
+		colors: ["#2c8f8e", "#206764"]
+	},
+	font:{
+		fontSize: 11
+	},
+	borderRadius: "5",
+	color: "#ffffff",
+	left: "2%",
+	width: "6%",	
+	bottom: "1%"
+	
+}
+
 ".botao_enviar":{
 	backgroundGradient: {
 		type: "linear",

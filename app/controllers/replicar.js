@@ -422,6 +422,10 @@ function selecionaQuantidade(button){
 	});
 }
 
+function teste(){
+	alert("teste");
+}
+
 function selecionaItem(e) {
 
 	var section = $.listapedidos.sections[e.sectionIndex];

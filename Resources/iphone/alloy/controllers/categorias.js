@@ -127,39 +127,39 @@ function Controller() {
         id: "lateral"
     });
     $.__views.categorias.add($.__views.lateral);
-    $.__views.__alloyId246 = Ti.UI.createView({
+    $.__views.__alloyId241 = Ti.UI.createView({
         backgroundColor: "white",
         width: "88%",
         height: "100%",
         left: 0,
-        id: "__alloyId246"
+        id: "__alloyId241"
     });
-    $.__views.lateral.add($.__views.__alloyId246);
+    $.__views.lateral.add($.__views.__alloyId241);
     $.__views.logoEmpresa = Ti.UI.createImageView({
         top: 5,
         left: 5,
         width: "98%",
         id: "logoEmpresa"
     });
-    $.__views.__alloyId246.add($.__views.logoEmpresa);
+    $.__views.__alloyId241.add($.__views.logoEmpresa);
     goToDestacadas ? $.__views.logoEmpresa.addEventListener("click", goToDestacadas) : __defers["$.__views.logoEmpresa!click!goToDestacadas"] = true;
-    $.__views.__alloyId247 = Ti.UI.createButton({
+    $.__views.__alloyId242 = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         color: "#000000",
         height: "5%",
         top: "15%",
         width: "100%",
         title: "Categorias",
-        id: "__alloyId247"
+        id: "__alloyId242"
     });
-    $.__views.__alloyId246.add($.__views.__alloyId247);
-    var __alloyId248 = {};
-    var __alloyId251 = [];
-    var __alloyId253 = {
+    $.__views.__alloyId241.add($.__views.__alloyId242);
+    var __alloyId243 = {};
+    var __alloyId246 = [];
+    var __alloyId248 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId254 = [];
-            var __alloyId256 = {
+            var __alloyId249 = [];
+            var __alloyId251 = {
                 type: "Ti.UI.Label",
                 bindId: "btnmenu",
                 properties: {
@@ -170,8 +170,8 @@ function Controller() {
                     bindId: "btnmenu"
                 }
             };
-            __alloyId254.push(__alloyId256);
-            return __alloyId254;
+            __alloyId249.push(__alloyId251);
+            return __alloyId249;
         }(),
         properties: {
             backgroundColor: "#3f3a35",
@@ -185,21 +185,21 @@ function Controller() {
             click: selecionaCategoria
         }
     };
-    __alloyId251.push(__alloyId253);
-    var __alloyId250 = {
+    __alloyId246.push(__alloyId248);
+    var __alloyId245 = {
         properties: {
             height: "112dp",
             name: "menuTemplateSimple"
         },
-        childTemplates: __alloyId251
+        childTemplates: __alloyId246
     };
-    __alloyId248["menuTemplateSimple"] = __alloyId250;
-    var __alloyId259 = [];
-    var __alloyId261 = {
+    __alloyId243["menuTemplateSimple"] = __alloyId245;
+    var __alloyId254 = [];
+    var __alloyId256 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId262 = [];
-            var __alloyId264 = {
+            var __alloyId257 = [];
+            var __alloyId259 = {
                 type: "Ti.UI.Label",
                 bindId: "btnmenuA",
                 properties: {
@@ -211,8 +211,8 @@ function Controller() {
                     bindId: "btnmenuA"
                 }
             };
-            __alloyId262.push(__alloyId264);
-            var __alloyId266 = {
+            __alloyId257.push(__alloyId259);
+            var __alloyId261 = {
                 type: "Ti.UI.Label",
                 bindId: "btnmenuB",
                 properties: {
@@ -224,8 +224,8 @@ function Controller() {
                     bindId: "btnmenuB"
                 }
             };
-            __alloyId262.push(__alloyId266);
-            return __alloyId262;
+            __alloyId257.push(__alloyId261);
+            return __alloyId257;
         }(),
         properties: {
             backgroundColor: "#3f3a35",
@@ -240,20 +240,20 @@ function Controller() {
             click: selecionaCategoria
         }
     };
-    __alloyId259.push(__alloyId261);
-    var __alloyId258 = {
+    __alloyId254.push(__alloyId256);
+    var __alloyId253 = {
         properties: {
             height: "112dp",
             name: "menuTemplateDouble"
         },
-        childTemplates: __alloyId259
+        childTemplates: __alloyId254
     };
-    __alloyId248["menuTemplateDouble"] = __alloyId258;
-    $.__views.__alloyId267 = Ti.UI.createListSection({
-        id: "__alloyId267"
+    __alloyId243["menuTemplateDouble"] = __alloyId253;
+    $.__views.__alloyId262 = Ti.UI.createListSection({
+        id: "__alloyId262"
     });
-    var __alloyId269 = [];
-    __alloyId269.push($.__views.__alloyId267);
+    var __alloyId264 = [];
+    __alloyId264.push($.__views.__alloyId262);
     $.__views.listaCategorias = Ti.UI.createListView({
         backgroundColor: "#d0e2e6",
         borderColor: "#008382",
@@ -261,20 +261,20 @@ function Controller() {
         height: "80%",
         top: "20%",
         width: "100%",
-        sections: __alloyId269,
-        templates: __alloyId248,
+        sections: __alloyId264,
+        templates: __alloyId243,
         defaultItemTemplate: "menuTemplateSimple",
         id: "listaCategorias"
     });
-    $.__views.__alloyId246.add($.__views.listaCategorias);
-    $.__views.__alloyId270 = Ti.UI.createImageView({
+    $.__views.__alloyId241.add($.__views.listaCategorias);
+    $.__views.__alloyId265 = Ti.UI.createImageView({
         image: "/images/setinhaindo.png",
         width: "12%",
         right: 0,
-        id: "__alloyId270"
+        id: "__alloyId265"
     });
-    $.__views.lateral.add($.__views.__alloyId270);
-    showMenu ? $.__views.__alloyId270.addEventListener("click", showMenu) : __defers["$.__views.__alloyId270!click!showMenu"] = true;
+    $.__views.lateral.add($.__views.__alloyId265);
+    showMenu ? $.__views.__alloyId265.addEventListener("click", showMenu) : __defers["$.__views.__alloyId265!click!showMenu"] = true;
     $.__views.corpo = Ti.UI.createView({
         height: "98%",
         top: "1%",
@@ -332,7 +332,7 @@ function Controller() {
     $.listaCategorias.sections[0].setItems(data);
     goToDestacadas();
     __defers["$.__views.logoEmpresa!click!goToDestacadas"] && $.__views.logoEmpresa.addEventListener("click", goToDestacadas);
-    __defers["$.__views.__alloyId270!click!showMenu"] && $.__views.__alloyId270.addEventListener("click", showMenu);
+    __defers["$.__views.__alloyId265!click!showMenu"] && $.__views.__alloyId265.addEventListener("click", showMenu);
     _.extend($, exports);
 }
 

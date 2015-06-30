@@ -49,13 +49,13 @@ function Controller() {
         id: "novo_cliente"
     });
     $.__views.novo_cliente && $.addTopLevelView($.__views.novo_cliente);
-    var __alloyId1028 = {};
-    var __alloyId1031 = [];
-    var __alloyId1033 = {
+    var __alloyId1023 = {};
+    var __alloyId1026 = [];
+    var __alloyId1028 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId1034 = [];
-            var __alloyId1036 = {
+            var __alloyId1029 = [];
+            var __alloyId1031 = {
                 type: "Ti.UI.Label",
                 bindId: "btnmenu",
                 properties: {
@@ -66,8 +66,8 @@ function Controller() {
                     bindId: "btnmenu"
                 }
             };
-            __alloyId1034.push(__alloyId1036);
-            return __alloyId1034;
+            __alloyId1029.push(__alloyId1031);
+            return __alloyId1029;
         }(),
         properties: {
             backgroundColor: "#3f3a35",
@@ -81,189 +81,189 @@ function Controller() {
             click: menuClick
         }
     };
-    __alloyId1031.push(__alloyId1033);
-    var __alloyId1030 = {
+    __alloyId1026.push(__alloyId1028);
+    var __alloyId1025 = {
         properties: {
             height: "112dp",
             name: "menuTemplate"
         },
-        childTemplates: __alloyId1031
+        childTemplates: __alloyId1026
     };
-    __alloyId1028["menuTemplate"] = __alloyId1030;
-    var __alloyId1039 = [];
-    $.__views.__alloyId1040 = {
+    __alloyId1023["menuTemplate"] = __alloyId1025;
+    var __alloyId1034 = [];
+    $.__views.__alloyId1035 = {
         btnmenu: {
             text: "CNPJ/\n RAZÃO SOCIAL/\n ENDEREÇO LOJA"
+        },
+        properties: {
+            id: "__alloyId1035"
+        }
+    };
+    __alloyId1034.push($.__views.__alloyId1035);
+    $.__views.__alloyId1036 = {
+        btnmenu: {
+            text: "ANÁLISE DE \n CRÉDITO"
+        },
+        properties: {
+            id: "__alloyId1036"
+        }
+    };
+    __alloyId1034.push($.__views.__alloyId1036);
+    $.__views.__alloyId1037 = {
+        btnmenu: {
+            text: "IR AO\n CATÁLOGO"
+        },
+        properties: {
+            id: "__alloyId1037"
+        }
+    };
+    __alloyId1034.push($.__views.__alloyId1037);
+    $.__views.__alloyId1038 = {
+        btnmenu: {
+            text: "PEDIDOS"
+        },
+        properties: {
+            id: "__alloyId1038"
+        }
+    };
+    __alloyId1034.push($.__views.__alloyId1038);
+    $.__views.__alloyId1039 = {
+        btnmenu: {
+            text: "TRANSPORTADORA"
+        },
+        properties: {
+            id: "__alloyId1039"
+        }
+    };
+    __alloyId1034.push($.__views.__alloyId1039);
+    $.__views.__alloyId1040 = {
+        btnmenu: {
+            text: "NOVO CLIENTE"
         },
         properties: {
             id: "__alloyId1040"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1040);
+    __alloyId1034.push($.__views.__alloyId1040);
     $.__views.__alloyId1041 = {
         btnmenu: {
-            text: "ANÁLISE DE \n CRÉDITO"
+            text: "FUNÇÕES"
         },
         properties: {
             id: "__alloyId1041"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1041);
+    __alloyId1034.push($.__views.__alloyId1041);
     $.__views.__alloyId1042 = {
         btnmenu: {
-            text: "IR AO\n CATÁLOGO"
+            text: "EMAIL"
         },
         properties: {
             id: "__alloyId1042"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1042);
+    __alloyId1034.push($.__views.__alloyId1042);
     $.__views.__alloyId1043 = {
         btnmenu: {
-            text: "PEDIDOS"
+            text: "VOLTAR PARA TELA INICIAL"
         },
         properties: {
             id: "__alloyId1043"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1043);
+    __alloyId1034.push($.__views.__alloyId1043);
     $.__views.__alloyId1044 = {
         btnmenu: {
-            text: "TRANSPORTADORA"
+            text: "TROCAR\n MARCA"
         },
         properties: {
             id: "__alloyId1044"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1044);
+    __alloyId1034.push($.__views.__alloyId1044);
     $.__views.__alloyId1045 = {
         btnmenu: {
-            text: "NOVO CLIENTE"
+            text: "SAIR"
         },
         properties: {
             id: "__alloyId1045"
         }
     };
-    __alloyId1039.push($.__views.__alloyId1045);
-    $.__views.__alloyId1046 = {
-        btnmenu: {
-            text: "FUNÇÕES"
-        },
-        properties: {
-            id: "__alloyId1046"
-        }
-    };
-    __alloyId1039.push($.__views.__alloyId1046);
-    $.__views.__alloyId1047 = {
-        btnmenu: {
-            text: "EMAIL"
-        },
-        properties: {
-            id: "__alloyId1047"
-        }
-    };
-    __alloyId1039.push($.__views.__alloyId1047);
-    $.__views.__alloyId1048 = {
-        btnmenu: {
-            text: "VOLTAR PARA TELA INICIAL"
-        },
-        properties: {
-            id: "__alloyId1048"
-        }
-    };
-    __alloyId1039.push($.__views.__alloyId1048);
-    $.__views.__alloyId1049 = {
-        btnmenu: {
-            text: "TROCAR\n MARCA"
-        },
-        properties: {
-            id: "__alloyId1049"
-        }
-    };
-    __alloyId1039.push($.__views.__alloyId1049);
-    $.__views.__alloyId1050 = {
-        btnmenu: {
-            text: "SAIR"
-        },
-        properties: {
-            id: "__alloyId1050"
-        }
-    };
-    __alloyId1039.push($.__views.__alloyId1050);
-    $.__views.__alloyId1037 = Ti.UI.createListSection({
-        id: "__alloyId1037"
+    __alloyId1034.push($.__views.__alloyId1045);
+    $.__views.__alloyId1032 = Ti.UI.createListSection({
+        id: "__alloyId1032"
     });
-    $.__views.__alloyId1037.items = __alloyId1039;
-    var __alloyId1051 = [];
-    __alloyId1051.push($.__views.__alloyId1037);
-    $.__views.__alloyId1027 = Ti.UI.createListView({
+    $.__views.__alloyId1032.items = __alloyId1034;
+    var __alloyId1046 = [];
+    __alloyId1046.push($.__views.__alloyId1032);
+    $.__views.__alloyId1022 = Ti.UI.createListView({
         backgroundColor: "#ebf7f6",
         height: "100%",
         left: "0",
         width: "15%",
-        sections: __alloyId1051,
-        templates: __alloyId1028,
+        sections: __alloyId1046,
+        templates: __alloyId1023,
         defaultItemTemplate: "menuTemplate",
-        id: "__alloyId1027"
+        id: "__alloyId1022"
     });
-    $.__views.novo_cliente.add($.__views.__alloyId1027);
-    $.__views.__alloyId1052 = Ti.UI.createView({
+    $.__views.novo_cliente.add($.__views.__alloyId1022);
+    $.__views.__alloyId1047 = Ti.UI.createView({
         height: "100%",
         right: "0",
         width: "85%",
-        id: "__alloyId1052"
+        id: "__alloyId1047"
     });
-    $.__views.novo_cliente.add($.__views.__alloyId1052);
-    $.__views.__alloyId1053 = Ti.UI.createView({
+    $.__views.novo_cliente.add($.__views.__alloyId1047);
+    $.__views.__alloyId1048 = Ti.UI.createView({
         height: "90",
         top: "0",
         width: "98%",
-        id: "__alloyId1053"
+        id: "__alloyId1048"
     });
-    $.__views.__alloyId1052.add($.__views.__alloyId1053);
-    $.__views.__alloyId1054 = Ti.UI.createView({
+    $.__views.__alloyId1047.add($.__views.__alloyId1048);
+    $.__views.__alloyId1049 = Ti.UI.createView({
         height: "90%",
         left: "0",
         width: "15%",
-        id: "__alloyId1054"
+        id: "__alloyId1049"
     });
-    $.__views.__alloyId1053.add($.__views.__alloyId1054);
+    $.__views.__alloyId1048.add($.__views.__alloyId1049);
     $.__views.logoEmpresa = Ti.UI.createImageView({
         image: "/images/logo_rodape.jpg",
         id: "logoEmpresa"
     });
-    $.__views.__alloyId1054.add($.__views.logoEmpresa);
-    $.__views.__alloyId1055 = Ti.UI.createButton({
+    $.__views.__alloyId1049.add($.__views.logoEmpresa);
+    $.__views.__alloyId1050 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4e8789",
         height: "90",
         left: "15%",
         width: "70%",
         title: "NOVO CLIENTE",
-        id: "__alloyId1055"
+        id: "__alloyId1050"
     });
-    $.__views.__alloyId1053.add($.__views.__alloyId1055);
-    $.__views.__alloyId1056 = Ti.UI.createView({
+    $.__views.__alloyId1048.add($.__views.__alloyId1050);
+    $.__views.__alloyId1051 = Ti.UI.createView({
         height: "90",
         left: "85%",
         width: "15%",
-        id: "__alloyId1056"
+        id: "__alloyId1051"
     });
-    $.__views.__alloyId1053.add($.__views.__alloyId1056);
-    $.__views.__alloyId1057 = Ti.UI.createImageView({
+    $.__views.__alloyId1048.add($.__views.__alloyId1051);
+    $.__views.__alloyId1052 = Ti.UI.createImageView({
         image: "/images/logo_rodape.jpg",
-        id: "__alloyId1057"
+        id: "__alloyId1052"
     });
-    $.__views.__alloyId1056.add($.__views.__alloyId1057);
-    $.__views.__alloyId1058 = Ti.UI.createView({
+    $.__views.__alloyId1051.add($.__views.__alloyId1052);
+    $.__views.__alloyId1053 = Ti.UI.createView({
         borderColor: "#4e8789",
         borderWidth: "4",
         top: "90",
         width: "98%",
-        id: "__alloyId1058"
+        id: "__alloyId1053"
     });
-    $.__views.__alloyId1052.add($.__views.__alloyId1058);
-    $.__views.__alloyId1059 = Ti.UI.createButton({
+    $.__views.__alloyId1047.add($.__views.__alloyId1053);
+    $.__views.__alloyId1054 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -271,9 +271,9 @@ function Controller() {
         top: "0",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "RAZÃO SOCIAL",
-        id: "__alloyId1059"
+        id: "__alloyId1054"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1059);
+    $.__views.__alloyId1053.add($.__views.__alloyId1054);
     $.__views.idCampoA = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -286,8 +286,8 @@ function Controller() {
         id: "idCampoA",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoA);
-    $.__views.__alloyId1060 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoA);
+    $.__views.__alloyId1055 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -295,9 +295,9 @@ function Controller() {
         top: "95",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "CNPJ",
-        id: "__alloyId1060"
+        id: "__alloyId1055"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1060);
+    $.__views.__alloyId1053.add($.__views.__alloyId1055);
     $.__views.idCampoB = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -310,8 +310,8 @@ function Controller() {
         id: "idCampoB",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoB);
-    $.__views.__alloyId1061 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoB);
+    $.__views.__alloyId1056 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -319,9 +319,9 @@ function Controller() {
         top: "95",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "INSCRIÇÃO ESTADUAL",
-        id: "__alloyId1061"
+        id: "__alloyId1056"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1061);
+    $.__views.__alloyId1053.add($.__views.__alloyId1056);
     $.__views.idCampoC = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -334,8 +334,8 @@ function Controller() {
         id: "idCampoC",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoC);
-    $.__views.__alloyId1062 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoC);
+    $.__views.__alloyId1057 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -343,9 +343,9 @@ function Controller() {
         top: "190",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "ENDEREÇO",
-        id: "__alloyId1062"
+        id: "__alloyId1057"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1062);
+    $.__views.__alloyId1053.add($.__views.__alloyId1057);
     $.__views.idCampoD = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -358,8 +358,8 @@ function Controller() {
         id: "idCampoD",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoD);
-    $.__views.__alloyId1063 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoD);
+    $.__views.__alloyId1058 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -367,9 +367,9 @@ function Controller() {
         top: "190",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "NÚMERO",
-        id: "__alloyId1063"
+        id: "__alloyId1058"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1063);
+    $.__views.__alloyId1053.add($.__views.__alloyId1058);
     $.__views.idCampoE = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -382,8 +382,8 @@ function Controller() {
         id: "idCampoE",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoE);
-    $.__views.__alloyId1064 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoE);
+    $.__views.__alloyId1059 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -391,9 +391,9 @@ function Controller() {
         top: "285",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "COMPLEMENTO",
-        id: "__alloyId1064"
+        id: "__alloyId1059"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1064);
+    $.__views.__alloyId1053.add($.__views.__alloyId1059);
     $.__views.idCampoF = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -406,8 +406,8 @@ function Controller() {
         id: "idCampoF",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoF);
-    $.__views.__alloyId1065 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoF);
+    $.__views.__alloyId1060 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -415,9 +415,9 @@ function Controller() {
         top: "285",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "CEP",
-        id: "__alloyId1065"
+        id: "__alloyId1060"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1065);
+    $.__views.__alloyId1053.add($.__views.__alloyId1060);
     $.__views.idCampoG = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -430,8 +430,8 @@ function Controller() {
         id: "idCampoG",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoG);
-    $.__views.__alloyId1066 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoG);
+    $.__views.__alloyId1061 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -439,9 +439,9 @@ function Controller() {
         top: "380",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "CIDADE",
-        id: "__alloyId1066"
+        id: "__alloyId1061"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1066);
+    $.__views.__alloyId1053.add($.__views.__alloyId1061);
     $.__views.idCampoH = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -454,8 +454,8 @@ function Controller() {
         id: "idCampoH",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoH);
-    $.__views.__alloyId1067 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoH);
+    $.__views.__alloyId1062 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -463,9 +463,9 @@ function Controller() {
         top: "380",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "UF",
-        id: "__alloyId1067"
+        id: "__alloyId1062"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1067);
+    $.__views.__alloyId1053.add($.__views.__alloyId1062);
     $.__views.idCampoI = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -478,8 +478,8 @@ function Controller() {
         id: "idCampoI",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoI);
-    $.__views.__alloyId1068 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoI);
+    $.__views.__alloyId1063 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -487,9 +487,9 @@ function Controller() {
         top: "475",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "E-MAIL",
-        id: "__alloyId1068"
+        id: "__alloyId1063"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1068);
+    $.__views.__alloyId1053.add($.__views.__alloyId1063);
     $.__views.idCampoJ = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -502,8 +502,8 @@ function Controller() {
         id: "idCampoJ",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoJ);
-    $.__views.__alloyId1069 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoJ);
+    $.__views.__alloyId1064 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -511,9 +511,9 @@ function Controller() {
         top: "475",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "TELEFONE",
-        id: "__alloyId1069"
+        id: "__alloyId1064"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1069);
+    $.__views.__alloyId1053.add($.__views.__alloyId1064);
     $.__views.idCampoK = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -526,8 +526,8 @@ function Controller() {
         id: "idCampoK",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoK);
-    $.__views.__alloyId1070 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoK);
+    $.__views.__alloyId1065 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -535,9 +535,9 @@ function Controller() {
         top: "570",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "COMPRADOR",
-        id: "__alloyId1070"
+        id: "__alloyId1065"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1070);
+    $.__views.__alloyId1053.add($.__views.__alloyId1065);
     $.__views.idCampoL = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -550,8 +550,8 @@ function Controller() {
         id: "idCampoL",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoL);
-    $.__views.__alloyId1071 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoL);
+    $.__views.__alloyId1066 = Ti.UI.createButton({
         backgroundColor: "#FFFFFF",
         color: "#4E8789",
         height: "50",
@@ -559,9 +559,9 @@ function Controller() {
         top: "570",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         title: "CARGO",
-        id: "__alloyId1071"
+        id: "__alloyId1066"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1071);
+    $.__views.__alloyId1053.add($.__views.__alloyId1066);
     $.__views.idCampoM = Ti.UI.createTextField({
         borderColor: "#6EA9A0",
         borderWidth: "4",
@@ -574,8 +574,8 @@ function Controller() {
         id: "idCampoM",
         hintText: ""
     });
-    $.__views.__alloyId1058.add($.__views.idCampoM);
-    $.__views.__alloyId1072 = Ti.UI.createButton({
+    $.__views.__alloyId1053.add($.__views.idCampoM);
+    $.__views.__alloyId1067 = Ti.UI.createButton({
         backgroundColor: "#216a67",
         bottom: "10",
         height: "50",
@@ -584,10 +584,10 @@ function Controller() {
         color: "white",
         borderRadius: "5",
         title: "Cadastrar",
-        id: "__alloyId1072"
+        id: "__alloyId1067"
     });
-    $.__views.__alloyId1058.add($.__views.__alloyId1072);
-    grava ? $.__views.__alloyId1072.addEventListener("click", grava) : __defers["$.__views.__alloyId1072!click!grava"] = true;
+    $.__views.__alloyId1053.add($.__views.__alloyId1067);
+    grava ? $.__views.__alloyId1067.addEventListener("click", grava) : __defers["$.__views.__alloyId1067!click!grava"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};
@@ -600,7 +600,7 @@ function Controller() {
     Ti.App.Properties.getString(CURRENT_EMPRESA);
     Ti.App.Properties.getList(SELECTED_CLIENTS);
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
-    __defers["$.__views.__alloyId1072!click!grava"] && $.__views.__alloyId1072.addEventListener("click", grava);
+    __defers["$.__views.__alloyId1067!click!grava"] && $.__views.__alloyId1067.addEventListener("click", grava);
     _.extend($, exports);
 }
 

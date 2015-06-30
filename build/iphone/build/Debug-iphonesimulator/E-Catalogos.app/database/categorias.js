@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/categorias.js
+/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/database/categorias.js

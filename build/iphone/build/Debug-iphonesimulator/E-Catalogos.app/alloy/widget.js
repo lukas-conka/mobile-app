@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/widget.js
+/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/widget.js

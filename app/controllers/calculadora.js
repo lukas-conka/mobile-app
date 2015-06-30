@@ -717,7 +717,6 @@ function insertOrder(fk_tamanhos, fk_cores, car_quantidade, car_preco_unitario, 
 		var estoque = carrinho[2];
 		var quantidade = 0;
 		if (car_quantidade != 0)
-			quantidade = quantidade_atual + parseInt(car_quantidade);
 		if (quantidade > estoque)
 			quantidade = estoque;
 		updateCarrinho(car_id, session, quantidade, 0, 0, 0, 0, 0);
@@ -968,3 +967,12 @@ function botaoProximo() {
 	}
 	renderProduct();
 }
+$.referencia.font = {fontSize: 15};
+$.nome.font = {fontSize: 15};
+$.colecao.font = {fontSize: 15};
+$.informacoes.font = {fontSize: 15};
+$.composicao.font = {fontSize: 15};
+$.preco.font = {fontSize: 15};
+$.prazo.font = {fontSize: 15};
+$.descricao.font = {fontSize: 15};
+$.codbarras.font = {fontSize: 15};

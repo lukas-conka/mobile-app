@@ -30,12 +30,12 @@
 				</Label>
 			</View>
 			<View class="botaoInformacoes" onClick="informacoes">
-				<Label class="textoBotao">
+				<Label class="textoBotao" id="informacoes">
 					Informações técnicas
 				</Label>
 			</View>
 			<View class="botaoComposicao" onClick="composicao">
-				<Label class="textoBotao">
+				<Label class="textoBotao" id="composicao">
 					Composição
 				</Label>
 			</View>
@@ -45,17 +45,17 @@
 				</Label>
 			</View>
 			<View class="botaoPrazo" onClick="prazo">
-				<Label class="textoBotao">
+				<Label class="textoBotao" id="prazo">
 					Prazo de entrega
 				</Label>
 			</View>
 			<View class="botaoDescricao" onClick="descricao">
-				<Label class="textoBotao">
+				<Label class="textoBotao" id="descricao">
 					Descrição do produto
 				</Label>
 			</View>
 			<View class="botaoCodigo" onClick="codbarras">
-				<Label class="textoBotao">
+				<Label class="textoBotao" id="codbarras">
 					Código de barras
 				</Label>
 			</View>
