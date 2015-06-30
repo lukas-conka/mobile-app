@@ -51,34 +51,34 @@ function Controller() {
         id: "lista_notificacao"
     });
     $.__views.lista_notificacao && $.addTopLevelView($.__views.lista_notificacao);
-    $.__views.__alloyId806 = Ti.UI.createView({
+    $.__views.__alloyId801 = Ti.UI.createView({
         height: "10%",
         top: "0",
         width: "100%",
-        id: "__alloyId806"
+        id: "__alloyId801"
     });
-    $.__views.lista_notificacao.add($.__views.__alloyId806);
-    $.__views.__alloyId807 = Ti.UI.createButton({
+    $.__views.lista_notificacao.add($.__views.__alloyId801);
+    $.__views.__alloyId802 = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         color: "#000000",
         right: "10",
         title: "LISTA DE NOTIFICAÇÕES",
-        id: "__alloyId807"
+        id: "__alloyId802"
     });
-    $.__views.__alloyId806.add($.__views.__alloyId807);
+    $.__views.__alloyId801.add($.__views.__alloyId802);
     $.__views.logoEmpresa = Ti.UI.createImageView({
         left: "10",
         id: "logoEmpresa"
     });
-    $.__views.__alloyId806.add($.__views.logoEmpresa);
-    $.__views.__alloyId808 = Ti.UI.createView({
+    $.__views.__alloyId801.add($.__views.logoEmpresa);
+    $.__views.__alloyId803 = Ti.UI.createView({
         height: "90%",
         top: "10%",
         width: "100%",
-        id: "__alloyId808"
+        id: "__alloyId803"
     });
-    $.__views.lista_notificacao.add($.__views.__alloyId808);
-    $.__views.__alloyId809 = Ti.UI.createView({
+    $.__views.lista_notificacao.add($.__views.__alloyId803);
+    $.__views.__alloyId804 = Ti.UI.createView({
         backgroundGradient: {
             type: "linear",
             colors: [ "#3550a3", "#008382" ]
@@ -87,45 +87,45 @@ function Controller() {
         top: "0%",
         width: "100%",
         layout: "horizontal",
-        id: "__alloyId809"
+        id: "__alloyId804"
     });
-    $.__views.__alloyId808.add($.__views.__alloyId809);
-    $.__views.__alloyId810 = Ti.UI.createButton({
+    $.__views.__alloyId803.add($.__views.__alloyId804);
+    $.__views.__alloyId805 = Ti.UI.createButton({
         backgroundColor: "transparent",
         color: "#ffffff",
         height: "100%",
         width: "20%",
         title: "DATA E HORA",
-        id: "__alloyId810"
+        id: "__alloyId805"
     });
-    $.__views.__alloyId809.add($.__views.__alloyId810);
-    $.__views.__alloyId811 = Ti.UI.createButton({
+    $.__views.__alloyId804.add($.__views.__alloyId805);
+    $.__views.__alloyId806 = Ti.UI.createButton({
         backgroundColor: "transparent",
         color: "#ffffff",
         height: "100%",
         width: "80%",
         title: "MENSAGEM",
-        id: "__alloyId811"
+        id: "__alloyId806"
     });
-    $.__views.__alloyId809.add($.__views.__alloyId811);
-    $.__views.__alloyId812 = Ti.UI.createView({
+    $.__views.__alloyId804.add($.__views.__alloyId806);
+    $.__views.__alloyId807 = Ti.UI.createView({
         height: "85%",
         top: "7%",
         width: "100%",
-        id: "__alloyId812"
+        id: "__alloyId807"
     });
-    $.__views.__alloyId808.add($.__views.__alloyId812);
-    var __alloyId813 = {};
-    var __alloyId816 = [];
-    var __alloyId818 = {
+    $.__views.__alloyId803.add($.__views.__alloyId807);
+    var __alloyId808 = {};
+    var __alloyId811 = [];
+    var __alloyId813 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId819 = [];
-            var __alloyId821 = {
+            var __alloyId814 = [];
+            var __alloyId816 = {
                 type: "Ti.UI.View",
                 childTemplates: function() {
-                    var __alloyId822 = [];
-                    var __alloyId824 = {
+                    var __alloyId817 = [];
+                    var __alloyId819 = {
                         type: "Ti.UI.Label",
                         bindId: "label_data",
                         properties: {
@@ -135,19 +135,19 @@ function Controller() {
                             bindId: "label_data"
                         }
                     };
-                    __alloyId822.push(__alloyId824);
-                    return __alloyId822;
+                    __alloyId817.push(__alloyId819);
+                    return __alloyId817;
                 }(),
                 properties: {
                     width: "20%"
                 }
             };
-            __alloyId819.push(__alloyId821);
-            var __alloyId826 = {
+            __alloyId814.push(__alloyId816);
+            var __alloyId821 = {
                 type: "Ti.UI.View",
                 childTemplates: function() {
-                    var __alloyId827 = [];
-                    var __alloyId829 = {
+                    var __alloyId822 = [];
+                    var __alloyId824 = {
                         type: "Ti.UI.Label",
                         bindId: "label_mensagem",
                         properties: {
@@ -157,54 +157,54 @@ function Controller() {
                             bindId: "label_mensagem"
                         }
                     };
-                    __alloyId827.push(__alloyId829);
-                    return __alloyId827;
+                    __alloyId822.push(__alloyId824);
+                    return __alloyId822;
                 }(),
                 properties: {
                     width: "80%"
                 }
             };
-            __alloyId819.push(__alloyId826);
-            return __alloyId819;
+            __alloyId814.push(__alloyId821);
+            return __alloyId814;
         }(),
         properties: {
             layout: "horizontal"
         }
     };
-    __alloyId816.push(__alloyId818);
-    var __alloyId815 = {
+    __alloyId811.push(__alloyId813);
+    var __alloyId810 = {
         properties: {
             height: "50",
             top: "6",
             width: "100%",
             name: "notificacoes_lista"
         },
-        childTemplates: __alloyId816
+        childTemplates: __alloyId811
     };
-    __alloyId813["notificacoes_lista"] = __alloyId815;
-    $.__views.__alloyId830 = Ti.UI.createListSection({
-        id: "__alloyId830"
+    __alloyId808["notificacoes_lista"] = __alloyId810;
+    $.__views.__alloyId825 = Ti.UI.createListSection({
+        id: "__alloyId825"
     });
-    var __alloyId832 = [];
-    __alloyId832.push($.__views.__alloyId830);
+    var __alloyId827 = [];
+    __alloyId827.push($.__views.__alloyId825);
     $.__views.listanotificacoes = Ti.UI.createListView({
         height: "85%",
         top: "7%",
         width: "100%",
-        sections: __alloyId832,
-        templates: __alloyId813,
+        sections: __alloyId827,
+        templates: __alloyId808,
         id: "listanotificacoes",
         defaultItemTemplate: "notificacoes_lista"
     });
-    $.__views.__alloyId812.add($.__views.listanotificacoes);
-    $.__views.__alloyId833 = Ti.UI.createView({
+    $.__views.__alloyId807.add($.__views.listanotificacoes);
+    $.__views.__alloyId828 = Ti.UI.createView({
         height: "7%",
         bottom: "0%",
         width: "100%",
-        id: "__alloyId833"
+        id: "__alloyId828"
     });
-    $.__views.__alloyId808.add($.__views.__alloyId833);
-    $.__views.__alloyId834 = Ti.UI.createButton({
+    $.__views.__alloyId803.add($.__views.__alloyId828);
+    $.__views.__alloyId829 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -215,10 +215,10 @@ function Controller() {
         width: "10%",
         bottom: "1%",
         title: "Voltar",
-        id: "__alloyId834"
+        id: "__alloyId829"
     });
-    $.__views.__alloyId833.add($.__views.__alloyId834);
-    voltar ? $.__views.__alloyId834.addEventListener("click", voltar) : __defers["$.__views.__alloyId834!click!voltar"] = true;
+    $.__views.__alloyId828.add($.__views.__alloyId829);
+    voltar ? $.__views.__alloyId829.addEventListener("click", voltar) : __defers["$.__views.__alloyId829!click!voltar"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     Ti.include("/api/config.js");
@@ -226,7 +226,7 @@ function Controller() {
     Ti.include("/database/aparencia.js");
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
     resultadoNotificacoes();
-    __defers["$.__views.__alloyId834!click!voltar"] && $.__views.__alloyId834.addEventListener("click", voltar);
+    __defers["$.__views.__alloyId829!click!voltar"] && $.__views.__alloyId829.addEventListener("click", voltar);
     _.extend($, exports);
 }
 
