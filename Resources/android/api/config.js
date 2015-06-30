@@ -25,7 +25,7 @@ function AddSelectedProduct(id) {
         result = "true";
     } else {
         var index = products.indexOf(id);
-        products.splice(index, 1, 2);
+        products.slice(index, 0);
         result = "false";
     }
     Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
