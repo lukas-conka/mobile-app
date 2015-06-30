@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/funcao.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/funcao.js

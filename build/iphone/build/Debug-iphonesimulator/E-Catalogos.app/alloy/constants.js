@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/constants.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/constants.js

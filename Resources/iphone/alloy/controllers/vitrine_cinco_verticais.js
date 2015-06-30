@@ -177,6 +177,9 @@ function Controller() {
         height: "100%",
         layout: "horizontal",
         width: "48%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoA"
     });
     $.__views.legendaA.add($.__views.informacaoA);
@@ -186,7 +189,7 @@ function Controller() {
         height: "45%",
         width: "50%",
         font: {
-            fontSize: 13
+            fontSize: 7
         },
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoA"
@@ -252,6 +255,9 @@ function Controller() {
         height: "100%",
         layout: "horizontal",
         width: "48%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoB"
     });
     $.__views.legendaB.add($.__views.informacaoB);
@@ -261,7 +267,7 @@ function Controller() {
         height: "45%",
         width: "50%",
         font: {
-            fontSize: 13
+            fontSize: 7
         },
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoB"
@@ -327,6 +333,9 @@ function Controller() {
         height: "100%",
         layout: "horizontal",
         width: "48%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoC"
     });
     $.__views.legendaC.add($.__views.informacaoC);
@@ -336,7 +345,7 @@ function Controller() {
         height: "45%",
         width: "50%",
         font: {
-            fontSize: 13
+            fontSize: 7
         },
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoC"
@@ -402,6 +411,9 @@ function Controller() {
         height: "100%",
         layout: "horizontal",
         width: "48%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoD"
     });
     $.__views.legendaD.add($.__views.informacaoD);
@@ -411,7 +423,7 @@ function Controller() {
         height: "45%",
         width: "50%",
         font: {
-            fontSize: 13
+            fontSize: 7
         },
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoD"
@@ -477,6 +489,9 @@ function Controller() {
         height: "100%",
         layout: "horizontal",
         width: "48%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoE"
     });
     $.__views.legendaE.add($.__views.informacaoE);
@@ -486,7 +501,7 @@ function Controller() {
         height: "45%",
         width: "50%",
         font: {
-            fontSize: 13
+            fontSize: 7
         },
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoE"
@@ -656,6 +671,29 @@ function Controller() {
     var produtos = selectProductsCount(categoria, marca, empresa);
     var paginas = Math.ceil(produtos / itemsperpage);
     redimencionaVitrine($.vitrine);
+    if ("android" == Ti.Platform.osname) {
+        $.legendaA.height = "13%";
+        $.legendaB.height = "13%";
+        $.legendaC.height = "13%";
+        $.legendaD.height = "13%";
+        $.legendaE.height = "13%";
+        $.informacaoA.width = "45%";
+        $.informacaoB.width = "45%";
+        $.informacaoC.width = "45%";
+        $.informacaoD.width = "45%";
+        $.informacaoE.width = "45%";
+    } else {
+        $.legendaA.height = "14%";
+        $.legendaB.height = "14%";
+        $.legendaC.height = "14%";
+        $.legendaD.height = "14%";
+        $.legendaE.height = "14%";
+        $.informacaoA.width = "50%";
+        $.informacaoB.width = "50%";
+        $.informacaoC.width = "50%";
+        $.informacaoD.width = "50%";
+        $.informacaoE.width = "50%";
+    }
     renderProducts();
     var eventListener = function() {
         Ti.App.removeEventListener("removeBitmap", eventListener);

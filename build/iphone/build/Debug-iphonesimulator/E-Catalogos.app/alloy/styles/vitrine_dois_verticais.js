@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_dois_verticais.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/styles/vitrine_dois_verticais.js

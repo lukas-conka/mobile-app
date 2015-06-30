@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/lista_clientes.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/lista_clientes.js

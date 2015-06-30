@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_um_horizontal.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/styles/vitrine_um_horizontal.js

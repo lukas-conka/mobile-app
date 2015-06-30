@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/importar.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/importar.js

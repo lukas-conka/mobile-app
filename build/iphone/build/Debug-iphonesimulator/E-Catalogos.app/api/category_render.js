@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/api/category_render.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/api/category_render.js

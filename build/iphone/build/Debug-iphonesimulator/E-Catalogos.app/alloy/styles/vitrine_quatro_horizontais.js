@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_quatro_horizontais.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/styles/vitrine_quatro_horizontais.js

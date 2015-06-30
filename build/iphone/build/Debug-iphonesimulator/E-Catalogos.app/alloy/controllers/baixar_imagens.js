@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/baixar_imagens.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/baixar_imagens.js

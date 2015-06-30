@@ -609,7 +609,6 @@ function Controller() {
                         properties: {
                             top: 0,
                             height: "69%",
-                            width: "20%",
                             bindId: "imagem_produto"
                         }
                     };
@@ -1020,8 +1019,8 @@ function Controller() {
         },
         height: "100%",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-        width: "10%",
-        right: "31%",
+        width: "11%",
+        right: "17%",
         text: "Total",
         id: "__alloyId1308"
     });
@@ -1056,7 +1055,7 @@ function Controller() {
             fontSize: 13
         },
         height: "100%",
-        width: "15%",
+        width: "18%",
         text: "Porcentagem:",
         id: "__alloyId1309"
     });
@@ -1071,7 +1070,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1090,7 +1089,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1109,7 +1108,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1128,7 +1127,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1147,7 +1146,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1166,7 +1165,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1185,7 +1184,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",

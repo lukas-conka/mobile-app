@@ -25,7 +25,7 @@ function AddSelectedProduct(id) {
         result = "true";
     } else {
         var index = products.indexOf(id);
-        products.splice(index, 1);
+        products.splice(index, 1, 2);
         result = "false";
     }
     Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
@@ -88,8 +88,8 @@ function redimencionaVitrine(vitrine) {
         alturaTela -= 100;
         larguraTela -= 100;
     } else {
-        alturaTela = 550;
-        larguraTela = 1024;
+        alturaTela - 200;
+        larguraTela - 250;
     }
     var alturaView = Math.round(.9 * alturaTela);
     var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);

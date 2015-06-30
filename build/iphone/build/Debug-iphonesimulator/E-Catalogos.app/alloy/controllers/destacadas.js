@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/destacadas.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/destacadas.js

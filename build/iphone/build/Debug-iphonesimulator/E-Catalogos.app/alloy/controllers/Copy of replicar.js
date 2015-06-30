@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/Copy of replicar.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/alloy/controllers/Copy of replicar.js

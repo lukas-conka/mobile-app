@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/rpj.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/database/rpj.js

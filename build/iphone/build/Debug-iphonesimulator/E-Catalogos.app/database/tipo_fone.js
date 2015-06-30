@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/tipo_fone.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/database/tipo_fone.js

@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/representante.js
+/Users/ecatalogos/Documents/mobile-app/Resources/iphone/database/representante.js
