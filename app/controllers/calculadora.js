@@ -48,6 +48,8 @@ var quantidaderef = 0;
 var valorref = 0;
 var quantidadetotal = 0;
 var valortotal = 0;
+var qtnminima = 0;
+
 
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
 $.apaga.title = '<<';
@@ -432,16 +434,36 @@ function renderTable() {
 		});
 		coluna.add(tamanho);
 		var quantidade_total = 0;
+		
+		var vetor = [];
 		for (var j = 0; j < cores.length; j++) {
+			
+			
+			
 			var info_prd = selectInformacaoProdutoByTamanhoCor(prd_id, tamanhosid[i], coresid[j]);
 			if (info_prd.isValidRow()) {
+				
+				
+				
+				var qtnminima = info_prd.fieldByName('ifp_qtde_minima'); //quantidade minima
+				
+				//vetor criado com indice do id do produto e conteudo a variavel de qunatidde minima
+				vetor[prd_id] = [];
+				vetor[prd_id]  = qtnminima;
+				
 				var preco_unitario = info_prd.fieldByName('ifp_valor_1');
 				var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, tamanhosid[i], coresid[j], fk_cli);
 				var quantidade = 0;
 				var valor = 0;
+				
+				
+				
+				
 				if (carrinho[0] != 0) {
 					quantidade = carrinho[1];
 					quantidade_total = quantidade_total + quantidade;
+					
+				
 				}
 				if (porpreco)
 					valor = formatCurrency(preco_unitario);
@@ -502,7 +524,13 @@ function renderTable() {
 				coluna.add(botoes[location]);
 				location++;
 			}
+			
+	
+			
 		}
+		
+		Ti.App.Properties.setList("lista",vetor); //Propriedade T.I para colocar o vetor acima como variavel global o indice do vetor eh o prd_id (id do produto) conteudo eh a varievel de quantidade
+		
 		var total = Titanium.UI.createLabel({
 			backgroundColor : "#008382",
 			color : "white",
@@ -530,16 +558,36 @@ function selecionaItem(item) {
 	}
 }
 
+
+
 function botaoOk() {
+	
+	//recupero a propriedade do T.I setada em cima que recebe o vetor e o nome lista
+ 	var var_global = Ti.App.Properties.getList("lista");
+	var qtnminima = var_global[prd_id]; // recupero pelo indice setado  no vetor, isso pq o prd_id chega aqui.
+
+if($.tela.text < qtnminima){
+	
+	alert("Quantidade minima de " + qtnminima);
+}else{
+	
 	if ($.tela.text == '') {
 		alert('Digite a quantidade');
+		 
 	} else {
 		var quantidade = $.tela.text;
+		
 		if (sortido)
 			valorSortido(quantidade);
 		else
 			valorPorQuantidade(quantidade);
 	}
+	
+}
+	
+
+	
+	
 	$.tela.text = '';
 	//recalculateValues();
 	renderTable();

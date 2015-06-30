@@ -21,12 +21,12 @@ function dropCarrinhoPedido() {
 	db.close();
 }
 
-function insertCarrinhoPedido(crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id) {
+function insertCarrinhoPedido(crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id, desconto_unit) {
 	db = dbLoad();
 	db.execute('INSERT INTO ' + getTableCarrinhoPedido() + '(
-		crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id) 
-	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', 
-		crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id);
+		crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id, desconto_unit) 
+	VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', 
+		crp_id, crp_session_id, crp_quantidade, crp_preco_unitario, crp_ipi, crp_icms, crp_data, desconto, desconto_parcela, desconto_especial, crp_forma_pagamento, crp_fk_pedido, fk_usu, fk_tamanhos, fk_produtos, fk_cores, rp_id, ep_id, desconto_unit);
 	db.close();
 }
 
@@ -53,7 +53,7 @@ function selectallCarrinhoPedido() {
 function consultaCarrinhoPedidoByPedido(pedido){
 	db = dbLoad();
 	var query = "SELECT " + 
-	"tb_carrinho_pedido.crp_quantidade, tb_carrinho_pedido.crp_preco_unitario, tb_carrinho_pedido.crp_ipi, " +
+	"tb_carrinho_pedido.crp_quantidade, tb_carrinho_pedido.desconto_unit, tb_carrinho_pedido.crp_preco_unitario, tb_carrinho_pedido.crp_ipi, " +
 	"tb_carrinho_pedido.crp_data, tb_carrinho_pedido.desconto, tb_carrinho_pedido.desconto_parcela, tb_carrinho_pedido.desconto_especial, " +
 	"tb_carrinho_pedido.crp_forma_pagamento, tb_carrinho_pedido.fk_tamanhos, tb_carrinho_pedido.fk_produtos, tb_carrinho_pedido.fk_cores, " +
 	"tb_pedido.ped_entrega, tb_pedido.ped_entrega_prazo, tb_pedido.ped_numero, tb_pedido.ped_observacao, tb_pedido.fk_marcas, tb_pedido.ped_data_pag, " +
@@ -79,7 +79,7 @@ function consultaCarrinhoPedidoByPedido(pedido){
 
 function consultaCarrinhoTotalizacao(pedido){
 	db = dbLoad();
-	var pedido = db.execute("SELECT tb_carrinho_pedido.crp_quantidade,tb_carrinho_pedido.crp_preco_unitario,tb_carrinho_pedido.crp_ipi,tb_carrinho_pedido.desconto_parcela,tb_carrinho_pedido.desconto_especial FROM tb_carrinho_pedido WHERE tb_carrinho_pedido.crp_fk_pedido = " + pedido);
+	var pedido = db.execute("SELECT tb_carrinho_pedido.crp_quantidade,tb_carrinho_pedido.crp_preco_unitario,tb_carrinho_pedido.crp_ipi, tb_carrinho_pedido.desconto_unit, tb_carrinho_pedido.desconto_parcela,tb_carrinho_pedido.desconto_especial FROM tb_carrinho_pedido WHERE tb_carrinho_pedido.crp_fk_pedido = " + pedido);
 	if (Ti.Platform.osname == "android") {
 		db.close();
 	}
