@@ -1,7 +1,13 @@
 dependencies: \
+<<<<<<< HEAD
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBindingRunLoop.m \
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollContext.h \
+=======
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBindingRunLoop.m \
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollContext.h \
+>>>>>>> 72bf3b9524365db3058701be36db01bdcd314972
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -9,6 +15,12 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
+<<<<<<< HEAD
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBase.h \
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiThreading.h \
   /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiPublicAPI.h
+=======
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBase.h \
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiThreading.h \
+  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiPublicAPI.h
+>>>>>>> 72bf3b9524365db3058701be36db01bdcd314972

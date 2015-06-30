@@ -82,164 +82,164 @@ function Controller() {
         id: "funcao"
     });
     $.__views.funcao && $.addTopLevelView($.__views.funcao);
-    $.__views.__alloyId749 = Ti.UI.createView({
+    $.__views.__alloyId744 = Ti.UI.createView({
         height: "10%",
         top: "0",
         width: "100%",
-        id: "__alloyId749"
+        id: "__alloyId744"
     });
-    $.__views.funcao.add($.__views.__alloyId749);
-    $.__views.__alloyId750 = Ti.UI.createButton({
+    $.__views.funcao.add($.__views.__alloyId744);
+    $.__views.__alloyId745 = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         color: "#000000",
         right: "10",
         title: "FUNÇÕES",
-        id: "__alloyId750"
+        id: "__alloyId745"
     });
-    $.__views.__alloyId749.add($.__views.__alloyId750);
-    $.__views.__alloyId751 = Ti.UI.createImageView({
+    $.__views.__alloyId744.add($.__views.__alloyId745);
+    $.__views.__alloyId746 = Ti.UI.createImageView({
         left: "10",
-        id: "__alloyId751"
+        id: "__alloyId746"
     });
-    $.__views.__alloyId749.add($.__views.__alloyId751);
-    $.__views.__alloyId752 = Ti.UI.createView({
+    $.__views.__alloyId744.add($.__views.__alloyId746);
+    $.__views.__alloyId747 = Ti.UI.createView({
         height: "90%",
         top: "10%",
         width: "100%",
-        id: "__alloyId752"
+        id: "__alloyId747"
     });
-    $.__views.funcao.add($.__views.__alloyId752);
-    $.__views.__alloyId753 = Ti.UI.createImageView({
+    $.__views.funcao.add($.__views.__alloyId747);
+    $.__views.__alloyId748 = Ti.UI.createImageView({
         image: "/images/funcao_pedido.jpg",
         height: "auto",
         left: "0%",
         top: "0%",
         width: "25%",
-        id: "__alloyId753"
+        id: "__alloyId748"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId753);
-    goToListaPedido ? $.__views.__alloyId753.addEventListener("click", goToListaPedido) : __defers["$.__views.__alloyId753!click!goToListaPedido"] = true;
-    $.__views.__alloyId754 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId748);
+    goToListaPedido ? $.__views.__alloyId748.addEventListener("click", goToListaPedido) : __defers["$.__views.__alloyId748!click!goToListaPedido"] = true;
+    $.__views.__alloyId749 = Ti.UI.createImageView({
         image: "/images/funcao_produto.jpg",
         height: "auto",
         left: "25%",
         top: "0%",
         width: "25%",
-        id: "__alloyId754"
+        id: "__alloyId749"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId754);
-    goToProdutos ? $.__views.__alloyId754.addEventListener("click", goToProdutos) : __defers["$.__views.__alloyId754!click!goToProdutos"] = true;
-    $.__views.__alloyId755 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId749);
+    goToProdutos ? $.__views.__alloyId749.addEventListener("click", goToProdutos) : __defers["$.__views.__alloyId749!click!goToProdutos"] = true;
+    $.__views.__alloyId750 = Ti.UI.createImageView({
         image: "/images/funcao_cliente.jpg",
         height: "auto",
         left: "50%",
         top: "0%",
         width: "25%",
-        id: "__alloyId755"
+        id: "__alloyId750"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId755);
-    goToClientes ? $.__views.__alloyId755.addEventListener("click", goToClientes) : __defers["$.__views.__alloyId755!click!goToClientes"] = true;
-    $.__views.__alloyId756 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId750);
+    goToClientes ? $.__views.__alloyId750.addEventListener("click", goToClientes) : __defers["$.__views.__alloyId750!click!goToClientes"] = true;
+    $.__views.__alloyId751 = Ti.UI.createImageView({
         image: "/images/funcao_sincronizacao.jpg",
         height: "auto",
         left: "75%",
         top: "0%",
         width: "25%",
-        id: "__alloyId756"
+        id: "__alloyId751"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId756);
-    goToSync ? $.__views.__alloyId756.addEventListener("click", goToSync) : __defers["$.__views.__alloyId756!click!goToSync"] = true;
-    $.__views.__alloyId757 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId751);
+    goToSync ? $.__views.__alloyId751.addEventListener("click", goToSync) : __defers["$.__views.__alloyId751!click!goToSync"] = true;
+    $.__views.__alloyId752 = Ti.UI.createImageView({
         image: "/images/funcao_notificacao.jpg",
         height: "auto",
         left: "0%",
         width: "25%",
-        id: "__alloyId757"
+        id: "__alloyId752"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId757);
-    goToNotificacao ? $.__views.__alloyId757.addEventListener("click", goToNotificacao) : __defers["$.__views.__alloyId757!click!goToNotificacao"] = true;
-    $.__views.__alloyId758 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId752);
+    goToNotificacao ? $.__views.__alloyId752.addEventListener("click", goToNotificacao) : __defers["$.__views.__alloyId752!click!goToNotificacao"] = true;
+    $.__views.__alloyId753 = Ti.UI.createImageView({
         image: "/images/funcao_email.jpg",
         height: "auto",
         left: "25%",
         width: "25%",
-        id: "__alloyId758"
+        id: "__alloyId753"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId758);
-    goToEmail ? $.__views.__alloyId758.addEventListener("click", goToEmail) : __defers["$.__views.__alloyId758!click!goToEmail"] = true;
-    $.__views.__alloyId759 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId753);
+    goToEmail ? $.__views.__alloyId753.addEventListener("click", goToEmail) : __defers["$.__views.__alloyId753!click!goToEmail"] = true;
+    $.__views.__alloyId754 = Ti.UI.createImageView({
         image: "/images/funcao_video.jpg",
         height: "auto",
         left: "50%",
         width: "25%",
-        id: "__alloyId759"
+        id: "__alloyId754"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId759);
-    goToVideo ? $.__views.__alloyId759.addEventListener("click", goToVideo) : __defers["$.__views.__alloyId759!click!goToVideo"] = true;
-    $.__views.__alloyId760 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId754);
+    goToVideo ? $.__views.__alloyId754.addEventListener("click", goToVideo) : __defers["$.__views.__alloyId754!click!goToVideo"] = true;
+    $.__views.__alloyId755 = Ti.UI.createImageView({
         image: "/images/funcao_relatorio.jpg",
         height: "auto",
         left: "75%",
         width: "25%",
-        id: "__alloyId760"
+        id: "__alloyId755"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId760);
-    goToRelatorio ? $.__views.__alloyId760.addEventListener("click", goToRelatorio) : __defers["$.__views.__alloyId760!click!goToRelatorio"] = true;
-    $.__views.__alloyId761 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId755);
+    goToRelatorio ? $.__views.__alloyId755.addEventListener("click", goToRelatorio) : __defers["$.__views.__alloyId755!click!goToRelatorio"] = true;
+    $.__views.__alloyId756 = Ti.UI.createImageView({
         image: "/images/funcao_duvida.jpg",
         bottom: "0%",
         height: "auto",
         left: "0%",
         width: "25%",
-        id: "__alloyId761"
+        id: "__alloyId756"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId761);
-    goToDuvida ? $.__views.__alloyId761.addEventListener("click", goToDuvida) : __defers["$.__views.__alloyId761!click!goToDuvida"] = true;
-    $.__views.__alloyId762 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId756);
+    goToDuvida ? $.__views.__alloyId756.addEventListener("click", goToDuvida) : __defers["$.__views.__alloyId756!click!goToDuvida"] = true;
+    $.__views.__alloyId757 = Ti.UI.createImageView({
         image: "/images/funcao_suporte.jpg",
         bottom: "0%",
         height: "auto",
         left: "25%",
         width: "25%",
-        id: "__alloyId762"
+        id: "__alloyId757"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId762);
-    goToSuporte ? $.__views.__alloyId762.addEventListener("click", goToSuporte) : __defers["$.__views.__alloyId762!click!goToSuporte"] = true;
-    $.__views.__alloyId763 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId757);
+    goToSuporte ? $.__views.__alloyId757.addEventListener("click", goToSuporte) : __defers["$.__views.__alloyId757!click!goToSuporte"] = true;
+    $.__views.__alloyId758 = Ti.UI.createImageView({
         image: "/images/funcao_online.jpg",
         bottom: "0%",
         height: "auto",
         left: "50%",
         width: "25%",
-        id: "__alloyId763"
+        id: "__alloyId758"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId763);
-    goToOnline ? $.__views.__alloyId763.addEventListener("click", goToOnline) : __defers["$.__views.__alloyId763!click!goToOnline"] = true;
-    $.__views.__alloyId764 = Ti.UI.createImageView({
+    $.__views.__alloyId747.add($.__views.__alloyId758);
+    goToOnline ? $.__views.__alloyId758.addEventListener("click", goToOnline) : __defers["$.__views.__alloyId758!click!goToOnline"] = true;
+    $.__views.__alloyId759 = Ti.UI.createImageView({
         image: "/images/funcao_offline.jpg",
         bottom: "0%",
         height: "auto",
         left: "75%",
         width: "25%",
-        id: "__alloyId764"
+        id: "__alloyId759"
     });
-    $.__views.__alloyId752.add($.__views.__alloyId764);
-    goToOffline ? $.__views.__alloyId764.addEventListener("click", goToOffline) : __defers["$.__views.__alloyId764!click!goToOffline"] = true;
+    $.__views.__alloyId747.add($.__views.__alloyId759);
+    goToOffline ? $.__views.__alloyId759.addEventListener("click", goToOffline) : __defers["$.__views.__alloyId759!click!goToOffline"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     Ti.include("/api/config.js");
-    __defers["$.__views.__alloyId753!click!goToListaPedido"] && $.__views.__alloyId753.addEventListener("click", goToListaPedido);
-    __defers["$.__views.__alloyId754!click!goToProdutos"] && $.__views.__alloyId754.addEventListener("click", goToProdutos);
-    __defers["$.__views.__alloyId755!click!goToClientes"] && $.__views.__alloyId755.addEventListener("click", goToClientes);
-    __defers["$.__views.__alloyId756!click!goToSync"] && $.__views.__alloyId756.addEventListener("click", goToSync);
-    __defers["$.__views.__alloyId757!click!goToNotificacao"] && $.__views.__alloyId757.addEventListener("click", goToNotificacao);
-    __defers["$.__views.__alloyId758!click!goToEmail"] && $.__views.__alloyId758.addEventListener("click", goToEmail);
-    __defers["$.__views.__alloyId759!click!goToVideo"] && $.__views.__alloyId759.addEventListener("click", goToVideo);
-    __defers["$.__views.__alloyId760!click!goToRelatorio"] && $.__views.__alloyId760.addEventListener("click", goToRelatorio);
-    __defers["$.__views.__alloyId761!click!goToDuvida"] && $.__views.__alloyId761.addEventListener("click", goToDuvida);
-    __defers["$.__views.__alloyId762!click!goToSuporte"] && $.__views.__alloyId762.addEventListener("click", goToSuporte);
-    __defers["$.__views.__alloyId763!click!goToOnline"] && $.__views.__alloyId763.addEventListener("click", goToOnline);
-    __defers["$.__views.__alloyId764!click!goToOffline"] && $.__views.__alloyId764.addEventListener("click", goToOffline);
+    __defers["$.__views.__alloyId748!click!goToListaPedido"] && $.__views.__alloyId748.addEventListener("click", goToListaPedido);
+    __defers["$.__views.__alloyId749!click!goToProdutos"] && $.__views.__alloyId749.addEventListener("click", goToProdutos);
+    __defers["$.__views.__alloyId750!click!goToClientes"] && $.__views.__alloyId750.addEventListener("click", goToClientes);
+    __defers["$.__views.__alloyId751!click!goToSync"] && $.__views.__alloyId751.addEventListener("click", goToSync);
+    __defers["$.__views.__alloyId752!click!goToNotificacao"] && $.__views.__alloyId752.addEventListener("click", goToNotificacao);
+    __defers["$.__views.__alloyId753!click!goToEmail"] && $.__views.__alloyId753.addEventListener("click", goToEmail);
+    __defers["$.__views.__alloyId754!click!goToVideo"] && $.__views.__alloyId754.addEventListener("click", goToVideo);
+    __defers["$.__views.__alloyId755!click!goToRelatorio"] && $.__views.__alloyId755.addEventListener("click", goToRelatorio);
+    __defers["$.__views.__alloyId756!click!goToDuvida"] && $.__views.__alloyId756.addEventListener("click", goToDuvida);
+    __defers["$.__views.__alloyId757!click!goToSuporte"] && $.__views.__alloyId757.addEventListener("click", goToSuporte);
+    __defers["$.__views.__alloyId758!click!goToOnline"] && $.__views.__alloyId758.addEventListener("click", goToOnline);
+    __defers["$.__views.__alloyId759!click!goToOffline"] && $.__views.__alloyId759.addEventListener("click", goToOffline);
     _.extend($, exports);
 }
 
