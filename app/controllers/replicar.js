@@ -499,13 +499,13 @@ function percenteDesconto(event){
 		data[event.itemIndex].total_ref.total_ref = total_desc - desc;
 		event.section.updateItemAt(event.itemIndex, data[event.itemIndex]);
 		
-		$.total_preco.text = formatCurrency(total_total);
 		
 		var db = dbLoad();
 		var query = "UPDATE tb_carrinho set car_desc_unit = " + desc + " WHERE car_id = " + car_id_n;
 		db.execute(query);
 		var aux_ipi = Ti.App.Properties.getString("ipi_");	
-		Ti.App.Properties.setString("ipi_mod", aux_ipi);		
+		Ti.App.Properties.setString("ipi_mod", aux_ipi);
+		$.total_preco.text = formatCurrency(valor_total -= desc);		
 	});
 		
 }

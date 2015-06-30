@@ -88,20 +88,19 @@ function AddSelectedProduct(id) {
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
+	var result = "false";
 	if (checkSelectedProduct(id) == "false") {
 		products.push(id);
 		result = "true";
 	} else {
 		var index = products.indexOf(id);
-		//products.slice(index, 1);
-		products.splice(index, 1, 2);
+		products.splice(index, 1);
 		result = "false";
-
 	}
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
 	return result;
-}	
-	
+}
+
 function addSelectedClients(cliente) {
 	if (Ti.App.Properties.getList(SELECTED_CLIENTS)) {
 		var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
@@ -173,6 +172,7 @@ function redimencionaVitrine(vitrine) {
 
 	var alturaTela = 730;
 	var larguraTela = 1280;
+	
 	if (Ti.Platform.osname != "android") {
 		alturaTela = alturaTela - 100;
 		larguraTela = larguraTela - 100;

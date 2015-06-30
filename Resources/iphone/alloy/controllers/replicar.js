@@ -398,17 +398,16 @@ function Controller() {
             var total_max = data[event.itemIndex].total_ref.VAL;
             var total_desc = total_max;
             var desc = total_desc / 100 * valores[e.index];
-            var total_total = valor_total;
             data[event.itemIndex].prd_id;
             data[event.itemIndex].total_ref.text = formatCurrency(total_desc - desc);
             data[event.itemIndex].total_ref.total_ref = total_desc - desc;
             event.section.updateItemAt(event.itemIndex, data[event.itemIndex]);
-            $.total_preco.text = formatCurrency(total_total);
             var db = dbLoad();
             var query = "UPDATE tb_carrinho set car_desc_unit = " + desc + " WHERE car_id = " + car_id_n;
             db.execute(query);
             var aux_ipi = Ti.App.Properties.getString("ipi_");
             Ti.App.Properties.setString("ipi_mod", aux_ipi);
+            $.total_preco.text = formatCurrency(valor_total -= desc);
         });
     }
     function insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores) {
@@ -609,7 +608,6 @@ function Controller() {
                         properties: {
                             top: 0,
                             height: "69%",
-                            width: "20%",
                             bindId: "imagem_produto"
                         }
                     };
@@ -1020,8 +1018,8 @@ function Controller() {
         },
         height: "100%",
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-        width: "10%",
-        right: "31%",
+        width: "11%",
+        right: "17%",
         text: "Total",
         id: "__alloyId1308"
     });
@@ -1056,7 +1054,7 @@ function Controller() {
             fontSize: 13
         },
         height: "100%",
-        width: "15%",
+        width: "18%",
         text: "Porcentagem:",
         id: "__alloyId1309"
     });
@@ -1071,7 +1069,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1090,7 +1088,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1109,7 +1107,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1128,7 +1126,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1147,7 +1145,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1166,7 +1164,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
@@ -1185,7 +1183,7 @@ function Controller() {
         },
         borderRadius: "5",
         color: "#ffffff",
-        left: "1%",
+        left: "2%",
         width: "6%",
         bottom: "1%",
         title: "0%",
