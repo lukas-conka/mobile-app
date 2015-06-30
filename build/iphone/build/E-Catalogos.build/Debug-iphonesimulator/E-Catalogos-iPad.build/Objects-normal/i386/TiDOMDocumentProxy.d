@@ -1,23 +1,12 @@
 dependencies: \
-<<<<<<< HEAD
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBase.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiThreading.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPublicAPI.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiEvaluator.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollContext.h \
-=======
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.m \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBase.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiThreading.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiPublicAPI.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiEvaluator.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollContext.h \
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.m \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMDocumentProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBase.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiThreading.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiPublicAPI.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiEvaluator.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -25,17 +14,10 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-<<<<<<< HEAD
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollCallback.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollObject.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/GDataXMLNode.h \
-=======
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollCallback.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollObject.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/GDataXMLNode.h \
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollCallback.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollObject.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlexports.h \
@@ -59,48 +41,24 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/SAX2.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xpath.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xpathInternals.h \
-<<<<<<< HEAD
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMNodeListProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMTextNodeProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TIDOMCharacterDataProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMElementProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMAttrProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMCDATANodeProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMCommentProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMPIProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMDocFragProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TIDOMDOMImplementationProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TIDOMDocumentTypeProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMEntityRefProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUtils.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDimension.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiColor.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/WebFont.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiFile.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBuffer.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBlob.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMValidator.h
-=======
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMNodeListProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMTextNodeProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TIDOMCharacterDataProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMElementProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMAttrProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMCDATANodeProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMCommentProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMPIProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMDocFragProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TIDOMDOMImplementationProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TIDOMDocumentTypeProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMEntityRefProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiUtils.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDimension.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiColor.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/WebFont.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiFile.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBuffer.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBlob.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDOMValidator.h
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMNodeListProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMTextNodeProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TIDOMCharacterDataProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMElementProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMAttrProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMCDATANodeProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMCommentProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMPIProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMDocFragProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TIDOMDOMImplementationProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TIDOMDocumentTypeProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMEntityRefProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiUtils.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDimension.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiColor.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/WebFont.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiFile.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBuffer.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBlob.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDOMValidator.h

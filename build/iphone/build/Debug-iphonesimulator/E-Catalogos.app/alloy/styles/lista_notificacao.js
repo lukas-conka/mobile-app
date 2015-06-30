@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/lista_notificacao.js
+/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/styles/lista_notificacao.js

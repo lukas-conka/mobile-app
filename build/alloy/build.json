@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-{"cfgHash":"73c0b9c26436bbd9541200ac5038bd69","themeChanged":false,"globalStyleCacheHash":"d41d8cd98f00b204e9800998ecf8427e","ios":{"/Users/cbc/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"fac5a2a5cd14269c01bdd9604f8dd4bc","/Users/ecatalogos/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"f965d848e80f3448cfb958bcb6c2b582","/Users/cbc/Documents/CarlosStark/mobile-app/app/alloy.js":"7e650a1b4a435adcb49ccac79a6bb0de"}}
-=======
-{"cfgHash":"73c0b9c26436bbd9541200ac5038bd69","themeChanged":false,"globalStyleCacheHash":"d41d8cd98f00b204e9800998ecf8427e","ios":{"/Users/cbc/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"fac5a2a5cd14269c01bdd9604f8dd4bc","/Users/ecatalogos/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"f965d848e80f3448cfb958bcb6c2b582","/Users/ecatalogos/Documents/mobile-app/app/alloy.js":"10b19999c56aa8a0a76f9644caf7c8cf"}}
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
-=======
-{"cfgHash":"73c0b9c26436bbd9541200ac5038bd69","themeChanged":false,"globalStyleCacheHash":"d41d8cd98f00b204e9800998ecf8427e","ios":{"/Users/cbc/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"fac5a2a5cd14269c01bdd9604f8dd4bc","/Users/ecatalogos/Documents/Titanium_Studio_Workspace/mobile-app/app/alloy.js":"f965d848e80f3448cfb958bcb6c2b582"},"android":{"/home/james/Documents/projetoMobile/mobile-app/app/alloy.js":"b59cc2fde0a946eed52431b3da7be858"}}
->>>>>>> 3761241a7f20d500b5ea463773d843b5cb6dc5ad
+{"cfgHash":"73c0b9c26436bbd9541200ac5038bd69","themeChanged":false,"globalStyleCacheHash":"d41d8cd98f00b204e9800998ecf8427e","ios":{"/Users/cbc/Documents/CarlosStark/mobile-app/app/alloy.js":"7e650a1b4a435adcb49ccac79a6bb0de","/Users/ecatalogos/Documents/lucas/mobile-app/app/alloy.js":"389ff0d6d9386d373bdd86cf493a34b5"}}
