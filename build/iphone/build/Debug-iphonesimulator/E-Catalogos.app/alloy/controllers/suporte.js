@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/controllers/suporte.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/suporte.js

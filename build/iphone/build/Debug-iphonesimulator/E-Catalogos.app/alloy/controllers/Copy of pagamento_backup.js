@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/controllers/Copy of pagamento_backup.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/Copy of pagamento_backup.js

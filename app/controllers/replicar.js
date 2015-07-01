@@ -395,11 +395,8 @@ function atualizarQuantidades(button){
 
 function selecionaQuantidade(button){
 	var valores = [];
-	for(var i = 0; i<=100;  i++){
+	for(var i = 0; i<=100;  i+=10){
 		valores.push(i);
-	}	
-	for(var i = 0; i<=20;  i++){
-		valores.push(100+i*10);
 	}
 	
 	var dialog = Titanium.UI.createOptionDialog({

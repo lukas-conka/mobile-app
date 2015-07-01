@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/alloy/sync/sql.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/sync/sql.js

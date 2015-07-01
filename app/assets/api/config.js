@@ -94,12 +94,11 @@ function AddSelectedProduct(id) {
 		result = "true";
 	} else {
 		var index = products.indexOf(id);
-<<<<<<< HEAD
+
 		products.splice(index, 1);
-=======
+
 		products.slice(index, 0);
 		//products.splice(inde, 1);
->>>>>>> 1ef0c9ecadc18894883c55e9831fe72080f3b589
 		result = "false";
 	}
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);

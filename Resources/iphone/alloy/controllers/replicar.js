@@ -327,8 +327,7 @@ function Controller() {
     }
     function selecionaQuantidade(button) {
         var valores = [];
-        for (var i = 0; 100 >= i; i++) valores.push(i);
-        for (var i = 0; 20 >= i; i++) valores.push(100 + 10 * i);
+        for (var i = 0; 100 >= i; i += 10) valores.push(i);
         var dialog = Titanium.UI.createOptionDialog({
             options: valores,
             destructive: 2,

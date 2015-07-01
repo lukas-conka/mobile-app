@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/database/representante_marca.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/representante_marca.js

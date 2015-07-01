@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/database/credito.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/credito.js

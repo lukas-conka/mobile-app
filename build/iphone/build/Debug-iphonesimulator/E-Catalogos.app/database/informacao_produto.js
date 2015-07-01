@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/lucas/mobile-app/Resources/iphone/database/informacao_produto.js
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/informacao_produto.js
