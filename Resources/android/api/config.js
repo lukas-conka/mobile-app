@@ -10,22 +10,24 @@ function getSelectedProducts() {
 
 function checkSelectedProduct(id) {
     var products = [];
-    var result = "false";
+    var result = "true";
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
     var index = products.indexOf(id);
-    result = index >= 0 ? "true" : "false";
+    result = index > 0 ? "true" : "false";
     return result;
 }
 
 function AddSelectedProduct(id) {
     var products = [];
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
-    if ("false" == checkSelectedProduct(id)) {
+    if ("false" == checkSelectedProduct(id) && parseInt(Ti.App.Properties.getString("marca"))) {
         products.push(id);
         result = "true";
     } else {
+        var marca2 = parseInt(Ti.App.Properties.getString("marca"));
+        Ti.App.Properties.setString("marca", marca2 + 1);
         var index = products.indexOf(id);
-        products.slice(index, 0);
+        products.splice(index, 1);
         result = "false";
     }
     Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
@@ -84,7 +86,7 @@ function redimencionaVitrine(vitrine) {
     var LARGURA_PADRAO = 1260;
     var alturaTela = 730;
     var larguraTela = 1280;
-    alturaTela - 200;
+    alturaTela - 210;
     larguraTela - 250;
     var alturaView = Math.round(.9 * alturaTela);
     var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);
@@ -280,3 +282,5 @@ var URL_PEDIDO = URL_BASE + "/Loja/jsonConsultaPedido/";
 var URL_CARRINHO_PEDIDO = URL_BASE + "/Loja/jsonConsultaCarrinho_pedido/";
 
 var URL_VIDEO = URL_BASE + "/Loja/jsonConsultaVideo/";
+
+Ti.App.Properties.setString("marca", 0);

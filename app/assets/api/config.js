@@ -70,12 +70,12 @@ function getSelectedProducts() {
 
 function checkSelectedProduct(id) {
 	var products = [];
-	var result = "false";
+	var result = "true";
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
 	var index = products.indexOf(id);
-	if (index >= 0) {
+	if (index > 0) {
 		result = "true";
 	} else {
 		result = "false";
@@ -83,23 +83,31 @@ function checkSelectedProduct(id) {
 	return result;
 }
 
+//AddSelectedProduct("true");
+Ti.App.Properties.setString("marca", 0);
+
 function AddSelectedProduct(id) {
+	
 	var products = [];
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
-	if (checkSelectedProduct(id) == "false") {
+	if (checkSelectedProduct(id) == "false" && parseInt(Ti.App.Properties.getString("marca"))) {
 		products.push(id);
 		result = "true";
 	} else {
+		var marca2 = parseInt(Ti.App.Properties.getString("marca"));
+		Ti.App.Properties.setString("marca", marca2 + 1);
 		var index = products.indexOf(id);
-		products.slice(index, 0);
-		//products.splice(inde, 1);
+		//products.slice(index, 1);
+		products.splice(index, 1);
 		result = "false";
 	}
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
 	return result;
+			
 }	
+
 	
 function addSelectedClients(cliente) {
 	if (Ti.App.Properties.getList(SELECTED_CLIENTS)) {
@@ -152,6 +160,7 @@ function addSelectedClients(cliente) {
 	}
 }
 
+
 function delSelectedClients(cliente) {
 
 	var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
@@ -176,7 +185,7 @@ function redimencionaVitrine(vitrine) {
 		alturaTela = alturaTela - 100;
 		larguraTela = larguraTela - 100;
 	} else {
-		alturaTela -200;
+		alturaTela -210;
 		larguraTela -250;
 	}
 

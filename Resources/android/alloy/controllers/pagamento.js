@@ -134,14 +134,11 @@ function Controller() {
         calculoParcela(comando, cliente);
     }
     function calculoParcela(comando, cliente) {
-        var calculo1 = 0;
-        calculo1 = 0 != aux_calc ? aux_calc * descontoPrazo[cliente] / 100 : valorInicial[cliente] * descontoPrazo[cliente] / 100;
-        var resultado1 = 0;
-        resultado1 = 0 != aux_calc ? aux_calc - calculo1 : valorInicial[cliente] - calculo1;
+        var calculo1 = valorInicial[cliente] * descontoPrazo[cliente] / 100;
+        var resultado1 = valorInicial[cliente] - calculo1;
         var calculo2 = resultado1 * descontoEspecial[cliente] / 100;
         var resultado2 = resultado1 - calculo2;
-        var parcelaSemDesconto = 0;
-        parcelaSemDesconto = 0 != aux_calc ? aux_calc / dataPrazoMedio[cliente] : valorInicial[cliente] / dataPrazoMedio[cliente];
+        valorInicial[cliente] / dataPrazoMedio[cliente];
         var parcelaComDesconto = resultado2 / dataPrazoMedio[cliente];
         var credito = getClienteCredito(cliente);
         var cl_credito_utilizado = credito.fieldByName("cl_credito_utilizado");
@@ -210,9 +207,10 @@ function Controller() {
                     var fk_produtos = carrinho[j][7];
                     var fk_tamanhos = carrinho[j][8];
                     var fk_cores = carrinho[j][9];
+                    var car_desc_unit = carrinho[j][10];
                     var crp_id = ultimoCarrinhoPedido + q;
                     q++;
-                    insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2);
+                    insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2, car_desc_unit);
                 }
                 insertPedido(ped_id, Ti.App.Properties.getString(SESSION_ID), 1, condicaoPrazoMedio[conjunto[i]], car_entrega, car_entrega_prazo, save_date, 1, numero, "", "N", conjunto[i], Ti.App.Properties.getString(CURRENT_USER_ID), 2);
             }
@@ -968,7 +966,8 @@ function Controller() {
     var quantidade;
     var total_geral = 0;
     var sobrepedido = [];
-    var lista_xd = Ti.App.Properties.getString("valor_desconto_ref");
+    var desconto_unit = 0;
+    Ti.App.Properties.getString("valor_desconto_ref");
     for (var i = 0; 7 > i; i++) sobrepedido[i] = 100;
     Ti.App.Properties.getList(SOBRE_PEDIDO) && (sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO));
     var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
@@ -985,11 +984,14 @@ function Controller() {
                 var car_quantidade = pedido.fieldByName("car_quantidade");
                 var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
                 var car_ipi = pedido.fieldByName("car_ipi");
+                var car_desc_unit = pedido.fieldByName("car_desc_unit");
+                desconto_unit = parseFloat(car_desc_unit);
                 var produto = car_quantidade * car_preco_unitario;
+                produto -= car_desc_unit;
                 var ipi = produto * car_ipi / 100;
                 quantidade += car_quantidade;
                 bruto = bruto + produto + ipi;
-                total_geral += bruto;
+                total_geral = total_geral + produto + ipi;
                 pedido.next();
             }
             descontoEspecial[cl_id] = 0;
@@ -1002,11 +1004,6 @@ function Controller() {
             } else {
                 var porcentagem = sobrepedido[i];
             }
-            if (lista_xd > 0) {
-                bruto = lista_xd;
-                lista_xd = 0;
-            } else bruto = bruto;
-            100 > porcentagem && (porcentagem = 0);
             data.push({
                 cliente: cl_id,
                 template: "item_cliente",
@@ -1048,11 +1045,10 @@ function Controller() {
                 }
             });
         }
-        $.total_geral.text = formatCurrency(bruto);
+        $.total_geral.text = formatCurrency(total_geral);
     }
     $.listaclientes.sections[0].setItems(data);
-    var aux_calc = Ti.App.Properties.getString("valor_desconto_ref");
-    Ti.App.Properties.setString("valor_desconto_ref", 0);
+    $.total_geral.text = formatCurrency(total_geral);
     __defers["$.__views.boleto!click!selecionaBoleto"] && $.__views.boleto.addEventListener("click", selecionaBoleto);
     __defers["$.__views.__alloyId1133!click!selecionaBoleto"] && $.__views.__alloyId1133.addEventListener("click", selecionaBoleto);
     __defers["$.__views.cheque!click!selecionaCheque"] && $.__views.cheque.addEventListener("click", selecionaCheque);

@@ -39,7 +39,17 @@ function Controller() {
         listProdutos();
     }
     function limpar() {
-        categoryClear($.quantidade);
+        var valores = [ "sim", "nao" ];
+        var exclui = Ti.UI.createOptionDialog({
+            options: valores,
+            destructive: 2,
+            cancel: 0,
+            title: "Desmarcar iteins"
+        });
+        exclui.show();
+        exclui.addEventListener("click", function(e) {
+            "sim" == valores[e.index] ? categoryClear($.quantidade) : alert("Continue comprando");
+        });
     }
     function voltar() {
         categoryVoltar();

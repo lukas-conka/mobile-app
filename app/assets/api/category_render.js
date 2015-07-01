@@ -184,12 +184,16 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 	}
 	//seleciona.width = seleciona.toBlob().height;
 
-	if (checkSelectedProduct(prd_id) == "true")
+	if (checkSelectedProduct(prd_id) == "true"){
 		seleciona.image = '/images/selecionar_vermelho.png';
-	else
+	}
+	//else
+	if(checkSelectedProduct(prd_id) == "false"){
 		seleciona.image = '/images/seleciona.png';
-
+		
 	seleciona.prd_id = prd_id;
+	}
+	
 	seleciona.addEventListener('click', function(e) {
 		if (AddSelectedProduct(e.source.prd_id) == "true") {
 			e.source.image = '/images/selecionar_vermelho.png';
@@ -200,6 +204,7 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 	});
 	setSelected(quantidade);
 }
+
 
 function cleanImages() {
 	if (Ti.Platform.osname == "android") {
