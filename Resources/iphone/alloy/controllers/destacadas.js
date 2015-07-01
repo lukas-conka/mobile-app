@@ -64,7 +64,7 @@ function Controller() {
         id: "destacadas"
     });
     $.__views.destacadas && $.addTopLevelView($.__views.destacadas);
-    $.__views.__alloyId343 = Ti.UI.createButton({
+    $.__views.__alloyId338 = Ti.UI.createButton({
         backgroundColor: "#008382",
         borderRadius: "5",
         color: "#ffffff",
@@ -73,10 +73,10 @@ function Controller() {
         top: "1%",
         width: "10%",
         title: "Menu",
-        id: "__alloyId343"
+        id: "__alloyId338"
     });
-    $.__views.destacadas.add($.__views.__alloyId343);
-    goToMenu ? $.__views.__alloyId343.addEventListener("click", goToMenu) : __defers["$.__views.__alloyId343!click!goToMenu"] = true;
+    $.__views.destacadas.add($.__views.__alloyId338);
+    goToMenu ? $.__views.__alloyId338.addEventListener("click", goToMenu) : __defers["$.__views.__alloyId338!click!goToMenu"] = true;
     $.__views.imagem = Ti.UI.createImageView({
         top: "8%",
         width: "98%",
@@ -126,7 +126,7 @@ function Controller() {
         $.imagem.image = null;
     };
     Ti.App.addEventListener("removeBitmap", eventListener);
-    __defers["$.__views.__alloyId343!click!goToMenu"] && $.__views.__alloyId343.addEventListener("click", goToMenu);
+    __defers["$.__views.__alloyId338!click!goToMenu"] && $.__views.__alloyId338.addEventListener("click", goToMenu);
     __defers["$.__views.imagem!click!stopSlides"] && $.__views.imagem.addEventListener("click", stopSlides);
     __defers["$.__views.nextSlide!click!nextSlide"] && $.__views.nextSlide.addEventListener("click", nextSlide);
     __defers["$.__views.prevSlide!click!prevSlide"] && $.__views.prevSlide.addEventListener("click", prevSlide);

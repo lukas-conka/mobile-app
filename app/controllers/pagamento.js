@@ -21,9 +21,9 @@ var quantidade;
 var total_geral = 0;
 var sobrepedido = [];
 var desconto_unit = 0;
-
+var aux_total = 0;
+var vrf = 0;
 //Variavel estatica global que recebe o valor com o desconto de replicar.js
-var lista_xd = Ti.App.Properties.getString('valor_desconto_ref');
 
 for (var i = 0; i < 7; i++) {
 	sobrepedido[i] = 100;
@@ -34,7 +34,8 @@ if (Ti.App.Properties.getList(SOBRE_PEDIDO)) {
 }
 
 var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
-
+dadosConsulta();
+function dadosConsulta(){
 for (var i = 0; i < conjunto.length; i++) {
 	var cliente = consultaCliente(conjunto[i]);
 	if (cliente.isValidRow()) {
@@ -62,10 +63,11 @@ for (var i = 0; i < conjunto.length; i++) {
 			pedido.next();
 		}
 		
+		aux_total += bruto;
+		valorInicial[cl_id] = bruto;
 		descontoEspecial[cl_id] = 0;
 		descontoPrazo[cl_id] = 0;
 		descontoVolume[cl_id] = 0;
-		valorInicial[cl_id] = bruto;
 
 		if (base == 0) {
 			var porcentagem = 100;
@@ -118,6 +120,7 @@ for (var i = 0; i < conjunto.length; i++) {
 		});
 	}
 	$.total_geral.text = formatCurrency(total_geral);
+}
 }
 
 $.listaclientes.sections[0].setItems(data);
@@ -275,15 +278,24 @@ function calculoEspecial(comando, cliente, desconto) {
 	selecao.updateItemAt(comando.itemIndex, item);
 	calculoParcela(comando, cliente);
 }
-
+Ti.App.Properties.setString('totalFinal', 0);
+Ti.App.Properties.setString('calc1', 0);
+Ti.App.Properties.setString('calc2', 0);
 function calculoParcela(comando, cliente) {
 	//modificado por Lucas
+	var totalFinal = parseFloat(Ti.App.Properties.getString('totalFinal'));
 	
 	var calculo1 = (valorInicial[cliente] * descontoPrazo[cliente]) / 100;
-	
 	var resultado1 = valorInicial[cliente] - calculo1;
 	
+	
+	
+	
 	var calculo2 = (resultado1 * descontoEspecial[cliente]) / 100; //valor final do pedido
+	// alert(calculo2);
+	// aux_total -= calculo1;
+	// aux_total -= calculo2;
+	
 	var resultado2 = resultado1 - calculo2; //valor final do pedido finalmente 
 
 	var parcelaSemDesconto = valorInicial[cliente] / dataPrazoMedio[cliente];
@@ -301,10 +313,38 @@ function calculoParcela(comando, cliente) {
 	item.label_parcela.text = dataPrazoMedio[cliente] + "x de " + formatCurrency(parcelaComDesconto);
 	item.label_desconto.text = formatCurrency(resultado2);
 	item.label_credito.text = formatCurrency(utilizado);
-	$.total_geral.text = formatCurrency(resultado2);
-	
-
 	selecao.updateItemAt(comando.itemIndex, item);
+	
+	//Nivel lincoln
+	if(calculo1 != 0){
+		if(totalFinal == 0){
+			aux_total = aux_total - calculo1;
+		}
+		else{
+			
+			aux_total = totalFinal;
+			aux_total = aux_total - calculo1;
+		}
+		
+		
+		Ti.App.Properties.setString('totalFinal', aux_total);
+
+	}
+	if(calculo2 != 0){
+		if(totalFinal == 0){
+			aux_total = aux_total - calculo2;
+		}
+		else{
+			
+			aux_total = totalFinal;
+			aux_total = aux_total - calculo2;
+		}
+		
+		Ti.App.Properties.setString('totalFinal', aux_total);
+		
+	}
+	
+	$.total_geral.text = formatCurrency(aux_total);
 }
 
 function selecionaBoleto() {

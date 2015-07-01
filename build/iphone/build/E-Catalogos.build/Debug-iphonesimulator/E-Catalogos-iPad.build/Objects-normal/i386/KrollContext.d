@@ -3,9 +3,9 @@ dependencies: \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollContext.m \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollContext.h \
 =======
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollContext.m \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollContext.h \
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollContext.m \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollContext.h \
+>>>>>>> 1ef0c9ecadc18894883c55e9831fe72080f3b589
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -36,25 +36,25 @@ dependencies: \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiExceptionHandler.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIAlertDialogProxy.h
 =======
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBase.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiThreading.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiPublicAPI.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollObject.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollTimer.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/KrollCallback.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiUtils.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDimension.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiColor.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiProxy.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiEvaluator.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/WebFont.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiFile.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBuffer.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiBlob.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiLocale.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiDebugger.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiProfiler/TiProfiler.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiExceptionHandler.h \
-  /Users/ecatalogos/Documents/mobile-app/build/iphone/Classes/TiUIAlertDialogProxy.h
->>>>>>> 7339142a7b390fa0467c2df9f3d99db546cc3b13
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBase.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiThreading.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiPublicAPI.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollObject.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollTimer.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/KrollCallback.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiUtils.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDimension.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiColor.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiProxy.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiEvaluator.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/WebFont.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiFile.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBuffer.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiBlob.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiLocale.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiDebugger.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiProfiler/TiProfiler.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiExceptionHandler.h \
+  /Users/ecatalogos/Documents/lucas/mobile-app/build/iphone/Classes/TiUIAlertDialogProxy.h
+>>>>>>> 1ef0c9ecadc18894883c55e9831fe72080f3b589

@@ -92,23 +92,42 @@ function AddSelectedProduct(id) {
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
+<<<<<<< HEAD
 	if (checkSelectedProduct(id) == "false" && parseInt(Ti.App.Properties.getString("marca"))) {
+=======
+	var result = "false";
+	if (checkSelectedProduct(id) == "false") {
+>>>>>>> d3e31c3f60a98ee403c4d100e859ff7ada05e007
 		products.push(id);
 		result = "true";
 	} else {
 		var marca2 = parseInt(Ti.App.Properties.getString("marca"));
 		Ti.App.Properties.setString("marca", marca2 + 1);
 		var index = products.indexOf(id);
+<<<<<<< HEAD
 		//products.slice(index, 1);
 		products.splice(index, 1);
+=======
+<<<<<<< HEAD
+		products.splice(index, 1);
+=======
+		products.slice(index, 0);
+		//products.splice(inde, 1);
+>>>>>>> 1ef0c9ecadc18894883c55e9831fe72080f3b589
+>>>>>>> d3e31c3f60a98ee403c4d100e859ff7ada05e007
 		result = "false";
 	}
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
 	return result;
+<<<<<<< HEAD
 			
 }	
 
 	
+=======
+}
+
+>>>>>>> d3e31c3f60a98ee403c4d100e859ff7ada05e007
 function addSelectedClients(cliente) {
 	if (Ti.App.Properties.getList(SELECTED_CLIENTS)) {
 		var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
@@ -181,12 +200,18 @@ function redimencionaVitrine(vitrine) {
 
 	var alturaTela = 730;
 	var larguraTela = 1280;
+	
 	if (Ti.Platform.osname != "android") {
 		alturaTela = alturaTela - 100;
 		larguraTela = larguraTela - 100;
 	} else {
+<<<<<<< HEAD
 		alturaTela -210;
 		larguraTela -250;
+=======
+		alturaTela -550;
+		larguraTela -1024;
+>>>>>>> d3e31c3f60a98ee403c4d100e859ff7ada05e007
 	}
 
 	var alturaView = Math.round(alturaTela * 0.9);
