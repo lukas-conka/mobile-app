@@ -20,12 +20,10 @@ function checkSelectedProduct(id) {
 function AddSelectedProduct(id) {
     var products = [];
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
-    if ("false" == checkSelectedProduct(id) && parseInt(Ti.App.Properties.getString("marca"))) {
+    if ("false" == checkSelectedProduct(id)) {
         products.push(id);
         result = "true";
     } else {
-        var marca2 = parseInt(Ti.App.Properties.getString("marca"));
-        Ti.App.Properties.setString("marca", marca2 + 1);
         var index = products.indexOf(id);
         products.splice(index, 1);
         result = "false";
@@ -282,5 +280,3 @@ var URL_PEDIDO = URL_BASE + "/Loja/jsonConsultaPedido/";
 var URL_CARRINHO_PEDIDO = URL_BASE + "/Loja/jsonConsultaCarrinho_pedido/";
 
 var URL_VIDEO = URL_BASE + "/Loja/jsonConsultaVideo/";
-
-Ti.App.Properties.setString("marca", 0);

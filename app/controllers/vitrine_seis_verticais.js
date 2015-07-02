@@ -97,19 +97,21 @@ function renderProducts() {
 }
 
 function limpar() {
-	var valores = ["sim","nao"];
+	//var valores = ["sim","nao"];
 	
-	var exclui  = Ti.UI.createOptionDialog({
-		options: valores,
+	var exclui  = Ti.UI.createAlertDialog({
+		//options: valores,
+		buttonNames:['Confirmar','Cancelar'],
 		destructive: 2,
 		cancel: 0,
-		title: "Desmarcar iteins"
+		title: "Desmarcar itens"
 	});
 	
 	exclui.show();
 	
+	
 	exclui.addEventListener("click", function(e){
-		if(valores[e.index] == "sim"){
+		if(e.cancel){
 				categoryClear($.quantidade);
 		} else {
 			alert("Continue comprando");
@@ -170,3 +172,10 @@ if(Ti.Platform.osname == "ipad"){
 	$.botaoQuatroVerticais.textAlign = "center";
 	
 }
+/*($.informacaoA.font = {fontSize: 7};
+$.informacaoB.font = {fontSize: 7};
+$.informacaoC.font = {fontSize: 7};
+$.informacaoD.font = {fontSize: 7};
+$.informacaoE.font = {fontSize: 7};
+$.informacaoF.font = {fontSize: 7};
+*/

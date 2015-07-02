@@ -89,13 +89,13 @@ function redimencionaVitrine(vitrine) {
         alturaTela -= 100;
         larguraTela -= 100;
     } else {
-<<<<<<< HEAD
+
         alturaTela - 200;
         larguraTela - 250;
-=======
+
         alturaTela - 550;
         larguraTela - 1024;
->>>>>>> 1ef0c9ecadc18894883c55e9831fe72080f3b589
+
     }
     var alturaView = Math.round(.9 * alturaTela);
     var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);

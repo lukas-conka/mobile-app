@@ -1061,17 +1061,17 @@ function Controller() {
     var total_geral = 0;
     var sobrepedido = [];
     var desconto_unit = 0;
-<<<<<<< HEAD
+
     Ti.App.Properties.getString("valor_desconto_ref");
     if (Ti.App.Properties.getList(SOBRE_PEDIDO)) {
         sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO);
         alert(sobrepedido);
     }
-=======
+
     var aux_total = 0;
     for (var i = 0; 7 > i; i++) sobrepedido[i] = 100;
     Ti.App.Properties.getList(SOBRE_PEDIDO) && (sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO));
->>>>>>> 93ad86a35365fd6dbb17f399886d97bee5b58119
+
     var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
     dadosConsulta();
     $.listaclientes.sections[0].setItems(data);

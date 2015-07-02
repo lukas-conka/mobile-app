@@ -67,16 +67,15 @@ function Controller() {
         produtos.close();
     }
     function limpar() {
-        var valores = [ "sim", "nao" ];
         var exclui = Ti.UI.createOptionDialog({
-            options: valores,
+            buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
             cancel: 0,
-            title: "Desmarcar iteins"
+            title: "Desmarcar itens"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            "sim" == valores[e.index] ? categoryClear($.quantidade) : alert("Continue comprando");
+            e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
         });
     }
     function voltar() {
