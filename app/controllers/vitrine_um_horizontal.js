@@ -94,32 +94,11 @@ function goToListaProdutos(){
 function limpar() {
 		var valores = ["sim","nao"];
 	
-	if(Ti.Platform.osname == "android"){
+	// if(Ti.Platform.osname == "android"){
 		
-		var exclui  = Ti.UI.createOptionDialog({
+		var exclui  = Ti.UI.createAlertDialog({
 			//options: valores,
 			buttonNames: ['Confirmar','Cancelar'],
-			destructive: 2,
-			cancel: 0,
-			title: "Desmarcar itens"
-		});
-		
-		exclui.show();
-		
-		exclui.addEventListener("click", function(e){
-			if(e.cancel){
-					categoryClear($.quantidade);
-			} else {
-				alert("Continue comprando");
-			}
-		
-		});
-		
-	}else{
-		
-		var exclui  = Ti.UI.createOptionDialog({
-			//options: valores,
-			options: ['Confirmar','Cancelar'],
 			destructive: 2,
 			title: "Desmarcar itens"
 		});
@@ -134,8 +113,6 @@ function limpar() {
 			}
 		
 		});
-		
-	}
 }
 
 function voltar() {

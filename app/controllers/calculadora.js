@@ -952,3 +952,11 @@ function botaoProximo() {
 	}
 	renderProduct();
 }
+
+$.informacoes.font = {fontSize: 13};
+$.referencia.font = {fontSize: 13};
+$.nome.font = {fontSize: 13};
+$.colecao.font = {fontSize: 13};
+$.composicao.font = {fontSize: 13};
+$.preco.font = {fontSize: 13};
+$.prazo.font = {fontSize: 13};

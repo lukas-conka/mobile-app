@@ -39,15 +39,14 @@ function Controller() {
         listProdutos();
     }
     function limpar() {
-        var exclui = Ti.UI.createOptionDialog({
+        var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            cancel: 0,
             title: "Desmarcar itens"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
+            0 == e.index ? categoryClear($.quantidade) : alert("Continue comprando");
         });
     }
     function voltar() {
@@ -100,12 +99,12 @@ function Controller() {
         id: "win"
     });
     $.__views.win && $.addTopLevelView($.__views.win);
-    $.__views.__alloyId1647 = Ti.UI.createView({
+    $.__views.__alloyId1645 = Ti.UI.createView({
         height: "90%",
         top: "0",
-        id: "__alloyId1647"
+        id: "__alloyId1645"
     });
-    $.__views.win.add($.__views.__alloyId1647);
+    $.__views.win.add($.__views.__alloyId1645);
     $.__views.gradeA = Ti.UI.createView({
         backgroundColor: "#dddddd",
         bottom: "0",
@@ -113,28 +112,28 @@ function Controller() {
         width: "98%",
         id: "gradeA"
     });
-    $.__views.__alloyId1647.add($.__views.gradeA);
-    $.__views.__alloyId1648 = Ti.UI.createView({
+    $.__views.__alloyId1645.add($.__views.gradeA);
+    $.__views.__alloyId1646 = Ti.UI.createView({
         backgroundColor: "#ffffff",
         height: "86%",
         top: "1.5%",
         width: "98%",
-        id: "__alloyId1648"
+        id: "__alloyId1646"
     });
-    $.__views.gradeA.add($.__views.__alloyId1648);
+    $.__views.gradeA.add($.__views.__alloyId1646);
     $.__views.imagemA = Ti.UI.createImageView({
         width: "100%",
         id: "imagemA"
     });
-    $.__views.__alloyId1648.add($.__views.imagemA);
-    $.__views.__alloyId1649 = Ti.UI.createView({
+    $.__views.__alloyId1646.add($.__views.imagemA);
+    $.__views.__alloyId1647 = Ti.UI.createView({
         height: "8.8%",
         top: "89%",
         width: "98%",
         layout: "horizontal",
-        id: "__alloyId1649"
+        id: "__alloyId1647"
     });
-    $.__views.gradeA.add($.__views.__alloyId1649);
+    $.__views.gradeA.add($.__views.__alloyId1647);
     $.__views.precoA = Ti.UI.createLabel({
         backgroundColor: "#ffffff",
         color: "#000000",
@@ -144,7 +143,7 @@ function Controller() {
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "precoA"
     });
-    $.__views.__alloyId1649.add($.__views.precoA);
+    $.__views.__alloyId1647.add($.__views.precoA);
     $.__views.referenciaA = Ti.UI.createLabel({
         backgroundColor: "#ffffff",
         color: "#000000",
@@ -154,7 +153,7 @@ function Controller() {
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "referenciaA"
     });
-    $.__views.__alloyId1649.add($.__views.referenciaA);
+    $.__views.__alloyId1647.add($.__views.referenciaA);
     $.__views.tempoA = Ti.UI.createButton({
         backgroundColor: "#000000",
         color: "#ffffff",
@@ -167,36 +166,36 @@ function Controller() {
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         id: "tempoA"
     });
-    $.__views.__alloyId1649.add($.__views.tempoA);
+    $.__views.__alloyId1647.add($.__views.tempoA);
     $.__views.selecionaA = Ti.UI.createImageView({
         height: "100%",
         left: 3,
         zIndex: 10,
         id: "selecionaA"
     });
-    $.__views.__alloyId1649.add($.__views.selecionaA);
+    $.__views.__alloyId1647.add($.__views.selecionaA);
     $.__views.imagesA = Ti.UI.createView({
         left: 3,
         height: "100%",
         width: "400dp",
         id: "imagesA"
     });
-    $.__views.__alloyId1649.add($.__views.imagesA);
-    $.__views.__alloyId1650 = Ti.UI.createView({
+    $.__views.__alloyId1647.add($.__views.imagesA);
+    $.__views.__alloyId1648 = Ti.UI.createView({
         height: "10%",
         left: "0%",
         top: "90%",
         width: "100%",
-        id: "__alloyId1650"
+        id: "__alloyId1648"
     });
-    $.__views.win.add($.__views.__alloyId1650);
-    $.__views.__alloyId1651 = Ti.UI.createView({
+    $.__views.win.add($.__views.__alloyId1648);
+    $.__views.__alloyId1649 = Ti.UI.createView({
         height: "100%",
         left: "0",
         width: "25%",
-        id: "__alloyId1651"
+        id: "__alloyId1649"
     });
-    $.__views.__alloyId1650.add($.__views.__alloyId1651);
+    $.__views.__alloyId1648.add($.__views.__alloyId1649);
     $.__views.botaoQuatroVerticais = Ti.UI.createButton({
         backgroundColor: "#008382",
         borderRadius: "5",
@@ -207,9 +206,9 @@ function Controller() {
         title: "Limpar todas marcações",
         id: "botaoQuatroVerticais"
     });
-    $.__views.__alloyId1651.add($.__views.botaoQuatroVerticais);
+    $.__views.__alloyId1649.add($.__views.botaoQuatroVerticais);
     limpar ? $.__views.botaoQuatroVerticais.addEventListener("click", limpar) : __defers["$.__views.botaoQuatroVerticais!click!limpar"] = true;
-    $.__views.__alloyId1652 = Ti.UI.createButton({
+    $.__views.__alloyId1650 = Ti.UI.createButton({
         backgroundColor: "#008382",
         borderRadius: "5",
         color: "#ffffff",
@@ -217,35 +216,35 @@ function Controller() {
         left: "55%",
         width: "45%",
         title: "Voltar",
-        id: "__alloyId1652"
+        id: "__alloyId1650"
     });
-    $.__views.__alloyId1651.add($.__views.__alloyId1652);
-    voltar ? $.__views.__alloyId1652.addEventListener("click", voltar) : __defers["$.__views.__alloyId1652!click!voltar"] = true;
-    $.__views.__alloyId1653 = Ti.UI.createView({
+    $.__views.__alloyId1649.add($.__views.__alloyId1650);
+    voltar ? $.__views.__alloyId1650.addEventListener("click", voltar) : __defers["$.__views.__alloyId1650!click!voltar"] = true;
+    $.__views.__alloyId1651 = Ti.UI.createView({
         height: "100%",
         left: "25%",
         width: "50%",
-        id: "__alloyId1653"
+        id: "__alloyId1651"
     });
-    $.__views.__alloyId1650.add($.__views.__alloyId1653);
-    $.__views.__alloyId1654 = Ti.UI.createImageView({
+    $.__views.__alloyId1648.add($.__views.__alloyId1651);
+    $.__views.__alloyId1652 = Ti.UI.createImageView({
         image: "/images/primeiro.png",
         height: "60%",
         left: "2%",
         width: "12%",
-        id: "__alloyId1654"
+        id: "__alloyId1652"
     });
-    $.__views.__alloyId1653.add($.__views.__alloyId1654);
-    primeiro ? $.__views.__alloyId1654.addEventListener("click", primeiro) : __defers["$.__views.__alloyId1654!click!primeiro"] = true;
-    $.__views.__alloyId1655 = Ti.UI.createImageView({
+    $.__views.__alloyId1651.add($.__views.__alloyId1652);
+    primeiro ? $.__views.__alloyId1652.addEventListener("click", primeiro) : __defers["$.__views.__alloyId1652!click!primeiro"] = true;
+    $.__views.__alloyId1653 = Ti.UI.createImageView({
         image: "/images/anterior.png",
         height: "60%",
         left: "16%",
         width: "12%",
-        id: "__alloyId1655"
+        id: "__alloyId1653"
     });
-    $.__views.__alloyId1653.add($.__views.__alloyId1655);
-    anterior ? $.__views.__alloyId1655.addEventListener("click", anterior) : __defers["$.__views.__alloyId1655!click!anterior"] = true;
+    $.__views.__alloyId1651.add($.__views.__alloyId1653);
+    anterior ? $.__views.__alloyId1653.addEventListener("click", anterior) : __defers["$.__views.__alloyId1653!click!anterior"] = true;
     $.__views.paginacao = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         borderColor: "#cdcdcd",
@@ -257,50 +256,50 @@ function Controller() {
         title: "1/1",
         id: "paginacao"
     });
-    $.__views.__alloyId1653.add($.__views.paginacao);
-    $.__views.__alloyId1656 = Ti.UI.createImageView({
+    $.__views.__alloyId1651.add($.__views.paginacao);
+    $.__views.__alloyId1654 = Ti.UI.createImageView({
         image: "/images/proximo.png",
         height: "60%",
         left: "52%",
         width: "12%",
-        id: "__alloyId1656"
+        id: "__alloyId1654"
     });
-    $.__views.__alloyId1653.add($.__views.__alloyId1656);
-    proximo ? $.__views.__alloyId1656.addEventListener("click", proximo) : __defers["$.__views.__alloyId1656!click!proximo"] = true;
-    $.__views.__alloyId1657 = Ti.UI.createImageView({
+    $.__views.__alloyId1651.add($.__views.__alloyId1654);
+    proximo ? $.__views.__alloyId1654.addEventListener("click", proximo) : __defers["$.__views.__alloyId1654!click!proximo"] = true;
+    $.__views.__alloyId1655 = Ti.UI.createImageView({
         image: "/images/ultimo.png",
         height: "60%",
         left: "66%",
         width: "12%",
-        id: "__alloyId1657"
+        id: "__alloyId1655"
     });
-    $.__views.__alloyId1653.add($.__views.__alloyId1657);
-    ultimo ? $.__views.__alloyId1657.addEventListener("click", ultimo) : __defers["$.__views.__alloyId1657!click!ultimo"] = true;
-    $.__views.__alloyId1658 = Ti.UI.createImageView({
+    $.__views.__alloyId1651.add($.__views.__alloyId1655);
+    ultimo ? $.__views.__alloyId1655.addEventListener("click", ultimo) : __defers["$.__views.__alloyId1655!click!ultimo"] = true;
+    $.__views.__alloyId1656 = Ti.UI.createImageView({
         image: "/images/lupa.png",
         height: "60%",
         left: "79%",
         width: "12%",
-        id: "__alloyId1658"
+        id: "__alloyId1656"
     });
-    $.__views.__alloyId1653.add($.__views.__alloyId1658);
-    goToListaProdutos ? $.__views.__alloyId1658.addEventListener("click", goToListaProdutos) : __defers["$.__views.__alloyId1658!click!goToListaProdutos"] = true;
-    $.__views.__alloyId1659 = Ti.UI.createView({
+    $.__views.__alloyId1651.add($.__views.__alloyId1656);
+    goToListaProdutos ? $.__views.__alloyId1656.addEventListener("click", goToListaProdutos) : __defers["$.__views.__alloyId1656!click!goToListaProdutos"] = true;
+    $.__views.__alloyId1657 = Ti.UI.createView({
         height: "100%",
         right: "0%",
         width: "25%",
-        id: "__alloyId1659"
+        id: "__alloyId1657"
     });
-    $.__views.__alloyId1650.add($.__views.__alloyId1659);
-    $.__views.__alloyId1660 = Ti.UI.createImageView({
+    $.__views.__alloyId1648.add($.__views.__alloyId1657);
+    $.__views.__alloyId1658 = Ti.UI.createImageView({
         image: "/images/cesta.png",
         height: "60%",
         right: "0%",
         width: "75%",
-        id: "__alloyId1660"
+        id: "__alloyId1658"
     });
-    $.__views.__alloyId1659.add($.__views.__alloyId1660);
-    cesta ? $.__views.__alloyId1660.addEventListener("click", cesta) : __defers["$.__views.__alloyId1660!click!cesta"] = true;
+    $.__views.__alloyId1657.add($.__views.__alloyId1658);
+    cesta ? $.__views.__alloyId1658.addEventListener("click", cesta) : __defers["$.__views.__alloyId1658!click!cesta"] = true;
     $.__views.quantidade = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         borderColor: "#cdcdcd",
@@ -312,7 +311,7 @@ function Controller() {
         title: "0",
         id: "quantidade"
     });
-    $.__views.__alloyId1659.add($.__views.quantidade);
+    $.__views.__alloyId1657.add($.__views.quantidade);
     exports.destroy = function() {};
     _.extend($, $.__views);
     Ti.include("/api/config.js");
@@ -336,13 +335,13 @@ function Controller() {
     };
     Ti.App.addEventListener("removeBitmap", eventListener);
     __defers["$.__views.botaoQuatroVerticais!click!limpar"] && $.__views.botaoQuatroVerticais.addEventListener("click", limpar);
-    __defers["$.__views.__alloyId1652!click!voltar"] && $.__views.__alloyId1652.addEventListener("click", voltar);
-    __defers["$.__views.__alloyId1654!click!primeiro"] && $.__views.__alloyId1654.addEventListener("click", primeiro);
-    __defers["$.__views.__alloyId1655!click!anterior"] && $.__views.__alloyId1655.addEventListener("click", anterior);
-    __defers["$.__views.__alloyId1656!click!proximo"] && $.__views.__alloyId1656.addEventListener("click", proximo);
-    __defers["$.__views.__alloyId1657!click!ultimo"] && $.__views.__alloyId1657.addEventListener("click", ultimo);
-    __defers["$.__views.__alloyId1658!click!goToListaProdutos"] && $.__views.__alloyId1658.addEventListener("click", goToListaProdutos);
-    __defers["$.__views.__alloyId1660!click!cesta"] && $.__views.__alloyId1660.addEventListener("click", cesta);
+    __defers["$.__views.__alloyId1650!click!voltar"] && $.__views.__alloyId1650.addEventListener("click", voltar);
+    __defers["$.__views.__alloyId1652!click!primeiro"] && $.__views.__alloyId1652.addEventListener("click", primeiro);
+    __defers["$.__views.__alloyId1653!click!anterior"] && $.__views.__alloyId1653.addEventListener("click", anterior);
+    __defers["$.__views.__alloyId1654!click!proximo"] && $.__views.__alloyId1654.addEventListener("click", proximo);
+    __defers["$.__views.__alloyId1655!click!ultimo"] && $.__views.__alloyId1655.addEventListener("click", ultimo);
+    __defers["$.__views.__alloyId1656!click!goToListaProdutos"] && $.__views.__alloyId1656.addEventListener("click", goToListaProdutos);
+    __defers["$.__views.__alloyId1658!click!cesta"] && $.__views.__alloyId1658.addEventListener("click", cesta);
     _.extend($, exports);
 }
 

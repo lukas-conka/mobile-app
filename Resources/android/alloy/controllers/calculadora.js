@@ -422,9 +422,9 @@ function Controller() {
         if ($.tela.text < qtnminima) alert("Quantidade minima de " + qtnminima); else if ("" == $.tela.text) alert("Digite a quantidade"); else {
             var quantidade = $.tela.text;
             sortido ? valorSortido(quantidade) : valorPorQuantidade(quantidade);
+            $.tela.text = "";
+            renderTable();
         }
-        $.tela.text = "";
-        renderTable();
     }
     function valorPorQuantidade(quantidade) {
         for (var i = 0; i < botoes_selecionados.length; i++) {
@@ -516,12 +516,11 @@ function Controller() {
         var fk_usu = Ti.App.Properties.getString(CURRENT_USER_ID);
         if (0 != carrinho[0]) {
             var car_id = carrinho[0];
-            {
-                carrinho[1];
-            }
+            var quantidade_atual = carrinho[1];
             var estoque = carrinho[2];
             var quantidade = 0;
-            0 != car_quantidade && quantidade > estoque && (quantidade = estoque);
+            0 != car_quantidade && (quantidade = quantidade_atual + parseInt(car_quantidade));
+            quantidade > estoque && (quantidade = estoque);
             updateCarrinho(car_id, session, quantidade, 0, 0, 0, 0, 0);
         } else insertCarrinho(session, car_quantidade, car_preco_unitario, car_ipi, car_icms, 0, 0, 0, 0, 0, fk_usu, prd_id, fk_tamanhos, fk_cores, fk_cli, ep_id);
     }
@@ -1749,32 +1748,26 @@ function Controller() {
         min_credito = cliente.fieldByName("cl_valor_minimo");
         max_credito = cliente.fieldByName("cl_credito_total") - cliente.fieldByName("cl_credito_utilizado");
     }
+    $.informacoes.font = {
+        fontSize: 13
+    };
     $.referencia.font = {
-        fontSize: 15
+        fontSize: 13
     };
     $.nome.font = {
-        fontSize: 15
+        fontSize: 13
     };
     $.colecao.font = {
-        fontSize: 15
-    };
-    $.informacoes.font = {
-        fontSize: 15
+        fontSize: 13
     };
     $.composicao.font = {
-        fontSize: 15
+        fontSize: 13
     };
     $.preco.font = {
-        fontSize: 15
+        fontSize: 13
     };
     $.prazo.font = {
-        fontSize: 15
-    };
-    $.descricao.font = {
-        fontSize: 15
-    };
-    $.codbarras.font = {
-        fontSize: 15
+        fontSize: 13
     };
     __defers["$.__views.__alloyId7!click!informacoes"] && $.__views.__alloyId7.addEventListener("click", informacoes);
     __defers["$.__views.__alloyId8!click!composicao"] && $.__views.__alloyId8.addEventListener("click", composicao);

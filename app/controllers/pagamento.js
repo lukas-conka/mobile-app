@@ -278,16 +278,18 @@ function calculoEspecial(comando, cliente, desconto) {
 	selecao.updateItemAt(comando.itemIndex, item);
 	calculoParcela(comando, cliente);
 }
+
+//Carlos
 Ti.App.Properties.setString('totalFinal', 0);
 Ti.App.Properties.setString('calc1', 0);
 Ti.App.Properties.setString('calc2', 0);
+
 function calculoParcela(comando, cliente) {
 	//modificado por Lucas
 	var totalFinal = parseFloat(Ti.App.Properties.getString('totalFinal'));
 	
 	var calculo1 = (valorInicial[cliente] * descontoPrazo[cliente]) / 100;
 	var resultado1 = valorInicial[cliente] - calculo1;
-	
 	
 	
 	
@@ -315,7 +317,6 @@ function calculoParcela(comando, cliente) {
 	item.label_credito.text = formatCurrency(utilizado);
 	selecao.updateItemAt(comando.itemIndex, item);
 	
-	//Nivel lincoln
 	if(calculo1 != 0){
 		if(totalFinal == 0){
 			aux_total = aux_total - calculo1;
@@ -326,8 +327,9 @@ function calculoParcela(comando, cliente) {
 			aux_total = aux_total - calculo1;
 		}
 		
-		
 		Ti.App.Properties.setString('totalFinal', aux_total);
+		lista[item.cliente] += item.cliente;
+		Ti.App.Properties.setString('vet_list_id', lista);
 
 	}
 	if(calculo2 != 0){
@@ -343,7 +345,6 @@ function calculoParcela(comando, cliente) {
 		Ti.App.Properties.setString('totalFinal', aux_total);
 		
 	}
-	
 	$.total_geral.text = formatCurrency(aux_total);
 }
 

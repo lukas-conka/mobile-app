@@ -354,7 +354,7 @@ function categoryCesta() {
 	cleanImages();
 	var produtos = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	if (produtos) {
-		if (produtos.length >= 0) {
+		if (produtos.length > 0) {
 			var calculadora = Alloy.createController("calculadora").getView();
 			calculadora.open({
 				fullscreen : true,

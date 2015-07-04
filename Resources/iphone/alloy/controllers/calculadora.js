@@ -1748,6 +1748,27 @@ function Controller() {
         min_credito = cliente.fieldByName("cl_valor_minimo");
         max_credito = cliente.fieldByName("cl_credito_total") - cliente.fieldByName("cl_credito_utilizado");
     }
+    $.informacoes.font = {
+        fontSize: 13
+    };
+    $.referencia.font = {
+        fontSize: 13
+    };
+    $.nome.font = {
+        fontSize: 13
+    };
+    $.colecao.font = {
+        fontSize: 13
+    };
+    $.composicao.font = {
+        fontSize: 13
+    };
+    $.preco.font = {
+        fontSize: 13
+    };
+    $.prazo.font = {
+        fontSize: 13
+    };
     __defers["$.__views.__alloyId7!click!informacoes"] && $.__views.__alloyId7.addEventListener("click", informacoes);
     __defers["$.__views.__alloyId8!click!composicao"] && $.__views.__alloyId8.addEventListener("click", composicao);
     __defers["$.__views.__alloyId9!click!precotroca"] && $.__views.__alloyId9.addEventListener("click", precotroca);

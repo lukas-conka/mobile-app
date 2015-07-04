@@ -13,13 +13,14 @@ function checkSelectedProduct(id) {
     var result = "true";
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
     var index = products.indexOf(id);
-    result = index > 0 ? "true" : "false";
+    result = index >= 0 ? "true" : "false";
     return result;
 }
 
 function AddSelectedProduct(id) {
     var products = [];
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
+    var result = "false";
     if ("false" == checkSelectedProduct(id)) {
         products.push(id);
         result = "true";
@@ -84,6 +85,7 @@ function redimencionaVitrine(vitrine) {
     var LARGURA_PADRAO = 1260;
     var alturaTela = 730;
     var larguraTela = 1280;
+    alturaTela - 250;
     alturaTela - 210;
     larguraTela - 250;
     var alturaView = Math.round(.9 * alturaTela);

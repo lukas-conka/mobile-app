@@ -23,7 +23,17 @@ function menuSelection(index) {
 		goToTransportadora();
 		break;
 	case 5:
-		goToNovoCliente();
+		var cliente_id = Ti.App.Properties.getList(SELECTED_CLIENTS);
+		if(cliente_id.length > 0){
+			goToNovoCliente();
+		}else{
+			var Alerta = Ti.UI.createAlertDialog({
+				message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
+				title: "Selecionar cliente!:"
+			});
+			
+			Alerta.show();
+		}
 		break;
 	case 6:
 		goToFuncoes();

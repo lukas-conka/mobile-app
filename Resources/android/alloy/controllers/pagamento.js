@@ -230,11 +230,14 @@ function Controller() {
         item.label_desconto.text = formatCurrency(resultado2);
         item.label_credito.text = formatCurrency(utilizado);
         selecao.updateItemAt(comando.itemIndex, item);
+        var lista = Ti.App.Properties.getList("vet_list_id");
         if (0 != calculo1) {
             if (0 == totalFinal) aux_total -= calculo1; else {
                 aux_total = totalFinal;
                 aux_total -= calculo1;
             }
+            Ti.App.Properties.setString("totalFinal", aux_total);
+            lista[item.cliente] = item.cliente;
             Ti.App.Properties.setString("totalFinal", aux_total);
         }
         if (0 != calculo2) {
@@ -244,6 +247,7 @@ function Controller() {
             }
             Ti.App.Properties.setString("totalFinal", aux_total);
         }
+        alert(lista);
         $.total_geral.text = formatCurrency(aux_total);
     }
     function selecionaBoleto() {
@@ -1071,6 +1075,7 @@ function Controller() {
     Ti.App.Properties.setString("totalFinal", 0);
     Ti.App.Properties.setString("calc1", 0);
     Ti.App.Properties.setString("calc2", 0);
+    Ti.App.Properties.setList("vet_list_id", []);
     __defers["$.__views.boleto!click!selecionaBoleto"] && $.__views.boleto.addEventListener("click", selecionaBoleto);
     __defers["$.__views.__alloyId1133!click!selecionaBoleto"] && $.__views.__alloyId1133.addEventListener("click", selecionaBoleto);
     __defers["$.__views.cheque!click!selecionaCheque"] && $.__views.cheque.addEventListener("click", selecionaCheque);
