@@ -1,1 +1,1 @@
-/home/james/Documents/projetoMobile/mobile-app/Resources/alloy/CFG.js
+/home/james/Documents/projetoMobile/mobile-app/Resources/android/alloy/CFG.js

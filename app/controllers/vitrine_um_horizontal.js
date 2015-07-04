@@ -92,7 +92,50 @@ function goToListaProdutos(){
 }
 
 function limpar() {
-	categoryClear($.quantidade);
+		var valores = ["sim","nao"];
+	
+	if(Ti.Platform.osname == "android"){
+		
+		var exclui  = Ti.UI.createOptionDialog({
+			//options: valores,
+			buttonNames: ['Confirmar','Cancelar'],
+			destructive: 2,
+			cancel: 0,
+			title: "Desmarcar itens"
+		});
+		
+		exclui.show();
+		
+		exclui.addEventListener("click", function(e){
+			if(e.cancel){
+					categoryClear($.quantidade);
+			} else {
+				alert("Continue comprando");
+			}
+		
+		});
+		
+	}else{
+		
+		var exclui  = Ti.UI.createOptionDialog({
+			//options: valores,
+			options: ['Confirmar','Cancelar'],
+			destructive: 2,
+			title: "Desmarcar itens"
+		});
+		
+		exclui.show();
+		
+		exclui.addEventListener("click", function(e){
+			if(e.index == 0){
+					categoryClear($.quantidade);
+			} else {
+				alert("Continue comprando");
+			}
+		
+		});
+		
+	}
 }
 
 function voltar() {

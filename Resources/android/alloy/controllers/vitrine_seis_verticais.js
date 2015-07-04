@@ -87,7 +87,16 @@ function Controller() {
         produtos.close();
     }
     function limpar() {
-        categoryClear($.quantidade);
+        var exclui = Ti.UI.createAlertDialog({
+            buttonNames: [ "Confirmar", "Cancelar" ],
+            destructive: 2,
+            cancel: 0,
+            title: "Desmarcar itens"
+        });
+        exclui.show();
+        exclui.addEventListener("click", function(e) {
+            e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
+        });
     }
     function voltar() {
         categoryVoltar();
@@ -183,9 +192,12 @@ function Controller() {
     });
     $.__views.gradeA.add($.__views.legendaA);
     $.__views.informacaoA = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoA"
     });
     $.__views.legendaA.add($.__views.informacaoA);
@@ -258,9 +270,12 @@ function Controller() {
     });
     $.__views.gradeB.add($.__views.legendaB);
     $.__views.informacaoB = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoB"
     });
     $.__views.legendaB.add($.__views.informacaoB);
@@ -333,9 +348,12 @@ function Controller() {
     });
     $.__views.gradeC.add($.__views.legendaC);
     $.__views.informacaoC = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoC"
     });
     $.__views.legendaC.add($.__views.informacaoC);
@@ -408,9 +426,12 @@ function Controller() {
     });
     $.__views.gradeD.add($.__views.legendaD);
     $.__views.informacaoD = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoD"
     });
     $.__views.legendaD.add($.__views.informacaoD);
@@ -483,9 +504,12 @@ function Controller() {
     });
     $.__views.gradeE.add($.__views.legendaE);
     $.__views.informacaoE = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoE"
     });
     $.__views.legendaE.add($.__views.informacaoE);
@@ -558,9 +582,12 @@ function Controller() {
     });
     $.__views.gradeF.add($.__views.legendaF);
     $.__views.informacaoF = Ti.UI.createView({
-        height: "100%",
+        height: "110%",
         layout: "horizontal",
         width: "58%",
+        font: {
+            fontSize: 3
+        },
         id: "informacaoF"
     });
     $.__views.legendaF.add($.__views.informacaoF);

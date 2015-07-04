@@ -188,6 +188,7 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 
 	}
 	//seleciona.width = seleciona.toBlob().height;
+
 	
 	// Ti.App.Properties.setString("globals_value", cont);
 	
@@ -219,8 +220,8 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 		});
 	}
 	setSelected(quantidade);
-	
 }
+
 
 function cleanImages() {
 	if (Ti.Platform.osname == "android") {

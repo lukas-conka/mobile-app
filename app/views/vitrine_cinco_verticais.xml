@@ -61,7 +61,7 @@
 					<View class="legenda" id="legendaE">
 						<View class="informacao" id="informacaoE">
 							<Button class="tempo" id="tempoE"/>
-							<ImageView class="seleciona" id="selecionaE"/>
+							<ImageView class="seleciona" id="selecionaE" />
 							<Label class="preco" id="precoE"/>
 						</View>
 						<View class="images" id="imagesE"></View>

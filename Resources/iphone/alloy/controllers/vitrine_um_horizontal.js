@@ -39,7 +39,28 @@ function Controller() {
         listProdutos();
     }
     function limpar() {
-        categoryClear($.quantidade);
+        if ("android" == Ti.Platform.osname) {
+            var exclui = Ti.UI.createOptionDialog({
+                buttonNames: [ "Confirmar", "Cancelar" ],
+                destructive: 2,
+                cancel: 0,
+                title: "Desmarcar itens"
+            });
+            exclui.show();
+            exclui.addEventListener("click", function(e) {
+                e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
+            });
+        } else {
+            var exclui = Ti.UI.createOptionDialog({
+                options: [ "Confirmar", "Cancelar" ],
+                destructive: 2,
+                title: "Desmarcar itens"
+            });
+            exclui.show();
+            exclui.addEventListener("click", function(e) {
+                0 == e.index ? categoryClear($.quantidade) : alert("Continue comprando");
+            });
+        }
     }
     function voltar() {
         categoryVoltar();

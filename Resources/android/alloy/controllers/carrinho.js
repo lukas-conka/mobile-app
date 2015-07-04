@@ -292,7 +292,7 @@ function Controller() {
         var quantidade = item.car_quantidade;
         item.estoque;
         quantidade--;
-        if (quantidade >= 0) {
+        if (quantidade > 0) {
             item.car_quantidade = quantidade;
             item.label_quant.text = quantidade;
             selecao.updateItemAt(e.itemIndex, item);

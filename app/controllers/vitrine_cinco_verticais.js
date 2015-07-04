@@ -116,8 +116,34 @@ function renderProducts() {
 	produtos.close();
 }
 
+
 function limpar() {
-	categoryClear($.quantidade);
+	
+	//var valores = ["sim","nao"];
+	
+	var exclui  = Ti.UI.createOptionDialog({
+		//options: 
+		buttonNames: ['Confirmar','Cancelar'],
+		destructive: 2,
+		cancel: 0,
+		title: "Desmarcar itens"
+	});
+	
+	exclui.show();
+	
+	exclui.addEventListener("click", function(e){
+		//alert(exclui);
+		//alert(e.cancel);
+		if(e.cancel){
+				categoryClear($.quantidade);
+		} else {
+			alert("Continue comprando");
+		}
+	
+	});
+	
+	
+
 }
 
 function voltar() {

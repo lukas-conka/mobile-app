@@ -8,6 +8,85 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
+    function dadosConsulta() {
+        for (var i = 0; i < conjunto.length; i++) {
+            var cliente = consultaCliente(conjunto[i]);
+            if (cliente.isValidRow()) {
+                var cl_id = cliente.fieldByName("cl_id");
+                var cl_cnpj = cliente.fieldByName("cl_cnpj");
+                dataPrazoMedio[cl_id] = 1;
+                quantidade = 0;
+                bruto = 0;
+                var pedido = consultaCarrinhoByPagamento(Ti.App.Properties.getString(SESSION_ID), conjunto[i]);
+                while (pedido.isValidRow()) {
+                    var car_quantidade = pedido.fieldByName("car_quantidade");
+                    var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
+                    var car_ipi = pedido.fieldByName("car_ipi");
+                    var car_desc_unit = pedido.fieldByName("car_desc_unit");
+                    desconto_unit = parseFloat(car_desc_unit);
+                    var produto = car_quantidade * car_preco_unitario;
+                    produto -= car_desc_unit;
+                    var ipi = produto * car_ipi / 100;
+                    quantidade += car_quantidade;
+                    bruto = bruto + produto + ipi;
+                    total_geral = total_geral + produto + ipi;
+                    pedido.next();
+                }
+                aux_total += bruto;
+                valorInicial[cl_id] = bruto;
+                descontoEspecial[cl_id] = 0;
+                descontoPrazo[cl_id] = 0;
+                descontoVolume[cl_id] = 0;
+                if (0 == base) {
+                    var porcentagem = 100;
+                    base++;
+                } else {
+                    var porcentagem = sobrepedido[i];
+                }
+                data.push({
+                    cliente: cl_id,
+                    template: "item_cliente",
+                    label_porcentagem_botao: {
+                        title: porcentagem + "%"
+                    },
+                    label_cnpj: {
+                        text: cl_cnpj
+                    },
+                    label_peca: {
+                        text: quantidade
+                    },
+                    label_bruto: {
+                        text: formatCurrency(bruto)
+                    },
+                    label_dias_botao: {
+                        title: "-"
+                    },
+                    label_prazo: {
+                        text: "0%"
+                    },
+                    label_especial_botao: {
+                        title: "0%"
+                    },
+                    label_volume: {
+                        text: "0%"
+                    },
+                    label_parcela: {
+                        text: "-"
+                    },
+                    label_desconto: {
+                        text: "-"
+                    },
+                    label_condicao: {
+                        text: "-"
+                    },
+                    label_credito: {
+                        text: "-"
+                    }
+                });
+            }
+            $.total_geral.text = formatCurrency(total_geral);
+        }
+    }
     function replicar() {
         goTo("replicar");
     }
@@ -134,14 +213,12 @@ function Controller() {
         calculoParcela(comando, cliente);
     }
     function calculoParcela(comando, cliente) {
-        var calculo1 = 0;
-        calculo1 = 0 != aux_calc ? aux_calc * descontoPrazo[cliente] / 100 : valorInicial[cliente] * descontoPrazo[cliente] / 100;
-        var resultado1 = 0;
-        resultado1 = 0 != aux_calc ? aux_calc - calculo1 : valorInicial[cliente] - calculo1;
+        var totalFinal = parseFloat(Ti.App.Properties.getString("totalFinal"));
+        var calculo1 = valorInicial[cliente] * descontoPrazo[cliente] / 100;
+        var resultado1 = valorInicial[cliente] - calculo1;
         var calculo2 = resultado1 * descontoEspecial[cliente] / 100;
         var resultado2 = resultado1 - calculo2;
-        var parcelaSemDesconto = 0;
-        parcelaSemDesconto = 0 != aux_calc ? aux_calc / dataPrazoMedio[cliente] : valorInicial[cliente] / dataPrazoMedio[cliente];
+        valorInicial[cliente] / dataPrazoMedio[cliente];
         var parcelaComDesconto = resultado2 / dataPrazoMedio[cliente];
         var credito = getClienteCredito(cliente);
         var cl_credito_utilizado = credito.fieldByName("cl_credito_utilizado");
@@ -152,8 +229,22 @@ function Controller() {
         item.label_parcela.text = dataPrazoMedio[cliente] + "x de " + formatCurrency(parcelaComDesconto);
         item.label_desconto.text = formatCurrency(resultado2);
         item.label_credito.text = formatCurrency(utilizado);
-        $.total_geral.text = formatCurrency(resultado2);
         selecao.updateItemAt(comando.itemIndex, item);
+        if (0 != calculo1) {
+            if (0 == totalFinal) aux_total -= calculo1; else {
+                aux_total = totalFinal;
+                aux_total -= calculo1;
+            }
+            Ti.App.Properties.setString("totalFinal", aux_total);
+        }
+        if (0 != calculo2) {
+            if (0 == totalFinal) aux_total -= calculo2; else {
+                aux_total = totalFinal;
+                aux_total -= calculo2;
+            }
+            Ti.App.Properties.setString("totalFinal", aux_total);
+        }
+        $.total_geral.text = formatCurrency(aux_total);
     }
     function selecionaBoleto() {
         formaPagamento = "boleto";
@@ -210,9 +301,10 @@ function Controller() {
                     var fk_produtos = carrinho[j][7];
                     var fk_tamanhos = carrinho[j][8];
                     var fk_cores = carrinho[j][9];
+                    var car_desc_unit = carrinho[j][10];
                     var crp_id = ultimoCarrinhoPedido + q;
                     q++;
-                    insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2);
+                    insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2, car_desc_unit);
                 }
                 insertPedido(ped_id, Ti.App.Properties.getString(SESSION_ID), 1, condicaoPrazoMedio[conjunto[i]], car_entrega, car_entrega_prazo, save_date, 1, numero, "", "N", conjunto[i], Ti.App.Properties.getString(CURRENT_USER_ID), 2);
             }
@@ -968,91 +1060,17 @@ function Controller() {
     var quantidade;
     var total_geral = 0;
     var sobrepedido = [];
-    var lista_xd = Ti.App.Properties.getString("valor_desconto_ref");
+    var desconto_unit = 0;
+    var aux_total = 0;
     for (var i = 0; 7 > i; i++) sobrepedido[i] = 100;
     Ti.App.Properties.getList(SOBRE_PEDIDO) && (sobrepedido = Ti.App.Properties.getList(SOBRE_PEDIDO));
     var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
-    for (var i = 0; i < conjunto.length; i++) {
-        var cliente = consultaCliente(conjunto[i]);
-        if (cliente.isValidRow()) {
-            var cl_id = cliente.fieldByName("cl_id");
-            var cl_cnpj = cliente.fieldByName("cl_cnpj");
-            dataPrazoMedio[cl_id] = 1;
-            quantidade = 0;
-            bruto = 0;
-            var pedido = consultaCarrinhoByPagamento(Ti.App.Properties.getString(SESSION_ID), conjunto[i]);
-            while (pedido.isValidRow()) {
-                var car_quantidade = pedido.fieldByName("car_quantidade");
-                var car_preco_unitario = pedido.fieldByName("car_preco_unitario");
-                var car_ipi = pedido.fieldByName("car_ipi");
-                var produto = car_quantidade * car_preco_unitario;
-                var ipi = produto * car_ipi / 100;
-                quantidade += car_quantidade;
-                bruto = bruto + produto + ipi;
-                total_geral += bruto;
-                pedido.next();
-            }
-            descontoEspecial[cl_id] = 0;
-            descontoPrazo[cl_id] = 0;
-            descontoVolume[cl_id] = 0;
-            valorInicial[cl_id] = bruto;
-            if (0 == base) {
-                var porcentagem = 100;
-                base++;
-            } else {
-                var porcentagem = sobrepedido[i];
-            }
-            if (lista_xd > 0) {
-                bruto = lista_xd;
-                lista_xd = 0;
-            } else bruto = bruto;
-            100 > porcentagem && (porcentagem = 0);
-            data.push({
-                cliente: cl_id,
-                template: "item_cliente",
-                label_porcentagem_botao: {
-                    title: porcentagem + "%"
-                },
-                label_cnpj: {
-                    text: cl_cnpj
-                },
-                label_peca: {
-                    text: quantidade
-                },
-                label_bruto: {
-                    text: formatCurrency(bruto)
-                },
-                label_dias_botao: {
-                    title: "-"
-                },
-                label_prazo: {
-                    text: "0%"
-                },
-                label_especial_botao: {
-                    title: "0%"
-                },
-                label_volume: {
-                    text: "0%"
-                },
-                label_parcela: {
-                    text: "-"
-                },
-                label_desconto: {
-                    text: "-"
-                },
-                label_condicao: {
-                    text: "-"
-                },
-                label_credito: {
-                    text: "-"
-                }
-            });
-        }
-        $.total_geral.text = formatCurrency(bruto);
-    }
+    dadosConsulta();
     $.listaclientes.sections[0].setItems(data);
-    var aux_calc = Ti.App.Properties.getString("valor_desconto_ref");
-    Ti.App.Properties.setString("valor_desconto_ref", 0);
+    $.total_geral.text = formatCurrency(total_geral);
+    Ti.App.Properties.setString("totalFinal", 0);
+    Ti.App.Properties.setString("calc1", 0);
+    Ti.App.Properties.setString("calc2", 0);
     __defers["$.__views.boleto!click!selecionaBoleto"] && $.__views.boleto.addEventListener("click", selecionaBoleto);
     __defers["$.__views.__alloyId1133!click!selecionaBoleto"] && $.__views.__alloyId1133.addEventListener("click", selecionaBoleto);
     __defers["$.__views.cheque!click!selecionaCheque"] && $.__views.cheque.addEventListener("click", selecionaCheque);

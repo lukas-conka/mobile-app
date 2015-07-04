@@ -36,8 +36,8 @@
 	},
 	height: "100%",
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
-	width: "11%"
-}
+	width: "11%",
+	}
 
 ".tituloProduto":{
 	backgroundColor: "#69A09D",
