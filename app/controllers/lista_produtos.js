@@ -65,6 +65,12 @@ function buscarProdutos() {
 	$.buscar.value = '';
 }
 
+// function Merda(){
+// 	
+	// alert
+// 	
+// }
+
 function selecionaProduto(e) {
 	var selecao = $.listaprodutos.sections[e.sectionIndex];
 	var item = selecao.getItemAt(e.itemIndex);

@@ -60,39 +60,39 @@ function Controller() {
         id: "perguntas"
     });
     $.__views.perguntas && $.addTopLevelView($.__views.perguntas);
-    $.__views.__alloyId1196 = Ti.UI.createView({
+    $.__views.__alloyId1122 = Ti.UI.createView({
         height: "10%",
         top: "0",
         width: "100%",
-        id: "__alloyId1196"
+        id: "__alloyId1122"
     });
-    $.__views.perguntas.add($.__views.__alloyId1196);
-    $.__views.__alloyId1197 = Ti.UI.createButton({
+    $.__views.perguntas.add($.__views.__alloyId1122);
+    $.__views.__alloyId1123 = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         color: "#000000",
         right: "10",
         title: "DÚVIDAS SOBRE O SISTEMA",
-        id: "__alloyId1197"
+        id: "__alloyId1123"
     });
-    $.__views.__alloyId1196.add($.__views.__alloyId1197);
+    $.__views.__alloyId1122.add($.__views.__alloyId1123);
     $.__views.logoEmpresa = Ti.UI.createImageView({
         left: "10",
         id: "logoEmpresa"
     });
-    $.__views.__alloyId1196.add($.__views.logoEmpresa);
-    $.__views.__alloyId1198 = Ti.UI.createView({
+    $.__views.__alloyId1122.add($.__views.logoEmpresa);
+    $.__views.__alloyId1124 = Ti.UI.createView({
         height: "80%",
         top: "11%",
         width: "100%",
-        id: "__alloyId1198"
+        id: "__alloyId1124"
     });
-    $.__views.perguntas.add($.__views.__alloyId1198);
-    $.__views.__alloyId1199 = Ti.UI.createView({
+    $.__views.perguntas.add($.__views.__alloyId1124);
+    $.__views.__alloyId1125 = Ti.UI.createView({
         width: "95%",
         layout: "horizontal",
-        id: "__alloyId1199"
+        id: "__alloyId1125"
     });
-    $.__views.__alloyId1198.add($.__views.__alloyId1199);
+    $.__views.__alloyId1124.add($.__views.__alloyId1125);
     $.__views.busca_texto = Ti.UI.createTextField({
         borderColor: "#6ea9a0",
         borderRadius: 5,
@@ -106,8 +106,8 @@ function Controller() {
         id: "busca_texto",
         hintText: "O que você está procurando?"
     });
-    $.__views.__alloyId1199.add($.__views.busca_texto);
-    $.__views.__alloyId1200 = Ti.UI.createButton({
+    $.__views.__alloyId1125.add($.__views.busca_texto);
+    $.__views.__alloyId1126 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -118,23 +118,23 @@ function Controller() {
         width: "5%",
         bottom: "1%",
         title: "Ir",
-        id: "__alloyId1200"
+        id: "__alloyId1126"
     });
-    $.__views.__alloyId1199.add($.__views.__alloyId1200);
-    buscarperguntas ? $.__views.__alloyId1200.addEventListener("click", buscarperguntas) : __defers["$.__views.__alloyId1200!click!buscarperguntas"] = true;
-    $.__views.__alloyId1201 = Ti.UI.createView({
+    $.__views.__alloyId1125.add($.__views.__alloyId1126);
+    buscarperguntas ? $.__views.__alloyId1126.addEventListener("click", buscarperguntas) : __defers["$.__views.__alloyId1126!click!buscarperguntas"] = true;
+    $.__views.__alloyId1127 = Ti.UI.createView({
         height: "90%",
         width: "100%",
-        id: "__alloyId1201"
+        id: "__alloyId1127"
     });
-    $.__views.__alloyId1198.add($.__views.__alloyId1201);
-    var __alloyId1202 = {};
-    var __alloyId1205 = [];
-    var __alloyId1207 = {
+    $.__views.__alloyId1124.add($.__views.__alloyId1127);
+    var __alloyId1128 = {};
+    var __alloyId1131 = [];
+    var __alloyId1133 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId1208 = [];
-            var __alloyId1210 = {
+            var __alloyId1134 = [];
+            var __alloyId1136 = {
                 type: "Ti.UI.Label",
                 bindId: "label_pergunta",
                 properties: {
@@ -145,8 +145,8 @@ function Controller() {
                     bindId: "label_pergunta"
                 }
             };
-            __alloyId1208.push(__alloyId1210);
-            var __alloyId1212 = {
+            __alloyId1134.push(__alloyId1136);
+            var __alloyId1138 = {
                 type: "Ti.UI.Label",
                 bindId: "label_resposta",
                 properties: {
@@ -157,8 +157,8 @@ function Controller() {
                     bindId: "label_resposta"
                 }
             };
-            __alloyId1208.push(__alloyId1212);
-            var __alloyId1214 = {
+            __alloyId1134.push(__alloyId1138);
+            var __alloyId1140 = {
                 type: "Ti.UI.View",
                 properties: {
                     backgroundColor: "#DDDDDD",
@@ -168,8 +168,8 @@ function Controller() {
                     left: 0
                 }
             };
-            __alloyId1208.push(__alloyId1214);
-            return __alloyId1208;
+            __alloyId1134.push(__alloyId1140);
+            return __alloyId1134;
         }(),
         properties: {
             backgroundColor: "white",
@@ -180,8 +180,8 @@ function Controller() {
             layout: "vertical"
         }
     };
-    __alloyId1205.push(__alloyId1207);
-    var __alloyId1204 = {
+    __alloyId1131.push(__alloyId1133);
+    var __alloyId1130 = {
         properties: {
             backgroundColor: "white",
             height: "100",
@@ -189,32 +189,32 @@ function Controller() {
             width: "90%",
             name: "pergunta_lista"
         },
-        childTemplates: __alloyId1205
+        childTemplates: __alloyId1131
     };
-    __alloyId1202["pergunta_lista"] = __alloyId1204;
-    $.__views.__alloyId1215 = Ti.UI.createListSection({
-        id: "__alloyId1215"
+    __alloyId1128["pergunta_lista"] = __alloyId1130;
+    $.__views.__alloyId1141 = Ti.UI.createListSection({
+        id: "__alloyId1141"
     });
-    var __alloyId1217 = [];
-    __alloyId1217.push($.__views.__alloyId1215);
+    var __alloyId1143 = [];
+    __alloyId1143.push($.__views.__alloyId1141);
     $.__views.listaperguntas = Ti.UI.createListView({
         height: "90%",
         top: "10%",
         width: "100%",
-        sections: __alloyId1217,
-        templates: __alloyId1202,
+        sections: __alloyId1143,
+        templates: __alloyId1128,
         id: "listaperguntas",
         defaultItemTemplate: "pergunta_lista"
     });
-    $.__views.__alloyId1201.add($.__views.listaperguntas);
-    $.__views.__alloyId1218 = Ti.UI.createView({
+    $.__views.__alloyId1127.add($.__views.listaperguntas);
+    $.__views.__alloyId1144 = Ti.UI.createView({
         height: "7%",
         bottom: "1%",
         width: "100%",
-        id: "__alloyId1218"
+        id: "__alloyId1144"
     });
-    $.__views.perguntas.add($.__views.__alloyId1218);
-    $.__views.__alloyId1219 = Ti.UI.createButton({
+    $.__views.perguntas.add($.__views.__alloyId1144);
+    $.__views.__alloyId1145 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -225,10 +225,10 @@ function Controller() {
         width: "10%",
         bottom: "1%",
         title: "Voltar",
-        id: "__alloyId1219"
+        id: "__alloyId1145"
     });
-    $.__views.__alloyId1218.add($.__views.__alloyId1219);
-    voltar ? $.__views.__alloyId1219.addEventListener("click", voltar) : __defers["$.__views.__alloyId1219!click!voltar"] = true;
+    $.__views.__alloyId1144.add($.__views.__alloyId1145);
+    voltar ? $.__views.__alloyId1145.addEventListener("click", voltar) : __defers["$.__views.__alloyId1145!click!voltar"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     Ti.include("/api/config.js");
@@ -238,8 +238,8 @@ function Controller() {
     var busca_texto = "";
     resultadoperguntas();
     var software = Ti.App.Properties.getString(CURRENT_SOFTWARE);
-    __defers["$.__views.__alloyId1200!click!buscarperguntas"] && $.__views.__alloyId1200.addEventListener("click", buscarperguntas);
-    __defers["$.__views.__alloyId1219!click!voltar"] && $.__views.__alloyId1219.addEventListener("click", voltar);
+    __defers["$.__views.__alloyId1126!click!buscarperguntas"] && $.__views.__alloyId1126.addEventListener("click", buscarperguntas);
+    __defers["$.__views.__alloyId1145!click!voltar"] && $.__views.__alloyId1145.addEventListener("click", voltar);
     _.extend($, exports);
 }
 

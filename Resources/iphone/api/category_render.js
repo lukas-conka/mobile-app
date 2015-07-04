@@ -167,7 +167,8 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
     }
     seleciona.image = "true" == checkSelectedProduct(prd_id) ? "/images/selecionar_vermelho.png" : "/images/seleciona.png";
     seleciona.prd_id = prd_id;
-    seleciona.addEventListener("click", function(e) {
+    teste && seleciona.addEventListener("click", function(e) {
+        teste = false;
         e.source.image = "true" == AddSelectedProduct(e.source.prd_id) ? "/images/selecionar_vermelho.png" : "/images/seleciona.png";
         setSelected(quantidade);
     });
@@ -258,7 +259,7 @@ function categoryVoltar() {
 function categoryCesta() {
     cleanImages();
     var produtos = Ti.App.Properties.getList(SELECTED_PRODUCTS);
-    if (produtos) if (produtos.length > 0) {
+    if (produtos) if (produtos.length >= 0) {
         var calculadora = Alloy.createController("calculadora").getView();
         calculadora.open({
             fullscreen: true,
@@ -298,3 +299,7 @@ Ti.include("/database/carrinho.js");
 var template = 0;
 
 var imageViews = [];
+
+var cont = 0;
+
+var teste = true;

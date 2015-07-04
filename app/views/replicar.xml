@@ -22,15 +22,21 @@
 						<Label class="label_itemGrande" onClick="percenteDesconto" bindId="label_desconto"/>
 						<Label class="label_itemPequeno" bindId="label_ref"/>
 						<Label class="label_itemPequeno" bindId="total_ref"/>
-						<View class="view_cliente" bindId="view_cliente2">
+						
+						
+						<View class="view_cliente" bindId="view_cliente0">
+						
+							<Label class="label_itemCliente" bindId="label_cliente0"/>
+						</View>
+						
+						<View class="view_cliente" bindId="view_cliente1" onClick="selecionaItem">
+						<ImageView class="seleciona_cliente" bindId="seleciona_cliente1" /> 
+							<Label class="label_itemCliente" bindId="label_cliente1"/>
+						</View>
+						<View class="view_cliente" bindId="view_cliente2" onClick="selecionaItem">
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente2" />
 							<Label class="label_itemCliente" bindId="label_cliente2"/>
 						</View>
-						<View class="view_cliente" bindId="view_cliente1" onClick="selecionaItem">
-							<ImageView class="seleciona_cliente" bindId="seleciona_cliente1" />
-							<Label class="label_itemCliente" bindId="label_cliente1"/>
-						</View>
-						
 						<View class="view_cliente" bindId="view_cliente3" onClick="selecionaItem">
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente3" />
 							<Label class="label_itemCliente" bindId="label_cliente3"/>
@@ -47,10 +53,10 @@
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente6" />
 							<Label class="label_itemCliente" bindId="label_cliente6"/>
 						</View>
-						<View class="view_cliente" bindId="view_cliente7" onClick="selecionaItem">
+						<!--<View class="view_cliente" bindId="view_cliente7" onClick="selecionaItem">
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente7" />
 							<Label class="label_itemCliente" bindId="label_cliente7"/>
-						</View>
+					</View>-->
 					</View>
 				</ItemTemplate>
 			</Templates>
@@ -61,15 +67,13 @@
 			<Label class="rodapeQtde" id="total_qtde">235</Label>
 			<Label class="rodapePreco" id="total_preco">R$ 23412.11</Label>
 			<Label class="rodapePorcentagem">Porcentagem:</Label>
-			<Button id="botao_cliente1" class="botao_porcentagem_base" cliente="2">BASE</Button>
+			<Button id="botao_cliente1" class="botao_porcentagem" cliente="0">0%</Button>
 			<Button id="botao_cliente2" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="1">0%</Button>
-			
-			
-			<Button id="botao_cliente3" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="3">0%</Button>
-			<Button id="botao_cliente4" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="4">0%</Button>
-			<Button id="botao_cliente5" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="5">0%</Button>
-			<Button id="botao_cliente6" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="6">0%</Button>
-			<Button id="botao_cliente7" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="7">0%</Button>
+			<Button id="botao_cliente3" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="2">0%</Button>
+			<Button id="botao_cliente4" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="3">0%</Button>
+			<Button id="botao_cliente5" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="4">0%</Button>
+			<Button id="botao_cliente6" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="5">0%</Button>
+			<Button id="botao_cliente7" class="botao_porcentagem" onClick="selecionaQuantidade" cliente="6">0%</Button>
 		</View>
 		<Button class="botao_enviar" onClick="enviar">Enviar</Button>
 		

@@ -70,7 +70,7 @@ function getSelectedProducts() {
 
 function checkSelectedProduct(id) {
 	var products = [];
-	var result = "false";
+	var result = "";
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
@@ -85,6 +85,7 @@ function checkSelectedProduct(id) {
 
 function AddSelectedProduct(id) {
 	var products = [];
+	var algo  = [];
 	if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) {
 		var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	}
@@ -94,11 +95,7 @@ function AddSelectedProduct(id) {
 		result = "true";
 	} else {
 		var index = products.indexOf(id);
-
 		products.splice(index, 1);
-
-		products.slice(index, 0);
-		//products.splice(inde, 1);
 		result = "false";
 	}
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
@@ -181,8 +178,8 @@ function redimencionaVitrine(vitrine) {
 		alturaTela = alturaTela - 100;
 		larguraTela = larguraTela - 100;
 	} else {
-		alturaTela -550;
-		larguraTela -1024;
+		alturaTela -250;
+		larguraTela -250;
 	}
 
 	var alturaView = Math.round(alturaTela * 0.9);
@@ -199,6 +196,7 @@ function redimencionaVitrine(vitrine) {
 		//alert('largura' + alturaView + ", width: " + larguraTela + ", height: " + alturaTela);
 	}
 }
+
 
 function getImagesFolder() {
 	var rootdir;

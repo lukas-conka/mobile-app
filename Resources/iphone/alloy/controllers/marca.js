@@ -35,27 +35,27 @@ function Controller() {
         id: "marca"
     });
     $.__views.marca && $.addTopLevelView($.__views.marca);
-    $.__views.__alloyId996 = Ti.UI.createView({
+    $.__views.__alloyId922 = Ti.UI.createView({
         height: "10%",
         top: "0",
         width: "100%",
-        id: "__alloyId996"
+        id: "__alloyId922"
     });
-    $.__views.marca.add($.__views.__alloyId996);
-    $.__views.__alloyId997 = Ti.UI.createButton({
+    $.__views.marca.add($.__views.__alloyId922);
+    $.__views.__alloyId923 = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         color: "#000000",
         left: "10",
         title: "SELECIONE A MARCA",
-        id: "__alloyId997"
+        id: "__alloyId923"
     });
-    $.__views.__alloyId996.add($.__views.__alloyId997);
-    $.__views.__alloyId998 = Ti.UI.createImageView({
+    $.__views.__alloyId922.add($.__views.__alloyId923);
+    $.__views.__alloyId924 = Ti.UI.createImageView({
         image: "/images/logo_rodape.jpg",
         right: "10",
-        id: "__alloyId998"
+        id: "__alloyId924"
     });
-    $.__views.__alloyId996.add($.__views.__alloyId998);
+    $.__views.__alloyId922.add($.__views.__alloyId924);
     $.__views.corpo = Ti.UI.createView({
         height: "90%",
         top: "10%",

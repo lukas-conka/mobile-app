@@ -50,7 +50,6 @@ var quantidadetotal = 0;
 var valortotal = 0;
 var qtnminima = 0;
 
-
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
 $.apaga.title = '<<';
 renderProduct();
@@ -435,15 +434,12 @@ function renderTable() {
 		coluna.add(tamanho);
 		var quantidade_total = 0;
 		
-		var vetor = [];
+		var vetor  = [];
+		
+		
 		for (var j = 0; j < cores.length; j++) {
-			
-			
-			
 			var info_prd = selectInformacaoProdutoByTamanhoCor(prd_id, tamanhosid[i], coresid[j]);
 			if (info_prd.isValidRow()) {
-				
-				
 				
 				var qtnminima = info_prd.fieldByName('ifp_qtde_minima'); //quantidade minima
 				
@@ -455,15 +451,9 @@ function renderTable() {
 				var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, tamanhosid[i], coresid[j], fk_cli);
 				var quantidade = 0;
 				var valor = 0;
-				
-				
-				
-				
 				if (carrinho[0] != 0) {
 					quantidade = carrinho[1];
 					quantidade_total = quantidade_total + quantidade;
-					
-				
 				}
 				if (porpreco)
 					valor = formatCurrency(preco_unitario);
@@ -524,12 +514,9 @@ function renderTable() {
 				coluna.add(botoes[location]);
 				location++;
 			}
-			
-	
-			
 		}
 		
-		Ti.App.Properties.setList("lista",vetor); //Propriedade T.I para colocar o vetor acima como variavel global o indice do vetor eh o prd_id (id do produto) conteudo eh a varievel de quantidade
+		Ti.App.Properties.setList("lista", vetor); //Propriedade T.I para colocar o vetor acima como variavel global o indice do vetor eh o prd_id (id do produto) conteudo eh a varievel de quantidade
 		
 		var total = Titanium.UI.createLabel({
 			backgroundColor : "#008382",
@@ -558,40 +545,37 @@ function selecionaItem(item) {
 	}
 }
 
-
-
 function botaoOk() {
 	
 	//recupero a propriedade do T.I setada em cima que recebe o vetor e o nome lista
  	var var_global = Ti.App.Properties.getList("lista");
 	var qtnminima = var_global[prd_id]; // recupero pelo indice setado  no vetor, isso pq o prd_id chega aqui.
 
-if($.tela.text < qtnminima){
-	
-	alert("Quantidade minima de " + qtnminima);
-}else{
-	
-	if ($.tela.text == '') {
-		alert('Digite a quantidade');
-		 
-	} else {
-		var quantidade = $.tela.text;
+	if($.tela.text < qtnminima){
 		
-		if (sortido)
-			valorSortido(quantidade);
-		else
-			valorPorQuantidade(quantidade);
+		alert("Quantidade minima de " + qtnminima);
+		
+	}else{
+		
+		if ($.tela.text == '') {
+			alert('Digite a quantidade');
+			 
+		} else {
+			var quantidade = $.tela.text;
+			
+			if(sortido){
+				valorSortido(quantidade);
+			}else{
+				valorPorQuantidade(quantidade);
+			}
+			
+			$.tela.text = '';
+			//recalculateValues();
+			renderTable();
+			//clearAllButtons();
+		}
+	
 	}
-	
-}
-	
-
-	
-	
-	$.tela.text = '';
-	//recalculateValues();
-	renderTable();
-	//clearAllButtons();
 }
 
 function valorPorQuantidade(quantidade) {
@@ -717,6 +701,7 @@ function insertOrder(fk_tamanhos, fk_cores, car_quantidade, car_preco_unitario, 
 		var estoque = carrinho[2];
 		var quantidade = 0;
 		if (car_quantidade != 0)
+			quantidade = quantidade_atual + parseInt(car_quantidade);
 		if (quantidade > estoque)
 			quantidade = estoque;
 		updateCarrinho(car_id, session, quantidade, 0, 0, 0, 0, 0);
@@ -967,12 +952,3 @@ function botaoProximo() {
 	}
 	renderProduct();
 }
-$.referencia.font = {fontSize: 15};
-$.nome.font = {fontSize: 15};
-$.colecao.font = {fontSize: 15};
-$.informacoes.font = {fontSize: 15};
-$.composicao.font = {fontSize: 15};
-$.preco.font = {fontSize: 15};
-$.prazo.font = {fontSize: 15};
-$.descricao.font = {fontSize: 15};
-$.codbarras.font = {fontSize: 15};

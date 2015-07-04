@@ -63,7 +63,7 @@ function renderProducts() {
 	var produtos = selectProductsByPage(empresa, marca, categoria, start, itemsperpage);
 
 	$.gradeA.hide();
-
+	// Ti.App.Properties.setString("aux", 0);
 	while (produtos.isValidRow()) {
 		switch(i) {
 		case 0:
@@ -76,6 +76,10 @@ function renderProducts() {
 			break;
 		}
 		loadItems(template, produtos, referencia, preco, tempo, seleciona, imagem, $.imagesA, $.quantidade);
+		
+		// var var_melo = parseInt(Ti.App.Properties.getString("aux"));
+		//var_melo++;
+		// Ti.App.Properties.setString("aux", var_melo);
 		i++;
 		produtos.next();
 	}
@@ -83,6 +87,7 @@ function renderProducts() {
 }
 
 function goToListaProdutos(){
+
 	listProdutos();
 }
 

@@ -2,6 +2,11 @@ Ti.include("/database/produtos.js");
 Ti.include("/database/carrinho.js");
 var template = 0;
 var imageViews = [];
+// Ti.App.Properties.setString("globals_value", 0);
+// Ti.App.Properties.setString("X", 0);
+var cont = 0;
+var teste = true;
+// var cont = parseInt(Ti.App.Properties.getString("globals_value"));
 function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, images, quantidade) {
 	template = tmpl;
 	var notfound;
@@ -183,22 +188,38 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 
 	}
 	//seleciona.width = seleciona.toBlob().height;
-
-	if (checkSelectedProduct(prd_id) == "true")
+	
+	// Ti.App.Properties.setString("globals_value", cont);
+	
+	if (checkSelectedProduct(prd_id) == "true"){
 		seleciona.image = '/images/selecionar_vermelho.png';
-	else
+	}else{
 		seleciona.image = '/images/seleciona.png';
-
+	}
+	
 	seleciona.prd_id = prd_id;
-	seleciona.addEventListener('click', function(e) {
-		if (AddSelectedProduct(e.source.prd_id) == "true") {
-			e.source.image = '/images/selecionar_vermelho.png';
-		} else {
-			e.source.image = '/images/seleciona.png';
-		}
-		setSelected(quantidade);
-	});
+	
+	//alert(JSON.stringify(seleciona));
+	
+	
+	if(teste){
+		seleciona.addEventListener('click', function(e) {
+			teste = false;
+			
+			if (AddSelectedProduct(e.source.prd_id) == "true") {
+				e.source.image = '/images/selecionar_vermelho.png';
+				//seleciona.addEventListener('click', arguments.callee);
+				// alert(arguments.callee);
+			} 
+			else {
+				e.source.image = '/images/seleciona.png';
+				//seleciona.removeEventListener('click', arguments.callee);
+			}
+			setSelected(quantidade);
+		});
+	}
 	setSelected(quantidade);
+	
 }
 
 function cleanImages() {
@@ -332,7 +353,7 @@ function categoryCesta() {
 	cleanImages();
 	var produtos = Ti.App.Properties.getList(SELECTED_PRODUCTS);
 	if (produtos) {
-		if (produtos.length > 0) {
+		if (produtos.length >= 0) {
 			var calculadora = Alloy.createController("calculadora").getView();
 			calculadora.open({
 				fullscreen : true,
@@ -343,7 +364,6 @@ function categoryCesta() {
 			alert('Selecione ao menos um produto para avançar');
 	} else
 		alert('Selecione ao menos um produto para avançar');
-
 }
 
 function listProdutos() {

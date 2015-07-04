@@ -10,7 +10,7 @@ function getSelectedProducts() {
 
 function checkSelectedProduct(id) {
     var products = [];
-    var result = "false";
+    var result = "";
     if (Ti.App.Properties.getList(SELECTED_PRODUCTS)) var products = Ti.App.Properties.getList(SELECTED_PRODUCTS);
     var index = products.indexOf(id);
     result = index >= 0 ? "true" : "false";
@@ -27,7 +27,6 @@ function AddSelectedProduct(id) {
     } else {
         var index = products.indexOf(id);
         products.splice(index, 1);
-        products.slice(index, 0);
         result = "false";
     }
     Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
@@ -90,8 +89,8 @@ function redimencionaVitrine(vitrine) {
         alturaTela -= 100;
         larguraTela -= 100;
     } else {
-        alturaTela - 550;
-        larguraTela - 1024;
+        alturaTela - 250;
+        larguraTela - 250;
     }
     var alturaView = Math.round(.9 * alturaTela);
     var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);

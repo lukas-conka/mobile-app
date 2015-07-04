@@ -19,6 +19,9 @@ var fk_usu = Ti.App.Properties.getString(CURRENT_USER_ID);
 var ep_id = Ti.App.Properties.getString(CURRENT_EMPRESA);
 var botao_visivel = [$.botao_cliente1, $.botao_cliente2, $.botao_cliente3, $.botao_cliente4, $.botao_cliente5, $.botao_cliente6, $.botao_cliente7];
 
+var idbase = Ti.App.Properties.getString("idbase");
+var idcliente = Ti.App.Properties.getString("idcliente");
+
 for (var i = 0; i < 7; i++) {
 	cliente_visivel[i] = 'false';
 	botao_visivel[i].visible = 'false';
@@ -32,6 +35,11 @@ if(Ti.App.Properties.getList(SOBRE_PEDIDO)){
 for (var i = 0; i < clientes.length; i++) {
 	cliente_visivel[i] = 'true';
 	botao_visivel[i].visible = 'true';
+	
+	if(idbase == clientes[i]){
+		botao_visivel[i].title = 'BASE';
+		
+	}
 }
 
 var valor_total = 0;
@@ -123,6 +131,7 @@ while (carrinho.isValidRow()) {
 		text : "cl_cnpj"
 	});
 
+	var cliente_selected0 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
 	var cliente_selected1 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
 	var cliente_selected2 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[1]);
 	var cliente_selected3 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[2]);
@@ -132,6 +141,7 @@ while (carrinho.isValidRow()) {
 	var cliente_selected7 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[6]);
 
 	quantidades.push(car_quantidade);
+	
 	data.push({
 		car_id : car_id,
 		car_quantidade : car_quantidade,
@@ -172,8 +182,26 @@ while (carrinho.isValidRow()) {
 			total_ref : total_ref,
 			VAL: total_ref
 		},
-		"view_cliente1" : {
+		"view_cliente" : {
 			prd_id : prd_id
+		},
+		"label_cliente0" : {
+			text : "Qtd.\n" + car_quantidade
+		},
+		"seleciona_cliente0" : {
+			prd_id : prd_id,
+			fk_tamanhos : fk_tamanhos,
+			fk_cores : fk_cores,
+			car_quantidade: Math.round(car_quantidade*sobrepedido[0]/100),
+			car_preco_unitario: car_preco_unitario, 
+			car_ipi : car_ipi, 
+			image: cliente_selected0,
+			cliente: clientes[0]
+		},
+		"view_cliente1" : {
+			visible : cliente_visivel[1],
+			backgroundColor : cinza_claro,
+			cliente: 1
 		},
 		"label_cliente1" : {
 			text : "Qtd.\n" + car_quantidade
@@ -182,15 +210,17 @@ while (carrinho.isValidRow()) {
 			prd_id : prd_id,
 			fk_tamanhos : fk_tamanhos,
 			fk_cores : fk_cores,
-			car_quantidade: Math.round(car_quantidade*sobrepedido[0]/100),
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
+			car_quantidade: Math.round(car_quantidade*sobrepedido[1]/100),
 			image: cliente_selected1,
-			cliente: clientes[0]
+			cliente: clientes[1]
+
 		},
+
 		"view_cliente2" : {
 			visible : cliente_visivel[1],
-			backgroundColor : cinza_claro,
+			backgroundColor : cinza_escuro,
 			cliente: 2
 		},
 		"label_cliente2" : {
@@ -202,15 +232,15 @@ while (carrinho.isValidRow()) {
 			fk_cores : fk_cores,
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[1]/100),
+			car_quantidade: Math.round(car_quantidade*sobrepedido[2]/100),
 			image: cliente_selected2,
 			cliente: clientes[1]
 
 		},
 
 		"view_cliente3" : {
-			visible : cliente_visivel[2],
-			backgroundColor : cinza_escuro,
+			visible : cliente_visivel[3],
+			backgroundColor : cinza_claro,
 			cliente: 3
 		},
 		"label_cliente3" : {
@@ -222,15 +252,14 @@ while (carrinho.isValidRow()) {
 			fk_cores : fk_cores,
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[2]/100),
+			car_quantidade: Math.round(car_quantidade*sobrepedido[3]/100),
 			image: cliente_selected3,
 			cliente: clientes[2]
-
 		},
 
 		"view_cliente4" : {
 			visible : cliente_visivel[3],
-			backgroundColor : cinza_claro,
+			backgroundColor : cinza_escuro,
 			cliente: 4
 		},
 		"label_cliente4" : {
@@ -242,14 +271,15 @@ while (carrinho.isValidRow()) {
 			fk_cores : fk_cores,
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[3]/100),
+			car_quantidade: Math.round(car_quantidade*sobrepedido[4]/100),
 			image: cliente_selected4,
 			cliente: clientes[3]
+
 		},
 
 		"view_cliente5" : {
 			visible : cliente_visivel[4],
-			backgroundColor : cinza_escuro,
+			backgroundColor : cinza_claro,
 			cliente: 5
 		},
 		"label_cliente5" : {
@@ -261,7 +291,7 @@ while (carrinho.isValidRow()) {
 			fk_cores : fk_cores,
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[4]/100),
+			car_quantidade: Math.round(car_quantidade*sobrepedido[5]/100),
 			image: cliente_selected5,
 			cliente: clientes[4]
 
@@ -269,7 +299,7 @@ while (carrinho.isValidRow()) {
 
 		"view_cliente6" : {
 			visible : cliente_visivel[5],
-			backgroundColor : cinza_claro,
+			backgroundColor : cinza_escuro,
 			cliente: 6
 		},
 		"label_cliente6" : {
@@ -281,29 +311,9 @@ while (carrinho.isValidRow()) {
 			fk_cores : fk_cores,
 			car_preco_unitario: car_preco_unitario, 
 			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[5]/100),
+			car_quantidade: Math.round(car_quantidade*sobrepedido[6]/100),
 			image: cliente_selected6,
 			cliente: clientes[5]
-
-		},
-
-		"view_cliente7" : {
-			visible : cliente_visivel[6],
-			backgroundColor : cinza_escuro,
-			cliente: 7
-		},
-		"label_cliente7" : {
-			text : "Qtd.\n" + car_quantidade
-		},
-		"seleciona_cliente7" : {
-			prd_id : prd_id,
-			fk_tamanhos : fk_tamanhos,
-			fk_cores : fk_cores,
-			car_preco_unitario: car_preco_unitario, 
-			car_ipi : car_ipi, 
-			car_quantidade: Math.round(car_quantidade*sobrepedido[6]/100),
-			image: cliente_selected7,
-			cliente: clientes[6]
 
 		}
 	});
@@ -408,7 +418,8 @@ function selecionaQuantidade(button){
 	
 	var cliente = button.source.cliente;
 	
-	dialog.show();	
+	dialog.show();
+	
 	dialog.addEventListener("click",function(e){
 		Ti.API.info("cliente" + cliente);	
 		sobrepedido[cliente] = valores[e.index];
@@ -439,6 +450,8 @@ function selecionaItem(e) {
 	var car_preco_unitario = itemID.car_preco_unitario;
 	var car_ipi = itemID.car_ipi;
 	var image = itemID.image;
+	
+	Ti.App.Properties.setString("idcliente",itemID.cliente);
 	
 	if (image == '/images/checkbox-falso.png') {
 		itemID.image = "/images/checkbox-ativo.png";

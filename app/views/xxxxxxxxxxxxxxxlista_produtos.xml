@@ -1,0 +1,63 @@
+<Alloy>
+	<Window class="container">
+		<View class="cabecalho">
+			<Button class="titulo">LISTA DE PRODUTOS</Button>
+			<ImageView id="logoEmpresa" class="logo"></ImageView>
+		</View>
+		<View class="corpo">
+			<Label class="busca_title">Referência, nome ou código de barras</Label>
+			<ImageView class="busca_barra"/>
+			<TextField id="buscar" hintText="Buscar" class="buscar_field"></TextField>
+			<Button class="buscar_button" onClick="buscarProdutos">Ir</Button>
+			<View class="barra">
+				<Label class="icone_produto">PRODUTO</Label>
+				<Label class="icone_referencia">REFERÊNCIA</Label>
+				<Label class="icone_barras">CÓDIGO DE BARRAS</Label>
+				<Label class="icone_nome">NOME</Label>
+				<Label class="icone_marca">MARCA</Label>
+				<Label class="icone_preco">PREÇO</Label>
+				<Label class="icone_quantidade_min">QTDE. MÍNIMA</Label>
+				<Label class="icone_selecionar">SELECIONAR</Label>
+			</View>
+			<View class="produtos">
+				<ListView class="produtos" id="listaprodutos" defaultItemTemplate="produto_lista">
+					<Templates>
+						<ItemTemplate name="produto_lista" class="produtos_item">
+							<View class="border_horizontal"/>
+							<View class="list" layout="horizontal">
+								<View class="border_vertical"/>
+								<View class="imagem_view">
+									<ImageView class="imagem_produto" bindId="imagem_produto"/>
+								</View>
+								<View class="border_vertical"/>
+								<Label class="label_referencia" bindId="label_referencia"/>
+								<View class="border_vertical"/>
+								<Label class="label_barras" bindId="label_barras"/>
+								<View class="border_vertical"/>
+								<Label class="label_nome" bindId="label_nome"/>
+								<View class="border_vertical"/>
+								<View class="marca_view">
+									<ImageView class="imagem_marca" bindId="imagem_marca"/>
+								</View>
+								<View class="border_vertical"/>
+								<Label class="label_preco" bindId="label_preco"/>
+								<View class="border_vertical"/>
+								<Label class="label_quantidade_min" bindId="label_quantidade_min"/>
+								<View class="border_vertical"/>
+								<View class="view_selecionar">
+									<ImageView class="image_selecionar" bindId="image_selecionar" onClick="selecionaProduto"/>
+								</View>
+								<View class="border_vertical"/>
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection/>
+				</ListView>
+			</View>
+		</View>
+		<View class="rodape">
+			<Button class="pedidos_voltar" onClick="voltar">Voltar</Button>
+			<Label class="ir_selecionados" onClick="irSelecionados">Ir para selecionados</Label>
+		</View>
+	</Window>
+</Alloy>
