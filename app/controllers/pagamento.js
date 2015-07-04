@@ -328,8 +328,6 @@ function calculoParcela(comando, cliente) {
 		}
 		
 		Ti.App.Properties.setString('totalFinal', aux_total);
-		lista[item.cliente] += item.cliente;
-		Ti.App.Properties.setString('vet_list_id', lista);
 
 	}
 	if(calculo2 != 0){

@@ -236,8 +236,6 @@ function Controller() {
                 aux_total -= calculo1;
             }
             Ti.App.Properties.setString("totalFinal", aux_total);
-            lista[item.cliente] += item.cliente;
-            Ti.App.Properties.setString("vet_list_id", lista);
         }
         if (0 != calculo2) {
             if (0 == totalFinal) aux_total -= calculo2; else {
