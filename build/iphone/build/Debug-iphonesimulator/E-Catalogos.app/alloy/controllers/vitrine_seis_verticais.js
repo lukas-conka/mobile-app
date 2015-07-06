@@ -1,1 +1,0 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/vitrine_seis_verticais.js

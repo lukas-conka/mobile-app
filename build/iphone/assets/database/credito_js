@@ -1,0 +1,1 @@
+function dbLoad(){var e=Ti.Database.open(Ti.App.Properties.getString(DATABASE_FILE));return e}function createTableCredit(){var e="CREATE TABLE IF NOT EXISTS credito (id INTEGER PRIMARY KEY AUTOINCREMENT, fk_id_cliente INTEGER, fk_id_ep INTEGER, fk_id_representante INTEGER, mensagem TEXT);",i=dbLoad();i.execute(e)}

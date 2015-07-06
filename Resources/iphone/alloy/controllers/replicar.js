@@ -90,14 +90,14 @@ function Controller() {
                 });
             }
             var cliente_selected0 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
-            var cliente_selected1 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
-            var cliente_selected2 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[1]);
-            var cliente_selected3 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[2]);
-            var cliente_selected4 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[3]);
-            var cliente_selected5 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[4]);
-            var cliente_selected6 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[5]);
+            var cliente_selected1 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[1]);
+            var cliente_selected2 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[2]);
+            var cliente_selected3 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[3]);
+            var cliente_selected4 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[4]);
+            var cliente_selected5 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[5]);
+            var cliente_selected6 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[6]);
             {
-                getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[6]);
+                getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[7]);
             }
             quantidades.push(car_quantidade);
             data.push({
@@ -272,11 +272,6 @@ function Controller() {
         $.total_qtde.text = quantidade_total;
         $.total_preco.text = formatCurrency(valor_total);
     }
-    function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente) {
-        if (!cliente) return false;
-        var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-        return 0 != carrinho[0] ? true : false;
-    }
     function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente) {
         if (!cliente) return "/images/checkbox-falso.png";
         var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
@@ -296,7 +291,7 @@ function Controller() {
             var car_preco_unitario = item.car_preco_unitario;
             var car_ipi = item.car_ipi;
             var prd_id = item.prd_id;
-            verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]) && insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+            insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
             switch (cliente) {
               case "1":
                 item.label_cliente1.text = novo_valor;
@@ -338,7 +333,6 @@ function Controller() {
             title: "Selecione a quantidade"
         });
         var cliente = button.source.cliente;
-        dialog.show();
         dialog.addEventListener("click", function(e) {
             Ti.API.info("cliente" + cliente);
             sobrepedido[cliente] = valores[e.index];
@@ -347,6 +341,7 @@ function Controller() {
             atualizarQuantidades(button);
             Ti.App.Properties.setList(SOBRE_PEDIDO, sobrepedido);
         });
+        dialog.show();
     }
     function selecionaItem(e) {
         var section = $.listapedidos.sections[e.sectionIndex];
