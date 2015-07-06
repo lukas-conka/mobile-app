@@ -272,11 +272,6 @@ function Controller() {
         $.total_qtde.text = quantidade_total;
         $.total_preco.text = formatCurrency(valor_total);
     }
-    function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente) {
-        if (!cliente) return false;
-        var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-        return 0 != carrinho[0] ? true : false;
-    }
     function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente) {
         if (!cliente) return "/images/checkbox-falso.png";
         var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
@@ -296,7 +291,7 @@ function Controller() {
             var car_preco_unitario = item.car_preco_unitario;
             var car_ipi = item.car_ipi;
             var prd_id = item.prd_id;
-            verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]) && insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+            insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
             switch (cliente) {
               case "1":
                 item.label_cliente1.text = novo_valor;

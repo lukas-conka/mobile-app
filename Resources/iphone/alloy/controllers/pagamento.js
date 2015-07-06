@@ -1057,7 +1057,7 @@ function Controller() {
     var descontoVolume = [];
     var formaPagamento = "";
     var valorInicial = [];
-    var quantidade;
+    var quantidade = 0;
     var total_geral = 0;
     var sobrepedido = [];
     var desconto_unit = 0;
