@@ -36,7 +36,7 @@ function resultadoPedidos() {
 				text : razao
 			},
 			"label_data" : {
-				text : data_text
+				text : ped_data
 			},
 			"label_representante" : {
 				text : Ti.App.Properties.getString(CURRENT_USER_NAME)

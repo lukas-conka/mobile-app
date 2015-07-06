@@ -22,7 +22,9 @@ function Controller() {
                 var tmp = ped_data.split(" ");
                 date = new Date(tmp[0]);
             } else date = ped_data;
-            var data_text = date.getDate() + " de " + getMonth(date.getMonth() + 1) + " de " + date.getFullYear();
+            {
+                date.getDate() + " de " + getMonth(date.getMonth() + 1) + " de " + date.getFullYear();
+            }
             data.push({
                 ped_id: id,
                 label_numero: {
@@ -35,7 +37,7 @@ function Controller() {
                     text: razao
                 },
                 label_data: {
-                    text: data_text
+                    text: ped_data
                 },
                 label_representante: {
                     text: Ti.App.Properties.getString(CURRENT_USER_NAME)
