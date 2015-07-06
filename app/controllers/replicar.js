@@ -352,13 +352,11 @@ function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente){
 }
 
 function atualizarQuantidades(button){
-	
 	var cliente = button.source.cliente;
 	Ti.API.info("clientebtn" + cliente);
 	var section = $.listapedidos.sections[0];
 	for(var i = 0; i < quantidades.length; i++){
 		var quantidade = quantidades[i];
-		
 		var car_quantidade = Math.round(quantidade*sobrepedido[cliente]/100);
 		
 		var novo_valor = "Qtd.\n" + car_quantidade;
@@ -372,7 +370,9 @@ function atualizarQuantidades(button){
 		
 		var car_ipi = item.car_ipi;
 		var prd_id = item.prd_id;
+
 		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
+
 			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
 		switch(cliente){
 		case "1":
