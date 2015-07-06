@@ -1,1 +1,0 @@
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/informacao_produto.js
