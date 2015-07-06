@@ -73,7 +73,13 @@ function Controller() {
         goTo("funcao");
     }
     function irSelecionados() {
-        goTo("calculadora");
+        if (0 != clientes.length) goTo("calculadora"); else {
+            var Alerta = Ti.UI.createAlertDialog({
+                message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
+                title: "Selecionar cliente!:"
+            });
+            Alerta.show();
+        }
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "lista_produtos";
@@ -580,6 +586,7 @@ function Controller() {
     Ti.include("/database/produtos.js");
     Ti.include("/database/aparencia.js");
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
+    var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
     var busca_texto = "";
     resultadoProdutos();
     __defers["$.__views.__alloyId891!click!buscarProdutos"] && $.__views.__alloyId891.addEventListener("click", buscarProdutos);

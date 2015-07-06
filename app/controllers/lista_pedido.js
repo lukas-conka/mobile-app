@@ -15,15 +15,9 @@ function resultadoPedidos() {
 		var cnpj = pedidos.fieldByName("cl_cnpj");
 		var razao = pedidos.fieldByName("cl_razao");
 		var ped_data = pedidos.fieldByName("ped_data");
-		var date;
 		
-		if ((new RegExp(' ')).test(ped_data)) {
-			var tmp = ped_data.split(" ");
-			date = new Date(tmp[0]);
-		} else {
-			date = ped_data;
-		}
-		var data_text = date.getDate() + " de " + getMonth(date.getMonth() + 1) + " de " + date.getFullYear();
+		
+		
 		data.push({
 			ped_id:id,
 			"label_numero" : {
@@ -36,7 +30,7 @@ function resultadoPedidos() {
 				text : razao
 			},
 			"label_data" : {
-				text : ped_data
+				text : formatDateBr(ped_data.toString())
 			},
 			"label_representante" : {
 				text : Ti.App.Properties.getString(CURRENT_USER_NAME)
@@ -73,4 +67,19 @@ function exibeDetalhes(e){
 
 function voltar() {
 	goTo('funcao');
+}
+
+function formatDateBr(string){
+	var name = "";
+	for(var i = 0; i < 8; i++){
+		if(string[i] != "-"){
+			name+=string[i];
+		}
+	}
+
+
+	if(name.length == 6){
+		var str = name[6]+"/"+name[5]+"/"+name[0]+name[1]+name[2]+name[3]
+		return str;
+	}
 }
