@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/ApplicationRouting.m \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/ApplicationRouting.h
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/ApplicationRouting.m \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/ApplicationRouting.h

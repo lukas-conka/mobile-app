@@ -389,6 +389,7 @@ function selecionaCombinar() {
 function volta() {
 	goTo("carrinho");
 }
+	
 
 function finalizaPagamento() {
 	if (formaPagamento == "") {
@@ -421,12 +422,17 @@ function finalizaPagamento() {
 				var car_desc_unit = carrinho[j][10];
 				var crp_id = ultimoCarrinhoPedido + q;
 				q++;
+				//alert(car_ipi);
 				insertCarrinhoPedido(crp_id, Ti.App.Properties.getString(SESSION_ID), car_quantidade, car_preco_unitario, car_ipi, car_icms, save_date, 0, descontoPrazo[conjunto[i]], descontoEspecial[conjunto[i]], formaPagamento, ped_id, conjunto[i], fk_tamanhos, fk_produtos, fk_cores, Ti.App.Properties.getString(CURRENT_USER_ID), 2, car_desc_unit);
 			}
 			insertPedido(ped_id, Ti.App.Properties.getString(SESSION_ID), 1, condicaoPrazoMedio[conjunto[i]], car_entrega, car_entrega_prazo, save_date, 1, numero, "", "N", conjunto[i], Ti.App.Properties.getString(CURRENT_USER_ID), 2);
-		}
+		} //funcao inserida por Felipe
+			if(condicaoPrazoMedio == ''){
+		alert("Selecione prazo medio para continuar!");
+	} else {
 		cleanOrders();
 		goTo("finalizacao");
+	}
 	}
 }
 
@@ -436,6 +442,12 @@ function cleanOrders() {
 	var clientes = [];
 	Ti.App.Properties.setList(SELECTED_CLIENTS, clientes);
 	Ti.App.Properties.setList(SELECTED_PRODUCTS, products);
+}
+
+function cleanOders2() {
+	resetCarrinho();
+	var clientes = [];
+	Ti.App.Properties.setList(SELECTED_CLIENTS, clientes);
 }
 
 //Zerando a constante global para n haver conflito na hora de colocar o valor total

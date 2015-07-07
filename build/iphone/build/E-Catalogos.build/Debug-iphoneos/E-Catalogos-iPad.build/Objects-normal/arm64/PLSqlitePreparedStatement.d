@@ -1,19 +1,19 @@
 dependencies: \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.m \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PlausibleDatabase.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLResultSet.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLPreparedStatement.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLDatabase.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBlob.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiProxy.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBase.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiThreading.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiEvaluator.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollContext.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.m \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PlausibleDatabase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLResultSet.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLPreparedStatement.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLDatabase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBlob.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiProxy.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiThreading.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiPublicAPI.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiEvaluator.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -21,6 +21,6 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollCallback.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollObject.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollCallback.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollObject.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h

@@ -50,6 +50,8 @@ $.label_totalComIPI.text = formatCurrency(totalComIPI);
 
 $.pagamento.hide();
 
+
+//onde eh criado a lista de produtos da pagina carrinho 
 function resultadoCarrinho(carrinho) {
 	var totalFinal = 0;
 
@@ -67,6 +69,8 @@ function resultadoCarrinho(carrinho) {
 	$.produto.add(scroll);
 
 	while (carrinho.isValidRow()) {
+		
+		
 		total_pedidos++;
 		var car_id = carrinho.fieldByName('car_id');
 		var car_quantidade = carrinho.fieldByName('car_quantidade');
@@ -80,7 +84,9 @@ function resultadoCarrinho(carrinho) {
 		var prd_data_inicio = carrinho.fieldByName('prd_data_inicio');
 		var prd_data_fim = carrinho.fieldByName('prd_data_fim');
 		var prd_data_prazo = carrinho.fieldByName('prd_data_prazo');
+		
 		var prd_data_limite = carrinho.fieldByName('prd_data_limite');
+	
 		var prd_peso = carrinho.fieldByName('prd_peso');
 		var prd_cub_a = carrinho.fieldByName('prd_cub_a');
 		var prd_cub_l = carrinho.fieldByName('prd_cub_l');
@@ -91,6 +97,7 @@ function resultadoCarrinho(carrinho) {
 		var tmpl = carrinho.fieldByName('fk_template');
 
 		setGap(prd_data_inicio, prd_data_fim, prd_data_prazo);
+
 
 		var notfound;
 		switch(tmpl) {
@@ -695,12 +702,18 @@ function setGap(inicio, fim, prazo) {
 	var today = new Date();
 	if (data_inicio <= today)
 		data_inicio = today;
+		
 	switch (prazo) {
 	case 'mensal':
 		if (data_inicio <= gap_inicial_mes)
+
+		
 			gap_inicial_mes = data_inicio;
+			
 		if (gap_final_mes <= data_fim)
 			gap_final_mes = data_fim;
+			
+			
 		break;
 	case 'semanal':
 		if (data_inicio <= gap_inicial_semana)

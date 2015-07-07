@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBindingRunLoop.m \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollContext.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingRunLoop.m \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -9,6 +9,6 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBase.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiThreading.h \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.h
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiThreading.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiPublicAPI.h

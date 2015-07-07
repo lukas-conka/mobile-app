@@ -3,8 +3,12 @@
 	"deployType": "test",
 	"iosSdkVersion": "8.3",
 	"deviceFamily": "ipad",
+<<<<<<< HEAD
 	"developerName": "James Coggan (45BEUM3J7K)",
 	"iosSdkPath": "/Users/ecatalogos/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
+=======
+	"iosSdkPath": "/Users/cbc/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
+>>>>>>> 2504ed21237ffccdff93873dc3960952823bf655
 	"tiCoreHash": "47658db9e85e6b4af144b3d6070d6de0",
 	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",

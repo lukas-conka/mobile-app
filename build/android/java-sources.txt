@@ -1,5 +1,6 @@
 "/home/james/Documents/projetoMobile/mobile-app/build/android/gen/android/support/v7/appcompat/R.java"
 "/home/james/Documents/projetoMobile/mobile-app/build/android/gen/net/ecatalogos/catalogos/ApplicationStylesheet.java"
+"/home/james/Documents/projetoMobile/mobile-app/build/android/gen/net/ecatalogos/catalogos/AssetCryptImpl.java"
 "/home/james/Documents/projetoMobile/mobile-app/build/android/gen/net/ecatalogos/catalogos/ECatalogosActivity.java"
 "/home/james/Documents/projetoMobile/mobile-app/build/android/gen/net/ecatalogos/catalogos/ECatalogosAppInfo.java"
 "/home/james/Documents/projetoMobile/mobile-app/build/android/gen/net/ecatalogos/catalogos/ECatalogosApplication.java"
