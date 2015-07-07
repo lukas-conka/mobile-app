@@ -1,1 +1,5 @@
+XSym
+0084
+2a6f78d7d6dc1ea66ee831768aa34acc
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/suporte.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

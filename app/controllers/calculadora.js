@@ -953,10 +953,12 @@ function botaoProximo() {
 	renderProduct();
 }
 
-$.informacoes.font = {fontSize: 13};
-$.referencia.font = {fontSize: 13};
-$.nome.font = {fontSize: 13};
-$.colecao.font = {fontSize: 13};
-$.composicao.font = {fontSize: 13};
-$.preco.font = {fontSize: 13};
-$.prazo.font = {fontSize: 13};
+$.informacoes.font = {fontSize: 19};
+$.referencia.font = {fontSize: 19};
+$.nome.font = {fontSize: 19};
+$.colecao.font = {fontSize: 19};
+$.composicao.font = {fontSize: 19};
+$.preco.font = {fontSize: 19};
+$.prazo.font = {fontSize: 19};
+$.descricao.font = {fontSize: 19};
+$.codbarras.font = {fontSize: 19};

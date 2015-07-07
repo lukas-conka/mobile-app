@@ -1,1 +1,5 @@
+XSym
+0089
+8a4e92b7347a5349809678de4abf5124
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/novo_cliente.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

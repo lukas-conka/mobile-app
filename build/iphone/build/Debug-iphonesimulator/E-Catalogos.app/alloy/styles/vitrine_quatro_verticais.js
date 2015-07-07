@@ -1,1 +1,5 @@
+XSym
+0101
+ad8414c5496c784e61c371a350d13e34
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_quatro_verticais.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

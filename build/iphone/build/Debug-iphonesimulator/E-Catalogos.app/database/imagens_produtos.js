@@ -1,1 +1,5 @@
+XSym
+0089
+05e27ebccac15afcd78b5cfd05525bcb
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/imagens_produtos.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

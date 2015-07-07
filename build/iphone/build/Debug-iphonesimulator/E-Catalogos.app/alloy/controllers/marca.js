@@ -1,1 +1,5 @@
+XSym
+0087
+0fcad6bf9571e504e54626de7a1c2f52
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/marca.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

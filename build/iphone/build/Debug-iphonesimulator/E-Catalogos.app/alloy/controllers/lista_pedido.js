@@ -1,1 +1,5 @@
+XSym
+0094
+6ad8d4ef8947372260d98957e9b0cb20
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/lista_pedido.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

@@ -1,1 +1,5 @@
+XSym
+0078
+05f014fb12413bd2e5e7a7320e5dcb88
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/email.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

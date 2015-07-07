@@ -1,1 +1,5 @@
+XSym
+0084
+2940436d0271dd724f4b3727b3430cb9
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/detalhe.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

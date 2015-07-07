@@ -1,1 +1,5 @@
+XSym
+0085
+1c4ccddc8f9bc728cf00c2117045b09b
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/replicar.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

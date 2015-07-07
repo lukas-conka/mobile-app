@@ -155,7 +155,7 @@ function renderCarrinho() {
 	var valor_parcelas = valor_total / parcelas;
 
 	$.listapedidos.sections[0].setItems(data);
-	$.label_ipi.text = formatCurrency(valor_total_ipi);
+	$.label_ipi.text = fdimmuormatCurrency(valor_total_ipi);
 	$.label_valor_parcelas.text = formatCurrency(valor_parcelas);
 	$.label_cubagem.text = (cubagem_a_total * cubagem_l_total * cubagem_p_total) + " m3";
 	$.label_peso.text = peso_total + " Kg";

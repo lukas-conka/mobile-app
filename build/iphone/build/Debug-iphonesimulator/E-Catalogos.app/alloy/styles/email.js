@@ -1,1 +1,5 @@
+XSym
+0082
+22cd15830a294f715b6f9e183dfb03a7
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/email.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

@@ -1,1 +1,5 @@
+XSym
+0078
+9ae8a4da1b97a2583351f67a83f64763
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/video.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

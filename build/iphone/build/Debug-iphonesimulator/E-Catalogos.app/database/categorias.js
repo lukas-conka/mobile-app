@@ -1,1 +1,5 @@
+XSym
+0083
+bc9fa2b8fa0f25bb3bf233db8327358d
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/categorias.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

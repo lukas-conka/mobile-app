@@ -1,1 +1,5 @@
+XSym
+0090
+437a0558108665ff5d4aae354ca38a42
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/sincronizacao.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

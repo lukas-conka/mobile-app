@@ -1,1 +1,5 @@
+XSym
+0077
+9425ffe9e1d2ed8b41feed17d3e131c1
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/fone.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

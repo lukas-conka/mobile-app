@@ -1,1 +1,5 @@
+XSym
+0092
+40561e3462ebc975f96262adebf59ffd
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/destacadas.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

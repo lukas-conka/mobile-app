@@ -1,1 +1,5 @@
+XSym
+0099
+80f74bd0b2020cb14d708c1d987f2136
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_dois_verticais.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

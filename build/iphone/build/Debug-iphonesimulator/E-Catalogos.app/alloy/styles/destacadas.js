@@ -1,1 +1,5 @@
+XSym
+0087
+105b3301f389435229e0364158ac2f5c
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/destacadas.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

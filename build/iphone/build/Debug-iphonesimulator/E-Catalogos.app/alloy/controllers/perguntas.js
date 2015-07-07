@@ -1,1 +1,5 @@
+XSym
+0091
+15bb4fc5449aa6aa8b8018c334e0c6e0
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/perguntas.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

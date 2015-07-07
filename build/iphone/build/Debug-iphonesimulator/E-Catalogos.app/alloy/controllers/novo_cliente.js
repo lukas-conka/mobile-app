@@ -1,1 +1,5 @@
+XSym
+0094
+4870d2e5d73df6af18f5e1834a15f458
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/novo_cliente.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

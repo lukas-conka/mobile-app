@@ -1,1 +1,5 @@
+XSym
+0088
+d7c086ef2265ed5cf934602228843afb
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/conceituais.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

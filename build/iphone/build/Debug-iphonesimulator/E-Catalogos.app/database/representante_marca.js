@@ -1,1 +1,5 @@
+XSym
+0092
+45313bb0dc42aea6c1277b005686df64
 /Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/representante_marca.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
