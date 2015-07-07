@@ -1,1 +1,0 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/grupo_cliente.js

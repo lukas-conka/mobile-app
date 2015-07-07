@@ -1,1 +1,0 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/vitrine_quatro_horizontais.js

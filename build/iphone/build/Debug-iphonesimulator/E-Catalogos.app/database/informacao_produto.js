@@ -1,1 +1,0 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/informacao_produto.js
