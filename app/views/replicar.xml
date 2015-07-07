@@ -53,10 +53,10 @@
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente6" />
 							<Label class="label_itemCliente" bindId="label_cliente6"/>
 						</View>
-						<!--<View class="view_cliente" bindId="view_cliente7" onClick="selecionaItem">
+						<View class="view_cliente" bindId="view_cliente7" onClick="selecionaItem">
 							<ImageView class="seleciona_cliente" bindId="seleciona_cliente7" />
 							<Label class="label_itemCliente" bindId="label_cliente7"/>
-					</View>-->
+					</View>
 					</View>
 				</ItemTemplate>
 			</Templates>

@@ -204,7 +204,8 @@ while (carrinho.isValidRow()) {
 			cliente: 1
 		},
 		"label_cliente1" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi
 		},
 		"seleciona_cliente1" : {
 			prd_id : prd_id,
@@ -219,12 +220,13 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente2" : {
-			visible : cliente_visivel[1],
+			visible : cliente_visivel[2],
 			backgroundColor : cinza_escuro,
 			cliente: 2
 		},
 		"label_cliente2" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi
 		},
 		"seleciona_cliente2" : {
 			prd_id : prd_id,
@@ -244,7 +246,8 @@ while (carrinho.isValidRow()) {
 			cliente: 3
 		},
 		"label_cliente3" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi
 		},
 		"seleciona_cliente3" : {
 			prd_id : prd_id,
@@ -258,12 +261,13 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente4" : {
-			visible : cliente_visivel[3],
+			visible : cliente_visivel[4],
 			backgroundColor : cinza_escuro,
 			cliente: 4
 		},
 		"label_cliente4" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi
 		},
 		"seleciona_cliente4" : {
 			prd_id : prd_id,
@@ -278,12 +282,13 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente5" : {
-			visible : cliente_visivel[4],
+			visible : cliente_visivel[5],
 			backgroundColor : cinza_claro,
 			cliente: 5
 		},
 		"label_cliente5" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi
 		},
 		"seleciona_cliente5" : {
 			prd_id : prd_id,
@@ -298,9 +303,10 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente6" : {
-			visible : cliente_visivel[5],
+			visible : cliente_visivel[6],
 			backgroundColor : cinza_escuro,
-			cliente: 6
+			cliente: 6,
+			car_ipi : car_ipi
 		},
 		"label_cliente6" : {
 			text : "Qtd.\n" + car_quantidade
@@ -364,21 +370,16 @@ function atualizarQuantidades(button){
 		var novo_valor = "Qtd.\n" + car_quantidade;
 		
     	var item = section.getItemAt(i);
-
+	
 		var fk_tamanhos = item.fk_tamanhos;
 		
 		var fk_cores = item.fk_cores;
 		var car_preco_unitario = item.car_preco_unitario;
-		
-		var car_ipi = item.car_ipi;
+		var algo = "label_cliente"+cliente;
+		var car_ipi = item[algo.toString()].car_ipi;
 		var prd_id = item.prd_id;
 		
-		console.log(prd_id+"prd_id");
-		console.log(fk_cores+"fk_cores");
-		console.log(fk_tamanhos+"fk_tamanhos");
-		console.log(clientes[cliente]+"clientes[clientes]");
 		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
-
 			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
 		switch(cliente){
 		case "1":
@@ -422,7 +423,6 @@ function selecionaQuantidade(button){
 	});
 	
 	var cliente = button.source.cliente;
-	
 	dialog.addEventListener("click",function(e){
 		Ti.API.info("cliente" + cliente);	
 		sobrepedido[cliente] = valores[e.index];
@@ -440,7 +440,6 @@ function teste(){
 }
 
 function selecionaItem(e) {
-
 	var section = $.listapedidos.sections[e.sectionIndex];
     var item = section.getItemAt(e.itemIndex);
 	
@@ -455,6 +454,8 @@ function selecionaItem(e) {
 	var car_preco_unitario = itemID.car_preco_unitario;
 	var car_ipi = itemID.car_ipi;
 	var image = itemID.image;
+	
+	
 	
 	Ti.App.Properties.setString("idcliente",itemID.cliente);
 	
@@ -531,7 +532,6 @@ function percenteDesconto(event){
 
 function insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores){
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-	
 	if(carrinho[0]!=0){
 		Ti.API.info("atualiza");
 		updateCarrinho(carrinho[0], session, car_quantidade, 0, 0, 0, 0, 0);

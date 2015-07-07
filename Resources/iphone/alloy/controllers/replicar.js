@@ -162,7 +162,8 @@ function Controller() {
                     cliente: 1
                 },
                 label_cliente1: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi
                 },
                 seleciona_cliente1: {
                     prd_id: prd_id,
@@ -175,12 +176,13 @@ function Controller() {
                     cliente: clientes[1]
                 },
                 view_cliente2: {
-                    visible: cliente_visivel[1],
+                    visible: cliente_visivel[2],
                     backgroundColor: cinza_escuro,
                     cliente: 2
                 },
                 label_cliente2: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi
                 },
                 seleciona_cliente2: {
                     prd_id: prd_id,
@@ -198,7 +200,8 @@ function Controller() {
                     cliente: 3
                 },
                 label_cliente3: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi
                 },
                 seleciona_cliente3: {
                     prd_id: prd_id,
@@ -211,12 +214,13 @@ function Controller() {
                     cliente: clientes[2]
                 },
                 view_cliente4: {
-                    visible: cliente_visivel[3],
+                    visible: cliente_visivel[4],
                     backgroundColor: cinza_escuro,
                     cliente: 4
                 },
                 label_cliente4: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi
                 },
                 seleciona_cliente4: {
                     prd_id: prd_id,
@@ -229,12 +233,13 @@ function Controller() {
                     cliente: clientes[3]
                 },
                 view_cliente5: {
-                    visible: cliente_visivel[4],
+                    visible: cliente_visivel[5],
                     backgroundColor: cinza_claro,
                     cliente: 5
                 },
                 label_cliente5: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi
                 },
                 seleciona_cliente5: {
                     prd_id: prd_id,
@@ -247,9 +252,10 @@ function Controller() {
                     cliente: clientes[4]
                 },
                 view_cliente6: {
-                    visible: cliente_visivel[5],
+                    visible: cliente_visivel[6],
                     backgroundColor: cinza_escuro,
-                    cliente: 6
+                    cliente: 6,
+                    car_ipi: car_ipi
                 },
                 label_cliente6: {
                     text: "Qtd.\n" + car_quantidade
@@ -289,12 +295,10 @@ function Controller() {
             var fk_tamanhos = item.fk_tamanhos;
             var fk_cores = item.fk_cores;
             var car_preco_unitario = item.car_preco_unitario;
-            var car_ipi = item.car_ipi;
+            var algo = "label_cliente" + cliente;
+            var car_ipi = item[algo.toString()].car_ipi;
             var prd_id = item.prd_id;
-            console.log(prd_id + "prd_id");
-            console.log(fk_cores + "fk_cores");
-            console.log(fk_tamanhos + "fk_tamanhos");
-            console.log(clientes[cliente] + "clientes[clientes]");
+            alert(car_ipi);
             insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
             switch (cliente) {
               case "1":
@@ -959,6 +963,47 @@ function Controller() {
                 }
             };
             __alloyId1232.push(__alloyId1291);
+            var __alloyId1298 = {
+                type: "Ti.UI.View",
+                bindId: "view_cliente7",
+                childTemplates: function() {
+                    var __alloyId1299 = [];
+                    var __alloyId1301 = {
+                        type: "Ti.UI.ImageView",
+                        bindId: "seleciona_cliente7",
+                        properties: {
+                            touchEnabled: "false",
+                            left: "1%",
+                            width: "40%",
+                            image: "/images/checkbox-falso.png",
+                            bindId: "seleciona_cliente7"
+                        }
+                    };
+                    __alloyId1299.push(__alloyId1301);
+                    var __alloyId1303 = {
+                        type: "Ti.UI.Label",
+                        bindId: "label_cliente7",
+                        properties: {
+                            touchEnabled: "false",
+                            textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+                            right: "5%",
+                            color: "black",
+                            bindId: "label_cliente7"
+                        }
+                    };
+                    __alloyId1299.push(__alloyId1303);
+                    return __alloyId1299;
+                }(),
+                properties: {
+                    width: "8%",
+                    height: "100%",
+                    bindId: "view_cliente7"
+                },
+                events: {
+                    click: selecionaItem
+                }
+            };
+            __alloyId1232.push(__alloyId1298);
             return __alloyId1232;
         }(),
         properties: {
@@ -975,30 +1020,30 @@ function Controller() {
         childTemplates: __alloyId1229
     };
     __alloyId1226["pedido_lista"] = __alloyId1228;
-    $.__views.__alloyId1297 = Ti.UI.createListSection({
-        id: "__alloyId1297"
+    $.__views.__alloyId1304 = Ti.UI.createListSection({
+        id: "__alloyId1304"
     });
-    var __alloyId1299 = [];
-    __alloyId1299.push($.__views.__alloyId1297);
+    var __alloyId1306 = [];
+    __alloyId1306.push($.__views.__alloyId1304);
     $.__views.listapedidos = Ti.UI.createListView({
         top: "10%",
         width: "98%",
         height: "70%",
-        sections: __alloyId1299,
+        sections: __alloyId1306,
         templates: __alloyId1226,
         id: "listapedidos",
         defaultItemTemplate: "pedido_lista"
     });
     $.__views.win.add($.__views.listapedidos);
-    $.__views.__alloyId1300 = Ti.UI.createView({
+    $.__views.__alloyId1307 = Ti.UI.createView({
         height: "7%",
         top: "81%",
         width: "98%",
         layout: "horizontal",
-        id: "__alloyId1300"
+        id: "__alloyId1307"
     });
-    $.__views.win.add($.__views.__alloyId1300);
-    $.__views.__alloyId1301 = Ti.UI.createLabel({
+    $.__views.win.add($.__views.__alloyId1307);
+    $.__views.__alloyId1308 = Ti.UI.createLabel({
         color: "black",
         font: {
             fontSize: 13
@@ -1008,9 +1053,9 @@ function Controller() {
         width: "11%",
         right: "17%",
         text: "Total",
-        id: "__alloyId1301"
+        id: "__alloyId1308"
     });
-    $.__views.__alloyId1300.add($.__views.__alloyId1301);
+    $.__views.__alloyId1307.add($.__views.__alloyId1308);
     $.__views.total_qtde = Ti.UI.createLabel({
         color: "black",
         font: {
@@ -1022,7 +1067,7 @@ function Controller() {
         text: "235",
         id: "total_qtde"
     });
-    $.__views.__alloyId1300.add($.__views.total_qtde);
+    $.__views.__alloyId1307.add($.__views.total_qtde);
     $.__views.total_preco = Ti.UI.createLabel({
         color: "black",
         font: {
@@ -1034,8 +1079,8 @@ function Controller() {
         text: "R$ 23412.11",
         id: "total_preco"
     });
-    $.__views.__alloyId1300.add($.__views.total_preco);
-    $.__views.__alloyId1302 = Ti.UI.createLabel({
+    $.__views.__alloyId1307.add($.__views.total_preco);
+    $.__views.__alloyId1309 = Ti.UI.createLabel({
         color: "black",
         font: {
             fontSize: 13
@@ -1043,9 +1088,9 @@ function Controller() {
         height: "100%",
         width: "18%",
         text: "Porcentagem:",
-        id: "__alloyId1302"
+        id: "__alloyId1309"
     });
-    $.__views.__alloyId1300.add($.__views.__alloyId1302);
+    $.__views.__alloyId1307.add($.__views.__alloyId1309);
     $.__views.botao_cliente1 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
@@ -1063,7 +1108,7 @@ function Controller() {
         id: "botao_cliente1",
         cliente: "0"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente1);
+    $.__views.__alloyId1307.add($.__views.botao_cliente1);
     $.__views.botao_cliente2 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
@@ -1081,7 +1126,7 @@ function Controller() {
         id: "botao_cliente2",
         cliente: "1"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente2);
+    $.__views.__alloyId1307.add($.__views.botao_cliente2);
     selecionaQuantidade ? $.__views.botao_cliente2.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente2!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente3 = Ti.UI.createButton({
         backgroundGradient: {
@@ -1100,7 +1145,7 @@ function Controller() {
         id: "botao_cliente3",
         cliente: "2"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente3);
+    $.__views.__alloyId1307.add($.__views.botao_cliente3);
     selecionaQuantidade ? $.__views.botao_cliente3.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente3!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente4 = Ti.UI.createButton({
         backgroundGradient: {
@@ -1119,7 +1164,7 @@ function Controller() {
         id: "botao_cliente4",
         cliente: "3"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente4);
+    $.__views.__alloyId1307.add($.__views.botao_cliente4);
     selecionaQuantidade ? $.__views.botao_cliente4.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente4!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente5 = Ti.UI.createButton({
         backgroundGradient: {
@@ -1138,7 +1183,7 @@ function Controller() {
         id: "botao_cliente5",
         cliente: "4"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente5);
+    $.__views.__alloyId1307.add($.__views.botao_cliente5);
     selecionaQuantidade ? $.__views.botao_cliente5.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente5!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente6 = Ti.UI.createButton({
         backgroundGradient: {
@@ -1157,7 +1202,7 @@ function Controller() {
         id: "botao_cliente6",
         cliente: "5"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente6);
+    $.__views.__alloyId1307.add($.__views.botao_cliente6);
     selecionaQuantidade ? $.__views.botao_cliente6.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente6!click!selecionaQuantidade"] = true;
     $.__views.botao_cliente7 = Ti.UI.createButton({
         backgroundGradient: {
@@ -1176,9 +1221,9 @@ function Controller() {
         id: "botao_cliente7",
         cliente: "6"
     });
-    $.__views.__alloyId1300.add($.__views.botao_cliente7);
+    $.__views.__alloyId1307.add($.__views.botao_cliente7);
     selecionaQuantidade ? $.__views.botao_cliente7.addEventListener("click", selecionaQuantidade) : __defers["$.__views.botao_cliente7!click!selecionaQuantidade"] = true;
-    $.__views.__alloyId1303 = Ti.UI.createButton({
+    $.__views.__alloyId1310 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -1189,10 +1234,10 @@ function Controller() {
         width: "10%",
         bottom: "1%",
         title: "Enviar",
-        id: "__alloyId1303"
+        id: "__alloyId1310"
     });
-    $.__views.win.add($.__views.__alloyId1303);
-    enviar ? $.__views.__alloyId1303.addEventListener("click", enviar) : __defers["$.__views.__alloyId1303!click!enviar"] = true;
+    $.__views.win.add($.__views.__alloyId1310);
+    enviar ? $.__views.__alloyId1310.addEventListener("click", enviar) : __defers["$.__views.__alloyId1310!click!enviar"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};
@@ -1260,7 +1305,7 @@ function Controller() {
     __defers["$.__views.botao_cliente5!click!selecionaQuantidade"] && $.__views.botao_cliente5.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente6!click!selecionaQuantidade"] && $.__views.botao_cliente6.addEventListener("click", selecionaQuantidade);
     __defers["$.__views.botao_cliente7!click!selecionaQuantidade"] && $.__views.botao_cliente7.addEventListener("click", selecionaQuantidade);
-    __defers["$.__views.__alloyId1303!click!enviar"] && $.__views.__alloyId1303.addEventListener("click", enviar);
+    __defers["$.__views.__alloyId1310!click!enviar"] && $.__views.__alloyId1310.addEventListener("click", enviar);
     _.extend($, exports);
 }
 
