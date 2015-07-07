@@ -29,7 +29,7 @@ function Controller() {
                     text: razao
                 },
                 label_data: {
-                    text: formatDateBr(ped_data.toString())
+                    text: ped_data
                 },
                 label_representante: {
                     text: Ti.App.Properties.getString(CURRENT_USER_NAME)
@@ -56,14 +56,6 @@ function Controller() {
     }
     function voltar() {
         goTo("funcao");
-    }
-    function formatDateBr(string) {
-        var name = "";
-        for (var i = 0; 8 > i; i++) "-" != string[i] && (name += string[i]);
-        if (6 == name.length) {
-            var str = name[6] + "/" + name[5] + "/" + name[0] + name[1] + name[2] + name[3];
-            return str;
-        }
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "lista_pedido";

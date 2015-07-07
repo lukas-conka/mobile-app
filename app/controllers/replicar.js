@@ -332,9 +332,11 @@ function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 		return false;
 	}
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-	if(carrinho[0]!=0){
-		return true;
+	if(carrinho[0] != 0){
+		
+		return  true;
 	} else {
+		
 		return false;
 	}
 }
@@ -370,7 +372,11 @@ function atualizarQuantidades(button){
 		
 		var car_ipi = item.car_ipi;
 		var prd_id = item.prd_id;
-
+		
+		console.log(prd_id+"prd_id");
+		console.log(fk_cores+"fk_cores");
+		console.log(fk_tamanhos+"fk_tamanhos");
+		console.log(clientes[cliente]+"clientes[clientes]");
 		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
 
 			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);

@@ -76,7 +76,7 @@ function Controller() {
         if (0 != clientes.length) goTo("calculadora"); else {
             var Alerta = Ti.UI.createAlertDialog({
                 message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
-                title: "Selecionar cliente!:"
+                title: "Selecionar cliente:t"
             });
             Alerta.show();
         }

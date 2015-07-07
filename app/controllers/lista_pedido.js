@@ -16,8 +16,6 @@ function resultadoPedidos() {
 		var razao = pedidos.fieldByName("cl_razao");
 		var ped_data = pedidos.fieldByName("ped_data");
 		
-		
-		
 		data.push({
 			ped_id:id,
 			"label_numero" : {
@@ -30,7 +28,7 @@ function resultadoPedidos() {
 				text : razao
 			},
 			"label_data" : {
-				text : formatDateBr(ped_data.toString())
+				text : ped_data
 			},
 			"label_representante" : {
 				text : Ti.App.Properties.getString(CURRENT_USER_NAME)
@@ -67,19 +65,4 @@ function exibeDetalhes(e){
 
 function voltar() {
 	goTo('funcao');
-}
-
-function formatDateBr(string){
-	var name = "";
-	for(var i = 0; i < 8; i++){
-		if(string[i] != "-"){
-			name+=string[i];
-		}
-	}
-
-
-	if(name.length == 6){
-		var str = name[6]+"/"+name[5]+"/"+name[0]+name[1]+name[2]+name[3]
-		return str;
-	}
 }

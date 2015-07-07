@@ -291,6 +291,10 @@ function Controller() {
             var car_preco_unitario = item.car_preco_unitario;
             var car_ipi = item.car_ipi;
             var prd_id = item.prd_id;
+            console.log(prd_id + "prd_id");
+            console.log(fk_cores + "fk_cores");
+            console.log(fk_tamanhos + "fk_tamanhos");
+            console.log(clientes[cliente] + "clientes[clientes]");
             insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
             switch (cliente) {
               case "1":

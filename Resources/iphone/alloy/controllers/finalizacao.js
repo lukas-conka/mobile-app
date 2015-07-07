@@ -136,6 +136,7 @@ function Controller() {
             });
             carrinho.next();
         }
+        alert(total);
         var valor_total_desconto = 0;
         valor_total = valor_total - valor_total_ipi - valor_total_desconto;
         var valor_parcelas = valor_total / parcelas;
