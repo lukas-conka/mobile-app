@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/desconto.js
+XSym
+0081
+79b582934036b76c554b4ed87c9a140d
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/desconto.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

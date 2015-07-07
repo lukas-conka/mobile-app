@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/importar.js
+XSym
+0090
+b5b5f1bfdc248ac4b69374dfa0b5a560
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/importar.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

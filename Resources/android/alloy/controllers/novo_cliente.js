@@ -12,20 +12,7 @@ function Controller() {
         menuSelection(e.itemIndex);
     }
     function grava() {
-        dbLoad();
-        $.idCampoA.value;
-        $.idCampoB.value;
-        $.idCampoC.value;
-        $.idCampoD.value;
-        $.idCampoE.value;
-        $.idCampoF.value;
-        $.idCampoG.value;
-        $.idCampoH.value;
-        $.idCampoI.value;
-        $.idCampoJ.value;
-        $.idCampoK.value;
-        $.idCampoL.value;
-        $.idCampoM.value;
+        alert("Cadastrado!");
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "novo_cliente";

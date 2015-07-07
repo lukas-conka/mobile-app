@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/aparencia.js
+XSym
+0082
+b73e7af330afe259153db63f2f24d1e5
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/aparencia.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

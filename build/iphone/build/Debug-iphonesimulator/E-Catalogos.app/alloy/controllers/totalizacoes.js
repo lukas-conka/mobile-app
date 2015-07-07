@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/totalizacoes.js
+XSym
+0094
+6de98598343ccfb0011b939c87c664b9
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/totalizacoes.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

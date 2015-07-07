@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/softwares.js
+XSym
+0086
+5f006f66d1046fec34185a3d2614655e
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/softwares.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

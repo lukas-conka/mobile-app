@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/email_empresa.js
+XSym
+0086
+bfbb9ef844a44afe128c887c4dc1a7ef
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/email_empresa.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         

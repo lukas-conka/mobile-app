@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/sync/localStorage.js
+XSym
+0087
+80e44228fc2669f774c933db4775a559
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/sync/localStorage.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

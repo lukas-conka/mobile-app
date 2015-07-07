@@ -8,6 +8,24 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
+    function redimencionaVitrineSeis(vitrine) {
+        var ALTURA_PADRAO = 710;
+        var LARGURA_PADRAO = 1260;
+        var alturaTela = 730;
+        var larguraTela = 1280;
+        alturaTela - 250;
+        larguraTela - 250;
+        var alturaView = Math.round(.9 * alturaTela);
+        var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);
+        if (larguraTela > larguraView) {
+            vitrine.width = larguraView;
+            vitrine.height = alturaView;
+        } else {
+            alturaView = Math.round(ALTURA_PADRAO * larguraTela / LARGURA_PADRAO);
+            vitrine.width = larguraTela;
+            vitrine.height = alturaView;
+        }
+    }
     function renderProducts() {
         $.paginacao.title = current_page + "/" + paginas;
         var i = 0;
@@ -90,12 +108,12 @@ function Controller() {
         var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            cancel: 0,
-            title: "Desmarcar itens"
+            title: "Desmarcar itens",
+            message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
+            0 == e.index ? categoryClear($.quantidade) : alert("Continue comprando");
         });
     }
     function voltar() {
@@ -766,7 +784,7 @@ function Controller() {
     var empresa = Ti.App.Properties.getString(CURRENT_EMPRESA);
     var produtos = selectProductsCount(categoria, marca, empresa);
     var paginas = Math.ceil(produtos / itemsperpage);
-    redimencionaVitrine($.vitrine);
+    redimencionaVitrineSeis($.vitrine);
     renderProducts();
     var eventListener = function() {
         Ti.App.removeEventListener("removeBitmap", eventListener);

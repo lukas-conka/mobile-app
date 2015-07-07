@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/carrinho.js
+XSym
+0090
+541a02bd46f6eff25584fcd355676d6e
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/carrinho.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

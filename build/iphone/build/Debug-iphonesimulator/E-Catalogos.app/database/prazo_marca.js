@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/prazo_marca.js
+XSym
+0084
+8d6521c1f2d0a970f95297aca8b3b785
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/prazo_marca.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

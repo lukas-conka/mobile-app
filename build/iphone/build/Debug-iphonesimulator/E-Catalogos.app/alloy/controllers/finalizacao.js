@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/finalizacao.js
+XSym
+0093
+47fcebd9a67e788b65b8eb269e2abf94
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/finalizacao.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

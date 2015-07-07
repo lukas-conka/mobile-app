@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy.js
+XSym
+0069
+5f125bb1eea9c12ba5903a8780921e4a
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

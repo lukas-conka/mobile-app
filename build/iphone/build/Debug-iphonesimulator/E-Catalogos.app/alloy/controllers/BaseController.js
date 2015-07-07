@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/BaseController.js
+XSym
+0096
+28aeab1981f66b7cdf8d093a9e0fb884
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/BaseController.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

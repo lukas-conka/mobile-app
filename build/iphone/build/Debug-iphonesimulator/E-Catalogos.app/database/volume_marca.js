@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/volume_marca.js
+XSym
+0085
+2c8b827ac08f8e04caba94d60418e7b9
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/volume_marca.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/seleciona_cliente.js
+XSym
+0094
+daa4159b33aae5e4d9416189a0052a4f
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/seleciona_cliente.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

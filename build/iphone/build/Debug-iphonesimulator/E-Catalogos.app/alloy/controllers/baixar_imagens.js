@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/baixar_imagens.js
+XSym
+0096
+e695324835ad3f07ebb5ab46008ae0ed
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/baixar_imagens.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

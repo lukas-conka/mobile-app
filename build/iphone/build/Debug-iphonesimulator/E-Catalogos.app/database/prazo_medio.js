@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/prazo_medio.js
+XSym
+0084
+7bf73f81880239e3d069e695972abb85
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/prazo_medio.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

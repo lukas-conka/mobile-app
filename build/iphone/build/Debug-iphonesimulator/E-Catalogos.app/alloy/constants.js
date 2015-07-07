@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/constants.js
+XSym
+0079
+91b69622f3bdf4bf022169778fec8ba1
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/constants.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

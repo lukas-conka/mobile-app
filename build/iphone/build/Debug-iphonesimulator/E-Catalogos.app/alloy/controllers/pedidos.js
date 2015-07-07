@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/pedidos.js
+XSym
+0089
+cbb4b47d6abe8ed53f213543f5c5702f
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/pedidos.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

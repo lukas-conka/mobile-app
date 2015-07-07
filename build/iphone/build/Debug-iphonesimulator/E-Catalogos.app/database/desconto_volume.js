@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/desconto_volume.js
+XSym
+0088
+affc0f31a7427658dd0a682dfdf9386a
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/desconto_volume.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

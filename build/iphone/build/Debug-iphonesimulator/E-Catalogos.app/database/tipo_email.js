@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/tipo_email.js
+XSym
+0083
+4e64f1b1373119e939cf57f0267713d9
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/tipo_email.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

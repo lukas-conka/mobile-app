@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/clientes.js
+XSym
+0081
+7e256b3dd6064507376ada6d7fba7063
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/clientes.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

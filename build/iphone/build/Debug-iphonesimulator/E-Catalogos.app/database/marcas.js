@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/marcas.js
+XSym
+0079
+aefee7250f29cd51ccf32d6608346a23
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/marcas.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

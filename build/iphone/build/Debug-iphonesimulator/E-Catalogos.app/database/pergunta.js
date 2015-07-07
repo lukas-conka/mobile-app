@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/pergunta.js
+XSym
+0081
+36797be22c57dbf280c2ca0154a743da
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/pergunta.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

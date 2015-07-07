@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/vitrine_cinco_verticais.js
+XSym
+0100
+c58be0423f7b7c5ec1e5e46d9e87054d
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_cinco_verticais.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/categorias.js
+XSym
+0087
+75b824027b0af29ad9762c8239899ddf
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/categorias.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

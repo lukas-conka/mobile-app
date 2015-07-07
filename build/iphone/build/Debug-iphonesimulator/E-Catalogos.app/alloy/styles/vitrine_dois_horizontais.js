@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/vitrine_dois_horizontais.js
+XSym
+0101
+1e061f52a20947313be1e0a9d44d1447
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_dois_horizontais.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

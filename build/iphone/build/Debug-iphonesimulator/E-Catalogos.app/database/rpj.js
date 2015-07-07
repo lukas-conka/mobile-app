@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/rpj.js
+XSym
+0076
+f7d1920b01ce7210ad83bcca0979fe98
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/rpj.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

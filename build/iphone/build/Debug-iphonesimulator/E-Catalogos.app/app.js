@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/app.js
+XSym
+0067
+9ef9ed7e6b3213ce7ec113ec1db4c211
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/app.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

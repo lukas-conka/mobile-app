@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/informacao_produto.js
+XSym
+0091
+3d47d09a0bc01760611764b5d3f28042
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/informacao_produto.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

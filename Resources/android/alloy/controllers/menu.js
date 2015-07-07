@@ -8,14 +8,6 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function menuClick(e) {
-        Ti.API.info(e.itemIndex);
-        if (1 == e.itemIndex || 2 == e.itemIndex || 3 == e.itemIndex || 4 == e.itemIndex) if (Ti.App.Properties.getList(SELECTED_CLIENTS)) {
-            var conjunto = Ti.App.Properties.getList(SELECTED_CLIENTS);
-            for (var quantidade = 0; quantidade < conjunto.length; quantidade++) ;
-            0 == quantidade ? alert("É necessário a seleção de um cliente ou mais para seguir em diante!") : menuSelection(e.itemIndex);
-        } else alert("É necessário a seleção de um cliente ou mais para seguir em diante!"); else menuSelection(e.itemIndex);
-    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "menu";
     this.args = arguments[0] || {};
@@ -161,9 +153,6 @@ function Controller() {
     menuClick ? $.__views.__alloyId999.addEventListener("itemclick", menuClick) : __defers["$.__views.__alloyId999!itemclick!menuClick"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    arguments[0] || {};
-    Ti.include("/api/menu.js");
-    Ti.include("/api/config.js");
     __defers["$.__views.__alloyId999!itemclick!menuClick"] && $.__views.__alloyId999.addEventListener("itemclick", menuClick);
     _.extend($, exports);
 }

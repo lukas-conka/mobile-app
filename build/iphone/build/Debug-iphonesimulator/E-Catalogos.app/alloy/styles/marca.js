@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/marca.js
+XSym
+0082
+d442746618215c59c7881e52c5265620
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/marca.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

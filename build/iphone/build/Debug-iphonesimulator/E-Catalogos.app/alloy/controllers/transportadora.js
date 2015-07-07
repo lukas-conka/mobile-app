@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/transportadora.js
+XSym
+0096
+6113926ff8ef568e641290dbe65a5ff2
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/transportadora.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

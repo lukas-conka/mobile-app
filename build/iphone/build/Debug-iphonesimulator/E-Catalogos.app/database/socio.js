@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/socio.js
+XSym
+0078
+e8cbd904b1fc77362a70b35668e98f26
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/socio.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

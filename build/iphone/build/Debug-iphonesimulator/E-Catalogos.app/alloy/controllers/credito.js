@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/credito.js
+XSym
+0089
+8c14f431afb559080751d4137f4fadbb
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/credito.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

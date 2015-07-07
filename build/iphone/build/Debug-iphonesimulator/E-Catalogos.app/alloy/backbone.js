@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/backbone.js
+XSym
+0078
+d5bc8f0e3014f17e897bd6c86fb24f3d
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/backbone.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

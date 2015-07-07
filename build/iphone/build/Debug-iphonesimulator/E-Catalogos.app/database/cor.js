@@ -1,1 +1,5 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/cor.js
+XSym
+0076
+45edc3ec38bdc3308f307af50360969e
+/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/cor.js
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
