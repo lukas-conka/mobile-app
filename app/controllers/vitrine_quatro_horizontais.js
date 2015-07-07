@@ -16,6 +16,9 @@ var paginas = Math.ceil(produtos / itemsperpage);
 
 redimencionaVitrine($.vitrine);
 
+
+
+
 renderProducts();
 
 function renderProducts() {
@@ -49,7 +52,42 @@ function renderProducts() {
 		case 1:
 			$.gradeB.show();
 			preco = $.precoB;
-			tempo = $.tempoB;
+			tempo = $.tempoB;function redimencionaVitrine(vitrine) {
+	var ALTURA_PADRAO = 710;
+	var LARGURA_PADRAO = 1260;
+	/*
+	 var alturaTela = dipUnitsToPixels(Ti.Platform.displayCaps.ydpi);
+
+[INFO] :   tb_produtos.prd_id	 var larguraTela = dipUnitsToPixels(Ti.Platform.displayCaps.xdpi);
+	 */
+
+	var alturaTela = 730;
+	var larguraTela = 1280;
+	if (Ti.Platform.osname != "android") {
+		alturaTela = alturaTela - 200;
+		larguraTela = larguraTela - 100;
+	} else {
+
+		alturaTela -250;
+
+
+		larguraTela -250;
+	}
+
+	var alturaView = Math.round(alturaTela * 0.9);
+	var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);
+
+	if (larguraView < larguraTela) {
+		vitrine.width = larguraView;
+		vitrine.height = alturaView;
+		//alert('largura' + larguraView + ", width: " + v.size.width + ", height: " + v.size.height);
+	} else {
+		alturaView = Math.round(ALTURA_PADRAO * larguraTela / LARGURA_PADRAO);
+		vitrine.width = larguraTela;
+		vitrine.height = alturaView;
+		//alert('largura' + alturaView + ", width: " + larguraTela + ", height: " + alturaTela);
+	}
+}
 			seleciona = $.selecionaB;
 			imagem = $.imagemB;
 			imagens = $.imagesB;
@@ -87,7 +125,8 @@ function limpar() {
 			//options: valores,
 			buttonNames: ['Confirmar','Cancelar'],
 			destructive: 2,
-			title: "Desmarcar itens"
+			title: "Desmarcar itens",
+			message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
 		});
 		
 		exclui.show();

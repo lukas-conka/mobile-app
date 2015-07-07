@@ -86,7 +86,6 @@ function redimencionaVitrine(vitrine) {
     var alturaTela = 730;
     var larguraTela = 1280;
     alturaTela - 250;
-    alturaTela - 210;
     larguraTela - 250;
     var alturaView = Math.round(.9 * alturaTela);
     var larguraView = Math.round(LARGURA_PADRAO * alturaView / ALTURA_PADRAO);

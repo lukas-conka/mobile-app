@@ -78,15 +78,18 @@ function Controller() {
         produtos.close();
     }
     function limpar() {
-        var exclui = Ti.UI.createOptionDialog({
+        var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            cancel: 0,
-            title: "Desmarcar itens"
+            title: "Desmarcar itens",
+            message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            e.cancel ? categoryClear($.quantidade) : alert("Continue comprando");
+            if (0 == e.index) {
+                categoryClear($.quantidade);
+                permanecer();
+            } else alert("Continue comprando");
         });
     }
     function voltar() {

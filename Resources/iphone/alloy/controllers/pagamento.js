@@ -308,8 +308,10 @@ function Controller() {
                 }
                 insertPedido(ped_id, Ti.App.Properties.getString(SESSION_ID), 1, condicaoPrazoMedio[conjunto[i]], car_entrega, car_entrega_prazo, save_date, 1, numero, "", "N", conjunto[i], Ti.App.Properties.getString(CURRENT_USER_ID), 2);
             }
-            cleanOrders();
-            goTo("finalizacao");
+            if ("" == condicaoPrazoMedio) alert("Selecione prazo medio para continuar!"); else {
+                cleanOrders();
+                goTo("finalizacao");
+            }
         }
     }
     function cleanOrders() {

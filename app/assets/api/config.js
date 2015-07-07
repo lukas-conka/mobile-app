@@ -184,7 +184,6 @@ function redimencionaVitrine(vitrine) {
 
 		alturaTela -250;
 
-		alturaTela -210;
 
 		larguraTela -250;
 	}
@@ -311,3 +310,6 @@ function checkdecimal(value) {
 		text = value;
 	return text;
 }
+
+
+

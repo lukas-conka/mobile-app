@@ -75,7 +75,7 @@ function renderCarrinho() {
 		var prd_cub_p = carrinho.fieldByName('ifp_cub_p');
 		var crp_quantidade = carrinho.fieldByName('crp_quantidade');
 		var prd_ipi = carrinho.fieldByName('prd_ipi');
-		//Implementado por carlos
+		//favor carlos comente o que vc fez abaixo. obrigado.
 		var ped_numero = carrinho.fieldByName('ped_numero');
 
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);

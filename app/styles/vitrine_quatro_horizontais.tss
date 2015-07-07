@@ -1,9 +1,11 @@
 ".container": {
-	backgroundColor: "white"
+	backgroundColor: "white",
+	height: "115%",
+	
 }
 
 ".lateral":{
-	height: "100%",
+	height: "90%",
 	left: "0",
 	width: "15%"
 }
@@ -48,8 +50,9 @@
 }
 
 ".corpo":{
-	height: "90%",
-	top: "0"
+	height: "95%",
+	top: "-7",//template com algo no rodape fazendo sumir os botoes
+	width: "100%"
 }
 
 
@@ -200,7 +203,7 @@
 ".paginacao":{
 	backgroundColor: "#ffffff",
 	borderColor: "#cdcdcd",
-	borderWidth: "1",
+	//borderWidth: "1",
 	color: "#008382",
 	height: "60%",
 	left: "30%",

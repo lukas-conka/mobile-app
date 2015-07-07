@@ -1,4 +1,3 @@
-//vou mexer no replicar
 var args = arguments[0] || {};
 Ti.include("/api/config.js");
 Ti.include("/database/clientes.js");
@@ -341,6 +340,7 @@ function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 	
 		return false;
 	}
+
 	
 	if(clientes[cliente]!=0){
 		return true;
@@ -355,6 +355,7 @@ var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, 
 	if(carrinho[0]!=0){
 		return true;
 	}
+
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	if(carrinho[0] != 0){
 		
