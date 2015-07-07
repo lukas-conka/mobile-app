@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/lista_video.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/lista_video.js

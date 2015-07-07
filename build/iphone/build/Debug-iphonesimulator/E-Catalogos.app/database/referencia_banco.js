@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/referencia_banco.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/referencia_banco.js

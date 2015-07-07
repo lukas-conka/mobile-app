@@ -135,7 +135,7 @@ function limpar() {
 		exclui.addEventListener("click", function(e){
 			if(e.index == 0){
 					categoryClear($.quantidade);
-					permanecer();
+					//permanecer(); quem eh permanecer felipe??
 			} else {
 				alert("Continue comprando");
 			}

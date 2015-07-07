@@ -82,7 +82,7 @@ function renderCarrinho() {
 		var desconto_unit = carrinho.fieldByName('desconto_unit');
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
 		var valor_produtos = crp_preco_unitario * crp_quantidade;
-		
+		// alert(prazo_de_entrega);
 		valor_produtos = valor_produtos - desconto_unit;
 
 		var valor_ipi = (valor_produtos * prd_ipi) / 100;

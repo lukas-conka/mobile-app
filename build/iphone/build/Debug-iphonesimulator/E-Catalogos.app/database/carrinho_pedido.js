@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/carrinho_pedido.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/carrinho_pedido.js

@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/status_representante.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/status_representante.js

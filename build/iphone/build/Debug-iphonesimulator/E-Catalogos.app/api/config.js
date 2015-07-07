@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/api/config.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/api/config.js

@@ -479,25 +479,29 @@
 ".label_precototal":{
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: '7%',
-	color: 'black'
+	color: 'black',
+	font: {fontSize: 11}
 }
 
 ".label_ipi":{
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: '7%',
-	color: 'black'
+	color: 'black',
+	font: {fontSize: 11}
 }
 
 ".label_sustrib":{
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: '6%',
-	color: 'black'
+	color: 'black',
+	font: {fontSize: 11}
 }
 
 ".label_valorfinal":{
 	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
-	width: '12%',
-	color: 'black'
+	width: '10%',
+	color: 'black',
+	font: {fontSize: 11}
 }
 
 ".pedidos_item_escuro":{

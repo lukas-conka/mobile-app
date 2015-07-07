@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/app.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/app.js

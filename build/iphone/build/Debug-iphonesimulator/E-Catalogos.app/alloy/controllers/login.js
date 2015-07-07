@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/login.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/login.js

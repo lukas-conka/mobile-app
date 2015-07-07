@@ -129,19 +129,11 @@ function Controller() {
         id: "vitrine_quatro_horizontais"
     });
     $.__views.vitrine_quatro_horizontais && $.addTopLevelView($.__views.vitrine_quatro_horizontais);
-<<<<<<< HEAD
-    $.__views.__alloyId1561 = Ti.UI.createView({
-        height: "95%",
-        top: "-7",
-        width: "100%",
-        id: "__alloyId1561"
-=======
     $.__views.__alloyId1568 = Ti.UI.createView({
         height: "95%",
         top: "-7",
         width: "100%",
         id: "__alloyId1568"
->>>>>>> ed1cb4a8474ae43678e1a897b739b9f8393018ca
     });
     $.__views.vitrine_quatro_horizontais.add($.__views.__alloyId1568);
     $.__views.vitrine = Ti.UI.createView({

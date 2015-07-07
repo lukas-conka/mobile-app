@@ -29,6 +29,8 @@ function Controller() {
             var car_ipi = carrinho.fieldByName("prd_ipi");
             var tmpl = carrinho.fieldByName("fk_template");
             var car_desc_unit = carrinho.fieldByName("car_desc_unit");
+            var car_entrega = carrinho.fieldByName("car_entrega");
+            var car_entrega_prazo = carrinho.fieldByName("car_entrega_prazo");
             quantidade_total += car_quantidade;
             var label_cortamanho = cor_nome + " - " + tmh_nome;
             var total_ref = car_preco_unitario * car_quantidade;
@@ -163,7 +165,9 @@ function Controller() {
                 },
                 label_cliente1: {
                     text: "Qtd.\n" + car_quantidade,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente1: {
                     prd_id: prd_id,
@@ -182,7 +186,9 @@ function Controller() {
                 },
                 label_cliente2: {
                     text: "Qtd.\n" + car_quantidade,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente2: {
                     prd_id: prd_id,
@@ -201,7 +207,9 @@ function Controller() {
                 },
                 label_cliente3: {
                     text: "Qtd.\n" + car_quantidade,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente3: {
                     prd_id: prd_id,
@@ -220,7 +228,9 @@ function Controller() {
                 },
                 label_cliente4: {
                     text: "Qtd.\n" + car_quantidade,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente4: {
                     prd_id: prd_id,
@@ -239,7 +249,9 @@ function Controller() {
                 },
                 label_cliente5: {
                     text: "Qtd.\n" + car_quantidade,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente5: {
                     prd_id: prd_id,
@@ -255,10 +267,14 @@ function Controller() {
                     visible: cliente_visivel[6],
                     backgroundColor: cinza_escuro,
                     cliente: 6,
-                    car_ipi: car_ipi
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega
                 },
                 label_cliente6: {
-                    text: "Qtd.\n" + car_quantidade
+                    text: "Qtd.\n" + car_quantidade,
+                    car_ipi: car_ipi,
+                    car_entrega: car_entrega,
+                    car_entrega_prazo: car_entrega_prazo
                 },
                 seleciona_cliente6: {
                     prd_id: prd_id,
@@ -302,9 +318,11 @@ function Controller() {
             var fk_cores = item.fk_cores;
             var car_preco_unitario = item.car_preco_unitario;
             var algo = "label_cliente" + cliente;
-            var car_ipi = item[algo.toString()].car_ipi;
+            var car_ipi = item.car_ipi;
             var prd_id = item.prd_id;
-            insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+            var car_entrega = item[algo.toString()].car_entrega;
+            var car_entrega_prazo = item[algo.toString()].car_entrega_prazo;
+            insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores, car_entrega, car_entrega_prazo);
             switch (cliente) {
               case "1":
                 item.label_cliente1.text = novo_valor;
@@ -373,7 +391,7 @@ function Controller() {
         Ti.App.Properties.setString("idcliente", itemID.cliente);
         if ("/images/checkbox-falso.png" == image) {
             itemID.image = "/images/checkbox-ativo.png";
-            insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+            insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores, 0, 0);
         } else {
             itemID.image = "/images/checkbox-falso.png";
             removeOrder(cliente, prd_id, fk_tamanhos, fk_cores);

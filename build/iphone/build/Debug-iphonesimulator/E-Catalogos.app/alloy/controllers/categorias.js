@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/categorias.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/categorias.js

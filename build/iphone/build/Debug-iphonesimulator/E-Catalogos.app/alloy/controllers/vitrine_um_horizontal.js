@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/vitrine_um_horizontal.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/vitrine_um_horizontal.js

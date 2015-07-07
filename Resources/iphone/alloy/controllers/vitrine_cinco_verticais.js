@@ -86,10 +86,7 @@ function Controller() {
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            if (0 == e.index) {
-                categoryClear($.quantidade);
-                permanecer();
-            } else alert("Continue comprando");
+            0 == e.index ? categoryClear($.quantidade) : alert("Continue comprando");
         });
     }
     function voltar() {

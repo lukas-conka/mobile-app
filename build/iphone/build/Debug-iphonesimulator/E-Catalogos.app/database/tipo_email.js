@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/tipo_email.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/tipo_email.js

@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/aparencia.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/aparencia.js

@@ -1,1 +1,1 @@
-/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/novo_cliente.js
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/novo_cliente.js
