@@ -335,11 +335,19 @@ function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 	
 		return false;
 	}
+<<<<<<< HEAD
 var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	console.log(carrinho);
 	if(carrinho[0]!=0){
 		return true;
+=======
+	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+	if(carrinho[0] != 0){
+		
+		return  true;
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
 	} else {
+		
 		return false;
 	}
 }
@@ -375,7 +383,11 @@ function atualizarQuantidades(button){
 		
 		var car_ipi = item.car_ipi;
 		var prd_id = item.prd_id;
-
+		
+		console.log(prd_id+"prd_id");
+		console.log(fk_cores+"fk_cores");
+		console.log(fk_tamanhos+"fk_tamanhos");
+		console.log(clientes[cliente]+"clientes[clientes]");
 		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
 		//comentado para retirar a verificacao de 0 no carrinho pois o ultimo item esta sempre como 0
 

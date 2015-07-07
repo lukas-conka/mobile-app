@@ -5,9 +5,10 @@ Ti.include("/database/aparencia.js");
 var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
 
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
+var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
+
 var busca_texto = '';
 resultadoProdutos();
-
 function resultadoProdutos() {
 	var produtos = listaProdutosQuatro(busca_texto);
 	var data = [];
@@ -93,7 +94,9 @@ function irSelecionados() {
 		
 		var Alerta = Ti.UI.createAlertDialog({
 				message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
+
 				title: "Selecionar cliente:"
+
 			});
 			
 			Alerta.show();

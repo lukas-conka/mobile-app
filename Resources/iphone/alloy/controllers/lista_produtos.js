@@ -76,7 +76,11 @@ function Controller() {
         if (0 != clientes.length) goTo("calculadora"); else {
             var Alerta = Ti.UI.createAlertDialog({
                 message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
+<<<<<<< HEAD
                 title: "Selecionar cliente:"
+=======
+                title: "Selecionar cliente:t"
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
             });
             Alerta.show();
         }
@@ -587,6 +591,7 @@ function Controller() {
     Ti.include("/database/aparencia.js");
     var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
     $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
+    var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
     var busca_texto = "";
     resultadoProdutos();
     __defers["$.__views.__alloyId891!click!buscarProdutos"] && $.__views.__alloyId891.addEventListener("click", buscarProdutos);
