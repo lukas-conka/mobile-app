@@ -1,5 +1,4 @@
 dependencies: \
-<<<<<<< HEAD
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiUIiPadProxy.m \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiUIiPadProxy.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiProxy.h \
@@ -8,16 +7,6 @@ dependencies: \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiEvaluator.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollContext.h \
-=======
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiPadProxy.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiPadProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBase.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiThreading.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPublicAPI.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiEvaluator.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollContext.h \
->>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -25,7 +14,6 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-<<<<<<< HEAD
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollCallback.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollObject.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h \
@@ -55,34 +43,3 @@ dependencies: \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiTabGroup.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiUIiOSTransitionAnimationProxy.h \
   /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiUIiOSDocumentViewerProxy.h
-=======
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollCallback.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollObject.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiPadPopoverProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiViewProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIView.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiAnimation.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPoint.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDimension.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiColor.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/ListenerEntry.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiModule.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUtils.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/WebFont.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiFile.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBuffer.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBlob.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/LayoutConstraint.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiGradient.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiRect.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiViewTemplate.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiViewController.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiControllerProtocols.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiPadSplitWindowProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiWindowProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiTab.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiTabGroup.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiOSTransitionAnimationProxy.h \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiUIiOSDocumentViewerProxy.h
->>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff

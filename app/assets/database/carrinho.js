@@ -289,7 +289,10 @@ function selecionaCarrinho(){
                                 WHERE
                                     car.fk_tamanhos = tm.tmh_id AND 
                                     prod.prd_id = car.fk_produtos AND 
-                                    prod.prd_referencia = prod.prd_referencia
+                                    prod.prd_referencia = prod.prd_referencia AND 
+                                    prd_data_fim >= datetime('now')
+                                    
+                                    
                                     ";
 	/*for(clientes){
 		array[cliente] = ID_CLIENTE

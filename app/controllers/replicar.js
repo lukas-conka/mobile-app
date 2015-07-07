@@ -1,4 +1,3 @@
-//vou mexer no replicar
 var args = arguments[0] || {};
 Ti.include("/api/config.js");
 Ti.include("/database/clientes.js");
@@ -335,17 +334,12 @@ function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 	
 		return false;
 	}
-<<<<<<< HEAD
-var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-	console.log(carrinho);
-	if(carrinho[0]!=0){
-		return true;
-=======
+
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	if(carrinho[0] != 0){
 		
 		return  true;
->>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
+
 	} else {
 		
 		return false;
