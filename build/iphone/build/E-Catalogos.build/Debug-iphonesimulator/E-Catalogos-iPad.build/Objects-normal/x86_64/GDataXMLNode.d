@@ -1,6 +1,11 @@
 dependencies: \
+<<<<<<< HEAD
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/GDataXMLNode.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/GDataXMLNode.h \
+=======
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/GDataXMLNode.m \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/GDataXMLNode.h \
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlexports.h \

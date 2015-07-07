@@ -12,6 +12,7 @@ var sobrepedido = [];
 var cinza_escuro = "#999999";
 var cinza_claro = "#D2D2D2";
 var carrinho = selecionaCarrinhoById(clientes[0]);
+console.log("cliente " + clientes[0]);
 var quantidades = [];
 var cliente_visivel = [];
 var session = Ti.App.Properties.getString(SESSION_ID);
@@ -132,13 +133,13 @@ while (carrinho.isValidRow()) {
 	});
 
 	var cliente_selected0 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
-	var cliente_selected1 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[0]);
-	var cliente_selected2 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[1]);
-	var cliente_selected3 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[2]);
-	var cliente_selected4 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[3]);
-	var cliente_selected5 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[4]);
-	var cliente_selected6 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[5]);
-	var cliente_selected7 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[6]);
+	var cliente_selected1 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[1]);
+	var cliente_selected2 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[2]);
+	var cliente_selected3 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[3]);
+	var cliente_selected4 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[4]);
+	var cliente_selected5 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[5]);
+	var cliente_selected6 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[6]);
+	var cliente_selected7 = getSelectedCheck(prd_id, fk_cores, fk_tamanhos, clientes[7]);
 
 	quantidades.push(car_quantidade);
 	
@@ -328,13 +329,25 @@ while (carrinho.isValidRow()) {
 }
 
 function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
+
+	console.log(cliente);
 	if(!cliente){
+	
 		return false;
 	}
-	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+<<<<<<< HEAD
+var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+	console.log(carrinho);
 	if(carrinho[0]!=0){
 		return true;
+=======
+	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+	if(carrinho[0] != 0){
+		
+		return  true;
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
 	} else {
+		
 		return false;
 	}
 }
@@ -356,7 +369,6 @@ function atualizarQuantidades(button){
 	Ti.API.info("clientebtn" + cliente);
 	var section = $.listapedidos.sections[0];
 	for(var i = 0; i < quantidades.length; i++){
-		
 		var quantidade = quantidades[i];
 		var car_quantidade = Math.round(quantidade*sobrepedido[cliente]/100);
 		
@@ -371,7 +383,14 @@ function atualizarQuantidades(button){
 		
 		var car_ipi = item.car_ipi;
 		var prd_id = item.prd_id;
-		// if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
+		
+		console.log(prd_id+"prd_id");
+		console.log(fk_cores+"fk_cores");
+		console.log(fk_tamanhos+"fk_tamanhos");
+		console.log(clientes[cliente]+"clientes[clientes]");
+		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
+		//comentado para retirar a verificacao de 0 no carrinho pois o ultimo item esta sempre como 0
+
 			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
 		switch(cliente){
 		case "1":
@@ -416,8 +435,6 @@ function selecionaQuantidade(button){
 	
 	var cliente = button.source.cliente;
 	
-	dialog.show();
-	
 	dialog.addEventListener("click",function(e){
 		Ti.API.info("cliente" + cliente);	
 		sobrepedido[cliente] = valores[e.index];
@@ -426,11 +443,10 @@ function selecionaQuantidade(button){
 		atualizarQuantidades(button);
 		Ti.App.Properties.setList(SOBRE_PEDIDO, sobrepedido);
 	});
+	
+	dialog.show();
 }
 
-function teste(){
-	alert("teste");
-}
 
 function selecionaItem(e) {
 

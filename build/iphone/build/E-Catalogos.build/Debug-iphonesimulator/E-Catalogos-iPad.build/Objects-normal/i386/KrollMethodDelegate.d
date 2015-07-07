@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollMethodDelegate.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollMethodDelegate.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollMethodDelegate.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollMethodDelegate.h

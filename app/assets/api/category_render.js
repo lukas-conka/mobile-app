@@ -206,7 +206,6 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 	if(teste){
 		seleciona.addEventListener('click', function(e) {
 			teste = false;
-			
 			if (AddSelectedProduct(e.source.prd_id) == "true") {
 				e.source.image = '/images/selecionar_vermelho.png';
 				//seleciona.addEventListener('click', arguments.callee);
@@ -217,6 +216,7 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
 				//seleciona.removeEventListener('click', arguments.callee);
 			}
 			setSelected(quantidade);
+			
 		});
 	}
 	setSelected(quantidade);

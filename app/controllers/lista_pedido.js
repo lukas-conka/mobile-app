@@ -15,15 +15,7 @@ function resultadoPedidos() {
 		var cnpj = pedidos.fieldByName("cl_cnpj");
 		var razao = pedidos.fieldByName("cl_razao");
 		var ped_data = pedidos.fieldByName("ped_data");
-		var date;
 		
-		if ((new RegExp(' ')).test(ped_data)) {
-			var tmp = ped_data.split(" ");
-			date = new Date(tmp[0]);
-		} else {
-			date = ped_data;
-		}
-		var data_text = date.getDate() + " de " + getMonth(date.getMonth() + 1) + " de " + date.getFullYear();
 		data.push({
 			ped_id:id,
 			"label_numero" : {
@@ -36,7 +28,7 @@ function resultadoPedidos() {
 				text : razao
 			},
 			"label_data" : {
-				text : data_text
+				text : ped_data
 			},
 			"label_representante" : {
 				text : Ti.App.Properties.getString(CURRENT_USER_NAME)

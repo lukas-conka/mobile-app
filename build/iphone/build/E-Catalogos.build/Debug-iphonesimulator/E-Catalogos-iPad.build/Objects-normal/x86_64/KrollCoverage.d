@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollCoverage.m
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollCoverage.m

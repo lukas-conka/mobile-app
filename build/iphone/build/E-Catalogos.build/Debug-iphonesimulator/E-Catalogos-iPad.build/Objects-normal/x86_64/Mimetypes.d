@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Mimetypes.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Mimetypes.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Mimetypes.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Mimetypes.h

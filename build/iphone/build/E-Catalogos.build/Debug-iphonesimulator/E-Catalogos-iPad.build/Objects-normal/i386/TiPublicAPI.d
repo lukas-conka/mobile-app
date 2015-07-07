@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPublicAPI.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPublicAPI.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.h

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollPropertyDelegate.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollPropertyDelegate.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollPropertyDelegate.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollPropertyDelegate.h

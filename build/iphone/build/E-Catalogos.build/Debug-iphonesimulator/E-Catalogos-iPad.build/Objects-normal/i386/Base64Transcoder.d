@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Base64Transcoder.c \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Base64Transcoder.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Base64Transcoder.c \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Base64Transcoder.h

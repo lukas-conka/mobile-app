@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Reachability.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/Reachability.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Reachability.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/Reachability.h

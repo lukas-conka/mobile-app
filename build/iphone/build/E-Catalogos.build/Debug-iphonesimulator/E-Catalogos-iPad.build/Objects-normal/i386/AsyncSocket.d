@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/AsyncSocket.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/AsyncSocket.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/AsyncSocket.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/AsyncSocket.h

@@ -4,6 +4,7 @@ Ti.include("/database/carrinho_pedido.js");
 Ti.include("/database/imagens_produtos.js");
 Ti.include("/database/pedido.js");
 
+
 var pedidos = consultaPedidosBySession(Ti.App.Properties.getString(SESSION_ID));
 var paginas = pedidos.length;
 var current_page = 1;
@@ -79,11 +80,12 @@ function renderCarrinho() {
 		var crp_quantidade = carrinho.fieldByName('crp_quantidade');
 		var prd_ipi = carrinho.fieldByName('prd_ipi');
 		var desconto_unit = carrinho.fieldByName('desconto_unit');
-	
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
 		var valor_produtos = crp_preco_unitario * crp_quantidade;
+		
 		valor_produtos = valor_produtos - desconto_unit;
-		var valor_ipi = valor_produtos * prd_ipi / 100;
+
+		var valor_ipi = (valor_produtos * prd_ipi) / 100;
 		var valor_total_produto = valor_produtos + valor_ipi;
 
 		peso_total = peso_total + prd_peso;
@@ -103,7 +105,7 @@ function renderCarrinho() {
 		}
 
 		total = total + valor_total_produto;
-
+		
 		Ti.API.info('prd_id=' + prd_id);
 
 		data.push({
@@ -151,7 +153,7 @@ function renderCarrinho() {
 
 		carrinho.next();
 	}
-
+	alert(total);
 	var total_desconto = 0;
 	var valor_total_desconto = 0;
 

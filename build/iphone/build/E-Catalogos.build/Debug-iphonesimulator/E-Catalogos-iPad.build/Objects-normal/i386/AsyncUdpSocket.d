@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/AsyncUdpSocket.m \
-  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/AsyncUdpSocket.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/AsyncUdpSocket.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/AsyncUdpSocket.h

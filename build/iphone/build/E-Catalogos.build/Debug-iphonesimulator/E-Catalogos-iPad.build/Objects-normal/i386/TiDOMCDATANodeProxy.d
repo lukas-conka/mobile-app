@@ -1,4 +1,15 @@
 dependencies: \
+<<<<<<< HEAD
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiDOMCDATANodeProxy.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiDOMCDATANodeProxy.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiDOMTextNodeProxy.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiProxy.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBase.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiThreading.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiPublicAPI.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiEvaluator.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollContext.h \
+=======
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMCDATANodeProxy.m \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMCDATANodeProxy.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMTextNodeProxy.h \
@@ -8,6 +19,7 @@ dependencies: \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiPublicAPI.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiEvaluator.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollContext.h \
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -15,12 +27,21 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
+<<<<<<< HEAD
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollCallback.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/KrollObject.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TIDOMCharacterDataProxy.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/GDataXMLNode.h \
+=======
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollCallback.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/KrollObject.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiBindingRunLoop.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TIDOMCharacterDataProxy.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiDOMNodeProxy.h \
   /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/GDataXMLNode.h \
+>>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.3.sdk/usr/include/libxml2/libxml/xmlexports.h \
