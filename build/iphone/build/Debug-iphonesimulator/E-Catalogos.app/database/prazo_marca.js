@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/prazo_marca.js

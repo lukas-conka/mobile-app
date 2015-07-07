@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/vitrine_cinco_verticais.js

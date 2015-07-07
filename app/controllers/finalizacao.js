@@ -4,6 +4,7 @@ Ti.include("/database/carrinho_pedido.js");
 Ti.include("/database/imagens_produtos.js");
 Ti.include("/database/pedido.js");
 
+
 var pedidos = consultaPedidosBySession(Ti.App.Properties.getString(SESSION_ID));
 var paginas = pedidos.length;
 var current_page = 1;

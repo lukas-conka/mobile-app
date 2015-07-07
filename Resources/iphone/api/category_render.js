@@ -168,12 +168,11 @@ function loadItems(tmpl, produtos, referencia, preco, tempo, seleciona, imagem, 
     seleciona.image = "true" == checkSelectedProduct(prd_id) ? "/images/selecionar_vermelho.png" : "/images/seleciona.png";
     seleciona.prd_id = prd_id;
     teste && seleciona.addEventListener("click", function(e) {
+        teste = false;
         e.source.image = "true" == AddSelectedProduct(e.source.prd_id) ? "/images/selecionar_vermelho.png" : "/images/seleciona.png";
         setSelected(quantidade);
-        teste = false;
     });
     setSelected(quantidade);
-    teste = true;
 }
 
 function cleanImages() {

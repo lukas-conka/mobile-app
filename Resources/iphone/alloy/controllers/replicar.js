@@ -1203,6 +1203,7 @@ function Controller() {
     var cinza_escuro = "#999999";
     var cinza_claro = "#D2D2D2";
     var carrinho = selecionaCarrinhoById(clientes[0]);
+    console.log("cliente " + clientes[0]);
     var quantidades = [];
     var cliente_visivel = [];
     var session = Ti.App.Properties.getString(SESSION_ID);

@@ -1,0 +1,1 @@
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/socio.js

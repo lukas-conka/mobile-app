@@ -1,6 +1,9 @@
 Ti.include("/api/config.js");
 Ti.include("/database/produtos.js");
 Ti.include("/database/aparencia.js");
+
+var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
+
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
 var busca_texto = '';
 resultadoProdutos();
@@ -65,11 +68,6 @@ function buscarProdutos() {
 	$.buscar.value = '';
 }
 
-// function Merda(){
-// 	
-	// alert
-// 	
-// }
 
 function selecionaProduto(e) {
 	var selecao = $.listaprodutos.sections[e.sectionIndex];
@@ -89,5 +87,16 @@ function voltar() {
 }
 
 function irSelecionados() {
-	goTo('calculadora');
+	if(clientes.length != 0){
+		goTo('calculadora');
+	}else{
+		
+		var Alerta = Ti.UI.createAlertDialog({
+				message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
+				title: "Selecionar cliente:"
+			});
+			
+			Alerta.show();
+		
+	}
 }
