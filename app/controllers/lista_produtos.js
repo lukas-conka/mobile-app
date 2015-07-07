@@ -1,6 +1,9 @@
 Ti.include("/api/config.js");
 Ti.include("/database/produtos.js");
 Ti.include("/database/aparencia.js");
+
+var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
+
 $.logoEmpresa.image = getImagesFolder() + selectLogoFile();
 var clientes = Ti.App.Properties.getList(SELECTED_CLIENTS);
 
@@ -66,11 +69,6 @@ function buscarProdutos() {
 	$.buscar.value = '';
 }
 
-// function Merda(){
-// 	
-	// alert
-// 	
-// }
 
 function selecionaProduto(e) {
 	var selecao = $.listaprodutos.sections[e.sectionIndex];
@@ -96,7 +94,9 @@ function irSelecionados() {
 		
 		var Alerta = Ti.UI.createAlertDialog({
 				message: "É necessário a seleção de um cliente ou mais para seguir em diante!",
-				title: "Selecionar cliente:t"
+
+				title: "Selecionar cliente:"
+
 			});
 			
 			Alerta.show();

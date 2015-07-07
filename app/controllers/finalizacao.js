@@ -4,6 +4,7 @@ Ti.include("/database/carrinho_pedido.js");
 Ti.include("/database/imagens_produtos.js");
 Ti.include("/database/pedido.js");
 
+
 var pedidos = consultaPedidosBySession(Ti.App.Properties.getString(SESSION_ID));
 var paginas = pedidos.length;
 var current_page = 1;
@@ -152,7 +153,7 @@ function renderCarrinho() {
 
 		carrinho.next();
 	}
-	alert(total);
+	
 	var total_desconto = 0;
 	var valor_total_desconto = 0;
 

@@ -279,6 +279,12 @@ function Controller() {
         $.total_preco.text = formatCurrency(valor_total);
     }
     function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente) {
+        var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+        if (0 != carrinho[0]) return true;
+        var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+        return 0 != carrinho[0] ? true : false;
+    }
+    function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente) {
         if (!cliente) return "/images/checkbox-falso.png";
         var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
         return 0 != carrinho[0] ? "/images/checkbox-ativo.png" : "/images/checkbox-falso.png";
@@ -298,7 +304,6 @@ function Controller() {
             var algo = "label_cliente" + cliente;
             var car_ipi = item[algo.toString()].car_ipi;
             var prd_id = item.prd_id;
-            alert(car_ipi);
             insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
             switch (cliente) {
               case "1":
@@ -1252,6 +1257,7 @@ function Controller() {
     var cinza_escuro = "#999999";
     var cinza_claro = "#D2D2D2";
     var carrinho = selecionaCarrinhoById(clientes[0]);
+    console.log("cliente " + clientes[0]);
     var quantidades = [];
     var cliente_visivel = [];
     var session = Ti.App.Properties.getString(SESSION_ID);

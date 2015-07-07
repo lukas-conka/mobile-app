@@ -12,6 +12,7 @@ var sobrepedido = [];
 var cinza_escuro = "#999999";
 var cinza_claro = "#D2D2D2";
 var carrinho = selecionaCarrinhoById(clientes[0]);
+console.log("cliente " + clientes[0]);
 var quantidades = [];
 var cliente_visivel = [];
 var session = Ti.App.Properties.getString(SESSION_ID);
@@ -334,13 +335,31 @@ while (carrinho.isValidRow()) {
 }
 
 function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
+
+	
 	if(!cliente){
+	
 		return false;
+	}
+	
+	if(clientes[cliente]!=0){
+		return true;
+	}else{
+		return false;
+	}
+	
+}
+
+function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente){
+var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+	if(carrinho[0]!=0){
+		return true;
 	}
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	if(carrinho[0] != 0){
 		
 		return  true;
+
 	} else {
 		
 		return false;
@@ -435,9 +454,6 @@ function selecionaQuantidade(button){
 	dialog.show();
 }
 
-function teste(){
-	alert("teste");
-}
 
 function selecionaItem(e) {
 	var section = $.listapedidos.sections[e.sectionIndex];
