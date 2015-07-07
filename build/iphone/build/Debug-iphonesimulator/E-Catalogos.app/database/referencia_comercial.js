@@ -1,5 +1,1 @@
-XSym
-0093
-1c7015b3ce676ac5efe1a8d479c469e0
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/referencia_comercial.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/referencia_comercial.js

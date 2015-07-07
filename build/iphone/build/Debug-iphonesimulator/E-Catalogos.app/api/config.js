@@ -1,5 +1,1 @@
-XSym
-0074
-1d57a46646a58b2020a1d7e78a8a5210
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/api/config.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/api/config.js

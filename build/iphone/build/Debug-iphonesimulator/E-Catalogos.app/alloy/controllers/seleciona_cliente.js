@@ -1,5 +1,1 @@
-XSym
-0099
-e4bfd5d4b982fb416e181711ddbf51ba
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/seleciona_cliente.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/seleciona_cliente.js

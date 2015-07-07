@@ -1,5 +1,1 @@
-XSym
-0089
-01631c15048d23b1780fa57446c95b03
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/detalhe.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/detalhe.js

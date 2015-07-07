@@ -1,5 +1,1 @@
-XSym
-0076
-8b50f50703d444d1b88d78860c378389
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/widget.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/widget.js

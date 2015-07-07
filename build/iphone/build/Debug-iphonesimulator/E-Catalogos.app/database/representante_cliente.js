@@ -1,5 +1,1 @@
-XSym
-0094
-7fcaf36ffc292ee5d62ada873a049e58
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/representante_cliente.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/representante_cliente.js

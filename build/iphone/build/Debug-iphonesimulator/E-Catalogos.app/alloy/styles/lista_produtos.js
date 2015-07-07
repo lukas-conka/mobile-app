@@ -1,5 +1,1 @@
-XSym
-0091
-a39d91c77020817808a5c043235d23f7
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/lista_produtos.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/lista_produtos.js

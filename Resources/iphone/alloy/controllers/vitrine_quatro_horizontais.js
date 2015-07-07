@@ -70,7 +70,8 @@ function Controller() {
         var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            title: "Desmarcar itens"
+            title: "Desmarcar itens",
+            message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
@@ -124,12 +125,14 @@ function Controller() {
     var __defers = {};
     $.__views.vitrine_quatro_horizontais = Ti.UI.createView({
         backgroundColor: "white",
+        height: "115%",
         id: "vitrine_quatro_horizontais"
     });
     $.__views.vitrine_quatro_horizontais && $.addTopLevelView($.__views.vitrine_quatro_horizontais);
     $.__views.__alloyId1561 = Ti.UI.createView({
-        height: "90%",
-        top: "0",
+        height: "95%",
+        top: "-7",
+        width: "100%",
         id: "__alloyId1561"
     });
     $.__views.vitrine_quatro_horizontais.add($.__views.__alloyId1561);
@@ -477,7 +480,6 @@ function Controller() {
     $.__views.paginacao = Ti.UI.createButton({
         backgroundColor: "#ffffff",
         borderColor: "#cdcdcd",
-        borderWidth: "1",
         color: "#008382",
         height: "60%",
         left: "30%",

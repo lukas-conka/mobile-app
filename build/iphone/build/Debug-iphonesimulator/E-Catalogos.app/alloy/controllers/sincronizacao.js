@@ -1,5 +1,1 @@
-XSym
-0095
-c2af0fb49b1a0e4624b84ca75c4547fa
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/sincronizacao.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/sincronizacao.js

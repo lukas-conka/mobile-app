@@ -81,11 +81,15 @@ function Controller() {
         var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            title: "Desmarcar itens"
+            title: "Desmarcar itens",
+            message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {
-            0 == e.index ? categoryClear($.quantidade) : alert("Continue comprando");
+            if (0 == e.index) {
+                categoryClear($.quantidade);
+                permanecer();
+            } else alert("Continue comprando");
         });
     }
     function voltar() {

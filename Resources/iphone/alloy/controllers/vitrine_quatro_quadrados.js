@@ -70,7 +70,8 @@ function Controller() {
         var exclui = Ti.UI.createAlertDialog({
             buttonNames: [ "Confirmar", "Cancelar" ],
             destructive: 2,
-            title: "Desmarcar itens"
+            title: "Desmarcar itens",
+            message: "Essa opcao ira desmarcar todos os itens selecionados em todas as paginas!"
         });
         exclui.show();
         exclui.addEventListener("click", function(e) {

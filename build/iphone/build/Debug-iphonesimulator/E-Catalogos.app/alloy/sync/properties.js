@@ -1,5 +1,1 @@
-XSym
-0085
-a0f81bad002625df800c26c99c495646
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/sync/properties.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/sync/properties.js

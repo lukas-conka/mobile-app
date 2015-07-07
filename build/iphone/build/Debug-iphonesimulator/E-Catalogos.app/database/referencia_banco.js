@@ -1,5 +1,1 @@
-XSym
-0089
-1ba8e4baf1e8a2d1dbf802ee6a99bc68
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/referencia_banco.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/referencia_banco.js

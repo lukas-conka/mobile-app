@@ -1,5 +1,1 @@
-XSym
-0072
-19ae4abb2197b10a46c82e6df58fcb7e
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/api/menu.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/api/menu.js

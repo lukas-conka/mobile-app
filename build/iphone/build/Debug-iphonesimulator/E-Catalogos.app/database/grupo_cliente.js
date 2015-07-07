@@ -1,5 +1,1 @@
-XSym
-0086
-9fc1e788a099ae5b09858b89705742f9
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/grupo_cliente.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/grupo_cliente.js

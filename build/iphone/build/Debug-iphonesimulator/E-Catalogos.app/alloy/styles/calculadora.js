@@ -1,5 +1,1 @@
-XSym
-0088
-8683b63f4945ae93b5e9e53fb53b9d9d
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/calculadora.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/calculadora.js

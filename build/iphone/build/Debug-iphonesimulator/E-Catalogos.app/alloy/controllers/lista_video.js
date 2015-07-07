@@ -1,5 +1,1 @@
-XSym
-0093
-57e8288f9d67fc239f7671a19f83133f
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/lista_video.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/lista_video.js

@@ -1,5 +1,1 @@
-XSym
-0096
-dcabf19b6db23ed8f1973110f752c9b9
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/lista_produtos.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/lista_produtos.js

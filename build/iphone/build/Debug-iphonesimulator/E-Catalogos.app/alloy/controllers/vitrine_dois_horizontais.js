@@ -1,5 +1,1 @@
-XSym
-0106
-7a5a4569fe7f0cc81a61b4f8d31c27f4
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/vitrine_dois_horizontais.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/vitrine_dois_horizontais.js

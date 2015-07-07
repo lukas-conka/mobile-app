@@ -1,5 +1,1 @@
-XSym
-0083
-db4d46520ae879ac3872e37df9a836b7
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/api/category_render.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/api/category_render.js

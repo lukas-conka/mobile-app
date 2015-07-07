@@ -1,5 +1,1 @@
-XSym
-0078
-4ff6ffc76c13f3f8dad6f7800b3040dd
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/sync/sql.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/sync/sql.js

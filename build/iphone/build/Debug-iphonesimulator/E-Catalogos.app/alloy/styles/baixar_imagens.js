@@ -1,5 +1,1 @@
-XSym
-0091
-9c8511e44fc6217658474c5b5dcec883
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/baixar_imagens.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/baixar_imagens.js

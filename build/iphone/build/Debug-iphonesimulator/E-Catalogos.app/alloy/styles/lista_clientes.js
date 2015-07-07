@@ -1,5 +1,1 @@
-XSym
-0091
-a051f038cd4eb1b099a24c819afc8305
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/lista_clientes.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/lista_clientes.js

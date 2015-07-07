@@ -1,5 +1,1 @@
-XSym
-0085
-88939af09d2f5b45e058ebbf3813824a
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/importar.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/importar.js
