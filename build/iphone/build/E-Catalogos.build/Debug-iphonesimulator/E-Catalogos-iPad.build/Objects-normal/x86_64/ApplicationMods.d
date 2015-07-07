@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/ApplicationMods.m \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/ApplicationMods.h
+  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/ApplicationMods.m \
+  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/ApplicationMods.h

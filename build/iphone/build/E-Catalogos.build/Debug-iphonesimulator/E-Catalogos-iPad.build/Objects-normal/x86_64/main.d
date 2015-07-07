@@ -1,1 +1,2 @@
-dependencies: /Users/ecatalogos/Documents/ecatalogo/build/iphone/main.m
+dependencies: \
+  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/main.m

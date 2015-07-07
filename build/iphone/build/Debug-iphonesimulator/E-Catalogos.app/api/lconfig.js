@@ -1,5 +1,0 @@
-XSym
-0075
-14f8384590727a56f1ad4f42893a8fb6
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/api/lconfig.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

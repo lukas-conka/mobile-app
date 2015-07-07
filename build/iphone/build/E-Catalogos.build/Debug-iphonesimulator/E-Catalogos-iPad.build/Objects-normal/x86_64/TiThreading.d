@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiThreading.m \
-  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/TiThreading.h
+  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiThreading.m \
+  /Users/cbc/Documents/CarlosStark/mobile-app/build/iphone/Classes/TiThreading.h

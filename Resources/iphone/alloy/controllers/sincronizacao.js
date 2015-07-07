@@ -37,40 +37,40 @@ function Controller() {
         id: "sincronizacao"
     });
     $.__views.sincronizacao && $.addTopLevelView($.__views.sincronizacao);
-    $.__views.__alloyId1403 = Ti.UI.createLabel({
+    $.__views.__alloyId1410 = Ti.UI.createLabel({
         top: 10,
         color: "#000000",
         left: 10,
         text: "SINCRONIZAÇÃO DE DADOS",
-        id: "__alloyId1403"
+        id: "__alloyId1410"
     });
-    $.__views.sincronizacao.add($.__views.__alloyId1403);
-    $.__views.__alloyId1404 = Ti.UI.createLabel({
+    $.__views.sincronizacao.add($.__views.__alloyId1410);
+    $.__views.__alloyId1411 = Ti.UI.createLabel({
         color: "#000000",
         top: "10%",
         right: 10,
         left: 10,
         text: "As funções EXPORTAR e IMPORTAR são fundamentáis para sincronizar as informações com o sistema web, em caso de inclusão ou correção de alguma informação e/ou imagem efetuadas pelo fabricante.\n\n\n A ação de sincronizar os dados não elimina a necessidade de backup.",
-        id: "__alloyId1404"
+        id: "__alloyId1411"
     });
-    $.__views.sincronizacao.add($.__views.__alloyId1404);
-    $.__views.__alloyId1405 = Ti.UI.createView({
+    $.__views.sincronizacao.add($.__views.__alloyId1411);
+    $.__views.__alloyId1412 = Ti.UI.createView({
         height: "60%",
         top: "30%",
         width: "100%",
         layout: "horizontal",
-        id: "__alloyId1405"
+        id: "__alloyId1412"
     });
-    $.__views.sincronizacao.add($.__views.__alloyId1405);
-    $.__views.__alloyId1406 = Ti.UI.createView({
+    $.__views.sincronizacao.add($.__views.__alloyId1412);
+    $.__views.__alloyId1413 = Ti.UI.createView({
         backgroundColor: "white",
         borderRadius: "5",
         width: "45%",
         left: "3%",
-        id: "__alloyId1406"
+        id: "__alloyId1413"
     });
-    $.__views.__alloyId1405.add($.__views.__alloyId1406);
-    $.__views.__alloyId1407 = Ti.UI.createLabel({
+    $.__views.__alloyId1412.add($.__views.__alloyId1413);
+    $.__views.__alloyId1414 = Ti.UI.createLabel({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -82,18 +82,18 @@ function Controller() {
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         top: "1%",
         text: "EXPORTAR",
-        id: "__alloyId1407"
+        id: "__alloyId1414"
     });
-    $.__views.__alloyId1406.add($.__views.__alloyId1407);
-    $.__views.__alloyId1408 = Ti.UI.createLabel({
+    $.__views.__alloyId1413.add($.__views.__alloyId1414);
+    $.__views.__alloyId1415 = Ti.UI.createLabel({
         top: "20%",
         color: "black",
         left: "5%",
         text: "Dados dos pedidos\nDados dos clientes\nDados de email",
-        id: "__alloyId1408"
+        id: "__alloyId1415"
     });
-    $.__views.__alloyId1406.add($.__views.__alloyId1408);
-    $.__views.__alloyId1409 = Ti.UI.createButton({
+    $.__views.__alloyId1413.add($.__views.__alloyId1415);
+    $.__views.__alloyId1416 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -104,19 +104,19 @@ function Controller() {
         width: "15%",
         bottom: "3%",
         title: "OK",
-        id: "__alloyId1409"
+        id: "__alloyId1416"
     });
-    $.__views.__alloyId1406.add($.__views.__alloyId1409);
-    exportar ? $.__views.__alloyId1409.addEventListener("click", exportar) : __defers["$.__views.__alloyId1409!click!exportar"] = true;
-    $.__views.__alloyId1410 = Ti.UI.createView({
+    $.__views.__alloyId1413.add($.__views.__alloyId1416);
+    exportar ? $.__views.__alloyId1416.addEventListener("click", exportar) : __defers["$.__views.__alloyId1416!click!exportar"] = true;
+    $.__views.__alloyId1417 = Ti.UI.createView({
         backgroundColor: "white",
         borderRadius: "5",
         width: "45%",
         left: "3%",
-        id: "__alloyId1410"
+        id: "__alloyId1417"
     });
-    $.__views.__alloyId1405.add($.__views.__alloyId1410);
-    $.__views.__alloyId1411 = Ti.UI.createLabel({
+    $.__views.__alloyId1412.add($.__views.__alloyId1417);
+    $.__views.__alloyId1418 = Ti.UI.createLabel({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -128,18 +128,18 @@ function Controller() {
         textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
         top: "1%",
         text: "IMPORTAR",
-        id: "__alloyId1411"
+        id: "__alloyId1418"
     });
-    $.__views.__alloyId1410.add($.__views.__alloyId1411);
-    $.__views.__alloyId1412 = Ti.UI.createLabel({
+    $.__views.__alloyId1417.add($.__views.__alloyId1418);
+    $.__views.__alloyId1419 = Ti.UI.createLabel({
         top: "20%",
         color: "black",
         left: "5%",
         text: "Dados dos produtos\nDados das imagens\nDados de marcas\nDados dos representantes",
-        id: "__alloyId1412"
+        id: "__alloyId1419"
     });
-    $.__views.__alloyId1410.add($.__views.__alloyId1412);
-    $.__views.__alloyId1413 = Ti.UI.createButton({
+    $.__views.__alloyId1417.add($.__views.__alloyId1419);
+    $.__views.__alloyId1420 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -150,18 +150,18 @@ function Controller() {
         width: "15%",
         bottom: "3%",
         title: "OK",
-        id: "__alloyId1413"
+        id: "__alloyId1420"
     });
-    $.__views.__alloyId1410.add($.__views.__alloyId1413);
-    importar ? $.__views.__alloyId1413.addEventListener("click", importar) : __defers["$.__views.__alloyId1413!click!importar"] = true;
-    $.__views.__alloyId1414 = Ti.UI.createView({
+    $.__views.__alloyId1417.add($.__views.__alloyId1420);
+    importar ? $.__views.__alloyId1420.addEventListener("click", importar) : __defers["$.__views.__alloyId1420!click!importar"] = true;
+    $.__views.__alloyId1421 = Ti.UI.createView({
         height: "7%",
         bottom: "1%",
         width: "100%",
-        id: "__alloyId1414"
+        id: "__alloyId1421"
     });
-    $.__views.sincronizacao.add($.__views.__alloyId1414);
-    $.__views.__alloyId1415 = Ti.UI.createButton({
+    $.__views.sincronizacao.add($.__views.__alloyId1421);
+    $.__views.__alloyId1422 = Ti.UI.createButton({
         backgroundGradient: {
             type: "linear",
             colors: [ "#2c8f8e", "#206764" ]
@@ -172,16 +172,16 @@ function Controller() {
         width: "10%",
         bottom: "1%",
         title: "Voltar",
-        id: "__alloyId1415"
+        id: "__alloyId1422"
     });
-    $.__views.__alloyId1414.add($.__views.__alloyId1415);
-    voltar ? $.__views.__alloyId1415.addEventListener("click", voltar) : __defers["$.__views.__alloyId1415!click!voltar"] = true;
+    $.__views.__alloyId1421.add($.__views.__alloyId1422);
+    voltar ? $.__views.__alloyId1422.addEventListener("click", voltar) : __defers["$.__views.__alloyId1422!click!voltar"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
     arguments[0] || {};
-    __defers["$.__views.__alloyId1409!click!exportar"] && $.__views.__alloyId1409.addEventListener("click", exportar);
-    __defers["$.__views.__alloyId1413!click!importar"] && $.__views.__alloyId1413.addEventListener("click", importar);
-    __defers["$.__views.__alloyId1415!click!voltar"] && $.__views.__alloyId1415.addEventListener("click", voltar);
+    __defers["$.__views.__alloyId1416!click!exportar"] && $.__views.__alloyId1416.addEventListener("click", exportar);
+    __defers["$.__views.__alloyId1420!click!importar"] && $.__views.__alloyId1420.addEventListener("click", importar);
+    __defers["$.__views.__alloyId1422!click!voltar"] && $.__views.__alloyId1422.addEventListener("click", voltar);
     _.extend($, exports);
 }
 

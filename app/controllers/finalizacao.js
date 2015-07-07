@@ -153,7 +153,7 @@ function renderCarrinho() {
 
 		carrinho.next();
 	}
-	alert(total);
+	
 	var total_desconto = 0;
 	var valor_total_desconto = 0;
 
