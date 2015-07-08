@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingTiValue.m \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingTiValue.h \
+  headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
+  headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
+  headers/JavaScriptCore/TiObjectRef.h \
+  headers/JavaScriptCore/TiValueRef.h \
+  headers/JavaScriptCore/WebKitAvailability.h \
+  headers/JavaScriptCore/TiStringRef.h \
+  headers/JavaScriptCore/TiStringRefCF.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBase.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiThreading.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiPublicAPI.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollObject.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollMethod.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollContext.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollCallback.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/KrollBridge.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/Bridge.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiProxy.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiEvaluator.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiModule.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiUtils.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiDimension.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiColor.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/WebFont.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiFile.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBuffer.h \
+  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/TiBlob.h

@@ -1,5 +1,1 @@
-XSym
-0088
-03865a939aaa18a0ebe23e5c1e78271c
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/lista_video.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/lista_video.js

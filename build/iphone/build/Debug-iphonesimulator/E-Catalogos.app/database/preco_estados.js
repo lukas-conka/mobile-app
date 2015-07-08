@@ -1,5 +1,1 @@
-XSym
-0086
-11d93ffbe3001293c47bf04b9267b697
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/preco_estados.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/preco_estados.js

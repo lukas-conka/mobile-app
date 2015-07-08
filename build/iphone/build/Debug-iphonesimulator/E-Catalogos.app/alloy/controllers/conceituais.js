@@ -1,5 +1,1 @@
-XSym
-0093
-841a6f945d770c30d516a774299dbbef
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/conceituais.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/conceituais.js

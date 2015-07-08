@@ -1,13 +1,14 @@
 {
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"iosSdkVersion": "8.3",
 	"deviceFamily": "ipad",
 <<<<<<< HEAD
+	"developerName": "James Coggan (45BEUM3J7K)",
 	"iosSdkPath": "/Users/ecatalogos/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
 =======
 	"iosSdkPath": "/Users/cbc/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
->>>>>>> ab6b51cd101ef16ec02e05f4664d76262351b2ff
+>>>>>>> 2504ed21237ffccdff93873dc3960952823bf655
 	"tiCoreHash": "47658db9e85e6b4af144b3d6070d6de0",
 	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
@@ -21,8 +22,8 @@
 	"description": "",
 	"copyright": "2014 by James",
 	"guid": "4023640b-07c2-4d48-9222-bef18e9cb77a",
-	"skipJSMinification": true,
+	"skipJSMinification": false,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }

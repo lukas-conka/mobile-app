@@ -1,5 +1,1 @@
-XSym
-0085
-11d76811b6ef48438c9a4a3776562a0b
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/carrinho.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/carrinho.js

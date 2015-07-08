@@ -187,7 +187,7 @@ Ti.App.addEventListener('removeBitmap', eventListener);
 
 if(Ti.Platform.osname == "ipad"){
 	
-	
+
 	$.botaoQuatroVerticais.font = {fontSize: 13};
 	$.botaoQuatroVerticais.height = "63%";
 	$.botaoQuatroVerticais.title = "Limpar marcações";

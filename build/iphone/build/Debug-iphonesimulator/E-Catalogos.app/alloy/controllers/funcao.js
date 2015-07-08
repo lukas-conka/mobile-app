@@ -1,5 +1,1 @@
-XSym
-0088
-e2ef611f2eaa0ed06f6b1c4898a101c5
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/funcao.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/funcao.js

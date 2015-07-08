@@ -1,5 +1,1 @@
-XSym
-0103
-e10de3e24e83a9922d3aec1c81c6e9eb
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_quatro_horizontais.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/vitrine_quatro_horizontais.js

@@ -1,4 +1,3 @@
-//vou mexer no replicar
 var args = arguments[0] || {};
 Ti.include("/api/config.js");
 Ti.include("/database/clientes.js");
@@ -65,7 +64,8 @@ while (carrinho.isValidRow()) {
 	var car_ipi = carrinho.fieldByName('prd_ipi');
 	var tmpl = carrinho.fieldByName('fk_template');
 	var car_desc_unit = carrinho.fieldByName("car_desc_unit");
-	
+	var car_entrega = carrinho.fieldByName("car_entrega");
+	var car_entrega_prazo = carrinho.fieldByName("car_entrega_prazo");
 	quantidade_total = quantidade_total + car_quantidade;
 
 	var label_cortamanho = cor_nome + " - " + tmh_nome;
@@ -205,7 +205,10 @@ while (carrinho.isValidRow()) {
 			cliente: 1
 		},
 		"label_cliente1" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
 		},
 		"seleciona_cliente1" : {
 			prd_id : prd_id,
@@ -220,12 +223,15 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente2" : {
-			visible : cliente_visivel[1],
+			visible : cliente_visivel[2],
 			backgroundColor : cinza_escuro,
 			cliente: 2
 		},
 		"label_cliente2" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
 		},
 		"seleciona_cliente2" : {
 			prd_id : prd_id,
@@ -245,7 +251,10 @@ while (carrinho.isValidRow()) {
 			cliente: 3
 		},
 		"label_cliente3" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
 		},
 		"seleciona_cliente3" : {
 			prd_id : prd_id,
@@ -259,12 +268,15 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente4" : {
-			visible : cliente_visivel[3],
+			visible : cliente_visivel[4],
 			backgroundColor : cinza_escuro,
 			cliente: 4
 		},
 		"label_cliente4" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
 		},
 		"seleciona_cliente4" : {
 			prd_id : prd_id,
@@ -279,12 +291,15 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente5" : {
-			visible : cliente_visivel[4],
+			visible : cliente_visivel[5],
 			backgroundColor : cinza_claro,
 			cliente: 5
 		},
 		"label_cliente5" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
 		},
 		"seleciona_cliente5" : {
 			prd_id : prd_id,
@@ -299,12 +314,18 @@ while (carrinho.isValidRow()) {
 		},
 
 		"view_cliente6" : {
-			visible : cliente_visivel[5],
+			visible : cliente_visivel[6],
 			backgroundColor : cinza_escuro,
-			cliente: 6
+			cliente: 6,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega
 		},
 		"label_cliente6" : {
-			text : "Qtd.\n" + car_quantidade
+			text : "Qtd.\n" + car_quantidade,
+			car_ipi : car_ipi,
+			car_entrega: car_entrega,
+			car_entrega_prazo: car_entrega_prazo
+
 		},
 		"seleciona_cliente6" : {
 			prd_id : prd_id,
@@ -330,12 +351,32 @@ while (carrinho.isValidRow()) {
 
 function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 
-	console.log(cliente);
+	
 	if(!cliente){
 	
 		return false;
 	}
 
+<<<<<<< HEAD
+=======
+
+	
+	if(clientes[cliente]!=0){
+		return true;
+	}else{
+		return false;
+	}
+	
+}
+
+function getSelectedCheck(prd_id, fk_cores, fk_tamanhos, cliente){
+var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
+	if(carrinho[0]!=0){
+		return true;
+	}
+
+
+>>>>>>> 08784644550a24497d6bab6606212af1fa54131d
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	if(carrinho[0] != 0){
 		
@@ -370,23 +411,20 @@ function atualizarQuantidades(button){
 		var novo_valor = "Qtd.\n" + car_quantidade;
 		
     	var item = section.getItemAt(i);
-
+	
 		var fk_tamanhos = item.fk_tamanhos;
 		
 		var fk_cores = item.fk_cores;
 		var car_preco_unitario = item.car_preco_unitario;
-		
-		var car_ipi = item.car_ipi;
+		var algo = "label_cliente"+cliente;
+		var car_ipi = item[algo.toString()].car_ipi;
 		var prd_id = item.prd_id;
+		var car_entrega = item[algo.toString()].car_entrega;
+		var car_entrega_prazo = item[algo.toString()].car_entrega_prazo;
 		
-		console.log(prd_id+"prd_id");
-		console.log(fk_cores+"fk_cores");
-		console.log(fk_tamanhos+"fk_tamanhos");
-		console.log(clientes[cliente]+"clientes[clientes]");
+		
 		//if(verifySelected(prd_id, fk_cores, fk_tamanhos, clientes[cliente]))
-		//comentado para retirar a verificacao de 0 no carrinho pois o ultimo item esta sempre como 0
-
-			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+			insertOrder(clientes[cliente], car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores, car_entrega, car_entrega_prazo);
 		switch(cliente){
 		case "1":
 			item.label_cliente1.text = novo_valor;
@@ -429,7 +467,6 @@ function selecionaQuantidade(button){
 	});
 	
 	var cliente = button.source.cliente;
-	
 	dialog.addEventListener("click",function(e){
 		Ti.API.info("cliente" + cliente);	
 		sobrepedido[cliente] = valores[e.index];
@@ -444,7 +481,6 @@ function selecionaQuantidade(button){
 
 
 function selecionaItem(e) {
-
 	var section = $.listapedidos.sections[e.sectionIndex];
     var item = section.getItemAt(e.itemIndex);
 	
@@ -460,11 +496,13 @@ function selecionaItem(e) {
 	var car_ipi = itemID.car_ipi;
 	var image = itemID.image;
 	
+	
+	
 	Ti.App.Properties.setString("idcliente",itemID.cliente);
 	
 	if (image == '/images/checkbox-falso.png') {
 		itemID.image = "/images/checkbox-ativo.png";
-		insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores);
+		insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores, 0, 0);
 	} else {
 		itemID.image = "/images/checkbox-falso.png";
 		removeOrder(cliente, prd_id, fk_tamanhos, fk_cores);
@@ -535,7 +573,6 @@ function percenteDesconto(event){
 
 function insertOrder(cliente, car_preco_unitario, car_ipi, car_quantidade, prd_id, fk_tamanhos, fk_cores){
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
-	
 	if(carrinho[0]!=0){
 		Ti.API.info("atualiza");
 		updateCarrinho(carrinho[0], session, car_quantidade, 0, 0, 0, 0, 0);

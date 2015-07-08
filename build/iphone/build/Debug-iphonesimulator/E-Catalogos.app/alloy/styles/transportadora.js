@@ -1,5 +1,1 @@
-XSym
-0091
-8c9d0d07429a94efc679b766f3230930
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/transportadora.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/transportadora.js

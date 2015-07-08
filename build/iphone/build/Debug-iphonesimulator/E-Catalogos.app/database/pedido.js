@@ -1,5 +1,1 @@
-XSym
-0079
-d301ec639f4e1ddb2e894b6c7bb1ad8f
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/pedido.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/pedido.js

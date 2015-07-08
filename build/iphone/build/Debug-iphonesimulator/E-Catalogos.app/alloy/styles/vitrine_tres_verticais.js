@@ -1,5 +1,1 @@
-XSym
-0099
-9e33936aed0abf3fff8720b11add6be8
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/vitrine_tres_verticais.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/vitrine_tres_verticais.js

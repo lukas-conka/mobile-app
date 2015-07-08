@@ -1,5 +1,1 @@
-XSym
-0086
-8a18e16fb9ba538791b9e1b5561c5d37
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/perguntas.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/perguntas.js

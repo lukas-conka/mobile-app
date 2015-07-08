@@ -1,5 +1,1 @@
-XSym
-0084
-7bf73f81880239e3d069e695972abb85
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/prazo_medio.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/prazo_medio.js

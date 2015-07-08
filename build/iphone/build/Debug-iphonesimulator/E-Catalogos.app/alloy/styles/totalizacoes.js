@@ -1,5 +1,1 @@
-XSym
-0089
-e234d045f1f8b46efffa713c9ac7b918
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/totalizacoes.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/totalizacoes.js

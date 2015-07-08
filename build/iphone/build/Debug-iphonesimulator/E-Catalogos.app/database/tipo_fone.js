@@ -1,5 +1,1 @@
-XSym
-0082
-048333c88161e54ca00b7aa2a6960f3c
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/tipo_fone.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/tipo_fone.js

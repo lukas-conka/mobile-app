@@ -1,5 +1,1 @@
-XSym
-0091
-d8d033d5539a7e53577d2b8e10c8b071
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/pagamento.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/pagamento.js

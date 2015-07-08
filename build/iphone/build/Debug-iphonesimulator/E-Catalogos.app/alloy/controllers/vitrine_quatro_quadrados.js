@@ -1,5 +1,1 @@
-XSym
-0106
-7cad29be77c5f26869fc08a0b75987b8
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/vitrine_quatro_quadrados.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/vitrine_quatro_quadrados.js

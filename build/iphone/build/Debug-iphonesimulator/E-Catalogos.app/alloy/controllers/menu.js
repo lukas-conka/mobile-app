@@ -1,5 +1,1 @@
-XSym
-0086
-c7fcd818144cdcd489537c2c3e6a089f
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/menu.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/menu.js

@@ -1,5 +1,1 @@
-XSym
-0103
-f69fec8fd6648905a69b78c402a0cf4a
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/controllers/vitrine_um_horizontal.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/vitrine_um_horizontal.js

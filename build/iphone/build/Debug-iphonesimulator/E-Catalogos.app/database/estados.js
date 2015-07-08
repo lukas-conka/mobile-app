@@ -1,5 +1,1 @@
-XSym
-0080
-e6ab4628e48e574de77fb5dc74df0c32
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/estados.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/estados.js

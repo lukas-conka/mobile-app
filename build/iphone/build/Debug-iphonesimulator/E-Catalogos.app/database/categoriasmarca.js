@@ -1,5 +1,1 @@
-XSym
-0088
-a06470d79512dd1a6888d1cb0cfbd44f
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/categoriasmarca.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/categoriasmarca.js

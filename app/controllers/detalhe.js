@@ -30,7 +30,6 @@ function renderCarrinho() {
 		var desconto = carrinho.fieldByName("desconto");
 		var desconto_parcela = carrinho.fieldByName("desconto_parcela");
 		var desconto_especial = carrinho.fieldByName("desconto_especial");
-
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
 
 		var parcelas = 1;
@@ -75,13 +74,14 @@ function renderCarrinho() {
 		var prd_cub_p = carrinho.fieldByName('ifp_cub_p');
 		var crp_quantidade = carrinho.fieldByName('crp_quantidade');
 		var prd_ipi = carrinho.fieldByName('prd_ipi');
-		//Implementado por carlos
+		//favor carlos comente o que vc fez abaixo. obrigado.
 		var ped_numero = carrinho.fieldByName('ped_numero');
-
+		var desconto_unit = carrinho.fieldByName("desconto_unit");
 		var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
 		var valor_produtos = crp_preco_unitario * crp_quantidade;
+		valor_produtos = valor_produtos - desconto_unit;
 		var valor_ipi = valor_produtos * prd_ipi / 100;
-		var valor_total_produto = valor_produtos + valor_ipi;
+		var valor_total_produto = (crp_preco_unitario * crp_quantidade) + valor_ipi;
 
 		peso_total = peso_total + prd_peso;
 		cubagem_a_total = cubagem_a_total + prd_cub_a;
@@ -155,7 +155,7 @@ function renderCarrinho() {
 	var valor_parcelas = valor_total / parcelas;
 
 	$.listapedidos.sections[0].setItems(data);
-	$.label_ipi.text = fdimmuormatCurrency(valor_total_ipi);
+	$.label_ipi.text = formatCurrency(valor_total_ipi);
 	$.label_valor_parcelas.text = formatCurrency(valor_parcelas);
 	$.label_cubagem.text = (cubagem_a_total * cubagem_l_total * cubagem_p_total) + " m3";
 	$.label_peso.text = peso_total + " Kg";

@@ -1,5 +1,1 @@
-XSym
-0093
-7cfa8360bd8a4c7aef89d9aa8741115d
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/status_representante.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/status_representante.js

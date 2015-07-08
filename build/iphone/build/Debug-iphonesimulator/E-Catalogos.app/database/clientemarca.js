@@ -1,5 +1,1 @@
-XSym
-0085
-6815cac6b0c1f26a13524d746298edf9
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/clientemarca.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/clientemarca.js

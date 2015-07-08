@@ -1,5 +1,1 @@
-XSym
-0094
-7e61a6b39548d258ebf2188f45d60419
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/lista_notificacao.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/lista_notificacao.js

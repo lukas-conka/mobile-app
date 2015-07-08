@@ -1,5 +1,1 @@
-XSym
-0086
-bfbb9ef844a44afe128c887c4dc1a7ef
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/database/email_empresa.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/email_empresa.js

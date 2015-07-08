@@ -1,5 +1,0 @@
-XSym
-0095
-0f2fedf2a7af9d315d054a09b53bf3eb
-/Users/cbc/Documents/CarlosStark/mobile-app/Resources/iphone/alloy/styles/xxxxxxxxxxxxxxmenu.js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

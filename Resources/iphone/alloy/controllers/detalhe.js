@@ -70,10 +70,12 @@ function Controller() {
             var crp_quantidade = carrinho.fieldByName("crp_quantidade");
             var prd_ipi = carrinho.fieldByName("prd_ipi");
             var ped_numero = carrinho.fieldByName("ped_numero");
+            var desconto_unit = carrinho.fieldByName("desconto_unit");
             var prazo_de_entrega = selectPrazo(entrega_prazo, entrega);
             var valor_produtos = crp_preco_unitario * crp_quantidade;
+            valor_produtos -= desconto_unit;
             var valor_ipi = valor_produtos * prd_ipi / 100;
-            var valor_total_produto = valor_produtos + valor_ipi;
+            var valor_total_produto = crp_preco_unitario * crp_quantidade + valor_ipi;
             peso_total += prd_peso;
             cubagem_a_total += prd_cub_a;
             cubagem_l_total += prd_cub_l;
@@ -1158,6 +1160,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_precototal"
                 }
             };
@@ -1178,6 +1183,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_ipi"
                 }
             };
@@ -1198,6 +1206,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "6%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_sustrib"
                 }
             };
@@ -1216,8 +1227,11 @@ function Controller() {
                 bindId: "label_valorfinal",
                 properties: {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-                    width: "12%",
+                    width: "10%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_valorfinal"
                 }
             };
@@ -1464,6 +1478,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_precototal"
                 }
             };
@@ -1484,6 +1501,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "7%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_ipi"
                 }
             };
@@ -1504,6 +1524,9 @@ function Controller() {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
                     width: "6%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_sustrib"
                 }
             };
@@ -1522,8 +1545,11 @@ function Controller() {
                 bindId: "label_valorfinal",
                 properties: {
                     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-                    width: "12%",
+                    width: "10%",
                     color: "black",
+                    font: {
+                        fontSize: 11
+                    },
                     bindId: "label_valorfinal"
                 }
             };
