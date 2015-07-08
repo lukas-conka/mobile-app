@@ -699,7 +699,6 @@ function Controller() {
                     layout: "horizontal"
                 });
             } else linha.add(coluna);
-            linhas++;
         }
         listscroll.add(linha);
     }

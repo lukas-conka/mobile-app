@@ -357,6 +357,8 @@ function verifySelected(prd_id, fk_cores, fk_tamanhos, cliente){
 		return false;
 	}
 
+<<<<<<< HEAD
+=======
 
 	
 	if(clientes[cliente]!=0){
@@ -374,6 +376,7 @@ var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, 
 	}
 
 
+>>>>>>> 08784644550a24497d6bab6606212af1fa54131d
 	var carrinho = selectCarrinhoByProductTamanhoCor(prd_id, fk_tamanhos, fk_cores, cliente);
 	if(carrinho[0] != 0){
 		
