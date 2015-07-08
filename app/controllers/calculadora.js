@@ -838,7 +838,7 @@ function botaoLimpa() {
 	clearAllButtons();
 	$.tela.text = '';
 }
-
+//funcao reparada por Felipe
 function botaoLista() {
 	if (lista_visible) {
 		$.produtos.animate({
@@ -924,7 +924,6 @@ function renderLista() {
 		} else {
 			linha.add(coluna);
 		}
-		linhas++;
 	}
 	listscroll.add(linha);
 }
