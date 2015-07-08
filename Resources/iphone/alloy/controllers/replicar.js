@@ -318,7 +318,7 @@ function Controller() {
             var fk_cores = item.fk_cores;
             var car_preco_unitario = item.car_preco_unitario;
             var algo = "label_cliente" + cliente;
-            var car_ipi = item.car_ipi;
+            var car_ipi = item[algo.toString()].car_ipi;
             var prd_id = item.prd_id;
             var car_entrega = item[algo.toString()].car_entrega;
             var car_entrega_prazo = item[algo.toString()].car_entrega_prazo;

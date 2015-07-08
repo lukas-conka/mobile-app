@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/seleciona_cliente.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/seleciona_cliente.js

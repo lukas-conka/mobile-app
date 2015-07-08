@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/referencia_comercial.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/referencia_comercial.js

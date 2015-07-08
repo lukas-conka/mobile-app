@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/carrinho.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/carrinho.js

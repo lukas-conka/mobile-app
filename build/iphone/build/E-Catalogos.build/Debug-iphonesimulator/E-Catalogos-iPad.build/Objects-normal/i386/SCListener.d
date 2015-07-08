@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/SCListener.m \
-  /Users/cbc/Documents/CarlosStark/ecatalogo/build/iphone/Classes/SCListener.h
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/SCListener.m \
+  /Users/ecatalogos/Documents/ecatalogo/build/iphone/Classes/SCListener.h

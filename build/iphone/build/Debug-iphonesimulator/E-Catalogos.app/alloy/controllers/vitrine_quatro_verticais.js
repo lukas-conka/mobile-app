@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/controllers/vitrine_quatro_verticais.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/controllers/vitrine_quatro_verticais.js

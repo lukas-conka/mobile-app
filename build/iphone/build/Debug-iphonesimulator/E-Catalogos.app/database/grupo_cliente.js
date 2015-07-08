@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/grupo_cliente.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/grupo_cliente.js

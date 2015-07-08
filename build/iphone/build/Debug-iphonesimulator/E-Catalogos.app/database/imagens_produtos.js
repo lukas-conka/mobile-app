@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/database/imagens_produtos.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/database/imagens_produtos.js

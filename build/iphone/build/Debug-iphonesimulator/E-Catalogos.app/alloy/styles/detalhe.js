@@ -1,1 +1,1 @@
-/Users/cbc/Documents/CarlosStark/ecatalogo/Resources/iphone/alloy/styles/detalhe.js
+/Users/ecatalogos/Documents/ecatalogo/Resources/iphone/alloy/styles/detalhe.js
